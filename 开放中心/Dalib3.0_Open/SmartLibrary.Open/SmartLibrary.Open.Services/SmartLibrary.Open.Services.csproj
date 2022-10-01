@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SmartLibrary.Opac.Shared" Version="1.1.0" />
+    <PackageReference Include="SmartLibrary.Search.EsSearchProxy.Core" Version="1.1.9" />
+    <PackageReference Include="System.IO.Compression.ZipFile" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SmartLibrary.Open.Common\SmartLibrary.Open.Common.csproj" />
+    <ProjectReference Include="..\SmartLibrary.Open.EntityFramework.Core\SmartLibrary.Open.EntityFramework.Core.csproj" />
+  </ItemGroup>
+
+</Project>

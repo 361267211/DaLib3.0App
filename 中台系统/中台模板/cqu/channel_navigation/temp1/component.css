@@ -1,0 +1,114 @@
+.index-warp-box {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+.index-channel-box {
+  width: 100%;
+  height: 100%;
+  min-height: 80px;
+  background: #fff;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: flex;
+}
+.index-channel-box .index-channel-list {
+  width: 25%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.index-channel-box .index-channel-list:nth-child(1)::before,
+.index-channel-box .index-channel-list:nth-child(2)::before,
+.index-channel-box .index-channel-list:nth-child(3)::before {
+  content: "";
+  width: 1px;
+  height: 60%;
+  background: #c5c5c5;
+  position: absolute;
+  right: 0;
+  top: 20%;
+}
+.index-channel-box .index-channel-list:nth-child(1)::after {
+  position: absolute;
+  content: "01";
+  font-size: 75px;
+  z-index: 1;
+  color: rgba(234, 234, 234, 0.41);
+  right: 20%;
+  top: 0;
+  font-weight: bold;
+}
+.index-channel-box .index-channel-list:nth-child(2)::after {
+  position: absolute;
+  content: "02";
+  font-size: 75px;
+  z-index: 1;
+  color: rgba(234, 234, 234, 0.41);
+  right: 20%;
+  top: 0;
+  font-weight: bold;
+}
+.index-channel-box .index-channel-list:nth-child(3)::after {
+  position: absolute;
+  content: "03";
+  font-size: 75px;
+  z-index: 1;
+  color: rgba(234, 234, 234, 0.41);
+  right: 20%;
+  top: 0;
+  font-weight: bold;
+}
+.index-channel-box .index-channel-list:nth-child(4)::after {
+  position: absolute;
+  content: "04";
+  font-size: 75px;
+  z-index: 1;
+  color: rgba(234, 234, 234, 0.41);
+  right: 20%;
+  top: 0;
+  font-weight: bold;
+}
+.index-channel-box .index-channel-list > img {
+  width: 40px;
+  height: 35px;
+  position: relative;
+  z-index: 10;
+}
+.index-channel-box .index-channel-list > div {
+  margin-left: 10px;
+  position: relative;
+  z-index: 10;
+}
+.index-channel-box .index-channel-list > div span {
+  display: block;
+  font-size: 14px;
+}
+.index-channel-box .index-channel-list > div .index-channel-title1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #64a6fd;
+}
+.index-channel-box .index-channel-list > div .index-channel-title2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e62d2c;
+}
+.index-channel-box .index-channel-list > div .index-channel-title3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1cab61;
+}
+.index-channel-box .index-channel-list > div .index-channel-title4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #957ffd;
+}
+.index-channel-box .index-channel-list > div .index-channel-title{
+  cursor: pointer;
+}
+.index-channel-box .index-channel-list > div .index-channel-title:hover{
+  opacity: .8;
+}

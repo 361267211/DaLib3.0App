@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.c-l::after{
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+    display: block;
+}
+/***公用 ************/
+/***标题 */
+.temp-service-warp{
+    color: #353535;
+    font-size: 14px;
+    padding: 11px;
+    height: 100%;
+}
+.temp-service-warp .main-title-temp{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+.temp-service-warp .e-title{ 
+    color: #999999;
+    font-size: 12px;
+    line-height: 17px;
+    margin-left: 10px;
+}
+.temp-service-warp .main-title-temp .r-btn{
+    cursor: pointer;
+    float: right;
+    color: #8E8E8E;
+    font-size: 12px;
+    font-weight: normal;
+}
+.temp-service-warp .main-title-temp .r-btn:hover{
+    color: #000;
+}
+/***公用 end ************/
+.temp-service-warp .database-content{ 
+    min-height: calc(100% - 38px);
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 40px 75px rgba(57, 60, 67, 0.08);
+    border-radius: 16px;
+    padding: 7px;
+}
+.temp-service-warp .data-list{
+    padding: 10px;
+    width: 100%;
+    min-height: 100%;
+}
+.temp-service-warp .data-list .data-box{
+    width: 16.666%;
+    float: left;
+    padding: 10px;
+}
+.temp-service-warp .data-list .d-box{
+    cursor: pointer;
+    background: #F8F9FB;
+    border: 1px solid #FFFFFF;
+    box-shadow: 1px 1px 3px #D4D8E4;
+    border-radius: 8px;
+    height: 110px;
+    padding:15px 20px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.temp-service-warp .data-list .d-box:hover{
+    border: 1px solid #D4D8E4;
+}
+.temp-service-warp .data-list .d-logo{
+    width: 41px;
+    height: 41px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 7px;
+    background: #ebf1ff;
+    padding: 10px;
+    position: relative;
+    border-radius: 18px 22px 25px 17px;
+}
+.temp-service-warp .data-list .d-logo::after{
+    width: 52px;
+    height: 52px;
+    left: -7px;
+    top: -6px;
+    content: '';
+    border: 1px solid #ffdbd8;
+    position: absolute;
+    border-radius: 18px 22px 25px 17px;
+}
+.temp-service-warp .data-list .d-logo img{
+    width: 100%;
+    height: 100%;
+}
+.temp-service-warp .data-list .data-txt{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333333;
+    margin-top: 15px;
+}
+.temp-service-warp .data-list .data-txt span:first-child{
+    color: #333;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom:3px;
+}

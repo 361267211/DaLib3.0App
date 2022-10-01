@@ -1,0 +1,2 @@
+obj\Release\net5.0\Protos\Server/HealthCheck.cs \
+obj\Release\net5.0\Protos\Server/HealthCheckGrpc.cs: Protos/Server/HealthCheck.proto

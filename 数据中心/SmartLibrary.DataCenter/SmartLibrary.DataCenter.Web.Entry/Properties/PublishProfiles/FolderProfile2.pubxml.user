@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>E:\workspace\DataCenter</_PublishTargetUrl>
+    <History>True|2022-01-10T09:42:06.9231322Z;True|2022-01-07T16:03:35.4747273+08:00;True|2022-01-07T09:19:01.5524789+08:00;True|2021-12-24T16:32:54.4031612+08:00;True|2021-12-24T14:22:42.1925130+08:00;True|2021-12-21T15:31:06.7390483+08:00;True|2021-12-21T15:24:58.2380005+08:00;True|2021-11-15T15:53:50.2467107+08:00;</History>
+  </PropertyGroup>
+</Project>

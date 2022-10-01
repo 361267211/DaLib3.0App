@@ -1,0 +1,70 @@
+﻿{
+  //"JobAssemblyList": "TaskManager.Tasks",
+  //"AdaptersAssemblyList": "TaskManager.Adapters;TaskManager.Adapters.CquV1",
+  //"VersionDB": "3",
+  "ServerName": "智图3.0基础后台任务",
+  "Appsettings": {
+    "conn": "Host=202.202.12.19;Port=5432;User ID=postgres;Password=VipSmart2021!@#;Database=SmartLibrary_DatabaseTerrace;Pooling=true;  ",
+    "dbType": "PostgreSQL",
+    "isAutoClose": "true",
+    "newsContentAdaptStartTime": "'1900-01-01'", //同步数据的起始日期
+    "defaultColumnManagerId": "cqu_vipsmart00001",
+    "defaultColumnManager": "cqu_vipsmart00001",
+    "IsFullSynchronization": "false" //0-否，1-是
+  },
+  "AccessTokenUrl": "http://202.202.12.19:5002/api/Auth/AccessToken",
+  "FabioUrl": "http://202.202.12.19:9999",
+ 
+
+  "OrgInfo": {
+    "Id": "cqu",
+    "Secret": "cqu123"
+  }
+  //"SystemParm": {
+  //  "SYS_SITEID": "1",
+  //  "SYS_OWNER": "cqu",
+  //  "SYS_SITENAME": "cqu",
+  //  "SYS_SITEPASSWORD": "SmartCqu_2020",
+  //  "SYS_SITETYPE": "2",
+  //  "SYS_SMART_CONN": "",
+  //  "SYS_SMART_ASSET_CONN": "Server=192.168.21.47;Database=Smart_Asset_Dev; User ID=Smart_Dev;Password=Smart_2020;MultipleActiveResultSets=true;",
+  //  "SYS_SMART_PORTAL_CONN": "Server=192.168.21.47;Database=Smart_Portal_Dev; User ID=Smart_Dev;Password=Smart_2020;MultipleActiveResultSets=true;",
+  //  "SYS_SMART_LOG_CONN": "Server=192.168.21.47;Database=Smart_Log_Demo; User ID=Smart_Dev;Password=Smart_2020;MultipleActiveResultSets=true;",
+  //  "SYS_SMART_DBTYPE": "1",
+  //  //"SYS_UPLOADPATH": "http://f.cqvip.com/upload/",
+  //  //"SYS_DOWNPATH": "http://f.cqvip.com/download/",
+  //  "SYS_UPLOADPATH": "http://192.168.30.47:9910/upload/",
+  //  "SYS_DOWNPATH": "http://192.168.30.47:9910/download/",
+  //  "SYS_SOURCEFILEURL": "http://smartlibmgr.cqvip.com/provideriddb",
+  //  "SYS_CENTERAPIURL": "http://smartlibmgr.cqvip.com/ajax/AutoServiceHander.ashx",
+  //  "SYS_CENTERPROVIDERURL": "http://smartlibmgr.cqvip.com/ajax/ProviderResouceHander.ashx",
+  //  "SYS_CENTERTEMPLATEURL": "http://smartlibmgr.cqvip.com/ajax/GradTemplateUpload.ashx",
+  //  "SYS_REMOVEDB3PATH": "removeDB3",
+  //  "SYS_SHIELDDATAURL": "http://192.168.21.23:8023/SmartShield.asmx",
+  //  "SYS_SMART_BIGDATAAPI": "http://localhost:4008/api/v1",
+  //  "SYS_SMART_MYCAT_DBCONN": "Server=192.168.21.47;Port=8066;Database=SmartLibMasterLogDemo;Uid=root;Pwd=123456;Connection Timeout=520",
+  //  "SYS_SMART_lOGDBCONN": "Server=192.168.21.47;Database=Smart_Log_{0}; User ID=Smart_Dev;Password=Smart_2020;MultipleActiveResultSets=true;"
+  //},
+  //"Jobs": [
+  //  {
+  //    "JobName": "更新期刊Id",
+  //    "Cron": "20 17 10 * * ?",
+  //    "ClassFullName": "TaskManager.Tasks.Jobs.UpdateJournalIdJob"
+  //  },
+  //  {
+  //    "JobName": "汇编对象数据统计",
+  //    "Cron": "10 48 16 * * ?",
+  //    "ClassFullName": "TaskManager.Tasks.Jobs.AsmObjectJob"
+  //  },
+  //  {
+  //    "JobName": "同步中心站资源作业",
+  //    "Cron": "10 45 10 * * ?",
+  //    "ClassFullName": "TaskManager.Tasks.Jobs.SynCenterResouceJob"
+  //  },
+  //  {
+  //    "JobName": "资源及其批次处理",
+  //    "Cron": "10 37 10 * * ?",
+  //    "ClassFullName": "TaskManager.Tasks.Jobs.BatchAndProviderJob"
+  //  }
+  //]
+}

@@ -1,0 +1,27 @@
+syntax = "proto3";
+package SmartLibraryAppRoute;
+
+service AppRouteGrpcService {
+	rpc GetAppRouteList (AppRouteListRequest) returns (AppRouteListReply); // 应用路由列表
+}
+
+
+message AppRouteListRequest {
+	string TenantCode = 1; //租户标识
+}
+
+message AppRouteListReply {
+	repeated AppRouteListSingle TenantRouteList = 1;
+}
+
+message AppRouteListSingle {
+	string TenantCode = 1;
+	repeated AppRouteListSingleItem AppRouteList = 2;
+}
+
+
+message AppRouteListSingleItem {
+	string AppRouteCode = 1; //应用路由标识
+	string RestApiGateway = 2; //RestApi网关地址
+	string GrpcApiGateway = 3; //GrpcApi网关地址
+}

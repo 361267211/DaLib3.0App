@@ -1,0 +1,48 @@
+// 语法结构，使用pb3
+ syntax = "proto3";
+  // 定义命名空间，一般是项目名或者解决方案名
+ //option csharp_namespace = "SmartLibrary.GuessUserLike.Application";
+  // 定义服务的包
+ package SmartLibrary.GuessUserLike;
+ 
+ 
+ // 定义具体的服务
+ service SmartGuessUserLikeGrpcService {
+    // 定义某一个方法API，格式是：rpc 方法名(请求参数对象名) returns(返回参数对象名)
+    rpc GuessWhatsMyInterested  (GuessWhatsMyInterestedRequest) returns (GuessWhatsMyInterestedResponse);
+ }
+ 
+  // 定义请求的对象名
+ message GuessWhatsMyInterestedRequest {
+    // 有一个属性字段是name
+    int32 PageIndex = 1;
+ }
+ 
+  // 定义返回的对象名
+ message GuessWhatsMyInterestedResponse {
+   
+ repeated GuessWhatsMyInterestedResponseItem Items=1;
+
+
+ }
+ message GuessWhatsMyInterestedResponseItem{
+      // 有一个返回的字段是message
+    string title = 1;
+    int32  date = 2;
+    string language = 3;
+    string source = 4;
+    int32  type = 5;
+    string creator_institution = 6;
+    string cover = 7;
+    string identifier_pissn = 8;
+    string subject_clc = 9;
+    bool   exist_cover = 10;
+    string creator_en = 11;
+    string creator = 12;
+    string page = 13;
+    string medium = 14;
+    string volume = 15;
+    string description_core = 16;
+    string _id = 17;
+    string DetailLink=18;
+ }

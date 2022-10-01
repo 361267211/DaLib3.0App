@@ -1,0 +1,240 @@
+syntax = "proto3";
+
+package SmartLibrary.Open;
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/empty.proto";
+
+service AppGrpcService {
+	rpc GetDictionaryByType (DictionaryRequest) returns (DictionaryReply);//获取通用字典
+	rpc GetAppLog (AppLogRequest) returns (AppLogReply);//分页获取应用日志
+	rpc GetAppLogDetail (AppLogDetailRequest) returns (AppLogDetailReply);//获取更新日志详情
+	rpc GetAppList (google.protobuf.Empty) returns (AppListReply); //获取应用列表
+	rpc GetPayAppList (PayAppRequest) returns (PayAppReply); //付费应用推荐
+	rpc GetOrderList (OrderListRequest) returns (OrderListReply); // 应用订单列表
+	rpc CancelOder (CancelOrderRequest) returns (CancelOrderReply); //取消订单
+	rpc AppAction (AppActionReuqest) returns (AppActionReply); // 应用续订/延期/试用/采购
+	rpc GetOrgInfo (google.protobuf.Empty) returns (OrgInfoReply); //获取机构信息 
+}
+
+
+//获取字典，应用类型，采购类型等
+message DictionaryRequest {
+	string DicType = 1;
+}
+
+message DictionaryReply {
+	repeated DictionarySingle DictionaryList = 1;
+}
+
+message DictionarySingle {
+	string Id = 1;
+	string Name = 2;
+	string Value = 3;
+}
+
+
+//应用更新日志
+message AppLogRequest {
+	int32 PageIndex = 1;
+	int32 PageSize = 2;
+	int32 InfoType = 3; //信息类型 1-应用动态 2-活动信息 3-使用教程
+}
+
+message AppLogReply {
+	repeated AppLogSingle AppLogList = 1;
+	int32 TotalCount = 2;
+}
+
+message AppLogSingle {
+	string Id = 1; //消息ID
+	string Title = 2; //标题
+	string ReleaseTime = 3; //发布时间
+	string Content = 4; //内容
+	string AppId = 5; //适用应用
+	string Version = 6; //版本
+}
+
+//应用更新日志详情
+message AppLogDetailRequest {
+	string Id = 1; //消息ID
+}
+
+message AppLogDetailReply {
+	string Id = 1; //消息ID
+	string Title = 2; //标题
+	string AppTitle = 3; //应用名称
+	string AppIcon = 4; //应用图标
+	string UpdateTime = 5; //更新时间
+	string Content = 6; //内容
+	string Version = 7; //版本
+}
+
+
+//应用列表
+message AppListReply {
+	repeated AppListSingle AppList = 1;
+	int32 TotalCount = 2;
+}
+
+message AppListSingle {
+	string AppId = 1; //应用ID
+	string AppName = 2; //应用名称
+	string AppIcon = 3; //应用图标
+	string ExpireDate = 4; //到期时间
+	string BeginDate = 5; //开始时间
+	string CreateTime = 6; 
+	string UpdateTime = 7;
+	string FrontUrl = 8;//前台地址
+	string BackendUrl = 9;//管理地址
+	string AppType = 10; //应用类型
+	string PurchaseType = 11; //采购类型
+	string CurrentVersion = 12; //当前版本号
+	string ShowStatus = 13;//转换后的应用状态
+	string Status = 14;//应用状态
+	string SceneType = 15;//场景类型
+	string Terminal = 16; //支持终端
+	string Developer = 17; // 开发商
+	string Price = 18; //建议售价
+	string Content = 19; //应用介绍
+	string ApiHost = 20; //接口地址
+	string RouteCode = 21; //路由标识
+	repeated AppEntranceSingle AppEntranceList = 22; //入口列表
+	repeated AppWidgetSingle AppWidgetList = 23; //应用组件列表
+	repeated AppAvailibleSortFieldSingle AppAvailibleSortFieldList = 24; //应用排序字段列表
+	string PurchaseTypeName = 25; //采购类型名称
+}
+
+message AppWidgetSingle{
+    string Id = 1;// 应用组件ID
+    string AppId = 2;// 应用ID
+    string Name = 3;// 组件名称
+    string Target = 4;// 组件内容地址
+    string AvailableConfig = 5;// 可用配置 1-栏目 2-数据条数 3-排序字段 逗号分隔
+    int32 MaxTopCount = 6;// 最大数据条数
+    int32 TopCountInterval = 7;// 数据条数间隔
+	string Cover = 8;//封面
+	string WidgetCode = 9; //组件标识
+	int32 Width = 10;// 默认宽度
+    int32 Height = 11;// 默认高度
+    string CreateTime = 12;// 创建时间
+    string UpdateTime = 13;// 更新时间
+    int32 SceneType = 14;// 特殊场景标识 ，1-通用 2-个人中心
+}
+
+message AppAvailibleSortFieldSingle{
+    string Id =1; //Id
+    string AppId =2;// 应用标识
+    string SortFieldName =3;// 排序字段名称
+    string SortFieldValue =4;// 描述信息
+}
+
+message AppEntranceSingle {
+	string Id = 1;//入口Id
+    string Name = 2; //入口名称
+    string Code =3;//入口编码
+    int32 UseScene =4;// 使用场景 1-前台  2-后台
+    string VisitUrl =5;// 访问路径
+    bool IsSystem =6;// 是否内置入口
+	bool IsDefault =7;// 是否默认入口
+	repeated AppEventSingle AppEventList = 8;//应用事件
+	string BusinessType=9;//业务类型
+}
+
+message AppEventSingle {
+    string EventCode = 1; //事件编码
+    string EventName = 2; //事件名称
+	string EventType = 3; //事件类型， 1 运行日志，2 操作日志 ，3 积分获取，4 积分消费，5 待办项，0 所有，多个用逗号分隔
+}
+
+//付费应用推荐
+message PayAppRequest {
+	int32 PageIndex = 1;
+	int32 PageSize = 2;
+	string AppType = 3;
+}
+
+message PayAppReply {
+	repeated PayAppSingle PayAppList = 1;
+	int32 TotalCount = 2;
+}
+
+message PayAppSingle {
+	string Id = 1;
+	string AppName = 2;
+	string AppIcon = 3;
+	int32 Star = 4; //推荐指数
+	string Content = 5; //应用介绍
+	double Price = 6; //指导价格
+	bool IsFreeTry = 7; //是否支持免费试用
+	string Developer = 8; //开发商
+}
+
+
+//订单列表
+message OrderListRequest {
+	int32 PageIndex = 1;
+	int32 PageSize = 2;
+	google.protobuf.Int32Value Status = 3; //订单状态
+	string SearchKey = 4; //检索内容
+}
+
+message OrderListReply {
+	repeated OrderListSingle OrderList = 1;
+	int32 TotalCount = 2;
+}
+
+message OrderListSingle {
+	string Id = 1;
+	string AppName = 2;
+	string Developer = 3; //开发商
+	string Contacts = 4; //联系人
+	string Phone = 5; //联系电话
+	string ShowAuthType = 6; //显示授权类型
+	string AuthType = 7; //授权类型
+	string ShowOpenType = 8; //显示开通类型
+	string OpenType = 9; //开通类型
+	string ShowStatus = 10; // 显示状态
+	string Status = 11;
+	string CommitDate = 12; //提交日期
+	string ExpireDate = 13; //到期日期
+	string Remark = 14; // 拒绝状态备注信息
+}
+
+
+//取消订单
+message CancelOrderRequest {
+	string Id = 1;
+}
+
+message CancelOrderReply {
+	bool IsSuccess = 1;
+	string ErrorMsg = 2; //不成功时返回的提示信息
+}
+
+
+//应用延期/续订
+message AppActionReuqest {
+	int32 ActionType = 1; //操作类型 1=续订，2=延期，3=免费试用，4=预约采购，5=启用，6=停用
+	string AppId = 2; //应用ID
+	int32 TimeNum = 3; //续订/延期时间 纯数字,换算成月
+	string Contacts = 4; //联系人
+	string Phone = 5; //联系电话
+}
+
+message AppActionReply {
+	bool IsSuccess = 1;
+	string ErrorMsg = 2; //不成功时返回的提示信息
+}
+
+
+message OrgInfoReply {
+	string OrgCode = 1; //机构标识
+	string PortalUrl = 2; //门户地址
+	string ManageUrl = 3; //后台地址
+	string FileUrl = 4; //文件地址
+	string LoginUrl = 5; //前台登录地址
+	string MgrLoginUrl = 6; //后台登录地址
+	string OrgName = 7; //机构名称
+	string LogoUrl = 8; //机构Logo
+	string SimpleLogoUrl = 9; //机构简版Logo
+}

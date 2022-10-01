@@ -1,0 +1,1618 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmartLibrary.Navigation.EntityFramework.Core</name>
+    </assembly>
+    <members>
+        <member name="T:SmartLibrary.Navigation.EntityFramework.Core.DbContexts.AssetDbContext">
+            <summary>
+            示例数据库上下文
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.DbContexts.AssetDbContext.TenantInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Navigation.EntityFramework.Core.DbContexts.AssetDbContext._LoggerFactory">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Navigation.EntityFramework.Core.DbContexts.AssetDbContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{SmartLibrary.Navigation.EntityFramework.Core.DbContexts.AssetDbContext},kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.TenantInfo)">
+            <summary>
+            
+            </summary>
+            <param name="options"></param>
+            <param name="tenantInfo"></param>
+        </member>
+        <member name="M:SmartLibrary.Navigation.EntityFramework.Core.DbContexts.AssetDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            创建模型前
+            </summary>
+            <param name="modelBuilder"></param>
+        </member>
+        <member name="M:SmartLibrary.Navigation.EntityFramework.Core.DbContexts.AssetDbContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="optionsBuilder"></param>
+        </member>
+        <member name="M:SmartLibrary.Navigation.EntityFramework.Core.DbContexts.AssetDbContext.GetFullSchemaName">
+            <summary>
+            创建model时获取其schema
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Navigation.EntityFramework.Core.DbContexts.AssetDbContext.GetSchemaName">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Navigation.EntityFramework.Core.AssetDbContextLocator">
+            <summary>
+            DbContext上下文选择器，仅有一个DbContext时，可以省略
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentDto">
+            <summary>
+            名    称：ContentDto
+            作    者：张泽军
+            创建时间：2021/9/30 16:10:32
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentDto.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentDto.Title">
+            <summary>
+            内容标题
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentDto.TitleStyle">
+            <summary>
+            内容标题 带样式
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentDto.TitleStyleKV">
+            <summary>
+            内容扩展项键值对
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentDto.SubTitle">
+            <summary>
+            副标题
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentDto.CatalogueID">
+            <summary>
+            所属目录
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentDto.CatalogueName">
+            <summary>
+            所属目录名
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentDto.RelationCatalogueIDs">
+            <summary>
+            多目录投递
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentDto.RelationCatalogueIDsKV">
+            <summary>
+            多目录投递键值对
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentDto.Contents">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentDto.LinkUrl">
+            <summary>
+            链接
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentDto.Publisher">
+            <summary>
+            发布人
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentDto.Creator">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentDto.CreatorName">
+            <summary>
+            创建人名
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentDto.PublishDate">
+            <summary>
+            发布日期
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentDto.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentDto.StatusName">
+            <summary>
+            状态名
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentDto.HitCount">
+            <summary>
+            点击数
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentDto.SortIndex">
+            <summary>
+            排序号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentDto.UpdateTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentDto.CreatedTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentDto.IndexNum">
+            <summary>
+            页面序号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentVo.ColumnId">
+            <summary>
+            栏目id
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentVo.ColumnName">
+            <summary>
+            栏目名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentInfoDto.Auditor">
+            <summary>
+            审核人
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentInfoDto.Publisher">
+            <summary>
+            发布人
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentInfoDto.ShowTime">
+            <summary>
+            显示时间
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentInfoDto.DisplayTitle">
+            <summary>
+            显示标题
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentInfoDto.Preview">
+            <summary>
+            简介
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.ContentInfoDto.ApplyCount">
+            <summary>
+            报名人数，外链
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationBodyTemplateDto">
+            <summary>
+            名    称：NavigationBodyTemplateDto
+            作    者：张泽军
+            创建时间：2021/9/30 16:19:52
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationBodyTemplateDto.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationBodyTemplateDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationBodyTemplateDto.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationBodyTemplateDto.Note">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationBodyTemplateDto.PreviewPic">
+            <summary>
+            预览图
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationCatalogueDto">
+            <summary>
+            名    称：NavigationCatalogueDto
+            作    者：张泽军
+            创建时间：2021/9/30 16:20:41
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationCatalogueDto.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationCatalogueDto.ColumnID">
+            <summary>
+            栏目ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationCatalogueDto.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationCatalogueDto.TitleStyle">
+            <summary>
+            内容标题 带样式
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationCatalogueDto.TitleStyleKV">
+            <summary>
+            内容扩展项键值对
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationCatalogueDto.Alias">
+            <summary>
+            别名
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationCatalogueDto.ParentID">
+            <summary>
+            父级目录ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationCatalogueDto.PathCode">
+            <summary>
+            路径字符串
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationCatalogueDto.NavigationType">
+            <summary>
+            导航类型
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationCatalogueDto.AssociatedCatalog">
+            <summary>
+            关联目录
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationCatalogueDto.ExternalLinks">
+            <summary>
+            外部链接
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationCatalogueDto.IsOpenNewWindow">
+            <summary>
+            是否开启新页面
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationCatalogueDto.Cover">
+            <summary>
+            封面
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationCatalogueDto.Status">
+            <summary>
+            启用状态
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationCatalogueDto.SortIndex">
+            <summary>
+            排序号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationCatalogueDto.Creator">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationCatalogueDto.CreatorName">
+            <summary>
+            创建人名
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationColumnDto">
+            <summary>
+            名    称：NavigationColumnDto
+            作    者：张泽军
+            创建时间：2021/9/30 16:22:52
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationColumnDto.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationColumnDto.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationColumnDto.Label">
+            <summary>
+            标签
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationColumnDto.LabelKV">
+            <summary>
+            自定义标签键值对
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationColumnDto.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationColumnDto.LinkUrl">
+            <summary>
+            访问地址
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationColumnDto.DefaultTemplate">
+            <summary>
+            默认模板
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationColumnDto.ColumnIcon">
+            <summary>
+            栏目图标
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationColumnDto.SideList">
+            <summary>
+            侧边列表
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationColumnDto.SysMesList">
+            <summary>
+            展示的系统信息列表
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationColumnDto.SysMesListKV">
+            <summary>
+            展示的系统信息列表的键值对
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationColumnDto.CoverHeight">
+            <summary>
+            目录封面高度
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationColumnDto.CoverWidth">
+            <summary>
+            目录封面宽度
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationColumnDto.IsLoginAcess">
+            <summary>
+            是否登录可用
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationColumnDto.UserGroups">
+            <summary>
+            授权访问的用户分组
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationColumnDto.UserTypes">
+            <summary>
+            授权访问的用户类型
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationColumnDto.IsOpenFeedback">
+            <summary>
+            是否启用意见反馈
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationColumnDto.HeadTemplate">
+            <summary>
+            头部模板
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationColumnDto.FootTemplate">
+            <summary>
+            尾部模板
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationColumnPermissionsDto">
+            <summary>
+            名    称：NavigationColumnPermissionsDto
+            作    者：张泽军
+            创建时间：2021/9/30 16:27:09
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationColumnPermissionsDto.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationColumnPermissionsDto.ColumnID">
+            <summary>
+            栏目ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationColumnPermissionsDto.ManagerID">
+            <summary>
+            管理员ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationColumnPermissionsDto.Manager">
+            <summary>
+            管理员名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationColumnPermissionsDto.Permission">
+            <summary>
+            权限
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationLableInfoDto">
+            <summary>
+            名    称：NavigationLableInfoDto
+            作    者：张泽军
+            创建时间：2021/9/30 16:28:10
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationLableInfoDto.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationLableInfoDto.Title">
+            <summary>
+            内容标题
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationSettingsDto">
+            <summary>
+            名    称：NavigationSettingsDto
+            作    者：张泽军
+            创建时间：2021/9/30 16:31:35
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationSettingsDto.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationSettingsDto.SensitiveWords">
+            <summary>
+            敏感词启用
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationSettingsDto.Comments">
+            <summary>
+            评论启用
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationTemplateDto">
+            <summary>
+            名    称：NavigationTemplateDto
+            作    者：张泽军
+            创建时间：2021/9/30 16:32:19
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationTemplateDto.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationTemplateDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationTemplateDto.HeadTemplate">
+            <summary>
+            头部模板
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationTemplateDto.FootTemplate">
+            <summary>
+            尾部模板
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationTemplateDto.Note">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.NavigationTemplateDto.PreviewPic">
+            <summary>
+            预览图
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.PermissionMenu">
+            <summary>
+            名    称：PermissionMenu
+            作    者：张泽军
+            创建时间：2021/10/20 21:31:48
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.SysMenuPermissionDto.Pid">
+            <summary>
+            父ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.SysMenuPermissionDto.Path">
+            <summary>
+            节点路径
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.SysMenuPermissionDto.FullPath">
+            <summary>
+            全路径
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.SysMenuPermissionDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.SysMenuPermissionDto.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.SysMenuPermissionDto.Icon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.SysMenuPermissionDto.Router">
+            <summary>
+            路由
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.SysMenuPermissionDto.Component">
+            <summary>
+            组件
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.SysMenuPermissionDto.Permission">
+            <summary>
+            权限标识:接口的Action
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.SysMenuPermissionDto.Category">
+            <summary>
+            分组标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.SysMenuPermissionDto.OpenWay">
+            <summary>
+            打开方式
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.SysMenuPermissionDto.Visible">
+            <summary>
+            是否可见
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.SysMenuPermissionDto.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.SysMenuPermissionDto.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.SysMenuPermissionDto.IsSysMenu">
+            <summary>
+            是否应用系统菜单
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.SysMenuPermissionDto.DeleteFlag">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.SysRoleDto.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.SysRoleDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.SysRoleDto.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.SysRoleDto.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.SysRoleDto.DeleteFlag">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.SysRoleInfoDto.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.SysRoleInfoDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.SysRoleInfoDto.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.SysRoleInfoDto.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.SysRoleInfoDto.DeleteFlag">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.SysRoleInfoDto.Permissions">
+            <summary>
+            权限id
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.SysUserRoleDto.UserID">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Dto.Permission.SysUserRoleDto.RoleID">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Navigation.EntityFramework.Core.Entitys.Asset">
+            <summary>
+            测试 EF、多租户、多租户迁移用的模型Asset
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.Asset.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.Asset.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.Asset.Content">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.Asset.Language">
+            <summary>
+            语言
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.Asset.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.Asset.EnglihName">
+            <summary>
+            英文名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.Asset.Plate">
+            <summary>
+            模板
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Navigation.EntityFramework.Core.Entitys.Content">
+            <summary>
+            名    称：Content
+            作    者：张泽军
+            创建时间：2021/9/30 16:04:12
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.Content.Title">
+            <summary>
+            内容标题
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.Content.TitleStyle">
+            <summary>
+            内容标题 带样式
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.Content.SubTitle">
+            <summary>
+            副标题
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.Content.CatalogueID">
+            <summary>
+            所属目录
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.Content.RelationCatalogueIDs">
+            <summary>
+            多目录投递
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.Content.Contents">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.Content.ContentsText">
+            <summary>
+            内容的文本
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.Content.LinkUrl">
+            <summary>
+            链接
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.Content.Publisher">
+            <summary>
+            发布人
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.Content.Creator">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.Content.CreatorName">
+            <summary>
+            创建人名
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.Content.PublishDate">
+            <summary>
+            发布日期
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.Content.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.Content.HitCount">
+            <summary>
+            点击数
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.Content.SortIndex">
+            <summary>
+            排序号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.Content.DeleteFlag">
+            <summary>
+            删除标识
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationBodyTemplate">
+            <summary>
+            名    称：NavigationBodyTemplate
+            作    者：张泽军
+            创建时间：2021/9/30 15:25:09
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationBodyTemplate.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationBodyTemplate.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationBodyTemplate.Note">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationBodyTemplate.PreviewPic">
+            <summary>
+            预览图
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationBodyTemplate.DeleteFlag">
+            <summary>
+            删除标志
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationCatalogue">
+            <summary>
+            名    称：NavigationCatalogue
+            作    者：张泽军
+            创建时间：2021/9/30 15:54:48
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationCatalogue.ColumnID">
+            <summary>
+            栏目ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationCatalogue.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationCatalogue.TitleStyle">
+            <summary>
+            内容标题 带样式
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationCatalogue.Alias">
+            <summary>
+            别名
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationCatalogue.ParentID">
+            <summary>
+            父级目录ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationCatalogue.PathCode">
+            <summary>
+            路径字符串
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationCatalogue.NavigationType">
+            <summary>
+            导航类型
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationCatalogue.AssociatedCatalog">
+            <summary>
+            关联目录
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationCatalogue.ExternalLinks">
+            <summary>
+            外部链接
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationCatalogue.IsOpenNewWindow">
+            <summary>
+            是否开启新页面
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationCatalogue.Cover">
+            <summary>
+            封面
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationCatalogue.Status">
+            <summary>
+            启用状态
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationCatalogue.SortIndex">
+            <summary>
+            排序号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationCatalogue.Creator">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationCatalogue.CreatorName">
+            <summary>
+            创建人名
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationCatalogue.DeleteFlag">
+            <summary>
+            删除标识
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationColumn">
+            <summary>
+            名    称：NavigationColumn
+            作    者：张泽军
+            创建时间：2021/9/30 15:39:13
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationColumn.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationColumn.Label">
+            <summary>
+            标签
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationColumn.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationColumn.LinkUrl">
+            <summary>
+            访问地址
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationColumn.DefaultTemplate">
+            <summary>
+            默认模板
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationColumn.ColumnIcon">
+            <summary>
+            栏目图标
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationColumn.SideList">
+            <summary>
+            侧边列表
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationColumn.SysMesList">
+            <summary>
+            展示的系统信息列表
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationColumn.CoverHeight">
+            <summary>
+            目录封面高度
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationColumn.CoverWidth">
+            <summary>
+            目录封面宽度
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationColumn.IsLoginAcess">
+            <summary>
+            是否登录可用
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationColumn.UserGroups">
+            <summary>
+            授权访问的用户分组
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationColumn.UserTypes">
+            <summary>
+            授权访问的用户类型
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationColumn.IsOpenFeedback">
+            <summary>
+            是否启用意见反馈
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationColumn.DeleteFlag">
+            <summary>
+            删除标志
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationColumn.HeadTemplate">
+            <summary>
+            头部模板
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationColumn.FootTemplate">
+            <summary>
+            尾部模板
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationColumnPermissions">
+            <summary>
+            名    称：NavigationColumnPermissions
+            作    者：张泽军
+            创建时间：2021/9/30 15:37:33
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationColumnPermissions.ColumnID">
+            <summary>
+            栏目ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationColumnPermissions.ManagerID">
+            <summary>
+            管理员ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationColumnPermissions.Manager">
+            <summary>
+            管理员名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationColumnPermissions.Permission">
+            <summary>
+            权限
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationColumnPermissions.DeleteFlag">
+            <summary>
+            逻辑删除标识
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationLableInfo">
+            <summary>
+            名    称：NavigationLableInfo
+            作    者：张泽军
+            创建时间：2021/9/30 16:16:22
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationLableInfo.Title">
+            <summary>
+            内容标题
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationLableInfo.DeleteFlag">
+            <summary>
+            删除标识
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationSettings">
+            <summary>
+            名    称：NavigationSettings
+            作    者：张泽军
+            创建时间：2021/9/30 15:26:18
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationSettings.SensitiveWords">
+            <summary>
+            敏感词启用
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationSettings.Comments">
+            <summary>
+            评论启用
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationSettings.DeleteFlag">
+            <summary>
+            逻辑删除标识
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationTemplate">
+            <summary>
+            名    称：NavigationTemplate
+            作    者：张泽军
+            创建时间：2021/9/30 15:22:33
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationTemplate.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationTemplate.HeadTemplate">
+            <summary>
+            头部模板
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationTemplate.FootTemplate">
+            <summary>
+            尾部模板
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationTemplate.Note">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationTemplate.PreviewPic">
+            <summary>
+            预览图
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.NavigationTemplate.DeleteFlag">
+            <summary>
+            删除标志
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysMenuCategory">
+            系统菜单分组
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysMenuCategory.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysMenuCategory.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysMenuCategory.IsDefault">
+            <summary>
+            默认展示
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysMenuCategory.Sort">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysMenuCategory.Visible">
+            <summary>
+            是否可见
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysMenuCategory.DeleteFlag">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysMenuPermission">
+            系统菜单及权限配置
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysMenuPermission.Pid">
+            <summary>
+            父ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysMenuPermission.Path">
+            <summary>
+            节点路径
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysMenuPermission.FullPath">
+            <summary>
+            全路径
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysMenuPermission.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysMenuPermission.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysMenuPermission.Icon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysMenuPermission.Router">
+            <summary>
+            路由
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysMenuPermission.Component">
+            <summary>
+            组件
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysMenuPermission.Permission">
+            <summary>
+            权限标识:接口的Action
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysMenuPermission.Category">
+            <summary>
+            分组标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysMenuPermission.OpenWay">
+            <summary>
+            打开方式
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysMenuPermission.Visible">
+            <summary>
+            是否可见
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysMenuPermission.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysMenuPermission.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysMenuPermission.IsSysMenu">
+            <summary>
+            是否应用系统菜单
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysMenuPermission.DeleteFlag">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysRole">
+            系统角色
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysRole.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysRole.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysRole.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysRole.DeleteFlag">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysRoleMenu">
+            角色菜单权限
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysRoleMenu.RoleID">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysRoleMenu.MenuPermissionID">
+            <summary>
+            菜单权限ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysRoleMenu.DeleteFlag">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysUserRole">
+            用户角色关系表
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysUserRole.UserID">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysUserRole.RoleID">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Navigation.EntityFramework.Core.Entitys.SysUserRole.DeleteFlag">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Navigation.EntityFramework.Core.Enum.NavigationBodyTemplateTypeEnum">
+            <summary>
+            名    称：NavigationBodyTemplateTypeEnum
+            作    者：张泽军
+            创建时间：2021/10/21 11:53:12
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Navigation.EntityFramework.Core.Enum.NavigationBodyTemplateTypeEnum.Head">
+            <summary>
+            头部
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Navigation.EntityFramework.Core.Enum.NavigationBodyTemplateTypeEnum.Foot">
+            <summary>
+            尾部
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Navigation.EntityFramework.Core.Enum.PermissionTypeEnum">
+            <summary>
+            系统菜单类型
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Navigation.EntityFramework.Core.Enum.PermissionTypeEnum.Dir">
+            <summary>
+            目录
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Navigation.EntityFramework.Core.Enum.PermissionTypeEnum.Menu">
+            <summary>
+            菜单
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Navigation.EntityFramework.Core.Enum.PermissionTypeEnum.Btn">
+            <summary>
+            按钮
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Navigation.EntityFramework.Core.Enum.PermissionTypeEnum.Query">
+            <summary>
+            查询
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Navigation.EntityFramework.Core.Enum.PermissionTypeEnum.Operate">
+            <summary>
+            操作
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Navigation.EntityFramework.Core.Enum.PermissionTypeEnum.Api">
+            <summary>
+            接口
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Navigation.Application.Enums.AuditPowerEunm">
+            <summary>
+            名    称：AuditPowerEunm
+            作    者：张泽军
+            创建时间：2021/10/8 11:41:39
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Navigation.Application.Enums.AuditPowerEunm.Manage">
+            <summary>
+            管理权限 
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Navigation.Application.Enums.NavigationTypeEunm">
+            <summary>
+            名    称：NavigationTypeEunm
+            作    者：张泽军
+            创建时间：2021/10/10 10:01:31
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Navigation.Application.Enums.NavigationTypeEunm.Content">
+            <summary>
+            内容导航 
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Navigation.Application.Enums.NavigationTypeEunm.Associated">
+            <summary>
+            关联目录 
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Navigation.Application.Enums.NavigationTypeEunm.OutLink">
+            <summary>
+            外部链接 
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Navigation.Application.Enums.SideListEnum">
+            <summary>
+            名    称：SideListEnum
+            作    者：张泽军
+            创建时间：2021/10/8 14:46:54
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Navigation.Application.Enums.SideListEnum.None">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Navigation.Application.Enums.SideListEnum.SameLableColumn">
+            <summary>
+            左侧显示同标签栏目
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Navigation.Application.Enums.SideListEnum.SameColumnNavigationContent">
+            <summary>
+            左侧显示栏目内容
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Navigation.Application.Enums.SysMesListEnum">
+            <summary>
+            名    称：SysMesListEnum
+            作    者：张泽军
+            创建时间：2021/10/8 14:35:52
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Navigation.Application.Enums.SysMesListEnum.ListShowPublishDate">
+            <summary>
+            列表显示发布日期
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Navigation.Application.Enums.SysMesListEnum.ListShowHitCount">
+            <summary>
+            列表显示访问击次数
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Navigation.Application.Enums.SysMesListEnum.ListShowContentAttr">
+            <summary>
+            列表显示信息摘要
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Navigation.Application.Enums.SysMesListEnum.DetailShowPublishDate">
+            <summary>
+            详情显示发布日期
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Navigation.Application.Enums.SysMesListEnum.DetailShowHitCount">
+            <summary>
+            详情显示访问次数
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Core.Entitys.Person">
+            <summary>
+            测试 EF、多租户、多租户迁移用的模型Person
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Core.Entitys.Person.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Core.Entitys.Person.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Core.Entitys.Person.Age">
+            <summary>
+            年龄
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Core.Entitys.Person.Address">
+            <summary>
+            住址
+            </summary>
+        </member>
+        <member name="T:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.ConnectionResolverOption">
+            <summary>
+            数据库连接信息的模型
+            </summary>
+        </member>
+        <member name="T:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.MigrationByTenantAssembly">
+            <summary>
+            自定义的MigrationsAssembly：用于更改模板的格式（引入 带"schema" 的构造函数）
+            </summary>
+        </member>
+        <member name="M:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.MigrationByTenantAssembly.CreateMigration(System.Reflection.TypeInfo,System.String)">
+            <summary>
+            调用模板方法构造函数，获取 改造后的 Migration 的子类
+            </summary>
+            <param name="migrationClass"></param>
+            <param name="activeProvider"></param>
+            <returns></returns>
+        </member>
+        <member name="T:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.MultipleTenancyExtension">
+            <summary>
+            注册DbContext
+            </summary>
+        </member>
+        <member name="M:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.MultipleTenancyExtension.AddDatabasePerConnection``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.ConnectionResolverOption)">
+            <summary>
+            基于数据库连接的多租户
+            </summary>
+            <typeparam name="TDbContext"></typeparam>
+            <param name="services"></param>
+            <param name="option"></param>
+            <returns></returns>
+        </member>
+        <member name="M:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.MultipleTenancyExtension.AddDatabase``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.ConnectionResolverOption)">
+            <summary>
+            注册
+            </summary>
+            <typeparam name="TDbContext"></typeparam>
+            <param name="services"></param>
+            <param name="option"></param>
+            <returns></returns>
+        </member>
+        <member name="M:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.MultipleTenancyExtension.AddTenantDatabasePerTable``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.ConnectionResolverOption)">
+            <summary>
+            基于表的多租户
+            </summary>
+            <typeparam name="TDbContext"></typeparam>
+            <param name="services"></param>
+            <param name="option"></param>
+            <returns></returns>
+        </member>
+        <member name="M:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.MultipleTenancyExtension.AddTenantDatabasePerSchema``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.ConnectionResolverOption)">
+            <summary>
+            基于Schema的多租户
+            </summary>
+            <typeparam name="TDbContext"></typeparam>
+            <param name="services"></param>
+            <param name="option"></param>
+            <returns></returns>
+        </member>
+        <member name="T:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.TenantInfo">
+            <summary>
+            租户信息的模型类，后期可继续拓展
+            </summary>
+        </member>
+        <member name="P:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.TenantInfo.Name">
+            <summary>
+            多租户姓名
+            </summary>
+        </member>
+        <member name="P:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.TenantInfo.UserKey">
+            <summary>
+            UserKey
+            </summary>
+        </member>
+        <member name="T:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.TenantInfoMiddleware">
+            <summary>
+            中间件，拦截，根据httpcontext请求获取租户信息，后续可拓展定义
+            </summary>
+        </member>
+        <member name="M:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.TenantInfoMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            获取Scope周期的TenantInfo，为其赋值context中的租户信息
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

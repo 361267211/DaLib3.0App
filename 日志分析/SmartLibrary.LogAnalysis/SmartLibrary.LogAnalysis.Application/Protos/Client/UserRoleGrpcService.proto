@@ -1,0 +1,27 @@
+// 语法结构，使用pb3
+ syntax = "proto3";
+  // 定义命名空间，一般是项目名或者解决方案名
+ //option csharp_namespace = "SmartLibrary.DatabaseTerrace.Application";
+  // 定义服务的包
+ package SmartLibraryUser;
+ 
+ 
+// 定义具体的服务
+ service UserRoleGrpcService {
+    // 定义某一个方法API，格式是：rpc 方法名(请求参数对象名) returns(返回参数对象名)
+    rpc GetUserRole (UserRoleRequest) returns (UserRoleReply);
+ }
+ 
+  // 定义请求的对象名
+ message UserRoleRequest {
+    // 有一个属性字段是name
+    string UserKey = 1;     //user的唯一标识
+ }
+ 
+  // 定义返回的对象名
+ message UserRoleReply {
+    // 有一个返回的字段是message
+    int32 UserRole = 1;   //用户对应的角色
+}
+
+

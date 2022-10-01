@@ -1,0 +1,104 @@
+.index-warp-box {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+.index-like-box {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  overflow: hidden;
+}
+.index-like-box .index-like-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 16px;
+}
+.index-like-box .index-like-title > div {
+  font-size: 16px;
+  font-weight: bold;
+}
+.index-like-box .index-like-title > div .index-like-title-red {
+  color: #cc0000;
+}
+.index-like-box .index-like-title .index-like-title-more {
+  font-size: 12px;
+  color: #575655;
+  cursor: pointer;
+}
+.index-like-box .index-like-title .index-like-title-more:hover {
+  opacity: 0.8;
+}
+.index-like-box .index-like-cont {
+  padding-top: 15px;
+}
+.index-like-box .index-like-cont .index-like-list {
+  height: 67px;
+  border-bottom: 1px dashed #d9d9d9;
+}
+.index-like-box .index-like-cont .index-like-list .index-like-list-title {
+  padding: 6px 0;
+  cursor: pointer;
+}
+.index-like-box .index-like-cont .index-like-list .index-like-list-title:hover {
+  opacity: 0.8;
+}
+.index-like-box
+  .index-like-cont
+  .index-like-list
+  .index-like-list-title
+  .like-list-tag-red {
+  padding: 2px 6px;
+  color: #fff;
+  border-radius: 4px;
+  background: #f8685d;
+  display: inline-block;
+  font-size: 12px;
+}
+.index-like-box
+  .index-like-cont
+  .index-like-list
+  .index-like-list-title
+  .like-list-tag-bule {
+  padding: 2px 6px;
+  color: #fff;
+  border-radius: 4px;
+  background: #1db7ce;
+  display: inline-block;
+  font-size: 12px;
+}
+.index-like-box
+  .index-like-cont
+  .index-like-list
+  .index-like-list-title
+  .like-list-tag-org {
+  padding: 2px 6px;
+  color: #fff;
+  border-radius: 4px;
+  background: #f05408;
+  display: inline-block;
+  font-size: 12px;
+}
+.index-like-box .index-like-cont .index-like-list .index-like-list-title h5 {
+  display: inline-block;
+  font-weight: bold;
+  width: 70%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.index-like-box .index-like-cont .index-like-list .index-like-list-cont {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.index-like-box .index-like-cont .index-like-list .index-like-list-cont span{
+  margin-right: 10px;
+}

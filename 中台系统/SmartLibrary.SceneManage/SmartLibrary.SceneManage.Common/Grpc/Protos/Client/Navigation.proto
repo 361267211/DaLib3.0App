@@ -1,0 +1,22 @@
+syntax = "proto3";
+package SmartLibraryNavigation;
+
+service NavigationGrpcService {
+	rpc GetNavigationList (NavigationListRequest) returns (NavigationListReply); // 应用栏目列表
+}
+
+
+message NavigationListRequest {
+	string Id = 1; //目录主键标识
+}
+
+message NavigationListReply {
+	repeated NavCataListSingleItem NavigationList = 1;
+}
+
+message NavCataListSingleItem {
+	string Name = 1; //名称
+	string Url = 2; //链接
+	string Icon = 3; //图标
+	bool IsOpenNewWindow = 4; //是否打开新窗体
+}

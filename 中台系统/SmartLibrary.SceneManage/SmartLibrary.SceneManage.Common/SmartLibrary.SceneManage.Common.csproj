@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath></OutputPath>
+    <DocumentationFile>SmartLibrary.SceneManage.Common.xml</DocumentationFile>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <None Remove="Grpc\Protos\Client\AppCenterGrpcService.proto" />
+    <None Remove="Grpc\Protos\Client\AppColumn - 复制.proto" />
+    <None Remove="Grpc\Protos\Client\AppColumn.proto" />
+    <None Remove="Grpc\Protos\Client\AppRoute.proto" />
+    <None Remove="Grpc\Protos\Client\Navigation.proto" />
+    <None Remove="Grpc\Protos\Client\UserGrpcService.proto" />
+    <None Remove="Grpc\Protos\Server\HealthCheck.proto" />
+    <None Remove="SmartLibrary.SceneManage.Common.xml" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.19.1" />
+    <PackageReference Include="Grpc.AspNetCore.Server" Version="2.40.0" />
+    <PackageReference Include="Grpc.Net.ClientFactory" Version="2.40.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.42.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="SmartLibrary.Core" Version="3.0.1" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Protobuf Include="Grpc\Protos\Client\AppCenterGrpcService.proto">
+      <GrpcServices>Client</GrpcServices>
+    </Protobuf>
+    <Protobuf Include="Grpc\Protos\Client\Navigation.proto" GrpcServices="Client" />
+    <Protobuf Include="Grpc\Protos\Client\UserGrpcService.proto" GrpcServices="Client" />
+    <Protobuf Include="Grpc\Protos\Server\SceneManage.proto" GrpcServices="Server" />
+    <Protobuf Include="Grpc\Protos\Client\AppColumn.proto">
+      <GrpcServices>Client</GrpcServices>
+    </Protobuf>
+    <Protobuf Include="Grpc\Protos\Client\AppRoute.proto">
+      <GrpcServices>Client</GrpcServices>
+    </Protobuf>
+    <Protobuf Include="Grpc\Protos\Server\HealthCheck.proto">
+      <GrpcServices>Server</GrpcServices>
+    </Protobuf>
+  </ItemGroup>
+
+</Project>

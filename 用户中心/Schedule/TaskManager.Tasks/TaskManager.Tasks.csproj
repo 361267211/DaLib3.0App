@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Utils\**" />
+    <EmbeddedResource Remove="Utils\**" />
+    <None Remove="Utils\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mapster" Version="7.2.0" />
+    <PackageReference Include="Vive.Crypto" Version="1.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Scheduler.Core\Scheduler.Core.csproj" />
+    <ProjectReference Include="..\TaskManager.Adapters\TaskManager.Adapters.csproj" />
+    <ProjectReference Include="..\TaskManager.Model\TaskManager.Model.csproj" />
+  </ItemGroup>
+
+</Project>

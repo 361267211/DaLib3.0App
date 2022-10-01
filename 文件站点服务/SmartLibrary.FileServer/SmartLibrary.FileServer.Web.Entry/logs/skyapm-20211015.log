@@ -1,0 +1,192 @@
+2021-10-15 09:40:36.395 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Initializing ...
+2021-10-15 09:40:36.422 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2021-10-15 09:40:36.422 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2021-10-15 09:40:36.422 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2021-10-15 09:40:36.423 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2021-10-15 09:40:36.423 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2021-10-15 09:40:36.423 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2021-10-15 09:40:36.453 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [CapDiagnosticListener].
+2021-10-15 09:40:36.454 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-10-15 09:40:36.455 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2021-10-15 09:40:36.455 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2021-10-15 09:40:36.455 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2021-10-15 09:48:19.506 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Initializing ...
+2021-10-15 09:48:19.530 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2021-10-15 09:48:19.530 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2021-10-15 09:48:19.530 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2021-10-15 09:48:19.530 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2021-10-15 09:48:19.530 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2021-10-15 09:48:19.532 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2021-10-15 09:48:19.564 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [CapDiagnosticListener].
+2021-10-15 09:48:19.565 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-10-15 09:48:19.566 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2021-10-15 09:48:19.566 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2021-10-15 09:48:19.566 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2021-10-15 09:49:59.635 +08:00 [SmartLibrary.FileServer] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-10-15 09:49:59.650 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2021-10-15 09:51:39.664 +08:00 [SmartLibrary.FileServer] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-10-15 09:51:39.671 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2021-10-15 09:53:19.684 +08:00 [SmartLibrary.FileServer] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-10-15 09:53:19.691 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2021-10-15 09:54:59.704 +08:00 [SmartLibrary.FileServer] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-10-15 09:54:59.715 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2021-10-15 09:56:39.726 +08:00 [SmartLibrary.FileServer] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-10-15 09:56:39.732 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2021-10-15 09:58:19.745 +08:00 [SmartLibrary.FileServer] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-10-15 09:58:19.752 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2021-10-15 09:59:59.765 +08:00 [SmartLibrary.FileServer] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-10-15 09:59:59.771 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2021-10-15 10:01:39.783 +08:00 [SmartLibrary.FileServer] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-10-15 10:01:39.794 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2021-10-15 10:03:19.820 +08:00 [SmartLibrary.FileServer] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-10-15 10:03:19.831 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2021-10-15 10:05:07.686 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Initializing ...
+2021-10-15 10:05:07.709 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2021-10-15 10:05:07.709 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2021-10-15 10:05:07.709 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2021-10-15 10:05:07.709 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2021-10-15 10:05:07.709 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2021-10-15 10:05:07.709 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2021-10-15 10:05:07.739 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [CapDiagnosticListener].
+2021-10-15 10:05:07.740 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-10-15 10:05:07.740 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2021-10-15 10:05:07.741 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2021-10-15 10:05:07.741 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2021-10-15 10:06:47.794 +08:00 [SmartLibrary.FileServer] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-10-15 10:06:47.811 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2021-10-15 10:08:27.823 +08:00 [SmartLibrary.FileServer] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-10-15 10:08:27.829 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2021-10-15 10:10:07.844 +08:00 [SmartLibrary.FileServer] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-10-15 10:10:07.852 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2021-10-15 10:11:47.863 +08:00 [SmartLibrary.FileServer] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-10-15 10:11:47.874 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2021-10-15 10:13:27.888 +08:00 [SmartLibrary.FileServer] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-10-15 10:13:27.898 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2021-10-15 10:15:07.913 +08:00 [SmartLibrary.FileServer] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-10-15 10:15:07.919 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2021-10-15 10:16:47.935 +08:00 [SmartLibrary.FileServer] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-10-15 10:16:47.945 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2021-10-15 10:18:27.956 +08:00 [SmartLibrary.FileServer] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-10-15 10:18:27.963 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2021-10-15 10:20:07.974 +08:00 [SmartLibrary.FileServer] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-10-15 10:20:07.985 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2021-10-15 10:21:47.999 +08:00 [SmartLibrary.FileServer] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-10-15 10:21:48.009 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2021-10-15 10:23:28.022 +08:00 [SmartLibrary.FileServer] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-10-15 10:23:28.032 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2021-10-15 10:25:08.043 +08:00 [SmartLibrary.FileServer] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-10-15 10:25:08.056 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2021-10-15 10:26:48.071 +08:00 [SmartLibrary.FileServer] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-10-15 10:26:48.082 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2021-10-15 10:28:28.097 +08:00 [SmartLibrary.FileServer] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-10-15 10:28:28.107 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2021-10-15 10:30:08.119 +08:00 [SmartLibrary.FileServer] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-10-15 10:30:08.126 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2021-10-15 10:31:48.141 +08:00 [SmartLibrary.FileServer] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-10-15 10:31:48.149 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2021-10-15 10:33:28.165 +08:00 [SmartLibrary.FileServer] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-10-15 10:33:28.175 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].

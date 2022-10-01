@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Publish\SmartLibrary.UserIdentity</_PublishTargetUrl>
+    <History>True|2022-01-11T09:11:04.2876504Z;True|2022-01-11T17:06:48.7701495+08:00;</History>
+  </PropertyGroup>
+</Project>

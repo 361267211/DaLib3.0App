@@ -1,0 +1,2869 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmartLibrary.Open.Application</name>
+    </assembly>
+    <members>
+        <member name="T:SmartLibrary.Open.Application.AppServices.AppBranchAppService">
+            <summary>
+            应用分支管理接口
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.AppBranchAppService.QueryTableData(SmartLibrary.Open.Services.Dtos.AppBranchTableQuery)">
+            <summary>
+            查询应用分支表格数据
+            </summary>
+            <param name="queryFilter">查询条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.AppBranchAppService.GetByID(System.Guid)">
+            <summary>
+            获取应用分支详情
+            </summary>
+            <param name="appBranchId">应用分支Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.AppBranchAppService.Create(SmartLibrary.Open.Services.Dtos.AppBranchDto)">
+            <summary>
+            创建应用分支
+            </summary>
+            <param name="appBranchDto">应用分支数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.AppBranchAppService.Update(SmartLibrary.Open.Services.Dtos.AppBranchDto)">
+            <summary>
+            修改应用分支
+            </summary>
+            <param name="appBranchDto">应用分支数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.AppBranchAppService.Delete(System.Guid)">
+            <summary>
+            删除应用分支
+            </summary>
+            <param name="appBranchId">Id</param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Open.Application.AppServices.AppBranchEntryPointAppService">
+            <summary>
+            应用分支入口配置
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Open.Application.AppServices.AppBranchEntryPointAppService._appBranchEntryPointService">
+            <summary>
+            应用组件服务
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.AppBranchEntryPointAppService.#ctor(SmartLibrary.Open.Services.IAppBranchEntryPointService)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.AppBranchEntryPointAppService.QueryListData(System.String)">
+            <summary>
+            获取应用分支所有入口
+            </summary>
+            <param name="appBranchId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.AppBranchEntryPointAppService.CreateEntryPoint(SmartLibrary.Open.Services.Dtos.AppBranchEntryPointDto)">
+            <summary>
+            创建应用分支入口
+            </summary>
+            <param name="entryPointDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.AppBranchEntryPointAppService.UpdateEntryPoint(SmartLibrary.Open.Services.Dtos.AppBranchEntryPointDto)">
+            <summary>
+            修改应用分支入口
+            </summary>
+            <param name="entryPointDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.AppBranchEntryPointAppService.DeleteEntryPoint(System.String)">
+            <summary>
+            删除应用分支入口
+            </summary>
+            <param name="entryPointId">Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.AppBranchEntryPointAppService.GetAppEntranceList(System.String)">
+            <summary>
+            获取应用分支所有入口
+            </summary>
+            <param name="appBranchId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Open.Application.AppServices.ApplicationAppService">
+            <summary>
+            应用管理接口
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Open.Application.AppServices.ApplicationAppService._applicationService">
+            <summary>
+            应用服务
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.ApplicationAppService.#ctor(SmartLibrary.Open.Services.IApplicationService)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="applicationService"></param>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.ApplicationAppService.QueryTableData(SmartLibrary.Open.Services.Dtos.AppTableQuery)">
+            <summary>
+            查询App表格数据
+            </summary>
+            <param name="queryFilter">App表格查询条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.ApplicationAppService.GetById(System.Guid)">
+            <summary>
+            获取应用信息系详情
+            </summary>
+            <param name="appId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.ApplicationAppService.QueryVersionRecordData(SmartLibrary.Open.Services.Dtos.VersionTableQuery)">
+            <summary>
+            查询App版本变更数据
+            </summary>
+            <param name="queryFilter">查询条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.ApplicationAppService.QueryAppCustomerTableData(SmartLibrary.Open.Services.Dtos.AppCustomerTableQuery)">
+            <summary>
+            查询应用客户数据
+            </summary>
+            <param name="queryFilter">查询条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.ApplicationAppService.Create(SmartLibrary.Open.Services.Dtos.ApplicationDto)">
+            <summary>
+            添加应用信息
+            </summary>
+            <param name="appDto">应用创建数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.ApplicationAppService.Update(SmartLibrary.Open.Services.Dtos.ApplicationDto)">
+            <summary>
+            更新应用信息
+            </summary>
+            <param name="appDto">应用修改数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.ApplicationAppService.Delete(System.Guid)">
+            <summary>
+            删除应用
+            </summary>
+            <param name="appID">应用ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.ApplicationAppService.EnableApplication(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            批量上架应用
+            </summary>
+            <param name="appIds">上架应用Id集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.ApplicationAppService.DisableApplication(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            批量下架应用
+            </summary>
+            <param name="appIds">下架应用Id集合</param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Open.Application.AppServices.AppWidgetAppService">
+            <summary>
+            应用组件管理接口
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Open.Application.AppServices.AppWidgetAppService._appWidgetService">
+            <summary>
+            应用组件服务
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.AppWidgetAppService.#ctor(SmartLibrary.Open.Services.IAppWidgetService)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="appWidgetService"></param>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.AppWidgetAppService.QueryTableData(SmartLibrary.Open.Services.Dtos.AppWidgetTableQuery)">
+            <summary>
+            查询应用组件表格数据
+            </summary>
+            <param name="queryFilter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.AppWidgetAppService.GetByID(System.Guid)">
+            <summary>
+            获取应用组件详情
+            </summary>
+            <param name="appWidgetId">应用组件ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.AppWidgetAppService.Create(SmartLibrary.Open.Services.Dtos.AppWidgetDto)">
+            <summary>
+            创建应用组件
+            </summary>
+            <param name="appWidgetDto">应用组件数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.AppWidgetAppService.Update(SmartLibrary.Open.Services.Dtos.AppWidgetDto)">
+            <summary>
+            修改应用组件
+            </summary>
+            <param name="appWidgetDto">应用组件数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.AppWidgetAppService.Delete(System.String)">
+            <summary>
+            删除应用组件
+            </summary>
+            <param name="appWidgetId">应用组件ID</param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Open.Application.AppServices.CapDocumentAppService">
+            <summary>
+            Cap文档描述
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.CapDocumentAppService.GetCapPublishEventDoc">
+            <summary>
+            获取当前服务发布事件描述文档数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Open.Application.AppServices.CommonAppService">
+            <summary>
+            开放平台通用功能设置
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.Application.AppServices.CommonAppService._openDbContext">
+            <summary>
+            数据库上下文
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.CommonAppService.#ctor(SmartLibrary.Open.EntityFramework.Core.DbContexts.OpenDbContext,SmartLibrary.Open.Services.IApplicationService,SmartLibrary.Open.Services.ICommonService)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="openDbContext"></param>
+            <param name="applicationService"></param>
+            <param name="commonService"></param>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.CommonAppService.GetDictionary">
+            <summary>
+            获取服务类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.CommonAppService.CreateServiceType(SmartLibrary.Open.Common.Dtos.AppDictionaryDto)">
+            <summary>
+            添加服务类型
+            </summary>
+            <param name="dictDto">字典数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.CommonAppService.CreateServicePack(SmartLibrary.Open.Common.Dtos.AppDictionaryDto)">
+            <summary>
+            添加服务包
+            </summary>
+            <param name="dictDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.CommonAppService.GetSysDictInfo(System.Guid)">
+            <summary>
+            获取字典数据详情
+            </summary>
+            <param name="dictId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.CommonAppService.UpdateSysDict(SmartLibrary.Open.Common.Dtos.AppDictionaryDto)">
+            <summary>
+            编辑字典数据
+            </summary>
+            <param name="dictDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.CommonAppService.DeleteSysDict(System.Guid)">
+            <summary>
+            删除字典数据
+            </summary>
+            <param name="dictId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.CommonAppService.UpdateDatabaseSchema">
+            <summary>
+            升级数据库结构
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.CommonAppService.AddTestData">
+            <summary>
+            添加测试数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.CommonAppService.AddCustomerTestData">
+            <summary>
+            添加机构测试数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.CommonAppService.AddAppTestData_ScoreCenter">
+            <summary>
+            添加应用测试数据——积分中心
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.CommonAppService.AddAppTestData_AppEntrance">
+            <summary>
+            添加应用测试数据——应用入口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.CommonAppService.AddAppWidget">
+            <summary>
+            添加应用测试数据——应用模板
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.CommonAppService.AddAppTestData">
+            <summary>
+            添加应用测试数据-重大需要
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.CommonAppService.AddTestAppsForCqu">
+            <summary>
+            添加重大需要的应用,全部跳转到2.2版本
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.CommonAppService.AddQuickAppForCqu">
+            <summary>
+            添加快应用中心跳转到2.2应用
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.CommonAppService.AddTestAppLogs">
+            <summary>
+            添加应用更新日志
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.CommonAppService.AddBusinessType">
+            <summary>
+            添加业务类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.CommonAppService.AddTestAppInfo">
+            <summary>
+            添加测试数据，完成后可以删除
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Open.Application.AppServices.CustomerAppService">
+            <summary>
+            客户管理服务
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.CustomerAppService.QueryTableData(SmartLibrary.Open.Services.Dtos.CustomerTableQuery)">
+            <summary>
+            查询客户Table数据
+            </summary>
+            <param name="queryFilter">列表查询条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.CustomerAppService.GetById(System.Guid)">
+            <summary>
+            查询客户数据详情
+            </summary>
+            <param name="customerId">应用Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.CustomerAppService.GetCredentialById(System.Guid)">
+            <summary>
+            客户凭据信息
+            </summary>
+            <param name="customerId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Open.Application.AppServices.CustomerAppUsageAppService">
+            <summary>
+            客户应用使用情况
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.CustomerAppUsageAppService.QueryTableData(SmartLibrary.Open.Services.Dtos.CustomerAppUsageTableQuery)">
+            <summary>
+            查询客户应用使用情况表格数据
+            </summary>
+            <param name="queryFilter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.CustomerAppUsageAppService.QueryListData(SmartLibrary.Open.Services.Dtos.CustomerAppUsageTableQuery)">
+            <summary>
+            查询客户应用使用情况列表，不分页
+            </summary>
+            <param name="queryFilter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.CustomerAppUsageAppService.Create(SmartLibrary.Open.Services.Dtos.CustomerAppUsageDto)">
+            <summary>
+            添加客户应用使用记录
+            </summary>
+            <param name="usageDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.CustomerAppUsageAppService.Delete(System.Guid)">
+            <summary>
+            删除客户应用使用情况
+            </summary>
+            <param name="usageId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Open.Application.AppServices.DeploymentAppService">
+            <summary>
+            应用部署环境信息管理
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Open.Application.AppServices.DeploymentAppService._deploymentService">
+            <summary>
+            应用组件服务
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.DeploymentAppService.#ctor(SmartLibrary.Open.Services.IDeploymentService)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="deploymentService"></param>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.DeploymentAppService.QueryTableData(SmartLibrary.Open.Services.Dtos.Deployee.DeploymentTableQuery)">
+            <summary>
+            查询应用部署信息表格数据
+            </summary>
+            <param name="queryFilter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.DeploymentAppService.GetByID(System.String)">
+            <summary>
+            获取部署信息详情
+            </summary>
+            <param name="deploymentId">部署信息ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.DeploymentAppService.Create(SmartLibrary.Open.Services.Dtos.Deployee.DeploymentDto)">
+            <summary>
+            创建应用部署环境信息
+            </summary>
+            <param name="deploymentDto">部署环境信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.DeploymentAppService.Update(SmartLibrary.Open.Services.Dtos.Deployee.DeploymentDto)">
+            <summary>
+            修改应用部署环境信息
+            </summary>
+            <param name="deploymentDto">部署环境信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.DeploymentAppService.Delete(System.String)">
+            <summary>
+            删除应用部署环境信息
+            </summary>
+            <param name="deploymentId">Id</param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Open.Application.AppServices.DeveloperAppService">
+            <summary>
+            供应商管理接口
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.DeveloperAppService.QueryTableData(SmartLibrary.Open.Services.Dtos.DeveloperTableQuery)">
+            <summary>
+            供应商表格数据查询
+            </summary>
+            <param name="queryFilter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.DeveloperAppService.GetByID(System.Guid)">
+            <summary>
+            查询供应商详情
+            </summary>
+            <param name="developerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.DeveloperAppService.Create(SmartLibrary.Open.Services.Dtos.DeveloperDto)">
+            <summary>
+            添加供应商
+            </summary>
+            <param name="developerDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.DeveloperAppService.Update(SmartLibrary.Open.Services.Dtos.DeveloperDto)">
+            <summary>
+            修改供应商信息
+            </summary>
+            <param name="developerDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.DeveloperAppService.Delete(System.Guid)">
+            <summary>
+            删除供应商
+            </summary>
+            <param name="developerId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Open.Application.AppServices.InfomationAppService">
+            <summary>
+            应用消息发布服务
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.InfomationAppService.QueryAppDynamicTableData(SmartLibrary.Open.Services.Dtos.AppInfoTableQuery)">
+            <summary>
+            查询应用动态
+            </summary>
+            <param name="queryFilter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.InfomationAppService.QueryActivityInfoTableData(SmartLibrary.Open.Services.Dtos.AppInfoTableQuery)">
+            <summary>
+            查询活动消息
+            </summary>
+            <param name="queryFilter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.InfomationAppService.GetAppDynamicById(System.Guid)">
+            <summary>
+            获取应用动态详情
+            </summary>
+            <param name="appDynamicId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.InfomationAppService.GetActivityInfoById(System.Guid)">
+            <summary>
+            获取活动消息详情
+            </summary>
+            <param name="activityId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.InfomationAppService.CreateAppDynamicInfo(SmartLibrary.Open.Services.Dtos.AppDynamicDto)">
+            <summary>
+            添加应用动态
+            </summary>
+            <param name="dynamicInfoDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.InfomationAppService.CreateActivityInfo(SmartLibrary.Open.Services.Dtos.Infomation.ActivityInfoDto)">
+            <summary>
+            添加活动信息
+            </summary>
+            <param name="activityInfoDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.InfomationAppService.UpdateAppDynamicInfo(SmartLibrary.Open.Services.Dtos.AppDynamicDto)">
+            <summary>
+            更新应用动态
+            </summary>
+            <param name="dynamicInfoDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.InfomationAppService.UpdateActivityInfo(SmartLibrary.Open.Services.Dtos.Infomation.ActivityInfoDto)">
+            <summary>
+            更新活动消息
+            </summary>
+            <param name="activityInfoDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.InfomationAppService.TopSetAppDynamicInfo(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            置顶应用动态
+            </summary>
+            <param name="topSetIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.InfomationAppService.TopSetActivityInfo(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            置顶活动消息
+            </summary>
+            <param name="topSetIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.InfomationAppService.UntopSetAppDynamicInfo(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            取消置顶应用动态
+            </summary>
+            <param name="dynamicIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.InfomationAppService.UntopSetActivityInfo(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            取消置顶活动消息
+            </summary>
+            <param name="activityIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.InfomationAppService.DeleteAppDynamicInfo(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            删除应用动态
+            </summary>
+            <param name="delIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.InfomationAppService.DeleteActivityInfo(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            删除活动消息
+            </summary>
+            <param name="delIds"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Open.Application.AppServices.OrderAppService">
+            <summary>
+            授权订单管理
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.OrderAppService.QueryTableData(SmartLibrary.Open.Services.Dtos.OrderTableQuery)">
+            <summary>
+            获取授权订单列表数据
+            </summary>
+            <param name="queryFilter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.OrderAppService.GetById(System.Guid)">
+            <summary>
+            获取授权订单信息
+            </summary>
+            <param name="orderId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.OrderAppService.Delete(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            批量删除授权订单
+            </summary>
+            <param name="orderIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.OrderAppService.Confirm(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            批量审核授权订单
+            </summary>
+            <param name="orderIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.OrderAppService.Reject(SmartLibrary.Open.Services.Dtos.OrderRejectDto)">
+            <summary>
+            批量拒绝授权订单
+            </summary>
+            <param name="rejectDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.OrderAppService.Create(SmartLibrary.Open.Services.Dtos.OrderDto)">
+            <summary>
+            应用授权开通
+            </summary>
+            <param name="orderDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.OrderAppService.Update(SmartLibrary.Open.Services.Dtos.OrderDto)">
+            <summary>
+            应用授权订单编辑
+            </summary>
+            <param name="orderDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.OrderAppService.CreateBatchAppOrder(SmartLibrary.Open.Services.Dtos.Order.BatchAppOrderDto)">
+            <summary>
+            客户批量应用添加
+            </summary>
+            <param name="batchAppOrderDto"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Open.Application.AppServices.PointsEventAppService">
+            <summary>
+            查询应用积分事件接口
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.PointsEventAppService.QueryTableData(SmartLibrary.Open.Services.Dtos.PointsEventTableQuery)">
+            <summary>
+            查询积分事件表格数据
+            </summary>
+            <param name="queryFilter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.PointsEventAppService.GetByID(System.Guid)">
+            <summary>
+            获取事件详情
+            </summary>
+            <param name="eventId">事件ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.PointsEventAppService.Create(SmartLibrary.Open.Services.Dtos.PointsEventDto)">
+            <summary>
+            注册事件
+            </summary>
+            <param name="eventDto">事件数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.PointsEventAppService.Update(SmartLibrary.Open.Services.Dtos.PointsEventDto)">
+            <summary>
+            修改事件
+            </summary>
+            <param name="eventDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.PointsEventAppService.Delete(System.Guid)">
+            <summary>
+            删除事件
+            </summary>
+            <param name="eventId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.AppServices.PointsEventAppService.Confirm(System.Guid)">
+            <summary>
+            审批事件
+            </summary>
+            <param name="eventId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Open.Application.HealthAppService">
+            <summary>
+            WebApi心跳检查
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.HealthAppService.Index">
+            <summary>
+            WebApi心跳检查
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Open.Application.UserAppService">
+            <summary>
+            应用服务接口
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.UserAppService.SetCach(System.String)">
+            <summary>
+            设置redis缓存值
+            </summary>
+            <param name="redisValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.GrpcAppServices.IAssemblyDeliveryService.DeliverySharedAssembly(SmartLibrary.Assembly.Application.Protos.DeliverySharedAssemblyRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            将文献传递到开放中心
+            </summary>
+            <param name="entryPointId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Open.Application.GrpcAppServices.Service.AppManageGrpcService">
+            <summary>
+            开放平台应用管理Grpc服务
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Open.Application.GrpcAppServices.Service.AppManageGrpcService._appBranchService">
+            <summary>
+            应用分支服务
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Open.Application.GrpcAppServices.Service.AppManageGrpcService._applicationService">
+            <summary>
+            应用服务
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Open.Application.GrpcAppServices.Service.AppManageGrpcService._appWidgetService">
+            <summary>
+            应用组件服务
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Open.Application.GrpcAppServices.Service.AppManageGrpcService._appBranchEntryPointService">
+            <summary>
+            应用入口服务
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Open.Application.GrpcAppServices.Service.AppManageGrpcService._customerService">
+            <summary>
+            机构客户服务
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Open.Application.GrpcAppServices.Service.AppManageGrpcService._appRouteService">
+            <summary>
+            应用路由服务
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Open.Application.GrpcAppServices.Service.AppManageGrpcService._orderService">
+            <summary>
+            订单服务
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.GrpcAppServices.Service.AppManageGrpcService.#ctor(SmartLibrary.Open.Services.IAppBranchService,SmartLibrary.Open.Services.IApplicationService,SmartLibrary.Open.Services.IAppWidgetService,SmartLibrary.Open.Services.IAppBranchEntryPointService,SmartLibrary.Open.Services.AppManagement.IAppRouteService,SmartLibrary.Open.Services.ICustomerService,SmartLibrary.Open.Services.IOrderService)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="appBranchService"></param>
+            <param name="applicationService"></param>
+            <param name="appWidgetService"></param>
+            <param name="appBranchEntryPointService"></param>
+            <param name="appRouteService"></param>
+            <param name="customerService"></param>
+            <param name="orderService"></param>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.GrpcAppServices.Service.AppManageGrpcService.GetAppList(Google.Protobuf.WellKnownTypes.Empty,Grpc.Core.ServerCallContext)">
+            <summary>
+            应用列表检索
+            </summary>
+            <param name="request"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.GrpcAppServices.Service.AppManageGrpcService.GetOrgInfo(Google.Protobuf.WellKnownTypes.Empty,Grpc.Core.ServerCallContext)">
+            <summary>
+            获取机构详情
+            </summary>
+            <param name="request"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.GrpcAppServices.Service.AppManageGrpcService.GetDictionaryByType(SmartLibrary.Open.DictionaryRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            按类型获取字典
+            </summary>
+            <param name="request"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.GrpcAppServices.Service.AppManageGrpcService.GetAppLog(SmartLibrary.Open.AppLogRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            获取应用日志
+            </summary>
+            <param name="request"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.GrpcAppServices.Service.AppManageGrpcService.GetAppLogDetail(SmartLibrary.Open.AppLogDetailRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            获取应用日志详情
+            </summary>
+            <param name="request"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.GrpcAppServices.Service.AppManageGrpcService.GetPayAppList(SmartLibrary.Open.PayAppRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            付费应用推荐
+            </summary>
+            <param name="request"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.GrpcAppServices.Service.AppManageGrpcService.GetOrderList(SmartLibrary.Open.OrderListRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            应用订单列表
+            </summary>
+            <param name="request"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.GrpcAppServices.Service.AppManageGrpcService.CancelOder(SmartLibrary.Open.CancelOrderRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            取消订单
+            </summary>
+            <param name="request"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.GrpcAppServices.Service.AppManageGrpcService.AppAction(SmartLibrary.Open.AppActionReuqest,Grpc.Core.ServerCallContext)">
+            <summary>
+            操作类型 1=续订，2=延期，3=免费试用，4=预约采购，5=启用，6=停用
+            </summary>
+            <param name="request"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:SmartLibrary.Open.Application.GrpcAppServices.Service.AppRouteGrpcAppService._appRouteService">
+            <summary>
+            应用路由服务
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.GrpcAppServices.Service.AppRouteGrpcAppService.#ctor(SmartLibrary.Open.Services.AppManagement.IAppRouteService,SmartLibrary.Open.Services.ICustomerService)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="appRouteService"></param>
+            <param name="customerService"></param>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.GrpcAppServices.Service.AppRouteGrpcAppService.GetAppRouteList(SmartLibrary.Open.AppRouteListRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            应用列表检索
+            </summary>
+            <param name="request"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.GrpcAppServices.Service.AppRouteGrpcAppService.GetCustomerList(Google.Protobuf.WellKnownTypes.Empty,Grpc.Core.ServerCallContext)">
+            <summary>
+            获取所有租户列表
+            </summary>
+            <param name="request"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.GrpcAppServices.Service.AssemblyDeliveryService.DeliverySharedAssembly(SmartLibrary.Assembly.Application.Protos.DeliverySharedAssemblyRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            保存各个学校传递过来的表数据
+            </summary>
+            <param name="request"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.GrpcAppServices.Service.AssemblyDeliveryService.GetSystemAssemblyPage(SmartLibrary.Assembly.Application.Protos.GetSystemAssemblyRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            获取在用的系统专题分页
+            </summary>
+            <param name="request"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.GrpcAppServices.Service.AssemblyDeliveryService.GetAssemblyFromOpenCenter(SmartLibrary.Assembly.Application.Protos.GetAssemblyFromOpenCenterRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            从开放中心获取专题
+            </summary>
+            <param name="getAssemblyFromOpenCenterRequest"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.GrpcAppServices.Service.AssemblyDeliveryService.GetUnionSharedAssemblyPage(SmartLibrary.Assembly.Application.Protos.GetUnionSharedAssemblyPageRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            获取联盟已经共享的专题
+            </summary>
+            <param name="getUnionSharedAssemblyPageRequest"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.GrpcAppServices.Service.AssemblyDeliveryService.GetSharedLocalAssemblyPage(SmartLibrary.Assembly.Application.Protos.GetSharedLocalAssemblyPageRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            查找申请共享的专题
+            </summary>
+            <param name="request"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.GrpcAppServices.Service.AssemblyDeliveryService.PreviewArticleColumn(SmartLibrary.Assembly.Application.Protos.PreviewArticleColumnRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            根据专题id 预览文献栏目
+            </summary>
+            <param name="request"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.GrpcAppServices.Service.AssemblyDeliveryService.PreviewArticleColumnById(SmartLibrary.Assembly.Application.Protos.PreviewArticleColumnByIdRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            根据文献栏目id 获取预览数据表
+            </summary>
+            <param name="request"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.GrpcAppServices.Service.OpacTemplateService.ManulMap(SmartLibrary.Open.EntityFramework.Core.Entitys.OpacTemplate)">
+            <summary>
+            手工匹配
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Open.Application.Services.RemoteProxy.EsHttp">
+            <summary>
+            请求代理，具体使用方式参考furion框架
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Open.Application.Services.RemoteProxy.EsHttp.PostVipSearchByObjectV2Async(System.Object)">
+            <summary>
+            转发到Es查询服务，方法vipSearchByObjectV2
+            </summary>
+            <param name="condition"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Services.Mapper.Mapper.GetListFromStr(System.String)">
+            <summary>
+            多值字段判空+转数组
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Open.Services.Mapper.Mapper.GetStrFromList(System.Collections.Generic.List{System.String})">
+            <summary>
+             数组转多值字段，判空
+            </summary>
+            <param name="strs"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Open.OpenAppRouteReflection">
+            <summary>Holder for reflection information generated from Protos/Server/Open_AppRoute.proto</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.OpenAppRouteReflection.Descriptor">
+            <summary>File descriptor for Protos/Server/Open_AppRoute.proto</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppRouteListRequest.TenantCodeFieldNumber">
+            <summary>Field number for the "TenantCode" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppRouteListRequest.TenantCode">
+             <summary>
+            租户标识
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppRouteListReply.TenantRouteListFieldNumber">
+            <summary>Field number for the "TenantRouteList" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppRouteListSingle.TenantCodeFieldNumber">
+            <summary>Field number for the "TenantCode" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppRouteListSingle.AppRouteListFieldNumber">
+            <summary>Field number for the "AppRouteList" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppRouteListSingleItem.AppRouteCodeFieldNumber">
+            <summary>Field number for the "AppRouteCode" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppRouteListSingleItem.AppRouteCode">
+             <summary>
+            应用路由标识
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppRouteListSingleItem.RestApiGatewayFieldNumber">
+            <summary>Field number for the "RestApiGateway" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppRouteListSingleItem.RestApiGateway">
+             <summary>
+            RestApi网关地址
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppRouteListSingleItem.GrpcApiGatewayFieldNumber">
+            <summary>Field number for the "GrpcApiGateway" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppRouteListSingleItem.GrpcApiGateway">
+             <summary>
+            GrpcApi网关地址
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.CustomerListReply.CustomerListFieldNumber">
+            <summary>Field number for the "CustomerList" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.CustomerListReply.CustomerList">
+             <summary>
+            租户列表
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.CustomerSingleItem.OrgIdFieldNumber">
+            <summary>Field number for the "OrgId" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.CustomerSingleItem.OrgId">
+            <summary>
+            租户ID
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.CustomerSingleItem.OrgSecretFieldNumber">
+            <summary>Field number for the "OrgSecret" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.CustomerSingleItem.OrgSecret">
+            <summary>
+            租户秘钥
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppRouteGrpcService.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:SmartLibrary.Open.AppRouteGrpcService.AppRouteGrpcServiceBase">
+            <summary>Base class for server-side implementations of AppRouteGrpcService</summary>
+        </member>
+        <member name="M:SmartLibrary.Open.AppRouteGrpcService.AppRouteGrpcServiceBase.GetAppRouteList(SmartLibrary.Open.AppRouteListRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            应用路由列表
+            </summary>
+            <param name="request">The request received from the client.</param>
+            <param name="context">The context of the server-side call handler being invoked.</param>
+            <returns>The response to send back to the client (wrapped by a task).</returns>
+        </member>
+        <member name="M:SmartLibrary.Open.AppRouteGrpcService.AppRouteGrpcServiceBase.GetCustomerList(Google.Protobuf.WellKnownTypes.Empty,Grpc.Core.ServerCallContext)">
+            <summary>
+            租户列表
+            </summary>
+            <param name="request">The request received from the client.</param>
+            <param name="context">The context of the server-side call handler being invoked.</param>
+            <returns>The response to send back to the client (wrapped by a task).</returns>
+        </member>
+        <member name="M:SmartLibrary.Open.AppRouteGrpcService.BindService(SmartLibrary.Open.AppRouteGrpcService.AppRouteGrpcServiceBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:SmartLibrary.Open.AppRouteGrpcService.BindService(Grpc.Core.ServiceBinderBase,SmartLibrary.Open.AppRouteGrpcService.AppRouteGrpcServiceBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="T:SmartLibrary.Open.OpenAppManageReflection">
+            <summary>Holder for reflection information generated from Protos/Server/Open_AppManage.proto</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.OpenAppManageReflection.Descriptor">
+            <summary>File descriptor for Protos/Server/Open_AppManage.proto</summary>
+        </member>
+        <member name="T:SmartLibrary.Open.DictionaryRequest">
+             <summary>
+            获取字典，应用类型，采购类型等
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.DictionaryRequest.DicTypeFieldNumber">
+            <summary>Field number for the "DicType" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.DictionaryReply.DictionaryListFieldNumber">
+            <summary>Field number for the "DictionaryList" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.DictionarySingle.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.DictionarySingle.NameFieldNumber">
+            <summary>Field number for the "Name" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.DictionarySingle.ValueFieldNumber">
+            <summary>Field number for the "Value" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.Open.AppLogRequest">
+             <summary>
+            应用更新日志
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppLogRequest.PageIndexFieldNumber">
+            <summary>Field number for the "PageIndex" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppLogRequest.PageSizeFieldNumber">
+            <summary>Field number for the "PageSize" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppLogRequest.InfoTypeFieldNumber">
+            <summary>Field number for the "InfoType" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppLogRequest.InfoType">
+             <summary>
+            信息类型 1-应用动态 2-活动信息 3-使用教程
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppLogReply.AppLogListFieldNumber">
+            <summary>Field number for the "AppLogList" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppLogReply.TotalCountFieldNumber">
+            <summary>Field number for the "TotalCount" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppLogSingle.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppLogSingle.Id">
+             <summary>
+            消息ID
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppLogSingle.TitleFieldNumber">
+            <summary>Field number for the "Title" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppLogSingle.Title">
+             <summary>
+            标题
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppLogSingle.ReleaseTimeFieldNumber">
+            <summary>Field number for the "ReleaseTime" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppLogSingle.ReleaseTime">
+             <summary>
+            发布时间
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppLogSingle.ContentFieldNumber">
+            <summary>Field number for the "Content" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppLogSingle.Content">
+             <summary>
+            内容
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppLogSingle.AppIdFieldNumber">
+            <summary>Field number for the "AppId" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppLogSingle.AppId">
+             <summary>
+            适用应用
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppLogSingle.VersionFieldNumber">
+            <summary>Field number for the "Version" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppLogSingle.Version">
+             <summary>
+            版本
+             </summary>
+        </member>
+        <member name="T:SmartLibrary.Open.AppLogDetailRequest">
+             <summary>
+            应用更新日志详情
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppLogDetailRequest.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppLogDetailRequest.Id">
+             <summary>
+            消息ID
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppLogDetailReply.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppLogDetailReply.Id">
+             <summary>
+            消息ID
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppLogDetailReply.TitleFieldNumber">
+            <summary>Field number for the "Title" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppLogDetailReply.Title">
+             <summary>
+            标题
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppLogDetailReply.AppTitleFieldNumber">
+            <summary>Field number for the "AppTitle" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppLogDetailReply.AppTitle">
+             <summary>
+            应用名称
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppLogDetailReply.AppIconFieldNumber">
+            <summary>Field number for the "AppIcon" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppLogDetailReply.AppIcon">
+             <summary>
+            应用图标
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppLogDetailReply.UpdateTimeFieldNumber">
+            <summary>Field number for the "UpdateTime" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppLogDetailReply.UpdateTime">
+             <summary>
+            更新时间
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppLogDetailReply.ContentFieldNumber">
+            <summary>Field number for the "Content" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppLogDetailReply.Content">
+             <summary>
+            内容
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppLogDetailReply.VersionFieldNumber">
+            <summary>Field number for the "Version" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppLogDetailReply.Version">
+             <summary>
+            版本
+             </summary>
+        </member>
+        <member name="T:SmartLibrary.Open.AppListReply">
+             <summary>
+            应用列表
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppListReply.AppListFieldNumber">
+            <summary>Field number for the "AppList" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppListReply.TotalCountFieldNumber">
+            <summary>Field number for the "TotalCount" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppListSingle.AppIdFieldNumber">
+            <summary>Field number for the "AppId" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppListSingle.AppId">
+             <summary>
+            应用ID
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppListSingle.AppNameFieldNumber">
+            <summary>Field number for the "AppName" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppListSingle.AppName">
+             <summary>
+            应用名称
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppListSingle.AppIconFieldNumber">
+            <summary>Field number for the "AppIcon" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppListSingle.AppIcon">
+             <summary>
+            应用图标
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppListSingle.ExpireDateFieldNumber">
+            <summary>Field number for the "ExpireDate" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppListSingle.ExpireDate">
+             <summary>
+            到期时间
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppListSingle.BeginDateFieldNumber">
+            <summary>Field number for the "BeginDate" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppListSingle.BeginDate">
+             <summary>
+            开始时间
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppListSingle.CreateTimeFieldNumber">
+            <summary>Field number for the "CreateTime" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppListSingle.UpdateTimeFieldNumber">
+            <summary>Field number for the "UpdateTime" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppListSingle.FrontUrlFieldNumber">
+            <summary>Field number for the "FrontUrl" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppListSingle.FrontUrl">
+             <summary>
+            前台地址
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppListSingle.BackendUrlFieldNumber">
+            <summary>Field number for the "BackendUrl" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppListSingle.BackendUrl">
+             <summary>
+            管理地址
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppListSingle.AppTypeFieldNumber">
+            <summary>Field number for the "AppType" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppListSingle.AppType">
+             <summary>
+            应用类型
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppListSingle.PurchaseTypeFieldNumber">
+            <summary>Field number for the "PurchaseType" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppListSingle.PurchaseType">
+             <summary>
+            采购类型
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppListSingle.CurrentVersionFieldNumber">
+            <summary>Field number for the "CurrentVersion" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppListSingle.CurrentVersion">
+             <summary>
+            当前版本号
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppListSingle.ShowStatusFieldNumber">
+            <summary>Field number for the "ShowStatus" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppListSingle.ShowStatus">
+             <summary>
+            转换后的应用状态
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppListSingle.StatusFieldNumber">
+            <summary>Field number for the "Status" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppListSingle.Status">
+             <summary>
+            应用状态
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppListSingle.SceneTypeFieldNumber">
+            <summary>Field number for the "SceneType" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppListSingle.SceneType">
+             <summary>
+            场景类型
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppListSingle.TerminalFieldNumber">
+            <summary>Field number for the "Terminal" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppListSingle.Terminal">
+             <summary>
+            支持终端
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppListSingle.DeveloperFieldNumber">
+            <summary>Field number for the "Developer" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppListSingle.Developer">
+            <summary>
+            开发商
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppListSingle.PriceFieldNumber">
+            <summary>Field number for the "Price" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppListSingle.Price">
+             <summary>
+            建议售价
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppListSingle.ContentFieldNumber">
+            <summary>Field number for the "Content" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppListSingle.Content">
+             <summary>
+            应用介绍
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppListSingle.ApiHostFieldNumber">
+            <summary>Field number for the "ApiHost" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppListSingle.ApiHost">
+             <summary>
+            接口地址
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppListSingle.RouteCodeFieldNumber">
+            <summary>Field number for the "RouteCode" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppListSingle.RouteCode">
+             <summary>
+            路由标识
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppListSingle.AppEntranceListFieldNumber">
+            <summary>Field number for the "AppEntranceList" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppListSingle.AppEntranceList">
+             <summary>
+            入口列表
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppListSingle.AppWidgetListFieldNumber">
+            <summary>Field number for the "AppWidgetList" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppListSingle.AppWidgetList">
+             <summary>
+            应用组件列表
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppListSingle.AppAvailibleSortFieldListFieldNumber">
+            <summary>Field number for the "AppAvailibleSortFieldList" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppListSingle.AppAvailibleSortFieldList">
+             <summary>
+            应用排序字段列表
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppListSingle.PurchaseTypeNameFieldNumber">
+            <summary>Field number for the "PurchaseTypeName" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppListSingle.PurchaseTypeName">
+             <summary>
+            采购类型名称
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppWidgetSingle.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppWidgetSingle.Id">
+            <summary>
+            应用组件ID
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppWidgetSingle.AppIdFieldNumber">
+            <summary>Field number for the "AppId" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppWidgetSingle.AppId">
+            <summary>
+            应用ID
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppWidgetSingle.NameFieldNumber">
+            <summary>Field number for the "Name" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppWidgetSingle.Name">
+            <summary>
+            组件名称
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppWidgetSingle.TargetFieldNumber">
+            <summary>Field number for the "Target" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppWidgetSingle.Target">
+            <summary>
+            组件内容地址
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppWidgetSingle.AvailableConfigFieldNumber">
+            <summary>Field number for the "AvailableConfig" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppWidgetSingle.AvailableConfig">
+            <summary>
+            可用配置 1-栏目 2-数据条数 3-排序字段 逗号分隔
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppWidgetSingle.MaxTopCountFieldNumber">
+            <summary>Field number for the "MaxTopCount" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppWidgetSingle.MaxTopCount">
+            <summary>
+            最大数据条数
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppWidgetSingle.TopCountIntervalFieldNumber">
+            <summary>Field number for the "TopCountInterval" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppWidgetSingle.TopCountInterval">
+            <summary>
+            数据条数间隔
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppWidgetSingle.CoverFieldNumber">
+            <summary>Field number for the "Cover" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppWidgetSingle.Cover">
+             <summary>
+            封面
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppWidgetSingle.WidgetCodeFieldNumber">
+            <summary>Field number for the "WidgetCode" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppWidgetSingle.WidgetCode">
+             <summary>
+            组件标识
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppWidgetSingle.WidthFieldNumber">
+            <summary>Field number for the "Width" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppWidgetSingle.Width">
+            <summary>
+            默认宽度
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppWidgetSingle.HeightFieldNumber">
+            <summary>Field number for the "Height" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppWidgetSingle.Height">
+            <summary>
+            默认高度
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppWidgetSingle.CreateTimeFieldNumber">
+            <summary>Field number for the "CreateTime" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppWidgetSingle.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppWidgetSingle.UpdateTimeFieldNumber">
+            <summary>Field number for the "UpdateTime" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppWidgetSingle.UpdateTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppWidgetSingle.SceneTypeFieldNumber">
+            <summary>Field number for the "SceneType" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppWidgetSingle.SceneType">
+            <summary>
+            特殊场景标识 ，1-通用 2-个人中心
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppAvailibleSortFieldSingle.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppAvailibleSortFieldSingle.Id">
+             <summary>
+            Id
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppAvailibleSortFieldSingle.AppIdFieldNumber">
+            <summary>Field number for the "AppId" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppAvailibleSortFieldSingle.AppId">
+            <summary>
+            应用标识
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppAvailibleSortFieldSingle.SortFieldNameFieldNumber">
+            <summary>Field number for the "SortFieldName" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppAvailibleSortFieldSingle.SortFieldName">
+            <summary>
+            排序字段名称
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppAvailibleSortFieldSingle.SortFieldValueFieldNumber">
+            <summary>Field number for the "SortFieldValue" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppAvailibleSortFieldSingle.SortFieldValue">
+            <summary>
+            描述信息
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppEntranceSingle.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppEntranceSingle.Id">
+             <summary>
+            入口Id
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppEntranceSingle.NameFieldNumber">
+            <summary>Field number for the "Name" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppEntranceSingle.Name">
+             <summary>
+            入口名称
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppEntranceSingle.CodeFieldNumber">
+            <summary>Field number for the "Code" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppEntranceSingle.Code">
+             <summary>
+            入口编码
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppEntranceSingle.UseSceneFieldNumber">
+            <summary>Field number for the "UseScene" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppEntranceSingle.UseScene">
+            <summary>
+            使用场景 1-前台  2-后台
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppEntranceSingle.VisitUrlFieldNumber">
+            <summary>Field number for the "VisitUrl" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppEntranceSingle.VisitUrl">
+            <summary>
+            访问路径
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppEntranceSingle.IsSystemFieldNumber">
+            <summary>Field number for the "IsSystem" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppEntranceSingle.IsSystem">
+            <summary>
+            是否内置入口
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppEntranceSingle.IsDefaultFieldNumber">
+            <summary>Field number for the "IsDefault" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppEntranceSingle.IsDefault">
+            <summary>
+            是否默认入口
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppEntranceSingle.AppEventListFieldNumber">
+            <summary>Field number for the "AppEventList" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppEntranceSingle.AppEventList">
+             <summary>
+            应用事件
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppEntranceSingle.BusinessTypeFieldNumber">
+            <summary>Field number for the "BusinessType" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppEntranceSingle.BusinessType">
+             <summary>
+            业务类型
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppEventSingle.EventCodeFieldNumber">
+            <summary>Field number for the "EventCode" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppEventSingle.EventCode">
+             <summary>
+            事件编码
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppEventSingle.EventNameFieldNumber">
+            <summary>Field number for the "EventName" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppEventSingle.EventName">
+             <summary>
+            事件名称 
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppEventSingle.EventTypeFieldNumber">
+            <summary>Field number for the "EventType" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppEventSingle.EventType">
+             <summary>
+            事件类型：1 运行日志，2 操作日志 ，3 积分获取，4 积分消费，5 待办项，0 所有，多个用逗号分隔
+             </summary>
+        </member>
+        <member name="T:SmartLibrary.Open.PayAppRequest">
+             <summary>
+            付费应用推荐
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.PayAppRequest.PageIndexFieldNumber">
+            <summary>Field number for the "PageIndex" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.PayAppRequest.PageSizeFieldNumber">
+            <summary>Field number for the "PageSize" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.PayAppRequest.AppTypeFieldNumber">
+            <summary>Field number for the "AppType" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.PayAppReply.PayAppListFieldNumber">
+            <summary>Field number for the "PayAppList" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.PayAppReply.TotalCountFieldNumber">
+            <summary>Field number for the "TotalCount" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.PayAppSingle.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.PayAppSingle.AppNameFieldNumber">
+            <summary>Field number for the "AppName" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.PayAppSingle.AppIconFieldNumber">
+            <summary>Field number for the "AppIcon" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.PayAppSingle.StarFieldNumber">
+            <summary>Field number for the "Star" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.PayAppSingle.Star">
+             <summary>
+            推荐指数
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.PayAppSingle.ContentFieldNumber">
+            <summary>Field number for the "Content" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.PayAppSingle.Content">
+             <summary>
+            应用介绍
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.PayAppSingle.PriceFieldNumber">
+            <summary>Field number for the "Price" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.PayAppSingle.Price">
+             <summary>
+            指导价格
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.PayAppSingle.IsFreeTryFieldNumber">
+            <summary>Field number for the "IsFreeTry" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.PayAppSingle.IsFreeTry">
+             <summary>
+            是否支持免费试用
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.PayAppSingle.DeveloperFieldNumber">
+            <summary>Field number for the "Developer" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.PayAppSingle.Developer">
+             <summary>
+            开发商
+             </summary>
+        </member>
+        <member name="T:SmartLibrary.Open.OrderListRequest">
+             <summary>
+            订单列表
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OrderListRequest.PageIndexFieldNumber">
+            <summary>Field number for the "PageIndex" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OrderListRequest.PageSizeFieldNumber">
+            <summary>Field number for the "PageSize" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OrderListRequest.StatusFieldNumber">
+            <summary>Field number for the "Status" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.OrderListRequest.Status">
+             <summary>
+            订单状态
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OrderListRequest.SearchKeyFieldNumber">
+            <summary>Field number for the "SearchKey" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.OrderListRequest.SearchKey">
+             <summary>
+            检索内容
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OrderListReply.OrderListFieldNumber">
+            <summary>Field number for the "OrderList" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OrderListReply.TotalCountFieldNumber">
+            <summary>Field number for the "TotalCount" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OrderListSingle.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OrderListSingle.AppNameFieldNumber">
+            <summary>Field number for the "AppName" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OrderListSingle.DeveloperFieldNumber">
+            <summary>Field number for the "Developer" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.OrderListSingle.Developer">
+             <summary>
+            开发商
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OrderListSingle.ContactsFieldNumber">
+            <summary>Field number for the "Contacts" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.OrderListSingle.Contacts">
+             <summary>
+            联系人
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OrderListSingle.PhoneFieldNumber">
+            <summary>Field number for the "Phone" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.OrderListSingle.Phone">
+             <summary>
+            联系电话
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OrderListSingle.ShowAuthTypeFieldNumber">
+            <summary>Field number for the "ShowAuthType" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.OrderListSingle.ShowAuthType">
+             <summary>
+            显示授权类型
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OrderListSingle.AuthTypeFieldNumber">
+            <summary>Field number for the "AuthType" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.OrderListSingle.AuthType">
+             <summary>
+            授权类型
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OrderListSingle.ShowOpenTypeFieldNumber">
+            <summary>Field number for the "ShowOpenType" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.OrderListSingle.ShowOpenType">
+             <summary>
+            显示开通类型
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OrderListSingle.OpenTypeFieldNumber">
+            <summary>Field number for the "OpenType" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.OrderListSingle.OpenType">
+             <summary>
+            开通类型
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OrderListSingle.ShowStatusFieldNumber">
+            <summary>Field number for the "ShowStatus" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.OrderListSingle.ShowStatus">
+            <summary>
+            显示状态
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OrderListSingle.StatusFieldNumber">
+            <summary>Field number for the "Status" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OrderListSingle.CommitDateFieldNumber">
+            <summary>Field number for the "CommitDate" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.OrderListSingle.CommitDate">
+             <summary>
+            提交日期
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OrderListSingle.ExpireDateFieldNumber">
+            <summary>Field number for the "ExpireDate" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.OrderListSingle.ExpireDate">
+             <summary>
+            到期日期
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OrderListSingle.RemarkFieldNumber">
+            <summary>Field number for the "Remark" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.OrderListSingle.Remark">
+            <summary>
+            拒绝状态备注信息
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Open.CancelOrderRequest">
+             <summary>
+            取消订单
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.CancelOrderRequest.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.CancelOrderReply.IsSuccessFieldNumber">
+            <summary>Field number for the "IsSuccess" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.CancelOrderReply.ErrorMsgFieldNumber">
+            <summary>Field number for the "ErrorMsg" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.CancelOrderReply.ErrorMsg">
+             <summary>
+            不成功时返回的提示信息
+             </summary>
+        </member>
+        <member name="T:SmartLibrary.Open.AppActionReuqest">
+             <summary>
+            应用延期/续订
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppActionReuqest.ActionTypeFieldNumber">
+            <summary>Field number for the "ActionType" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppActionReuqest.ActionType">
+             <summary>
+            操作类型 1=续订，2=延期，3=免费试用，4=预约采购，5=启用，6=停用
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppActionReuqest.AppIdFieldNumber">
+            <summary>Field number for the "AppId" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppActionReuqest.AppId">
+             <summary>
+            应用ID
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppActionReuqest.TimeNumFieldNumber">
+            <summary>Field number for the "TimeNum" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppActionReuqest.TimeNum">
+             <summary>
+            续订/延期时间 纯数字,换算成月
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppActionReuqest.ContactsFieldNumber">
+            <summary>Field number for the "Contacts" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppActionReuqest.Contacts">
+             <summary>
+            联系人
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppActionReuqest.PhoneFieldNumber">
+            <summary>Field number for the "Phone" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppActionReuqest.Phone">
+             <summary>
+            联系电话
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppActionReply.IsSuccessFieldNumber">
+            <summary>Field number for the "IsSuccess" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.AppActionReply.ErrorMsgFieldNumber">
+            <summary>Field number for the "ErrorMsg" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppActionReply.ErrorMsg">
+             <summary>
+            不成功时返回的提示信息
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OrgInfoReply.OrgCodeFieldNumber">
+            <summary>Field number for the "OrgCode" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.OrgInfoReply.OrgCode">
+             <summary>
+            机构标识
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OrgInfoReply.PortalUrlFieldNumber">
+            <summary>Field number for the "PortalUrl" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.OrgInfoReply.PortalUrl">
+             <summary>
+            门户地址
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OrgInfoReply.ManageUrlFieldNumber">
+            <summary>Field number for the "ManageUrl" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.OrgInfoReply.ManageUrl">
+             <summary>
+            后台地址
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OrgInfoReply.FileUrlFieldNumber">
+            <summary>Field number for the "FileUrl" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.OrgInfoReply.FileUrl">
+             <summary>
+            文件地址
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OrgInfoReply.LoginUrlFieldNumber">
+            <summary>Field number for the "LoginUrl" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.OrgInfoReply.LoginUrl">
+             <summary>
+            前台登录地址
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OrgInfoReply.MgrLoginUrlFieldNumber">
+            <summary>Field number for the "MgrLoginUrl" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.OrgInfoReply.MgrLoginUrl">
+             <summary>
+            后台登录地址
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OrgInfoReply.OrgNameFieldNumber">
+            <summary>Field number for the "OrgName" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.OrgInfoReply.OrgName">
+             <summary>
+            机构名称
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OrgInfoReply.LogoUrlFieldNumber">
+            <summary>Field number for the "LogoUrl" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.OrgInfoReply.LogoUrl">
+             <summary>
+            机构Logo
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OrgInfoReply.SimpleLogoUrlFieldNumber">
+            <summary>Field number for the "SimpleLogoUrl" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.OrgInfoReply.SimpleLogoUrl">
+             <summary>
+            机构简版Logo
+             </summary>
+        </member>
+        <member name="P:SmartLibrary.Open.AppGrpcService.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:SmartLibrary.Open.AppGrpcService.AppGrpcServiceBase">
+            <summary>Base class for server-side implementations of AppGrpcService</summary>
+        </member>
+        <member name="M:SmartLibrary.Open.AppGrpcService.AppGrpcServiceBase.GetDictionaryByType(SmartLibrary.Open.DictionaryRequest,Grpc.Core.ServerCallContext)">
+             <summary>
+            获取通用字典
+             </summary>
+             <param name="request">The request received from the client.</param>
+             <param name="context">The context of the server-side call handler being invoked.</param>
+             <returns>The response to send back to the client (wrapped by a task).</returns>
+        </member>
+        <member name="M:SmartLibrary.Open.AppGrpcService.AppGrpcServiceBase.GetAppLog(SmartLibrary.Open.AppLogRequest,Grpc.Core.ServerCallContext)">
+             <summary>
+            分页获取应用日志
+             </summary>
+             <param name="request">The request received from the client.</param>
+             <param name="context">The context of the server-side call handler being invoked.</param>
+             <returns>The response to send back to the client (wrapped by a task).</returns>
+        </member>
+        <member name="M:SmartLibrary.Open.AppGrpcService.AppGrpcServiceBase.GetAppLogDetail(SmartLibrary.Open.AppLogDetailRequest,Grpc.Core.ServerCallContext)">
+             <summary>
+            获取更新日志详情
+             </summary>
+             <param name="request">The request received from the client.</param>
+             <param name="context">The context of the server-side call handler being invoked.</param>
+             <returns>The response to send back to the client (wrapped by a task).</returns>
+        </member>
+        <member name="M:SmartLibrary.Open.AppGrpcService.AppGrpcServiceBase.GetAppList(Google.Protobuf.WellKnownTypes.Empty,Grpc.Core.ServerCallContext)">
+             <summary>
+            获取应用列表
+             </summary>
+             <param name="request">The request received from the client.</param>
+             <param name="context">The context of the server-side call handler being invoked.</param>
+             <returns>The response to send back to the client (wrapped by a task).</returns>
+        </member>
+        <member name="M:SmartLibrary.Open.AppGrpcService.AppGrpcServiceBase.GetPayAppList(SmartLibrary.Open.PayAppRequest,Grpc.Core.ServerCallContext)">
+             <summary>
+            付费应用推荐
+             </summary>
+             <param name="request">The request received from the client.</param>
+             <param name="context">The context of the server-side call handler being invoked.</param>
+             <returns>The response to send back to the client (wrapped by a task).</returns>
+        </member>
+        <member name="M:SmartLibrary.Open.AppGrpcService.AppGrpcServiceBase.GetOrderList(SmartLibrary.Open.OrderListRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            应用订单列表
+            </summary>
+            <param name="request">The request received from the client.</param>
+            <param name="context">The context of the server-side call handler being invoked.</param>
+            <returns>The response to send back to the client (wrapped by a task).</returns>
+        </member>
+        <member name="M:SmartLibrary.Open.AppGrpcService.AppGrpcServiceBase.CancelOder(SmartLibrary.Open.CancelOrderRequest,Grpc.Core.ServerCallContext)">
+             <summary>
+            取消订单
+             </summary>
+             <param name="request">The request received from the client.</param>
+             <param name="context">The context of the server-side call handler being invoked.</param>
+             <returns>The response to send back to the client (wrapped by a task).</returns>
+        </member>
+        <member name="M:SmartLibrary.Open.AppGrpcService.AppGrpcServiceBase.AppAction(SmartLibrary.Open.AppActionReuqest,Grpc.Core.ServerCallContext)">
+            <summary>
+            应用续订/延期/试用/采购
+            </summary>
+            <param name="request">The request received from the client.</param>
+            <param name="context">The context of the server-side call handler being invoked.</param>
+            <returns>The response to send back to the client (wrapped by a task).</returns>
+        </member>
+        <member name="M:SmartLibrary.Open.AppGrpcService.AppGrpcServiceBase.GetOrgInfo(Google.Protobuf.WellKnownTypes.Empty,Grpc.Core.ServerCallContext)">
+             <summary>
+            获取机构信息 
+             </summary>
+             <param name="request">The request received from the client.</param>
+             <param name="context">The context of the server-side call handler being invoked.</param>
+             <returns>The response to send back to the client (wrapped by a task).</returns>
+        </member>
+        <member name="M:SmartLibrary.Open.AppGrpcService.BindService(SmartLibrary.Open.AppGrpcService.AppGrpcServiceBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:SmartLibrary.Open.AppGrpcService.BindService(Grpc.Core.ServiceBinderBase,SmartLibrary.Open.AppGrpcService.AppGrpcServiceBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="T:SmartLibrary.Open.OpenDonationTemplateTemplateReflection">
+            <summary>Holder for reflection information generated from Protos/Server/Open_DonationTemplateTemplate.proto</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.OpenDonationTemplateTemplateReflection.Descriptor">
+            <summary>File descriptor for Protos/Server/Open_DonationTemplateTemplate.proto</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.DonationTemplateGrpcResponse.DllLinkFieldNumber">
+            <summary>Field number for the "DllLink" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.DonationTemplateGrpcResponse.SymbolFieldNumber">
+            <summary>Field number for the "Symbol" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.DonationTemplateGrpcResponse.NameFieldNumber">
+            <summary>Field number for the "Name" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.DonationTemplateListGrpcResponse.ResultFieldNumber">
+            <summary>Field number for the "result" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.DonationTemplateGrpcRequest.SymbolFieldNumber">
+            <summary>Field number for the "symbol" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.DonationTemplateGrpcService.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:SmartLibrary.Open.DonationTemplateGrpcService.DonationTemplateGrpcServiceBase">
+            <summary>Base class for server-side implementations of DonationTemplateGrpcService</summary>
+        </member>
+        <member name="M:SmartLibrary.Open.DonationTemplateGrpcService.BindService(SmartLibrary.Open.DonationTemplateGrpcService.DonationTemplateGrpcServiceBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:SmartLibrary.Open.DonationTemplateGrpcService.BindService(Grpc.Core.ServiceBinderBase,SmartLibrary.Open.DonationTemplateGrpcService.DonationTemplateGrpcServiceBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="T:SmartLibrary.Open.OpenOpacTemplateReflection">
+            <summary>Holder for reflection information generated from Protos/Server/Open_OpacTemplate.proto</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.OpenOpacTemplateReflection.Descriptor">
+            <summary>File descriptor for Protos/Server/Open_OpacTemplate.proto</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OpacTemplateGrpcResponse.DllLinkFieldNumber">
+            <summary>Field number for the "DllLink" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OpacTemplateGrpcResponse.SymbolFieldNumber">
+            <summary>Field number for the "Symbol" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OpacTemplateGrpcResponse.NameFieldNumber">
+            <summary>Field number for the "Name" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OpacTemplateGrpcResponse.AppointmentSupportFieldNumber">
+            <summary>Field number for the "AppointmentSupport" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OpacTemplateListGrpcResponse.ListFieldNumber">
+            <summary>Field number for the "list" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.OpacTemplateGrpcRequest.SymbolFieldNumber">
+            <summary>Field number for the "symbol" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.OpacTemplateGrpcService.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:SmartLibrary.Open.OpacTemplateGrpcService.OpacTemplateGrpcServiceBase">
+            <summary>Base class for server-side implementations of OpacTemplateGrpcService</summary>
+        </member>
+        <member name="M:SmartLibrary.Open.OpacTemplateGrpcService.BindService(SmartLibrary.Open.OpacTemplateGrpcService.OpacTemplateGrpcServiceBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:SmartLibrary.Open.OpacTemplateGrpcService.BindService(Grpc.Core.ServiceBinderBase,SmartLibrary.Open.OpacTemplateGrpcService.OpacTemplateGrpcServiceBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="T:SmartLibrary.Open.OpenSearchBoxTitleItemServiceReflection">
+            <summary>Holder for reflection information generated from Protos/Server/Open_SearchBoxTitleItemService.proto</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.OpenSearchBoxTitleItemServiceReflection.Descriptor">
+            <summary>File descriptor for Protos/Server/Open_SearchBoxTitleItemService.proto</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.SearchBoxTitleItem.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.SearchBoxTitleItem.TitleFieldNumber">
+            <summary>Field number for the "Title" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.SearchBoxTitleItem.SymbolFieldNumber">
+            <summary>Field number for the "Symbol" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.SearchBoxTitleItem.ValueFieldNumber">
+            <summary>Field number for the "Value" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Open.SearchBoxTitleItemResponse.SearchBoxTitleItemsFieldNumber">
+            <summary>Field number for the "SearchBoxTitleItems" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Open.SearchBoxTitleItemGrpcService.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:SmartLibrary.Open.SearchBoxTitleItemGrpcService.SearchBoxTitleItemGrpcServiceBase">
+            <summary>Base class for server-side implementations of SearchBoxTitleItemGrpcService</summary>
+        </member>
+        <member name="T:SmartLibrary.Open.SearchBoxTitleItemGrpcService.SearchBoxTitleItemGrpcServiceClient">
+            <summary>Client for SearchBoxTitleItemGrpcService</summary>
+        </member>
+        <member name="M:SmartLibrary.Open.SearchBoxTitleItemGrpcService.SearchBoxTitleItemGrpcServiceClient.#ctor(Grpc.Core.ChannelBase)">
+            <summary>Creates a new client for SearchBoxTitleItemGrpcService</summary>
+            <param name="channel">The channel to use to make remote calls.</param>
+        </member>
+        <member name="M:SmartLibrary.Open.SearchBoxTitleItemGrpcService.SearchBoxTitleItemGrpcServiceClient.#ctor(Grpc.Core.CallInvoker)">
+            <summary>Creates a new client for SearchBoxTitleItemGrpcService that uses a custom <c>CallInvoker</c>.</summary>
+            <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+        </member>
+        <member name="M:SmartLibrary.Open.SearchBoxTitleItemGrpcService.SearchBoxTitleItemGrpcServiceClient.#ctor">
+            <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+        </member>
+        <member name="M:SmartLibrary.Open.SearchBoxTitleItemGrpcService.SearchBoxTitleItemGrpcServiceClient.#ctor(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Protected constructor to allow creation of configured clients.</summary>
+            <param name="configuration">The client configuration.</param>
+        </member>
+        <member name="M:SmartLibrary.Open.SearchBoxTitleItemGrpcService.SearchBoxTitleItemGrpcServiceClient.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+        </member>
+        <member name="M:SmartLibrary.Open.SearchBoxTitleItemGrpcService.BindService(SmartLibrary.Open.SearchBoxTitleItemGrpcService.SearchBoxTitleItemGrpcServiceBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:SmartLibrary.Open.SearchBoxTitleItemGrpcService.BindService(Grpc.Core.ServiceBinderBase,SmartLibrary.Open.SearchBoxTitleItemGrpcService.SearchBoxTitleItemGrpcServiceBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="T:SmartLibrary.Assembly.Application.Protos.OpenAssemblySharedReflection">
+            <summary>Holder for reflection information generated from Protos/Server/Open_AssemblyShared.proto</summary>
+        </member>
+        <member name="P:SmartLibrary.Assembly.Application.Protos.OpenAssemblySharedReflection.Descriptor">
+            <summary>File descriptor for Protos/Server/Open_AssemblyShared.proto</summary>
+        </member>
+        <member name="T:SmartLibrary.Assembly.Application.Protos.UnionAssemblyPagedList">
+             <summary>
+            联盟共享专题分页对象
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.UnionAssemblyPagedList.PageIndexFieldNumber">
+            <summary>Field number for the "PageIndex" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.UnionAssemblyPagedList.PageSizeFieldNumber">
+            <summary>Field number for the "PageSize" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.UnionAssemblyPagedList.TotalCountFieldNumber">
+            <summary>Field number for the "TotalCount" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.UnionAssemblyPagedList.TotalPagesFieldNumber">
+            <summary>Field number for the "TotalPages" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.UnionAssemblyPagedList.ItemsFieldNumber">
+            <summary>Field number for the "Items" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.Assembly.Application.Protos.GetSharedLocalAssemblyPageRequest">
+             <summary>
+            查找已共享的本官专题的入参
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.GetSharedLocalAssemblyPageRequest.SearchKeyFieldNumber">
+            <summary>Field number for the "SearchKey" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.GetSharedLocalAssemblyPageRequest.PageIndexFieldNumber">
+            <summary>Field number for the "PageIndex" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.GetSharedLocalAssemblyPageRequest.PageSizeFieldNumber">
+            <summary>Field number for the "PageSize" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.GetSharedLocalAssemblyPageRequest.AuditTypeFieldNumber">
+            <summary>Field number for the "AuditType" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.Assembly.Application.Protos.GetSharedLocalAssemblyPageReply">
+             <summary>
+            查找已共享的本官专题的reply
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.GetSharedLocalAssemblyPageReply.AssemblyPageFieldNumber">
+            <summary>Field number for the "AssemblyPage" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.Assembly.Application.Protos.GetUnionSharedAssemblyPageRequest">
+             <summary>
+            获取联盟共享专题分页的请求request
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.GetUnionSharedAssemblyPageRequest.SearchKeyFieldNumber">
+            <summary>Field number for the "SearchKey" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.GetUnionSharedAssemblyPageRequest.PageIndexFieldNumber">
+            <summary>Field number for the "PageIndex" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.GetUnionSharedAssemblyPageRequest.PageSizeFieldNumber">
+            <summary>Field number for the "PageSize" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.GetUnionSharedAssemblyPageRequest.AcquiredIdsFieldNumber">
+            <summary>Field number for the "acquiredIds" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.GetUnionSharedAssemblyPageRequest.SortRuleFieldNumber">
+            <summary>Field number for the "SortRule" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Assembly.Application.Protos.GetUnionSharedAssemblyPageRequest.SortRule">
+             <summary>
+            排序规则 1-默认排序 2-创建时间排序 3-点击量排序
+             </summary>
+        </member>
+        <member name="T:SmartLibrary.Assembly.Application.Protos.GetUnionSharedAssemblyReply">
+             <summary>
+            获取联盟共享专题分页的请求reply
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.GetUnionSharedAssemblyReply.AssemblyPageFieldNumber">
+            <summary>Field number for the "AssemblyPage" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.Assembly.Application.Protos.GetAssemblyFromOpenCenterRequest">
+             <summary>
+            获取共享专题的请求request
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.GetAssemblyFromOpenCenterRequest.AssemblyIdsFieldNumber">
+            <summary>Field number for the "assemblyIds" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Assembly.Application.Protos.GetAssemblyFromOpenCenterRequest.AssemblyIds">
+             <summary>
+            需要的专题列表
+             </summary>
+        </member>
+        <member name="T:SmartLibrary.Assembly.Application.Protos.GetAssemblyFromOpenCenterReply">
+             <summary>
+            获取共享专题的请求reply
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.GetAssemblyFromOpenCenterReply.AssemblysFieldNumber">
+            <summary>Field number for the "Assemblys" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.Assembly.Application.Protos.GetSystemAssemblyRequest">
+             <summary>
+            获取系统专题分页的请求request
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.GetSystemAssemblyRequest.SearchKeyFieldNumber">
+            <summary>Field number for the "SearchKey" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.GetSystemAssemblyRequest.RecommendTypeFieldNumber">
+            <summary>Field number for the "RecommendType" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.GetSystemAssemblyRequest.PageIndexFieldNumber">
+            <summary>Field number for the "PageIndex" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.GetSystemAssemblyRequest.PageSizeFieldNumber">
+            <summary>Field number for the "PageSize" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.GetSystemAssemblyRequest.AcquiredIdsFieldNumber">
+            <summary>Field number for the "acquiredIds" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.Assembly.Application.Protos.GetSystemAssemblyReply">
+             <summary>
+            获取系统专题分页的请求reply
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.GetSystemAssemblyReply.AssemblyPageFieldNumber">
+            <summary>Field number for the "AssemblyPage" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.Assembly.Application.Protos.SysAssemblyPagedList">
+             <summary>
+            系统专题分页对象
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.SysAssemblyPagedList.PageIndexFieldNumber">
+            <summary>Field number for the "PageIndex" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.SysAssemblyPagedList.PageSizeFieldNumber">
+            <summary>Field number for the "PageSize" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.SysAssemblyPagedList.TotalCountFieldNumber">
+            <summary>Field number for the "TotalCount" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.SysAssemblyPagedList.TotalPagesFieldNumber">
+            <summary>Field number for the "TotalPages" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.SysAssemblyPagedList.ItemsFieldNumber">
+            <summary>Field number for the "Items" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.Assembly.Application.Protos.AssemblyBaseInfoTab">
+             <summary>
+            专题基础信息表数据
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.AssemblyBaseInfoTab.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.AssemblyBaseInfoTab.AssemblyNameFieldNumber">
+            <summary>Field number for the "AssemblyName" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.AssemblyBaseInfoTab.ColumnIdFieldNumber">
+            <summary>Field number for the "ColumnId" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.AssemblyBaseInfoTab.DescriptionFieldNumber">
+            <summary>Field number for the "Description" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.AssemblyBaseInfoTab.KeyWordsFieldNumber">
+            <summary>Field number for the "KeyWords" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.AssemblyBaseInfoTab.LabelFieldNumber">
+            <summary>Field number for the "Label" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.AssemblyBaseInfoTab.TemplateFieldNumber">
+            <summary>Field number for the "Template" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.AssemblyBaseInfoTab.CoverFieldNumber">
+            <summary>Field number for the "Cover" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Assembly.Application.Protos.AssemblyBaseInfoTab.Cover">
+            <summary>
+            string MaintainerId = 8;
+             string CreaterId = 9;
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.AssemblyBaseInfoTab.SourceFieldNumber">
+            <summary>Field number for the "Source" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.AssemblyBaseInfoTab.FocusCountsFieldNumber">
+            <summary>Field number for the "FocusCounts" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.AssemblyBaseInfoTab.StatusFieldNumber">
+            <summary>Field number for the "Status" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.AssemblyBaseInfoTab.UnionServiceTypeFieldNumber">
+            <summary>Field number for the "UnionServiceType" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.AssemblyBaseInfoTab.SharedIdFieldNumber">
+            <summary>Field number for the "SharedId" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.AssemblyBaseInfoTab.DeleteFlagFieldNumber">
+            <summary>Field number for the "DeleteFlag" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.AssemblyBaseInfoTab.RecommendTypeFieldNumber">
+            <summary>Field number for the "RecommendType" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.AssemblyBaseInfoTab.OrgCodeFieldNumber">
+            <summary>Field number for the "OrgCode" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.AssemblyBaseInfoTab.RejectionReasonFieldNumber">
+            <summary>Field number for the "RejectionReason" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.AssemblyBaseInfoTab.SharedCountFieldNumber">
+            <summary>Field number for the "SharedCount" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.AssemblyBaseInfoTab.AuditStatusFieldNumber">
+            <summary>Field number for the "AuditStatus" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.AssemblyBaseInfoTab.OrginCreaterNameFieldNumber">
+            <summary>Field number for the "OrginCreaterName" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.AssemblyBaseInfoTab.OrginOwnerNameFieldNumber">
+            <summary>Field number for the "OrginOwnerName" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.AssemblyBaseInfoTab.SharedTimeFieldNumber">
+            <summary>Field number for the "SharedTime" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Assembly.Application.Protos.AssemblyBaseInfoTab.SharedTime">
+             <summary>
+            google.protobuf.Timestamp CreatedTime = 17;
+            google.protobuf.Timestamp UpdatedTime = 18;
+             </summary>
+        </member>
+        <member name="T:SmartLibrary.Assembly.Application.Protos.AssemblyArticleColumnTab">
+             <summary>
+            文献栏目表的数据
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.AssemblyArticleColumnTab.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.AssemblyArticleColumnTab.NameFieldNumber">
+            <summary>Field number for the "Name" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.AssemblyArticleColumnTab.AssemblyIDFieldNumber">
+            <summary>Field number for the "AssemblyID" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.AssemblyArticleColumnTab.TemplateFieldNumber">
+            <summary>Field number for the "Template" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.AssemblyArticleColumnTab.ArtBindTypeFieldNumber">
+            <summary>Field number for the "ArtBindType" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.AssemblyArticleColumnTab.DeleteFlagFieldNumber">
+            <summary>Field number for the "DeleteFlag" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.AssemblyArticleColumnTab.MaintainerIdFieldNumber">
+            <summary>Field number for the "MaintainerId" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Assembly.Application.Protos.AssemblyArticleColumnTab.MaintainerId">
+             <summary>
+            google.protobuf.Timestamp CreatedTime = 8;
+            google.protobuf.Timestamp UpdatedTime = 9;
+             </summary>
+        </member>
+        <member name="T:SmartLibrary.Assembly.Application.Protos.ArtColSearchThemesTab">
+             <summary>
+            主题检索规则表的数据
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.ArtColSearchThemesTab.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.ArtColSearchThemesTab.AssemblyArticleColumnIDFieldNumber">
+            <summary>Field number for the "AssemblyArticleColumnID" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.ArtColSearchThemesTab.SearchThemesFieldNumber">
+            <summary>Field number for the "SearchThemes" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.ArtColSearchThemesTab.ArtTypesFieldNumber">
+            <summary>Field number for the "ArtTypes" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.ArtColSearchThemesTab.DeleteFlagFieldNumber">
+            <summary>Field number for the "DeleteFlag" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Assembly.Application.Protos.ArtColSearchThemesTab.DeleteFlag">
+             <summary>
+            google.protobuf.Timestamp CreatedTime = 6;
+            google.protobuf.Timestamp UpdatedTime = 7;
+             </summary>
+        </member>
+        <member name="T:SmartLibrary.Assembly.Application.Protos.ArtRetrievalExpTab">
+             <summary>
+            表达式文献栏目的匹配规则表的数据
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.ArtRetrievalExpTab.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.ArtRetrievalExpTab.NameFieldNumber">
+            <summary>Field number for the "Name" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.ArtRetrievalExpTab.AssemblyArticleColumnIDFieldNumber">
+            <summary>Field number for the "AssemblyArticleColumnID" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.ArtRetrievalExpTab.ExpressionFieldNumber">
+            <summary>Field number for the "Expression" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.ArtRetrievalExpTab.ArticleTypesFieldNumber">
+            <summary>Field number for the "ArticleTypes" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.ArtRetrievalExpTab.CoreCollectionFieldNumber">
+            <summary>Field number for the "CoreCollection" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.ArtRetrievalExpTab.CollationFieldNumber">
+            <summary>Field number for the "Collation" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.ArtRetrievalExpTab.DeleteFlagFieldNumber">
+            <summary>Field number for the "DeleteFlag" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Assembly.Application.Protos.ArtRetrievalExpTab.DeleteFlag">
+             <summary>
+            google.protobuf.Timestamp CreatedTime = 9;
+            google.protobuf.Timestamp UpdatedTime = 10;
+             </summary>
+        </member>
+        <member name="T:SmartLibrary.Assembly.Application.Protos.ArtByImportedTab">
+             <summary>
+            导入类文献栏目的匹配规则表的数据
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.ArtByImportedTab.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.ArtByImportedTab.ArtColumnIdFieldNumber">
+            <summary>Field number for the "ArtColumnId" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.ArtByImportedTab.ArticleIDFieldNumber">
+            <summary>Field number for the "ArticleID" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.ArtByImportedTab.OrderIndexFieldNumber">
+            <summary>Field number for the "OrderIndex" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.ArtByImportedTab.CommentFieldNumber">
+            <summary>Field number for the "Comment" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.ArtByImportedTab.DeleteFlagFieldNumber">
+            <summary>Field number for the "DeleteFlag" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Assembly.Application.Protos.ArtByImportedTab.DeleteFlag">
+             <summary>
+            google.protobuf.Timestamp CreatedTime = 7;
+            google.protobuf.Timestamp UpdatedTime = 8;
+             </summary>
+        </member>
+        <member name="T:SmartLibrary.Assembly.Application.Protos.ArtByUploadTab">
+             <summary>
+            上传类文献栏目的匹配规则表的数据
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.ArtByUploadTab.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.ArtByUploadTab.ArtColumnIdFieldNumber">
+            <summary>Field number for the "ArtColumnId" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.ArtByUploadTab.TitleFieldNumber">
+            <summary>Field number for the "Title" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.ArtByUploadTab.AuthorFieldNumber">
+            <summary>Field number for the "Author" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.ArtByUploadTab.OrderIndexFieldNumber">
+            <summary>Field number for the "OrderIndex" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.ArtByUploadTab.DateFieldNumber">
+            <summary>Field number for the "Date" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.ArtByUploadTab.CommentFieldNumber">
+            <summary>Field number for the "Comment" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.ArtByUploadTab.FileFieldNumber">
+            <summary>Field number for the "File" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.ArtByUploadTab.UrlFieldNumber">
+            <summary>Field number for the "Url" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.ArtByUploadTab.DeleteFlagFieldNumber">
+            <summary>Field number for the "DeleteFlag" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Assembly.Application.Protos.ArtByUploadTab.DeleteFlag">
+             <summary>
+            google.protobuf.Timestamp CreatedTime = 11;
+            google.protobuf.Timestamp UpdatedTime = 12;
+             </summary>
+        </member>
+        <member name="T:SmartLibrary.Assembly.Application.Protos.FileSourceTab">
+             <summary>
+            文件资源表的数据
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.FileSourceTab.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.FileSourceTab.ArtByUploadIdFieldNumber">
+            <summary>Field number for the "ArtByUploadId" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.FileSourceTab.FilePathFieldNumber">
+            <summary>Field number for the "FilePath" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.FileSourceTab.FileNameFieldNumber">
+            <summary>Field number for the "FileName" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.FileSourceTab.DeleteFlagFieldNumber">
+            <summary>Field number for the "DeleteFlag" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Assembly.Application.Protos.FileSourceTab.DeleteFlag">
+             <summary>
+            google.protobuf.Timestamp CreatedTime = 6;
+            google.protobuf.Timestamp UpdatedTime = 7;
+             </summary>
+        </member>
+        <member name="T:SmartLibrary.Assembly.Application.Protos.DeliverySharedAssemblyRequest">
+            <summary>
+            定义请求的对象名
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.DeliverySharedAssemblyRequest.AssemblyTabFieldNumber">
+            <summary>Field number for the "AssemblyTab" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.DeliverySharedAssemblyRequest.ArtColumnTabFieldNumber">
+            <summary>Field number for the "ArtColumnTab" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.DeliverySharedAssemblyRequest.RuleByThemsTabFieldNumber">
+            <summary>Field number for the "RuleByThemsTab" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.DeliverySharedAssemblyRequest.RuleByExpTabFieldNumber">
+            <summary>Field number for the "RuleByExpTab" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.DeliverySharedAssemblyRequest.RuleByImportedTabFieldNumber">
+            <summary>Field number for the "RuleByImportedTab" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.DeliverySharedAssemblyRequest.RuleByUploadTabFieldNumber">
+            <summary>Field number for the "RuleByUploadTab" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.DeliverySharedAssemblyRequest.FileSourceTabFieldNumber">
+            <summary>Field number for the "FileSourceTab" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.Assembly.Application.Protos.DeliverySharedAssemblyReply">
+            <summary>
+            定义返回的对象名
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.DeliverySharedAssemblyReply.MessageFieldNumber">
+            <summary>Field number for the "message" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Assembly.Application.Protos.DeliverySharedAssemblyReply.Message">
+            <summary>
+            有一个返回的字段是message
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Assembly.Application.Protos.PreviewArticleColumnRequest">
+             <summary>
+            预览文献栏目的返回数据
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.PreviewArticleColumnRequest.AssemblyIdFieldNumber">
+            <summary>Field number for the "AssemblyId" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Assembly.Application.Protos.PreviewArticleColumnRequest.AssemblyId">
+             <summary>
+            专题id
+             </summary>
+        </member>
+        <member name="T:SmartLibrary.Assembly.Application.Protos.PreviewArticleColumnReply">
+             <summary>
+            预览文献栏目的返回数据
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.PreviewArticleColumnReply.ArtColumnTabsFieldNumber">
+            <summary>Field number for the "ArtColumnTabs" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.Assembly.Application.Protos.PreviewArticleColumnByIdRequest">
+             <summary>
+            预览文献栏目的返回数据
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.PreviewArticleColumnByIdRequest.PageIndexFieldNumber">
+            <summary>Field number for the "PageIndex" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.PreviewArticleColumnByIdRequest.PageSizeFieldNumber">
+            <summary>Field number for the "PageSize" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.PreviewArticleColumnByIdRequest.ArtColumnIdFieldNumber">
+            <summary>Field number for the "ArtColumnId" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.Assembly.Application.Protos.PreviewArticleColumnByIdRequest.ArtColumnId">
+             <summary>
+            专题id
+             </summary>
+        </member>
+        <member name="T:SmartLibrary.Assembly.Application.Protos.PreviewArticleColumnByIdReply">
+             <summary>
+            预览文献栏目的返回数据
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.PreviewArticleColumnByIdReply.ArtColumnTabFieldNumber">
+            <summary>Field number for the "ArtColumnTab" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.PreviewArticleColumnByIdReply.RuleByThemsTabFieldNumber">
+            <summary>Field number for the "RuleByThemsTab" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.PreviewArticleColumnByIdReply.RuleByExpTabFieldNumber">
+            <summary>Field number for the "RuleByExpTab" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.PreviewArticleColumnByIdReply.RuleByImportedTabFieldNumber">
+            <summary>Field number for the "RuleByImportedTab" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.PreviewArticleColumnByIdReply.RuleByUploadTabFieldNumber">
+            <summary>Field number for the "RuleByUploadTab" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.Assembly.Application.Protos.PreviewArticleColumnByIdReply.FileSourceTabFieldNumber">
+            <summary>Field number for the "FileSourceTab" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.Assembly.Application.Protos.AssemblySharedGrpcService">
+            <summary>
+            定义具体的服务
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Assembly.Application.Protos.AssemblySharedGrpcService.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:SmartLibrary.Assembly.Application.Protos.AssemblySharedGrpcService.AssemblySharedGrpcServiceBase">
+            <summary>Base class for server-side implementations of AssemblySharedGrpcService</summary>
+        </member>
+        <member name="M:SmartLibrary.Assembly.Application.Protos.AssemblySharedGrpcService.AssemblySharedGrpcServiceBase.DeliverySharedAssembly(SmartLibrary.Assembly.Application.Protos.DeliverySharedAssemblyRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            定义某一个方法API，格式是：rpc 方法名(请求参数对象名) returns(返回参数对象名)
+            </summary>
+            <param name="request">The request received from the client.</param>
+            <param name="context">The context of the server-side call handler being invoked.</param>
+            <returns>The response to send back to the client (wrapped by a task).</returns>
+        </member>
+        <member name="M:SmartLibrary.Assembly.Application.Protos.AssemblySharedGrpcService.BindService(SmartLibrary.Assembly.Application.Protos.AssemblySharedGrpcService.AssemblySharedGrpcServiceBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:SmartLibrary.Assembly.Application.Protos.AssemblySharedGrpcService.BindService(Grpc.Core.ServiceBinderBase,SmartLibrary.Assembly.Application.Protos.AssemblySharedGrpcService.AssemblySharedGrpcServiceBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="T:Grpc.Health.V1.HealthCheckReflection">
+            <summary>Holder for reflection information generated from Protos/Server/HealthCheck.proto</summary>
+        </member>
+        <member name="P:Grpc.Health.V1.HealthCheckReflection.Descriptor">
+            <summary>File descriptor for Protos/Server/HealthCheck.proto</summary>
+        </member>
+        <member name="F:Grpc.Health.V1.HealthCheckRequest.ServiceFieldNumber">
+            <summary>Field number for the "service" field.</summary>
+        </member>
+        <member name="F:Grpc.Health.V1.HealthCheckResponse.StatusFieldNumber">
+            <summary>Field number for the "status" field.</summary>
+        </member>
+        <member name="T:Grpc.Health.V1.HealthCheckResponse.Types">
+            <summary>Container for nested types declared in the HealthCheckResponse message type.</summary>
+        </member>
+        <member name="P:Grpc.Health.V1.Health.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:Grpc.Health.V1.Health.HealthBase">
+            <summary>Base class for server-side implementations of Health</summary>
+        </member>
+        <member name="M:Grpc.Health.V1.Health.BindService(Grpc.Health.V1.Health.HealthBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:Grpc.Health.V1.Health.BindService(Grpc.Core.ServiceBinderBase,Grpc.Health.V1.Health.HealthBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+    </members>
+</doc>

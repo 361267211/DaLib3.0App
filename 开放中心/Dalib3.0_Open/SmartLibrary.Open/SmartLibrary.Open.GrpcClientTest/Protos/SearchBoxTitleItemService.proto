@@ -1,0 +1,21 @@
+﻿// 语法结构，使用pb3
+syntax = "proto3";
+// 定义命名空间，一般是项目名或者解决方案名
+//option csharp_namespace = "SmartLibrary.Open.Application";
+// 定义服务的包
+package SmartLibrarySearch;
+message SearchBoxTitleItem {
+	string Id = 1;
+	string Title =2;
+
+	string Symbol =3;
+	int32 Value=4;
+} 
+message SearchBoxTitleItemResponse{
+	repeated SearchBoxTitleItem SearchBoxTitleItems=1;
+}
+message SearchBoxTitleItemRequest{}
+
+service  SearchBoxTitleItemGrpcService{
+	rpc GetAllAvailableTitleItem (SearchBoxTitleItemRequest) returns (SearchBoxTitleItemResponse);
+}

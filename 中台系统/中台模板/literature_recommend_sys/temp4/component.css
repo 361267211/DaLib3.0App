@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearFloat::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+}
+html{
+    background: #F6F8F9;
+}
+/***标题 */
+.top-main-title-temp{
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+  padding-bottom: 7px;
+  border-bottom:1px solid #E6E6E6;
+}
+.top-main-title-temp .e-title{ 
+  color: #999999;
+  font-size: 12px;
+  line-height: 17px;
+  margin-left: 10px;
+}
+.top-main-title-temp .r-btn{
+  cursor: pointer;
+  float: right;
+  color: #8E8E8E;
+  font-size: 12px;
+  font-weight: normal;
+}
+.top-main-title-temp .r-btn:hover{
+  color: #000;
+}
+/**书本列表**/
+.book-list{
+  margin: 10px -40px;
+}
+.book-list .box-25{
+  width: 25%;
+  float: left;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.book-list .box-25 img{
+  cursor: pointer;
+  width: 130px;
+  height: 177px;
+  box-shadow: 1px 1px 3px #D4D8E4;
+}
+.book-list .box-25:hover img{
+  box-shadow: 1px 1px 3px #999999;
+}
+.book-list .box-25 .title{
+  width: 130px;
+  font-size: 14px;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+.book-list .box-25 .s-title{
+  width: 130px;
+  font-size: 14px;
+  color: #999;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+/****新书速递******/
+.news-book-express-pad{
+  padding: 11px;
+  height: 100%;
+}
+.news-book-express{
+  background: #fff;
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 40px 75px rgba(57, 60, 67, 0.08);
+  border-radius: 5px;
+  color: #353535;
+  font-size: 14px;
+  padding: 20px;
+  overflow: hidden;
+  height: 100%;
+}

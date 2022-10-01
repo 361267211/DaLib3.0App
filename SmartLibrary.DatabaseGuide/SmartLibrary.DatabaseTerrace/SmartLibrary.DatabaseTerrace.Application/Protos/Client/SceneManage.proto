@@ -1,0 +1,38 @@
+syntax = "proto3";
+package SmartLibrary.SceneManage;
+import "google/protobuf/empty.proto";
+
+service SceneManageGrpcService {
+	rpc GetDefaultHeaderFooter (google.protobuf.Empty) returns (HeaderFooterReply); // 获取默认头尾
+	rpc GetHeaderFooterList (HeaderFooterListRequest) returns (HeaderFooterListReply); // 获取头尾列表
+	rpc GetHeaderFooterDetail (HeaderFooterRequest) returns (HeaderFooterReply); // 获取头尾详情
+}
+
+
+message HeaderFooterReply {
+	string HeaderTemplateCode = 1; //头部模板标识
+	string HeaderRouter = 2; //头部模板路由	
+	string FooterTemplateCode = 3; //头部模板标识
+	string FooterRouter = 4; //头部模板路由
+	string ApiRouter = 5; //接口路由
+}
+
+message HeaderFooterRequest {
+	string HeaderId = 1; //头部标识
+	string FooterId = 2; //底部标识
+}
+
+message HeaderFooterListRequest {
+	string Type = 1; //模板类型2-头部，3-底部
+}
+
+message HeaderFooterListReply {
+	repeated HeaderFooterListSingle HeaderFooterList = 1; //头部底部模板列表
+}
+
+
+message HeaderFooterListSingle {
+	string Id = 1; //模板标识
+	string Cover = 2; //封面
+	string Name = 3; //模板名称
+}

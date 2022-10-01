@@ -1,0 +1,193 @@
+2021-08-23 16:05:40.326 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Initializing ...
+2021-08-23 16:05:40.352 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2021-08-23 16:05:40.352 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2021-08-23 16:05:40.353 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2021-08-23 16:05:40.353 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2021-08-23 16:05:40.353 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2021-08-23 16:05:40.353 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2021-08-23 16:05:40.386 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [CapDiagnosticListener].
+2021-08-23 16:05:40.388 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-23 16:05:40.388 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-23 16:05:40.389 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2021-08-23 16:05:40.389 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2021-08-23 16:05:40.389 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2021-08-23 16:05:40.458 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[192.168.21.71:11800].
+2021-08-23 16:05:40.932 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.RegisterService : Reported Service Instance Properties[Service=SmartLibrary.DataCenter,InstanceId=192.168.21.75@b8bd8f98acc64f179721d7008b207884].
+2021-08-23 16:06:10.382 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:06:10 +00:00
+2021-08-23 16:06:10.488 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 16M ThreadPool 32764 32767 1000 1000
+2021-08-23 16:06:32.392 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 7 trace segment. cost: 00:00:00.0244615s
+2021-08-23 16:06:40.413 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 21M ThreadPool 32764 32767 1000 1000
+2021-08-23 16:06:40.413 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0529565s
+2021-08-23 16:06:49.642 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.EntityFrameworkCore].
+2021-08-23 16:07:17.567 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Initializing ...
+2021-08-23 16:07:17.590 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2021-08-23 16:07:17.591 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2021-08-23 16:07:17.591 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2021-08-23 16:07:17.591 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2021-08-23 16:07:17.591 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2021-08-23 16:07:17.591 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2021-08-23 16:07:17.621 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [CapDiagnosticListener].
+2021-08-23 16:07:17.622 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-23 16:07:17.623 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-23 16:07:17.623 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2021-08-23 16:07:17.624 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2021-08-23 16:07:17.624 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2021-08-23 16:07:17.670 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[192.168.21.71:11800].
+2021-08-23 16:07:18.146 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.RegisterService : Reported Service Instance Properties[Service=SmartLibrary.DataCenter,InstanceId=192.168.21.75@7f3b20848a5549af9a07874b16027f2e].
+2021-08-23 16:07:47.617 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:07:47 +00:00
+2021-08-23 16:07:47.662 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 16M ThreadPool 32764 32767 1000 1000
+2021-08-23 16:08:17.611 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 17M ThreadPool 32763 32767 1000 1000
+2021-08-23 16:08:17.665 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0604507s
+2021-08-23 16:08:47.611 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 18M ThreadPool 32755 32767 1000 1000
+2021-08-23 16:08:47.611 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:08:47 +00:00
+2021-08-23 16:08:50.800 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.EntityFrameworkCore].
+2021-08-23 16:09:17.613 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 23M ThreadPool 32763 32767 1000 1000
+2021-08-23 16:09:17.615 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-23 16:09:32.809 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 18 trace segment. cost: 00:00:00.0178017s
+2021-08-23 16:09:33.822 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 6 trace segment. cost: 00:00:00.0211089s
+2021-08-23 16:09:47.611 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 29M ThreadPool 32761 32767 1000 1000
+2021-08-23 16:09:47.611 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:09:47 +00:00
+2021-08-23 16:10:17.610 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 30M ThreadPool 32762 32767 1000 1000
+2021-08-23 16:10:17.849 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0476895s
+2021-08-23 16:10:47.612 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 30M ThreadPool 32763 32767 1000 1000
+2021-08-23 16:10:47.612 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:10:47 +00:00
+2021-08-23 16:11:17.607 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 31M ThreadPool 32764 32767 1000 1000
+2021-08-23 16:11:17.857 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0566038s
+2021-08-23 16:11:47.612 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 32M ThreadPool 32762 32767 1000 1000
+2021-08-23 16:11:47.612 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:11:47 +00:00
+2021-08-23 16:12:17.610 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 33M ThreadPool 32764 32767 1000 1000
+2021-08-23 16:12:17.811 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 4 trace segment. cost: 00:00:00.0087491s
+2021-08-23 16:12:47.609 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:12:47 +00:00
+2021-08-23 16:12:47.609 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 34M ThreadPool 32760 32767 1000 1000
+2021-08-23 16:13:19.320 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 1.5625 GenCollectCount 0 0 0 35M ThreadPool 32755 32767 1000 1000
+2021-08-23 16:13:20.187 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.8432057s
+2021-08-23 16:13:48.139 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:13:48 +00:00
+2021-08-23 16:13:48.139 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 6.25 GenCollectCount 0 0 0 37M ThreadPool 32756 32767 1000 1000
+2021-08-23 16:13:54.177 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 14 trace segment. cost: 00:00:06.0458778s
+2021-08-23 16:13:54.177 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:06.0328503s
+2021-08-23 16:13:54.188 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 6 trace segment. cost: 00:00:00.0106491s
+2021-08-23 16:13:54.225 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 6 trace segment. cost: 00:00:00.0325823s
+2021-08-23 16:13:55.227 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 6 trace segment. cost: 00:00:00.0490563s
+2021-08-23 16:14:17.600 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 39M ThreadPool 32765 32767 1000 1000
+2021-08-23 16:14:20.233 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0540974s
+2021-08-23 16:14:47.607 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 40M ThreadPool 32763 32767 1000 1000
+2021-08-23 16:14:47.607 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:14:47 +00:00
+2021-08-23 16:15:17.607 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 41M ThreadPool 32763 32767 1000 1000
+2021-08-23 16:15:20.246 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0534948s
+2021-08-23 16:15:47.610 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:15:47 +00:00
+2021-08-23 16:15:47.610 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 41M ThreadPool 32762 32767 1000 1000
+2021-08-23 16:16:17.606 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 42M ThreadPool 32761 32767 1000 1000
+2021-08-23 16:16:20.249 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0542155s
+2021-08-23 16:16:47.607 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:16:47 +00:00
+2021-08-23 16:16:47.607 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 43M ThreadPool 32760 32767 1000 1000
+2021-08-23 16:17:17.612 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 44M ThreadPool 32764 32767 1000 1000
+2021-08-23 16:17:18.245 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0515742s
+2021-08-23 16:17:20.203 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0077692s
+2021-08-23 16:17:22.207 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0127469s
+2021-08-23 16:17:29.198 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0077849s
+2021-08-23 16:17:34.200 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0077847s
+2021-08-23 16:17:47.606 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 45M ThreadPool 32760 32767 1000 1000
+2021-08-23 16:17:47.606 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:17:47 +00:00
+2021-08-23 16:18:17.625 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 45M ThreadPool 32764 32767 1000 1000
+2021-08-23 16:18:20.230 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0508497s
+2021-08-23 16:18:47.598 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 46M ThreadPool 32762 32767 1000 1000
+2021-08-23 16:18:47.598 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:18:47 +00:00
+2021-08-23 16:19:17.708 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 47M ThreadPool 32762 32767 1000 1000
+2021-08-23 16:19:20.255 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0606666s
+2021-08-23 16:19:47.606 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:19:47 +00:00
+2021-08-23 16:19:47.607 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 48M ThreadPool 32761 32767 1000 1000
+2021-08-23 16:20:17.605 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 48M ThreadPool 32764 32767 1000 1000
+2021-08-23 16:20:20.245 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0510005s
+2021-08-23 16:20:47.609 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 49M ThreadPool 32760 32767 1000 1000
+2021-08-23 16:20:47.609 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:20:47 +00:00
+2021-08-23 16:21:17.607 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 50M ThreadPool 32764 32767 1000 1000
+2021-08-23 16:21:20.245 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0509985s
+2021-08-23 16:21:47.610 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 51M ThreadPool 32759 32767 1000 1000
+2021-08-23 16:21:47.610 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:21:47 +00:00
+2021-08-23 16:22:17.608 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 51M ThreadPool 32764 32767 1000 1000
+2021-08-23 16:22:18.243 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0492248s
+2021-08-23 16:22:20.202 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0078885s
+2021-08-23 16:22:24.196 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0075713s
+2021-08-23 16:22:36.201 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0084650s
+2021-08-23 16:22:38.203 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0096685s
+2021-08-23 16:22:47.607 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:22:47 +00:00
+2021-08-23 16:22:47.607 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 52M ThreadPool 32760 32767 1000 1000
+2021-08-23 16:23:17.633 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 53M ThreadPool 32762 32767 1000 1000
+2021-08-23 16:23:20.246 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0515835s
+2021-08-23 16:23:47.688 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:23:47 +00:00
+2021-08-23 16:23:47.688 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 54M ThreadPool 32761 32767 1000 1000
+2021-08-23 16:24:17.611 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 55M ThreadPool 32763 32767 1000 1000
+2021-08-23 16:24:20.240 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0478199s
+2021-08-23 16:24:47.606 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 55M ThreadPool 32760 32767 1000 1000
+2021-08-23 16:24:47.606 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:24:47 +00:00
+2021-08-23 16:25:17.600 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 56M ThreadPool 32764 32767 1000 1000
+2021-08-23 16:25:20.245 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0500856s
+2021-08-23 16:25:47.605 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:25:47 +00:00
+2021-08-23 16:25:47.605 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 57M ThreadPool 32760 32767 1000 1000
+2021-08-23 16:26:17.607 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 58M ThreadPool 32761 32767 1000 1000
+2021-08-23 16:26:20.236 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0510588s
+2021-08-23 16:26:47.616 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:26:47 +00:00
+2021-08-23 16:26:47.616 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 58M ThreadPool 32760 32767 1000 1000
+2021-08-23 16:27:17.605 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 59M ThreadPool 32763 32767 1000 1000
+2021-08-23 16:27:18.242 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0482108s
+2021-08-23 16:27:20.227 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0472101s
+2021-08-23 16:27:31.188 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0078863s
+2021-08-23 16:27:43.200 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0085602s
+2021-08-23 16:27:44.201 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0082930s
+2021-08-23 16:27:47.606 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 60M ThreadPool 32759 32767 1000 1000
+2021-08-23 16:27:47.606 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:27:47 +00:00
+2021-08-23 16:28:17.604 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 61M ThreadPool 32764 32767 1000 1000
+2021-08-23 16:28:20.241 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0496831s
+2021-08-23 16:28:47.624 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 62M ThreadPool 32760 32767 1000 1000
+2021-08-23 16:28:47.624 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:28:47 +00:00
+2021-08-23 16:29:17.610 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 62M ThreadPool 32763 32767 1000 1000
+2021-08-23 16:29:20.241 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0499527s
+2021-08-23 16:29:47.615 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:29:47 +00:00
+2021-08-23 16:29:47.615 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 63M ThreadPool 32762 32767 1000 1000
+2021-08-23 16:30:17.624 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 64M ThreadPool 32764 32767 1000 1000
+2021-08-23 16:30:20.251 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0560350s
+2021-08-23 16:30:47.609 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:30:47 +00:00
+2021-08-23 16:30:47.610 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 65M ThreadPool 32762 32767 1000 1000
+2021-08-23 16:31:17.597 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 65M ThreadPool 32761 32767 1000 1000
+2021-08-23 16:31:20.239 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0505325s
+2021-08-23 16:31:47.610 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:31:47 +00:00
+2021-08-23 16:31:47.610 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 66M ThreadPool 32759 32767 1000 1000
+2021-08-23 16:32:17.611 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 1 0 0 9M ThreadPool 32764 32767 1000 1000
+2021-08-23 16:32:18.243 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0493291s
+2021-08-23 16:32:20.203 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0110525s
+2021-08-23 16:32:45.205 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0107555s
+2021-08-23 16:32:47.199 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0079377s
+2021-08-23 16:32:47.607 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:32:47 +00:00
+2021-08-23 16:32:47.607 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 1.5625 GenCollectCount 0 0 0 10M ThreadPool 32759 32767 1000 1000
+2021-08-23 16:33:17.612 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 11M ThreadPool 32762 32767 1000 1000
+2021-08-23 16:33:20.242 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0500170s
+2021-08-23 16:33:47.607 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 12M ThreadPool 32760 32767 1000 1000
+2021-08-23 16:33:47.607 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:33:47 +00:00
+2021-08-23 16:34:17.650 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 13M ThreadPool 32764 32767 1000 1000
+2021-08-23 16:34:20.246 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0513100s
+2021-08-23 16:34:47.611 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:34:47 +00:00
+2021-08-23 16:34:47.612 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 13M ThreadPool 32760 32767 1000 1000
+2021-08-23 16:35:17.611 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 14M ThreadPool 32763 32767 1000 1000
+2021-08-23 16:35:20.231 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0502651s
+2021-08-23 16:35:47.611 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 15M ThreadPool 32762 32767 1000 1000
+2021-08-23 16:35:47.611 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:35:47 +00:00
+2021-08-23 16:36:17.665 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 16M ThreadPool 32765 32767 1000 1000
+2021-08-23 16:36:20.227 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0484513s
+2021-08-23 16:36:47.609 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 16M ThreadPool 32759 32767 1000 1000
+2021-08-23 16:36:47.610 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:36:47 +00:00
+2021-08-23 16:37:17.608 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 17M ThreadPool 32763 32767 1000 1000
+2021-08-23 16:37:18.235 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0504047s
+2021-08-23 16:37:20.200 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0066540s
+2021-08-23 16:37:47.629 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:37:47 +00:00
+2021-08-23 16:37:47.629 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 18M ThreadPool 32760 32767 1000 1000
+2021-08-23 16:37:49.201 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0100173s
+2021-08-23 16:37:52.199 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0081726s
+2021-08-23 16:37:54.201 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0073292s
+2021-08-23 16:38:17.608 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 19M ThreadPool 32764 32767 1000 1000
+2021-08-23 16:38:20.398 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.2041481s
+2021-08-23 16:38:47.609 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:38:47 +00:00
+2021-08-23 16:38:47.609 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 20M ThreadPool 32761 32767 1000 1000
+2021-08-23 16:39:17.602 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 20M ThreadPool 32763 32767 1000 1000
+2021-08-23 16:39:20.244 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0495208s
+2021-08-23 16:39:47.606 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 21M ThreadPool 32759 32767 1000 1000
+2021-08-23 16:39:47.606 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/23 8:39:47 +00:00

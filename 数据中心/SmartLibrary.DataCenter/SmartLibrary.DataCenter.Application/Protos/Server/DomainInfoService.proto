@@ -1,0 +1,31 @@
+// 语法结构，使用pb3
+syntax = "proto3";
+// 定义命名空间，一般是项目名或者解决方案名
+//option csharp_namespace = "SmartLibrary.Open.Application";
+// 定义服务的包
+package SmartLibraryDomain;
+message DomainTreeItem {
+        int32 DomainID = 1;//学科编号
+        int32 ParentID =2;//父级编号
+        string DomainIDCode =3;//学科标识
+        string DomainName =4;//学科名称
+        string Contrast =5;//中图对照
+        int32 Level =6;//学科等级
+        string Mark =7;//说明
+        int32 Type =8;//类型 1-学科   2-中图
+        string CreateType =9;//创建类型 0 系统 1-自建
+        string UserKey =10;//创建者标识
+        repeated DomainTreeItem NextNodes =11; //下一级的所有学科
+} 
+message AllDomainInfoTreeReply{
+        repeated DomainTreeItem DomainTrees=1;
+}
+message AllDomainInfoTreeRequest{
+int32 type=1;
+int32 level=2;
+}
+
+service DomainInfoService{
+//获取当前owner所有可用的数据库，包含已购买的，纸本的，和公共的
+        rpc GetAllDomainInfoTrees (AllDomainInfoTreeRequest) returns (AllDomainInfoTreeReply);
+}

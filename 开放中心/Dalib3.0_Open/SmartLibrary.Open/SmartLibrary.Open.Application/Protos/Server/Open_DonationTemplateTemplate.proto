@@ -1,0 +1,25 @@
+// 语法结构，使用pb3
+syntax = "proto3";
+// 定义命名空间，一般是项目名或者解决方案名
+//option csharp_namespace = "SmartLibrary.Open.Application";
+// 定义服务的包
+package SmartLibrary.Open;
+message DonationTemplateGrpcResponse {
+	 string DllLink =1;
+	 string Symbol =2;
+	 string Name =3;
+ 
+} 
+message DonationTemplateListGrpcResponse{
+	  DonationTemplateGrpcResponse result= 1;
+}
+message DonationTemplateGrpcRequest{
+string symbol=1;
+}
+ 
+
+service  DonationTemplateGrpcService{
+	rpc FetchDonationTemplateBySymbol (DonationTemplateGrpcRequest) returns (DonationTemplateListGrpcResponse);
+ 
+	
+}

@@ -1,0 +1,32 @@
+// 语法结构，使用pb3
+syntax = "proto3";
+// 定义命名空间，一般是项目名或者解决方案名
+//option csharp_namespace = "SmartLibrary.Open.Application";
+// 定义服务的包
+package SmartLibrarySearch;
+message ProviderResourceItem {
+        string Id = 1;
+        string Provider =2;
+        string LinkTitle =3;
+        string LinkUrl=5;
+        string TerraceFullName=6;
+        string TerraceShortName=7;
+        int32 ServiceType=8;
+        int32 Type=9;
+        
+        int32 Medium=10;//载体 1=电子 2=纸本
+        int32 LanguageKind=11;// 语言 :0=中文;外文 
+        int32 FrequentUsedFlag=12;//是否常用数据库
+        int32 ProviderType=13;//类型 1 公共 2 已购买的数据库或学校的纸本
+} 
+message AvailableProviderResourceResponse{
+        repeated ProviderResourceItem ProviderResourceItems=1;
+}
+message AvailableProviderResourceRequest{
+string owner=1;
+}
+
+service ProviderResourceGrpcService{
+//获取当前owner所有可用的数据库，包含已购买的，纸本的，和公共的
+        rpc GetAllAvailableProviderResource (AvailableProviderResourceRequest) returns (AvailableProviderResourceResponse);
+}

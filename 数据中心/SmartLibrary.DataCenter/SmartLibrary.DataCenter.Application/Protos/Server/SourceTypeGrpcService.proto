@@ -1,0 +1,24 @@
+// 语法结构，使用pb3
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+// 定义命名空间，一般是项目名或者解决方案名
+//option csharp_namespace = "SmartLibrary.Open.Application";
+// 定义服务的包
+package SmartLibrarySourceType;
+message SourceTypeItem {
+        string Id = 1;//Id
+        int32 Code =2;//编号
+        int32 Name =3;//名称
+        string UserKey =4;//操作者/创建者
+} 
+message AllSourceReply{
+        repeated SourceTypeItem SourceTypes=1;
+}
+message AllSourceRequest{
+        string typs=1;//传空
+}
+service SourceTypeGrpcService{
+//获取当前owner所有可用的数据库，包含已购买的，纸本的，和公共的
+        rpc GetAllSourceType (AllSourceRequest) returns (AllSourceReply);
+}

@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartLibrary.SceneManage.Application", "SmartLibrary.SceneManage.Application\SmartLibrary.SceneManage.Application.csproj", "{60B2BFEB-3DF2-41BE-AA36-14567373E728}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartLibrary.SceneManage.Common", "SmartLibrary.SceneManage.Common\SmartLibrary.SceneManage.Common.csproj", "{A088BB12-F300-46DB-AD6A-41BD3294C755}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartLibrary.SceneManage.Database.Migrations", "SmartLibrary.SceneManage.Database.Migrations\SmartLibrary.SceneManage.Database.Migrations.csproj", "{0689E3C2-05C5-4A17-B49C-8FD0F23450D8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartLibrary.SceneManage.EntityFramework.Core", "SmartLibrary.SceneManage.EntityFramework.Core\SmartLibrary.SceneManage.EntityFramework.Core.csproj", "{B8CCFC9E-3828-4A0D-8684-10BA90CDE3A3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartLibrary.SceneManage.Web", "SmartLibrary.SceneManage.Web.Entry\SmartLibrary.SceneManage.Web.csproj", "{13C793C8-D4C2-4B3B-BECB-E5C7C644693B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartLibrary.SceneManage.Service", "SmartLibrary.SceneManage.Service\SmartLibrary.SceneManage.Service.csproj", "{04CAB868-FD91-4124-A8E0-B09F5991D15E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60B2BFEB-3DF2-41BE-AA36-14567373E728}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60B2BFEB-3DF2-41BE-AA36-14567373E728}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60B2BFEB-3DF2-41BE-AA36-14567373E728}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60B2BFEB-3DF2-41BE-AA36-14567373E728}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A088BB12-F300-46DB-AD6A-41BD3294C755}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A088BB12-F300-46DB-AD6A-41BD3294C755}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A088BB12-F300-46DB-AD6A-41BD3294C755}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A088BB12-F300-46DB-AD6A-41BD3294C755}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0689E3C2-05C5-4A17-B49C-8FD0F23450D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0689E3C2-05C5-4A17-B49C-8FD0F23450D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0689E3C2-05C5-4A17-B49C-8FD0F23450D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0689E3C2-05C5-4A17-B49C-8FD0F23450D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8CCFC9E-3828-4A0D-8684-10BA90CDE3A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8CCFC9E-3828-4A0D-8684-10BA90CDE3A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8CCFC9E-3828-4A0D-8684-10BA90CDE3A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8CCFC9E-3828-4A0D-8684-10BA90CDE3A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13C793C8-D4C2-4B3B-BECB-E5C7C644693B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13C793C8-D4C2-4B3B-BECB-E5C7C644693B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13C793C8-D4C2-4B3B-BECB-E5C7C644693B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13C793C8-D4C2-4B3B-BECB-E5C7C644693B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04CAB868-FD91-4124-A8E0-B09F5991D15E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04CAB868-FD91-4124-A8E0-B09F5991D15E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04CAB868-FD91-4124-A8E0-B09F5991D15E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04CAB868-FD91-4124-A8E0-B09F5991D15E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3FDC1C50-20FC-44AF-82D9-0630CA7F4D4E}
+	EndGlobalSection
+EndGlobal

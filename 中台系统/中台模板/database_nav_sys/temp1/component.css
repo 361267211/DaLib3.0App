@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.c-l::after{
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+    display: block;
+}
+/***公用 ************/
+/***标题 */
+.temp-database-warp{
+    color: #353535;
+    font-size: 14px;
+    padding: 11px;
+    height: 100%;
+}
+.temp-database-warp .main-title-temp{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+.temp-database-warp .e-title{ 
+    color: #999999;
+    font-size: 12px;
+    line-height: 17px;
+    margin-left: 10px;
+}
+/***公用 end ************/
+.temp-database-warp .database-content{ 
+    min-height: calc(100% - 38px);
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 40px 75px rgba(57, 60, 67, 0.08);
+    border-radius: 16px;
+    padding: 7px;
+}
+.temp-database-warp .database_nav_sys_temp1_data-list,
+.temp-database-warp .hot-list{
+    float: left;
+}
+.temp-database-warp .database_nav_sys_temp1_data-list{
+    padding: 10px;
+    width: calc(100% - 275px);
+}
+.temp-database-warp .database_nav_sys_temp1_data-list .data-box{
+    width: 25%;
+    float: left;
+    padding: 10px;
+}
+.temp-database-warp .database_nav_sys_temp1_data-list .d-box{
+    cursor: pointer;
+    background: #F8F9FB;
+    border: 1px solid #FFFFFF;
+    box-shadow: 1px 1px 3px #D4D8E4;
+    border-radius: 8px;
+    height: 80px;
+    padding: 20px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.temp-database-warp .database_nav_sys_temp1_data-list .d-box:hover{
+    border: 1px solid #D4D8E4;
+}
+.temp-database-warp .database_nav_sys_temp1_data-list img.d-logo{
+    float: left;
+    width: 60px;
+    height: 34px;
+    vertical-align: middle;
+}
+.temp-database-warp .database_nav_sys_temp1_data-list .data-txt{
+    width: 100px;
+    float: left;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.temp-database-warp .database_nav_sys_temp1_data-list .data-txt span{
+    display: block;
+    color: #999;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.temp-database-warp .database_nav_sys_temp1_data-list .data-txt span:first-child{
+    color: #333;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    margin-bottom:3px;
+}
+/*推荐数据库**/
+.temp-database-warp .hot-list{
+    border-left: 1px solid #E6E6E6;
+    width: 275px;
+    padding: 20px;
+}
+.temp-database-warp .hot-list .hot-title{
+    font-size: 16px;
+    color: #353535;
+    font-weight: bold;
+    padding-bottom: 13px;
+    border-bottom: 1px solid #E6E6E6;
+}
+.temp-database-warp .hot-list .hot-title i{
+    margin-right: 9px;
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    line-height: 23px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    background-color: #B74242;
+    vertical-align: middle;
+    font-style: inherit;
+}
+.temp-database-warp .hot-list ul{
+    margin-top: 16px;
+}
+.temp-database-warp .hot-list li{
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 8px;
+    color: #333333;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    border-bottom: 1px solid #fff;
+}
+.temp-database-warp .hot-list li:hover{
+    color: #000;
+    border-bottom: 1px solid #E6E6E6;
+}

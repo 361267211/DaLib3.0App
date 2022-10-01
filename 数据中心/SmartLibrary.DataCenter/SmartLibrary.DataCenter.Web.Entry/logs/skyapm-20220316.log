@@ -1,0 +1,152 @@
+2022-03-16 10:40:38.886 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Initializing ...
+2022-03-16 10:40:38.921 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2022-03-16 10:40:38.922 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2022-03-16 10:40:38.922 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2022-03-16 10:40:38.951 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2022-03-16 10:40:38.951 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2022-03-16 10:40:38.951 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2022-03-16 10:40:38.982 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [CapDiagnosticListener].
+2022-03-16 10:40:38.983 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2022-03-16 10:40:38.984 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2022-03-16 10:40:38.984 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2022-03-16 10:40:38.984 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2022-03-16 10:41:02.850 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.EntityFrameworkCore].
+2022-03-16 10:41:02.873 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.EntityFrameworkCore].
+2022-03-16 10:44:14.493 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Initializing ...
+2022-03-16 10:44:14.521 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2022-03-16 10:44:14.524 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2022-03-16 10:44:14.524 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2022-03-16 10:44:14.524 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2022-03-16 10:44:14.524 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2022-03-16 10:44:14.524 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2022-03-16 10:44:14.561 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [CapDiagnosticListener].
+2022-03-16 10:44:14.562 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2022-03-16 10:44:14.563 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2022-03-16 10:44:14.563 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2022-03-16 10:44:14.563 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2022-03-16 10:44:25.777 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.EntityFrameworkCore].
+2022-03-16 10:44:25.796 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.EntityFrameworkCore].
+2022-03-16 10:46:42.392 +08:00 [SmartLibrary.DataCenter] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2022-03-16 10:46:42.696 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2022-03-16 10:51:56.379 +08:00 [SmartLibrary.DataCenter] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2022-03-16 10:52:02.386 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2022-03-16 10:53:01.572 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Initializing ...
+2022-03-16 10:53:01.602 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2022-03-16 10:53:01.603 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2022-03-16 10:53:01.603 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2022-03-16 10:53:01.603 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2022-03-16 10:53:01.603 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2022-03-16 10:53:01.603 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2022-03-16 10:53:01.642 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [CapDiagnosticListener].
+2022-03-16 10:53:01.643 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2022-03-16 10:53:01.644 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2022-03-16 10:53:01.644 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2022-03-16 10:53:01.644 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2022-03-16 10:53:47.448 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.EntityFrameworkCore].
+2022-03-16 10:53:47.469 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.EntityFrameworkCore].
+2022-03-16 10:54:41.712 +08:00 [SmartLibrary.DataCenter] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2022-03-16 10:54:41.729 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2022-03-16 10:56:21.742 +08:00 [SmartLibrary.DataCenter] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2022-03-16 10:56:21.753 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2022-03-16 10:57:27.289 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Initializing ...
+2022-03-16 10:57:27.314 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2022-03-16 10:57:27.315 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2022-03-16 10:57:27.315 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2022-03-16 10:57:27.315 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2022-03-16 10:57:27.315 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2022-03-16 10:57:27.315 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2022-03-16 10:57:27.349 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [CapDiagnosticListener].
+2022-03-16 10:57:27.350 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2022-03-16 10:57:27.351 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2022-03-16 10:57:27.351 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2022-03-16 10:57:27.351 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2022-03-16 10:57:36.397 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.EntityFrameworkCore].
+2022-03-16 10:57:36.416 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.EntityFrameworkCore].
+2022-03-16 10:59:07.403 +08:00 [SmartLibrary.DataCenter] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2022-03-16 10:59:07.420 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2022-03-16 10:59:26.690 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Initializing ...
+2022-03-16 10:59:26.719 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2022-03-16 10:59:26.719 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2022-03-16 10:59:26.719 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2022-03-16 10:59:26.719 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2022-03-16 10:59:26.719 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2022-03-16 10:59:26.719 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2022-03-16 10:59:26.761 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [CapDiagnosticListener].
+2022-03-16 10:59:26.763 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2022-03-16 10:59:26.763 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2022-03-16 10:59:26.764 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2022-03-16 10:59:26.764 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2022-03-16 10:59:33.716 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.EntityFrameworkCore].
+2022-03-16 10:59:33.735 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.EntityFrameworkCore].
+2022-03-16 11:01:06.811 +08:00 [SmartLibrary.DataCenter] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2022-03-16 11:01:06.830 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2022-03-16 12:47:57.704 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Initializing ...
+2022-03-16 12:47:57.730 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2022-03-16 12:47:57.731 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2022-03-16 12:47:57.731 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2022-03-16 12:47:58.151 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2022-03-16 12:47:58.151 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2022-03-16 12:47:58.151 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2022-03-16 12:47:58.180 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [CapDiagnosticListener].
+2022-03-16 12:47:58.182 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2022-03-16 12:47:58.182 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2022-03-16 12:47:58.183 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2022-03-16 12:47:58.183 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2022-03-16 12:49:38.230 +08:00 [SmartLibrary.DataCenter] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2022-03-16 12:49:38.246 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[192.168.21.71:11800].
+2022-03-16 12:49:47.759 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.EntityFrameworkCore].
+2022-03-16 12:49:47.778 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.EntityFrameworkCore].
+2022-03-16 14:35:35.011 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Initializing ...
+2022-03-16 14:35:35.038 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2022-03-16 14:35:35.038 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2022-03-16 14:35:35.039 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2022-03-16 14:35:35.039 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2022-03-16 14:35:35.039 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2022-03-16 14:35:35.039 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2022-03-16 14:35:35.071 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [CapDiagnosticListener].
+2022-03-16 14:35:35.072 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2022-03-16 14:35:35.072 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2022-03-16 14:35:35.073 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2022-03-16 14:35:35.073 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2022-03-16 14:35:35.832 +08:00 [SmartLibrary.DataCenter] [Error] SkyApm.Service.RegisterService : SkyApm.Service.RegisterService.ExecuteAsync(token.Token) fail
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at SkyApm.Service.RegisterService.Polling[T](Int32 retry, Func`1 execute, Func`2 successPredicate, T failureResult, CancellationToken cancellationToken)
+   at SkyApm.Service.RegisterService.Polling(Int32 retry, Func`1 execute, CancellationToken cancellationToken)
+   at SkyApm.Service.RegisterService.ReportServiceInstancePropertiesAsync(CancellationToken cancellationToken)
+   at SkyApm.Service.RegisterService.ExecuteAsync(CancellationToken cancellationToken)
+   at SkyApm.ExecutionService.Callback(Object state)
+2022-03-16 14:35:35.832 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.RegisterService : Stopped instrument service RegisterService.
+2022-03-16 14:35:35.832 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Stopped instrument service PingService.
+2022-03-16 14:35:35.832 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.SegmentReportService : Stopped instrument service SegmentReportService.
+2022-03-16 14:35:35.832 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Stopped instrument service CLRStatsService.
+2022-03-16 14:35:35.832 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Stopped instrument service SimpleCountSamplingInterceptor.
+2022-03-16 14:35:35.832 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectService : Stopped instrument service ConnectService.
+2022-03-16 14:35:35.832 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Stopped SkyAPM .NET Core Agent.

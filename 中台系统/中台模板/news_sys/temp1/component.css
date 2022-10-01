@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.c-l::after{
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+    display: block;
+}
+/***公用 ************/
+/***标题 */
+.news-temp-warp{
+    color: #353535;
+    font-size: 14px;
+    padding: 11px;
+    height: 100%;
+}
+.news-temp-warp .main-title-temp{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+    margin-bottom: 10px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid #E6E6E6;
+}
+.news-temp-warp .e-title{ 
+    color: #999999;
+    font-size: 12px;
+    line-height: 17px;
+    margin-left: 10px;
+}
+.news-temp-warp .main-title-temp .r-btn{
+    cursor: pointer;
+    float: right;
+    color: #8E8E8E;
+    font-size: 12px;
+    font-weight: normal;
+}
+.news-temp-warp .main-title-temp .r-btn:hover{
+    color: #000;
+}
+/***公用 end ************/
+.news-temp-content{
+    width: 100%;
+    min-height: 100%;
+    padding: 10px;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 40px 75px rgba(57, 60, 67, 0.08);
+    border-radius: 16px;
+}
+.news-temp-warp .news-temp-left,
+.news-temp-warp .news-temp-right{
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+.news-temp-warp .news-content .news-row{
+    cursor: pointer;
+    padding: 7px 0;
+}
+.news-temp-warp .news-content .news-row .title{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    width: 70%;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+}
+.news-temp-warp .news-content .news-row:hover .title{
+    border-bottom: 1px solid #E6E6E6;
+}
+.news-temp-warp .news-content .news-row .date-time{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    width: 30%;
+    display: inline-block;
+    text-align: right;
+    font-size: 12px;
+    color: #999999;
+}
+
+
+
+
+
+
+
+

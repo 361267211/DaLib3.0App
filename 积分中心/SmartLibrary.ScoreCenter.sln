@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.218
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartLibrary.ScoreCenter.Application", "SmartLibrary.ScoreCenter.Application\SmartLibrary.ScoreCenter.Application.csproj", "{E3F6D698-C937-45DD-8E55-FF94EC1A204F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartLibrary.ScoreCenter.Common", "SmartLibrary.ScoreCenter.Common\SmartLibrary.ScoreCenter.Common.csproj", "{C2D00CA3-2BED-46F0-B603-60109D1E1B70}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartLibrary.ScoreCenter.Database.Migrations", "SmartLibrary.ScoreCenter.Database.Migrations\SmartLibrary.ScoreCenter.Database.Migrations.csproj", "{BADDC497-38E0-4CDC-B8FE-198B3F4ADA5A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartLibrary.ScoreCenter.EntityFramework.Core", "SmartLibrary.ScoreCenter.EntityFramework.Core\SmartLibrary.ScoreCenter.EntityFramework.Core.csproj", "{2777C1AF-C41E-4BD8-A8E6-A23510F0E7C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartLibrary.ScoreCenter.Web", "SmartLibrary.ScoreCenter.Web.Entry\SmartLibrary.ScoreCenter.Web.csproj", "{721228C2-2DC2-454C-92A7-2AD7790BC5C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartLibrary.DtmClient", "SmartLibrary.DtmClient\SmartLibrary.DtmClient.csproj", "{DD5BA3DA-A76A-452C-B988-B8A6B792FBE7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3F6D698-C937-45DD-8E55-FF94EC1A204F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3F6D698-C937-45DD-8E55-FF94EC1A204F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3F6D698-C937-45DD-8E55-FF94EC1A204F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3F6D698-C937-45DD-8E55-FF94EC1A204F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2D00CA3-2BED-46F0-B603-60109D1E1B70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2D00CA3-2BED-46F0-B603-60109D1E1B70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2D00CA3-2BED-46F0-B603-60109D1E1B70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2D00CA3-2BED-46F0-B603-60109D1E1B70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BADDC497-38E0-4CDC-B8FE-198B3F4ADA5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BADDC497-38E0-4CDC-B8FE-198B3F4ADA5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BADDC497-38E0-4CDC-B8FE-198B3F4ADA5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BADDC497-38E0-4CDC-B8FE-198B3F4ADA5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2777C1AF-C41E-4BD8-A8E6-A23510F0E7C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2777C1AF-C41E-4BD8-A8E6-A23510F0E7C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2777C1AF-C41E-4BD8-A8E6-A23510F0E7C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2777C1AF-C41E-4BD8-A8E6-A23510F0E7C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{721228C2-2DC2-454C-92A7-2AD7790BC5C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{721228C2-2DC2-454C-92A7-2AD7790BC5C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{721228C2-2DC2-454C-92A7-2AD7790BC5C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{721228C2-2DC2-454C-92A7-2AD7790BC5C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD5BA3DA-A76A-452C-B988-B8A6B792FBE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD5BA3DA-A76A-452C-B988-B8A6B792FBE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD5BA3DA-A76A-452C-B988-B8A6B792FBE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD5BA3DA-A76A-452C-B988-B8A6B792FBE7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {672AE168-906C-4C55-84FF-075585590C31}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,603 @@
+2021-08-19 11:09:42.605 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Initializing ...
+2021-08-19 11:09:42.628 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2021-08-19 11:09:42.628 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2021-08-19 11:09:42.628 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2021-08-19 11:09:42.628 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2021-08-19 11:09:42.629 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2021-08-19 11:09:42.629 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2021-08-19 11:09:42.658 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 11:09:42.658 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 11:09:42.658 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2021-08-19 11:09:42.659 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2021-08-19 11:09:42.659 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2021-08-19 11:09:42.726 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[192.168.21.71:11800].
+2021-08-19 11:09:43.192 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Reported Service Instance Properties[Service=SmartLibrary.FileServer,InstanceId=192.168.21.75@f3c372be86c4480ba2257fe5b02450be].
+2021-08-19 11:26:09.351 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Initializing ...
+2021-08-19 11:26:09.374 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2021-08-19 11:26:09.374 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2021-08-19 11:26:09.374 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2021-08-19 11:26:09.374 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2021-08-19 11:26:09.374 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2021-08-19 11:26:09.375 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2021-08-19 11:26:09.403 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 11:26:09.404 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 11:26:09.404 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2021-08-19 11:26:09.405 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2021-08-19 11:26:09.405 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2021-08-19 11:26:09.454 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[192.168.21.71:11800].
+2021-08-19 11:26:09.941 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Reported Service Instance Properties[Service=SmartLibrary.FileServer,InstanceId=192.168.21.75@5d681ccaf28842988af9d64bb1d0d00e].
+2021-08-19 11:26:12.440 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0539679s
+2021-08-19 11:26:13.429 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0492315s
+2021-08-19 11:26:25.136 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:01.6142043s
+2021-08-19 11:26:50.676 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Ping server @2021/8/19 3:26:50 +00:00
+2021-08-19 11:26:50.716 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0868142s
+2021-08-19 11:26:50.766 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 18M ThreadPool 32764 32767 999 1000
+2021-08-19 11:26:52.681 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0512825s
+2021-08-19 11:26:58.680 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0490602s
+2021-08-19 11:27:15.744 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 19M ThreadPool 32755 32767 995 1000
+2021-08-19 11:27:15.773 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:03.6213853s
+2021-08-19 11:27:16.755 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 3 trace segment. cost: 00:00:00.0120903s
+2021-08-19 11:27:22.791 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0481967s
+2021-08-19 11:27:27.794 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0523040s
+2021-08-19 11:27:32.788 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0492557s
+2021-08-19 11:27:39.392 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 21M ThreadPool 32759 32767 1000 1000
+2021-08-19 11:27:39.392 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Ping server @2021/8/19 3:27:39 +00:00
+2021-08-19 11:27:39.792 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0493170s
+2021-08-19 11:27:42.788 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0488819s
+2021-08-19 11:27:51.790 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0512290s
+2021-08-19 11:27:52.805 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0567065s
+2021-08-19 11:28:02.791 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0487969s
+2021-08-19 11:28:03.789 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0501775s
+2021-08-19 11:28:09.391 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 22M ThreadPool 32764 32767 1000 1000
+2021-08-19 11:28:12.797 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0558244s
+2021-08-19 11:28:15.797 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0512864s
+2021-08-19 11:28:16.790 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0486386s
+2021-08-19 11:28:22.792 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0524163s
+2021-08-19 11:28:27.799 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0489539s
+2021-08-19 11:28:32.794 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0545014s
+2021-08-19 11:28:39.397 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Ping server @2021/8/19 3:28:39 +00:00
+2021-08-19 11:28:39.397 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 23M ThreadPool 32760 32767 1000 1000
+2021-08-19 11:28:39.788 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0487853s
+2021-08-19 11:28:42.791 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0492232s
+2021-08-19 11:28:51.992 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.2442118s
+2021-08-19 11:28:52.790 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0484468s
+2021-08-19 11:29:02.790 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0496639s
+2021-08-19 11:29:03.793 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0518401s
+2021-08-19 11:29:09.388 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 24M ThreadPool 32761 32767 1000 1000
+2021-08-19 11:29:12.791 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0481440s
+2021-08-19 11:29:15.793 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0507650s
+2021-08-19 11:29:16.794 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0500356s
+2021-08-19 11:29:22.861 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.1206447s
+2021-08-19 11:29:27.795 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0503366s
+2021-08-19 11:29:32.787 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0512902s
+2021-08-19 11:29:39.395 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 26M ThreadPool 32764 32767 1000 1000
+2021-08-19 11:29:39.395 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Ping server @2021/8/19 3:29:39 +00:00
+2021-08-19 11:29:40.796 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0505515s
+2021-08-19 11:29:42.795 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0493261s
+2021-08-19 11:29:52.788 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0490496s
+2021-08-19 11:30:02.796 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0534262s
+2021-08-19 11:30:04.791 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0493156s
+2021-08-19 11:30:09.393 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 27M ThreadPool 32761 32767 1000 1000
+2021-08-19 11:30:12.789 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0502516s
+2021-08-19 11:30:16.754 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 3 trace segment. cost: 00:00:00.0111116s
+2021-08-19 11:30:22.793 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0500328s
+2021-08-19 11:30:28.797 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0508333s
+2021-08-19 11:30:32.790 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0488856s
+2021-08-19 11:30:39.419 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 28M ThreadPool 32759 32767 1000 1000
+2021-08-19 11:30:39.419 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Ping server @2021/8/19 3:30:39 +00:00
+2021-08-19 11:30:40.791 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0490503s
+2021-08-19 11:30:42.756 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0120830s
+2021-08-19 13:26:06.539 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Initializing ...
+2021-08-19 13:26:06.562 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2021-08-19 13:26:06.563 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2021-08-19 13:26:06.563 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2021-08-19 13:26:06.563 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2021-08-19 13:26:06.563 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2021-08-19 13:26:06.563 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2021-08-19 13:26:06.591 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 13:26:06.591 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 13:26:06.593 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2021-08-19 13:26:06.594 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2021-08-19 13:26:06.594 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2021-08-19 13:26:06.641 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[192.168.21.71:11800].
+2021-08-19 13:26:07.126 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Reported Service Instance Properties[Service=SmartLibrary.FileServer,InstanceId=192.168.21.75@eb85ae7316ca4924ad93bfe04e4dcbd1].
+2021-08-19 13:26:10.589 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0184165s
+2021-08-19 13:26:11.627 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0506918s
+2021-08-19 13:26:14.576 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0078123s
+2021-08-19 13:26:18.619 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0492469s
+2021-08-19 13:26:20.581 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0088578s
+2021-08-19 13:26:21.621 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0524053s
+2021-08-19 13:26:22.051 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Stopped instrument service RegisterService.
+2021-08-19 13:26:22.051 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Stopped instrument service PingService.
+2021-08-19 13:26:22.051 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.SegmentReportService : Stopped instrument service SegmentReportService.
+2021-08-19 13:26:22.051 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Stopped instrument service CLRStatsService.
+2021-08-19 13:26:22.051 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Stopped instrument service SimpleCountSamplingInterceptor.
+2021-08-19 13:26:22.051 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectService : Stopped instrument service ConnectService.
+2021-08-19 13:26:22.051 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Stopped SkyAPM .NET Core Agent.
+2021-08-19 13:27:01.083 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Initializing ...
+2021-08-19 13:27:01.111 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2021-08-19 13:27:01.111 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2021-08-19 13:27:01.111 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2021-08-19 13:27:01.111 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2021-08-19 13:27:01.111 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2021-08-19 13:27:01.111 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2021-08-19 13:27:01.145 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 13:27:01.145 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 13:27:01.147 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2021-08-19 13:27:01.148 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2021-08-19 13:27:01.148 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2021-08-19 13:27:01.233 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[192.168.21.71:11800].
+2021-08-19 13:27:02.015 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Reported Service Instance Properties[Service=SmartLibrary.FileServer,InstanceId=192.168.21.75@dbea06be79ab402394187fee141e5cc3].
+2021-08-19 13:27:03.783 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Stopped instrument service RegisterService.
+2021-08-19 13:27:03.783 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Stopped instrument service PingService.
+2021-08-19 13:27:03.783 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.SegmentReportService : Stopped instrument service SegmentReportService.
+2021-08-19 13:27:03.783 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Stopped instrument service CLRStatsService.
+2021-08-19 13:27:03.783 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Stopped instrument service SimpleCountSamplingInterceptor.
+2021-08-19 13:27:03.783 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectService : Stopped instrument service ConnectService.
+2021-08-19 13:27:03.783 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Stopped SkyAPM .NET Core Agent.
+2021-08-19 13:27:19.870 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Initializing ...
+2021-08-19 13:27:19.894 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2021-08-19 13:27:19.894 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2021-08-19 13:27:19.894 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2021-08-19 13:27:19.895 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2021-08-19 13:27:19.895 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2021-08-19 13:27:19.895 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2021-08-19 13:27:19.923 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 13:27:19.923 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 13:27:19.925 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2021-08-19 13:27:19.925 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2021-08-19 13:27:19.925 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2021-08-19 13:27:19.994 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[192.168.21.71:11800].
+2021-08-19 13:27:20.472 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Reported Service Instance Properties[Service=SmartLibrary.FileServer,InstanceId=192.168.21.75@7f48acbe9e804658a294faee6b54a48b].
+2021-08-19 13:27:20.668 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Stopped instrument service RegisterService.
+2021-08-19 13:27:20.668 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Stopped instrument service PingService.
+2021-08-19 13:27:20.668 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.SegmentReportService : Stopped instrument service SegmentReportService.
+2021-08-19 13:27:20.668 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Stopped instrument service CLRStatsService.
+2021-08-19 13:27:20.668 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Stopped instrument service SimpleCountSamplingInterceptor.
+2021-08-19 13:27:20.668 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectService : Stopped instrument service ConnectService.
+2021-08-19 13:27:20.669 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Stopped SkyAPM .NET Core Agent.
+2021-08-19 13:27:50.218 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Initializing ...
+2021-08-19 13:27:50.243 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2021-08-19 13:27:50.243 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2021-08-19 13:27:50.243 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2021-08-19 13:27:50.243 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2021-08-19 13:27:50.243 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2021-08-19 13:27:50.243 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2021-08-19 13:27:50.271 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 13:27:50.271 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 13:27:50.273 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2021-08-19 13:27:50.274 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2021-08-19 13:27:50.274 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2021-08-19 13:27:50.322 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[192.168.21.71:11800].
+2021-08-19 13:27:50.798 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Reported Service Instance Properties[Service=SmartLibrary.FileServer,InstanceId=192.168.21.75@9c506570c4ba47ac95b48c4fe8c53296].
+2021-08-19 13:27:55.324 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0658300s
+2021-08-19 13:28:00.325 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0697990s
+2021-08-19 13:33:26.428 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Initializing ...
+2021-08-19 13:33:26.452 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2021-08-19 13:33:26.452 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2021-08-19 13:33:26.453 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2021-08-19 13:33:26.453 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2021-08-19 13:33:26.453 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2021-08-19 13:33:26.453 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2021-08-19 13:33:26.481 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 13:33:26.487 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 13:33:26.490 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2021-08-19 13:33:26.490 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2021-08-19 13:33:26.490 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2021-08-19 13:33:26.529 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[192.168.21.71:11800].
+2021-08-19 13:33:27.096 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Reported Service Instance Properties[Service=SmartLibrary.FileServer,InstanceId=192.168.21.75@ff208deb0d87490f813023a50a971a0e].
+2021-08-19 13:33:35.525 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0573303s
+2021-08-19 13:33:45.539 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0748962s
+2021-08-19 13:33:47.511 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0480913s
+2021-08-19 13:33:55.546 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0866474s
+2021-08-19 13:33:56.480 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Ping server @2021/8/19 5:33:56 +00:00
+2021-08-19 13:33:56.525 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 19M ThreadPool 32764 32767 1000 1000
+2021-08-19 13:33:59.515 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0568490s
+2021-08-19 13:34:05.511 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0489032s
+2021-08-19 13:34:11.509 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0504602s
+2021-08-19 13:34:15.508 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0477975s
+2021-08-19 13:34:23.506 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0486166s
+2021-08-19 13:34:25.509 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0508285s
+2021-08-19 13:34:26.521 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0627191s
+2021-08-19 13:34:26.521 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 1.5625 GenCollectCount 0 0 0 20M ThreadPool 32764 32767 1000 1000
+2021-08-19 13:34:35.512 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0503885s
+2021-08-19 13:34:45.550 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0892637s
+2021-08-19 13:34:47.508 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0495165s
+2021-08-19 13:34:55.510 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0497151s
+2021-08-19 13:34:56.468 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 1.5625 GenCollectCount 0 0 0 22M ThreadPool 32757 32767 1000 1000
+2021-08-19 13:34:56.469 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Ping server @2021/8/19 5:34:56 +00:00
+2021-08-19 13:34:59.510 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0487116s
+2021-08-19 13:35:05.512 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0501894s
+2021-08-19 13:35:11.505 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0480981s
+2021-08-19 13:35:15.509 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0500205s
+2021-08-19 13:35:23.514 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0491732s
+2021-08-19 13:35:25.509 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0482871s
+2021-08-19 13:35:26.530 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0705008s
+2021-08-19 13:35:26.530 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 23M ThreadPool 32764 32767 1000 1000
+2021-08-19 13:35:35.515 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0568304s
+2021-08-19 13:35:45.532 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0726237s
+2021-08-19 13:35:47.469 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0090253s
+2021-08-19 13:35:48.515 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0555266s
+2021-08-19 13:35:49.510 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0461434s
+2021-08-19 13:35:55.927 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.4587916s
+2021-08-19 13:35:56.463 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 24M ThreadPool 32765 32767 1000 1000
+2021-08-19 13:35:56.508 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Ping server @2021/8/19 5:35:56 +00:00
+2021-08-19 13:35:59.509 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0492788s
+2021-08-19 13:36:05.505 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0485601s
+2021-08-19 13:36:11.469 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.7979981s
+2021-08-19 13:36:14.713 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0497351s
+2021-08-19 13:36:16.018 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.1444814s
+2021-08-19 13:38:26.975 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Initializing ...
+2021-08-19 13:38:27.003 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2021-08-19 13:38:27.004 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2021-08-19 13:38:27.004 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2021-08-19 13:38:27.004 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2021-08-19 13:38:27.004 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2021-08-19 13:38:27.004 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2021-08-19 13:38:27.034 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 13:38:27.105 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[192.168.21.71:11800].
+2021-08-19 13:38:27.571 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Reported Service Instance Properties[Service=SmartLibrary.FileServer,InstanceId=192.168.21.75@b72c8b9f6cd64d528d7641514cffd1f6].
+2021-08-19 13:38:27.792 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 13:38:27.792 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2021-08-19 13:38:27.793 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2021-08-19 13:38:27.793 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2021-08-19 13:38:30.062 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0512160s
+2021-08-19 13:38:32.056 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0505915s
+2021-08-19 13:38:39.118 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.1118148s
+2021-08-19 13:38:44.052 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0479069s
+2021-08-19 13:38:49.057 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0531975s
+2021-08-19 13:38:56.057 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0530251s
+2021-08-19 13:38:57.019 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Ping server @2021/8/19 5:38:57 +00:00
+2021-08-19 13:38:57.066 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 19M ThreadPool 32763 32767 1000 1000
+2021-08-19 13:38:59.056 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0504443s
+2021-08-19 13:39:08.059 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0528570s
+2021-08-19 13:39:09.054 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0487939s
+2021-08-19 13:39:19.080 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0752088s
+2021-08-19 13:39:20.052 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0479773s
+2021-08-19 13:39:27.054 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0496134s
+2021-08-19 13:39:27.054 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 20M ThreadPool 32763 32767 1000 1000
+2021-08-19 13:39:29.057 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0481554s
+2021-08-19 13:39:32.055 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0507134s
+2021-08-19 13:39:39.065 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0489624s
+2021-08-19 13:39:44.069 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0561064s
+2021-08-19 13:39:49.057 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0502446s
+2021-08-19 13:39:56.067 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0591576s
+2021-08-19 13:39:57.058 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 22M ThreadPool 32754 32767 1000 1000
+2021-08-19 13:39:57.059 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Ping server @2021/8/19 5:39:57 +00:00
+2021-08-19 13:39:59.052 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0484913s
+2021-08-19 13:40:08.058 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0531415s
+2021-08-19 13:40:09.067 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0499786s
+2021-08-19 13:40:12.411 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:01.1021744s
+2021-08-19 13:40:36.243 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 3.125 GenCollectCount 0 0 0 23M ThreadPool 32754 32767 996 1000
+2021-08-19 13:40:36.345 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 3 trace segment. cost: 00:00:00.1053826s
+2021-08-19 13:40:37.294 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0509363s
+2021-08-19 13:40:39.293 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0498027s
+2021-08-19 13:40:49.298 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0589154s
+2021-08-19 13:40:57.018 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 24M ThreadPool 32764 32767 1000 1000
+2021-08-19 13:40:57.018 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Ping server @2021/8/19 5:40:57 +00:00
+2021-08-19 13:40:59.293 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0489995s
+2021-08-19 13:41:01.303 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0563018s
+2021-08-19 13:41:09.291 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0492690s
+2021-08-19 13:41:10.291 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0481012s
+2021-08-19 13:41:11.247 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0079624s
+2021-08-19 13:41:19.290 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0510602s
+2021-08-19 13:41:21.541 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.3023385s
+2021-08-19 13:41:23.293 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0494188s
+2021-08-19 13:41:27.017 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 26M ThreadPool 32765 32767 1000 1000
+2021-08-19 13:41:29.298 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0519069s
+2021-08-19 13:41:31.287 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0492857s
+2021-08-19 13:41:35.288 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0488481s
+2021-08-19 13:41:37.300 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0526148s
+2021-08-19 13:41:39.253 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0071283s
+2021-08-19 13:41:41.294 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0557359s
+2021-08-19 13:41:47.293 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0489625s
+2021-08-19 13:41:49.288 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0481499s
+2021-08-19 13:41:51.293 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0496573s
+2021-08-19 13:41:57.055 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 28M ThreadPool 32761 32767 1000 1000
+2021-08-19 13:41:57.055 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Ping server @2021/8/19 5:41:57 +00:00
+2021-08-19 13:41:59.304 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0589311s
+2021-08-19 13:42:01.302 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0540723s
+2021-08-19 13:42:09.289 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0510298s
+2021-08-19 13:42:11.255 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 3 trace segment. cost: 00:00:00.0087275s
+2021-08-19 13:42:19.290 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0480002s
+2021-08-19 13:42:21.292 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0492173s
+2021-08-19 13:42:23.291 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0488029s
+2021-08-19 13:42:27.016 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 29M ThreadPool 32764 32767 1000 1000
+2021-08-19 13:42:29.250 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0077368s
+2021-08-19 13:42:31.292 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0484035s
+2021-08-19 13:42:35.288 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0498440s
+2021-08-19 13:42:37.247 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0093611s
+2021-08-19 13:42:39.292 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0486269s
+2021-08-19 13:42:41.251 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0083512s
+2021-08-19 13:42:47.288 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0497816s
+2021-08-19 13:42:49.291 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0527024s
+2021-08-19 13:42:51.249 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0076002s
+2021-08-19 13:42:57.023 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Ping server @2021/8/19 5:42:57 +00:00
+2021-08-19 13:42:57.023 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 30M ThreadPool 32761 32767 1000 1000
+2021-08-19 13:42:59.293 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0490898s
+2021-08-19 13:43:01.247 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0070789s
+2021-08-19 13:43:09.292 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0533277s
+2021-08-19 13:43:11.316 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0691162s
+2021-08-19 13:43:12.256 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0142821s
+2021-08-19 13:43:16.295 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0487923s
+2021-08-19 13:43:17.255 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0147135s
+2021-08-19 13:43:18.249 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0102029s
+2021-08-19 13:43:19.302 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0498193s
+2021-08-19 13:43:21.263 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0140504s
+2021-08-19 13:43:23.252 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0081936s
+2021-08-19 13:43:27.035 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 32M ThreadPool 32761 32767 1000 1000
+2021-08-19 13:43:27.327 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0863692s
+2021-08-19 13:43:29.286 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0483479s
+2021-08-19 13:43:31.249 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0077761s
+2021-08-19 13:43:35.290 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0507799s
+2021-08-19 13:43:37.329 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0903744s
+2021-08-19 13:43:39.311 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0681131s
+2021-08-19 13:43:41.253 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0074907s
+2021-08-19 13:43:47.293 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0508964s
+2021-08-19 13:43:49.289 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0492264s
+2021-08-19 13:43:51.247 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0077668s
+2021-08-19 13:43:57.041 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 34M ThreadPool 32760 32767 1000 1000
+2021-08-19 13:43:57.041 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Ping server @2021/8/19 5:43:57 +00:00
+2021-08-19 13:43:59.291 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0483192s
+2021-08-19 13:44:01.248 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0071980s
+2021-08-19 13:44:09.566 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.3280981s
+2021-08-19 13:44:11.299 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0599433s
+2021-08-19 13:44:13.251 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0125828s
+2021-08-19 13:44:19.291 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0502185s
+2021-08-19 13:44:21.289 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0497208s
+2021-08-19 13:44:23.253 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0071574s
+2021-08-19 13:44:27.012 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 35M ThreadPool 32765 32767 1000 1000
+2021-08-19 13:44:29.264 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0221791s
+2021-08-19 13:44:32.256 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0138466s
+2021-08-19 13:44:35.554 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.3146326s
+2021-08-19 13:44:37.315 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0757360s
+2021-08-19 13:44:39.290 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0511332s
+2021-08-19 13:44:42.259 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0093350s
+2021-08-19 13:44:47.291 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0515088s
+2021-08-19 13:44:49.249 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0076506s
+2021-08-19 13:45:34.350 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Initializing ...
+2021-08-19 13:45:34.374 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2021-08-19 13:45:34.374 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2021-08-19 13:45:34.374 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2021-08-19 13:45:34.374 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2021-08-19 13:45:34.374 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2021-08-19 13:45:34.374 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2021-08-19 13:45:34.405 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 13:45:34.405 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 13:45:34.406 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2021-08-19 13:45:34.406 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2021-08-19 13:45:34.406 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2021-08-19 13:45:34.452 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[192.168.21.71:11800].
+2021-08-19 13:45:34.941 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Reported Service Instance Properties[Service=SmartLibrary.FileServer,InstanceId=192.168.21.75@9bab4ff4b98a40b4a4e2d99a7f27dd38].
+2021-08-19 13:45:37.441 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0519883s
+2021-08-19 13:45:39.428 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0493514s
+2021-08-19 13:45:43.433 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0507627s
+2021-08-19 13:45:46.438 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0561495s
+2021-08-19 13:45:48.596 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.2098025s
+2021-08-19 13:45:49.477 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0977034s
+2021-08-19 13:45:57.834 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.8106904s
+2021-08-19 13:46:11.506 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 3 trace segment. cost: 00:00:04.3203241s
+2021-08-19 13:46:11.582 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0766520s
+2021-08-19 13:46:11.583 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 20M ThreadPool 32763 32767 999 1000
+2021-08-19 13:46:11.583 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Ping server @2021/8/19 5:46:11 +00:00
+2021-08-19 13:46:13.586 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0650622s
+2021-08-19 13:46:15.560 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0495002s
+2021-08-19 13:46:17.560 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0510569s
+2021-08-19 13:46:23.585 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0676775s
+2021-08-19 13:46:25.565 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0553430s
+2021-08-19 13:46:27.591 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0744323s
+2021-08-19 13:46:29.559 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0523909s
+2021-08-19 13:46:33.555 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0488964s
+2021-08-19 13:46:34.394 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 22M ThreadPool 32764 32767 1000 1000
+2021-08-19 13:46:34.514 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0082763s
+2021-08-19 13:46:35.566 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0597625s
+2021-08-19 13:46:37.569 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0487822s
+2021-08-19 13:46:42.714 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.3842247s
+2021-08-19 13:46:44.190 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:01.4763424s
+2021-08-19 13:47:56.149 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Ping server @2021/8/19 5:47:56 +00:00
+2021-08-19 13:47:56.179 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 3.125 GenCollectCount 0 0 0 23M ThreadPool 32755 32767 998 1000
+2021-08-19 13:47:56.223 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 3 trace segment. cost: 00:00:00.0779043s
+2021-08-19 13:47:56.179 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 3.125 GenCollectCount 0 0 0 23M ThreadPool 32755 32767 995 1000
+2021-08-19 13:47:57.158 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 6 trace segment. cost: 00:00:00.0074008s
+2021-08-19 13:54:30.980 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Initializing ...
+2021-08-19 13:54:31.004 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2021-08-19 13:54:31.005 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2021-08-19 13:54:31.005 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2021-08-19 13:54:31.005 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2021-08-19 13:54:31.005 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2021-08-19 13:54:31.005 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2021-08-19 13:54:31.035 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 13:54:31.036 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 13:54:31.081 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[192.168.21.71:11800].
+2021-08-19 13:54:31.572 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Reported Service Instance Properties[Service=SmartLibrary.FileServer,InstanceId=192.168.21.75@c0ecea7a24e94f9a9c1a2e24736a3c6d].
+2021-08-19 13:54:31.816 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2021-08-19 13:54:31.816 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2021-08-19 13:54:31.816 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2021-08-19 13:54:34.060 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0521398s
+2021-08-19 13:54:40.120 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.1098509s
+2021-08-19 13:54:41.064 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0509070s
+2021-08-19 13:54:50.055 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0499607s
+2021-08-19 13:54:56.681 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:01.4571652s
+2021-08-19 13:55:42.995 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:32.4226503s
+2021-08-19 13:55:43.045 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0496251s
+2021-08-19 13:55:43.552 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.5361942s
+2021-08-19 13:55:43.553 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Ping server @2021/8/19 5:55:43 +00:00
+2021-08-19 13:55:43.554 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 20M ThreadPool 32755 32767 996 1000
+2021-08-19 13:55:43.554 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 20M ThreadPool 32761 32767 999 1000
+2021-08-19 13:55:44.013 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 4 trace segment. cost: 00:00:00.0086888s
+2021-08-19 13:55:53.053 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0489391s
+2021-08-19 13:55:54.055 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0487483s
+2021-08-19 13:55:56.054 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0495796s
+2021-08-19 13:56:01.013 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 21M ThreadPool 32763 32767 1000 1000
+2021-08-19 13:56:01.013 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Ping server @2021/8/19 5:56:01 +00:00
+2021-08-19 13:56:04.055 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0501900s
+2021-08-19 13:56:08.055 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0497288s
+2021-08-19 13:56:09.053 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0492330s
+2021-08-19 13:56:14.067 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0568386s
+2021-08-19 13:56:19.063 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0564221s
+2021-08-19 13:56:20.056 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0502134s
+2021-08-19 13:56:24.445 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.4361740s
+2021-08-19 13:56:30.055 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0494826s
+2021-08-19 13:56:31.015 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 23M ThreadPool 32762 32767 1000 1000
+2021-08-19 13:56:32.056 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0495165s
+2021-08-19 13:56:34.058 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0531107s
+2021-08-19 13:56:35.056 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0511517s
+2021-08-19 13:56:40.062 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0554503s
+2021-08-19 13:56:44.486 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 4 trace segment. cost: 00:00:00.4824437s
+2021-08-19 13:56:45.055 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0482639s
+2021-08-19 13:56:50.056 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0495802s
+2021-08-19 13:56:54.128 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.1232642s
+2021-08-19 13:56:55.056 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0487547s
+2021-08-19 13:56:56.013 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0084124s
+2021-08-19 13:57:00.054 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0501214s
+2021-08-19 13:57:01.012 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 25M ThreadPool 32764 32767 1000 1000
+2021-08-19 13:57:01.012 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Ping server @2021/8/19 5:57:01 +00:00
+2021-08-19 13:57:04.053 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0488031s
+2021-08-19 13:57:05.099 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0938319s
+2021-08-19 13:57:08.055 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0509622s
+2021-08-19 13:57:10.011 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0070602s
+2021-08-19 13:57:14.052 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0551822s
+2021-08-19 13:57:15.056 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0518183s
+2021-08-19 13:57:20.061 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0544195s
+2021-08-19 13:57:24.054 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0486714s
+2021-08-19 13:57:25.059 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0486940s
+2021-08-19 13:57:30.066 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0597950s
+2021-08-19 13:57:31.014 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 27M ThreadPool 32763 32767 1000 1000
+2021-08-19 13:57:32.018 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0105553s
+2021-08-19 13:57:34.057 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0518021s
+2021-08-19 13:57:35.014 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0074058s
+2021-08-19 13:57:40.055 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0486278s
+2021-08-19 13:57:44.025 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 5 trace segment. cost: 00:00:00.0209260s
+2021-08-19 13:57:45.056 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0493942s
+2021-08-19 13:57:50.057 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0506481s
+2021-08-19 13:57:54.064 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0554604s
+2021-08-19 13:57:55.060 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0560681s
+2021-08-19 13:57:56.017 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0081156s
+2021-08-19 13:58:00.094 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0902023s
+2021-08-19 13:58:01.014 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 29M ThreadPool 32762 32767 1000 1000
+2021-08-19 13:58:01.014 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Ping server @2021/8/19 5:58:01 +00:00
+2021-08-19 13:58:04.054 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0492289s
+2021-08-19 13:58:05.013 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0072086s
+2021-08-19 13:58:08.058 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0492947s
+2021-08-19 13:58:10.061 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0550484s
+2021-08-19 13:58:14.054 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0504177s
+2021-08-19 13:58:15.029 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0250088s
+2021-08-19 13:58:20.052 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0479114s
+2021-08-19 13:58:24.102 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0963339s
+2021-08-19 13:58:25.013 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0067140s
+2021-08-19 13:58:30.055 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0502318s
+2021-08-19 13:58:31.018 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 31M ThreadPool 32764 32767 1000 1000
+2021-08-19 13:58:32.016 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0104565s
+2021-08-19 13:58:34.016 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0070746s
+2021-08-19 13:58:35.101 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0962681s
+2021-08-19 13:58:40.054 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0491834s
+2021-08-19 15:31:21.586 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Initializing ...
+2021-08-19 15:31:21.610 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2021-08-19 15:31:21.611 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2021-08-19 15:31:21.611 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2021-08-19 15:31:21.611 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2021-08-19 15:31:21.611 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2021-08-19 15:31:21.611 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2021-08-19 15:31:21.641 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 15:31:21.641 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 15:31:21.642 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2021-08-19 15:31:21.642 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2021-08-19 15:31:21.642 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2021-08-19 15:31:21.708 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[192.168.21.71:11800].
+2021-08-19 15:31:22.210 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Reported Service Instance Properties[Service=SmartLibrary.FileServer,InstanceId=192.168.21.75@cb815959d33d42de95dd0fb349fdf33a].
+2021-08-19 15:48:04.747 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Initializing ...
+2021-08-19 15:48:04.773 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2021-08-19 15:48:04.773 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2021-08-19 15:48:04.774 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2021-08-19 15:48:04.774 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2021-08-19 15:48:04.774 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2021-08-19 15:48:04.774 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2021-08-19 15:48:04.805 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 15:48:04.878 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 15:48:04.878 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2021-08-19 15:48:04.879 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2021-08-19 15:48:04.879 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2021-08-19 15:48:04.893 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[192.168.21.71:11800].
+2021-08-19 15:48:05.345 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Reported Service Instance Properties[Service=SmartLibrary.FileServer,InstanceId=192.168.21.75@6a6a3421f18e40aca3df727a8c5ed166].
+2021-08-19 15:48:07.740 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Stopped instrument service RegisterService.
+2021-08-19 15:48:07.740 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Stopped instrument service PingService.
+2021-08-19 15:48:07.741 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.SegmentReportService : Stopped instrument service SegmentReportService.
+2021-08-19 15:48:07.741 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Stopped instrument service CLRStatsService.
+2021-08-19 15:48:07.741 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Stopped instrument service SimpleCountSamplingInterceptor.
+2021-08-19 15:48:07.741 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectService : Stopped instrument service ConnectService.
+2021-08-19 15:48:07.741 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Stopped SkyAPM .NET Core Agent.
+2021-08-19 15:48:26.303 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Initializing ...
+2021-08-19 15:48:26.327 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2021-08-19 15:48:26.327 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2021-08-19 15:48:26.327 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2021-08-19 15:48:26.327 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2021-08-19 15:48:26.327 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2021-08-19 15:48:26.329 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2021-08-19 15:48:26.358 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 15:48:26.358 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 15:48:26.358 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2021-08-19 15:48:26.359 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2021-08-19 15:48:26.359 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2021-08-19 15:48:26.405 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[192.168.21.71:11800].
+2021-08-19 15:48:26.898 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Reported Service Instance Properties[Service=SmartLibrary.FileServer,InstanceId=192.168.21.75@5b4148b7ee384a6fb221e3b986e34b3b].
+2021-08-19 15:48:30.907 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Stopped instrument service RegisterService.
+2021-08-19 15:48:30.907 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Stopped instrument service PingService.
+2021-08-19 15:48:30.907 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.SegmentReportService : Stopped instrument service SegmentReportService.
+2021-08-19 15:48:30.907 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Stopped instrument service CLRStatsService.
+2021-08-19 15:48:30.907 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Stopped instrument service SimpleCountSamplingInterceptor.
+2021-08-19 15:48:30.907 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectService : Stopped instrument service ConnectService.
+2021-08-19 15:48:30.907 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Stopped SkyAPM .NET Core Agent.
+2021-08-19 17:04:48.405 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Initializing ...
+2021-08-19 17:04:48.427 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2021-08-19 17:04:48.427 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2021-08-19 17:04:48.427 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2021-08-19 17:04:48.427 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2021-08-19 17:04:48.427 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2021-08-19 17:04:48.427 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2021-08-19 17:04:48.455 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 17:04:48.455 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 17:04:48.456 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2021-08-19 17:04:48.456 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2021-08-19 17:04:48.456 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2021-08-19 17:04:48.512 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[192.168.21.71:11800].
+2021-08-19 17:04:48.997 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Reported Service Instance Properties[Service=SmartLibrary.FileServer,InstanceId=192.168.21.75@dbe3a7f0fad841588a2b83a63936d671].
+2021-08-19 17:04:55.488 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0527373s
+2021-08-19 17:05:05.478 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0477734s
+2021-08-19 17:05:07.479 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0488923s
+2021-08-19 17:17:23.957 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Initializing ...
+2021-08-19 17:17:23.979 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2021-08-19 17:17:23.979 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2021-08-19 17:17:23.979 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2021-08-19 17:17:23.980 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2021-08-19 17:17:23.980 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2021-08-19 17:17:23.980 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2021-08-19 17:17:24.007 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 17:17:24.008 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 17:17:24.008 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2021-08-19 17:17:24.009 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2021-08-19 17:17:24.009 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2021-08-19 17:17:24.056 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[192.168.21.71:11800].
+2021-08-19 17:17:24.536 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Reported Service Instance Properties[Service=SmartLibrary.FileServer,InstanceId=192.168.21.75@5952cab4662a4763b86bbfadeec84576].
+2021-08-19 18:14:28.915 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Initializing ...
+2021-08-19 18:14:28.940 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2021-08-19 18:14:28.940 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2021-08-19 18:14:28.940 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2021-08-19 18:14:28.940 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2021-08-19 18:14:28.940 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2021-08-19 18:14:28.940 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2021-08-19 18:14:28.969 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 18:14:29.011 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[192.168.21.71:11800].
+2021-08-19 18:14:29.501 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Reported Service Instance Properties[Service=SmartLibrary.FileServer,InstanceId=192.168.21.75@397883ff74a543389a8fbbb7c83c736b].
+2021-08-19 18:14:29.717 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-19 18:14:29.718 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2021-08-19 18:14:29.718 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2021-08-19 18:14:29.718 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2021-08-19 18:14:58.964 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Ping server @2021/8/19 10:14:58 +00:00
+2021-08-19 18:14:58.966 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 15M ThreadPool 32764 32767 1000 1000
+2021-08-19 18:15:06.506 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Stopped instrument service RegisterService.
+2021-08-19 18:15:06.506 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Stopped instrument service PingService.
+2021-08-19 18:15:06.506 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.SegmentReportService : Stopped instrument service SegmentReportService.
+2021-08-19 18:15:06.506 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Stopped instrument service CLRStatsService.
+2021-08-19 18:15:06.506 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Stopped instrument service SimpleCountSamplingInterceptor.
+2021-08-19 18:15:06.506 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectService : Stopped instrument service ConnectService.
+2021-08-19 18:15:06.506 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Stopped SkyAPM .NET Core Agent.

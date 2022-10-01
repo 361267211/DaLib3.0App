@@ -1,0 +1,1141 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmartLibrary.LogAnalysis.Application</name>
+    </assembly>
+    <members>
+        <member name="T:SmartLibrary.LogAnalysis.Application.AppServices.CapDocumentAppService">
+            <summary>
+            Cap文档描述
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.AppServices.CapDocumentAppService.GetCapPublishEventDoc">
+            <summary>
+            获取当前服务发布事件描述文档数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.LogAnalysis.Application.AppServices.SysMenuAppService">
+            <summary>
+            权限管理接口
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.AppServices.SysMenuAppService.GetAllPermissionTree">
+            <summary>
+            获取完整的权限-树型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.AppServices.SysMenuAppService.GetSysRoleInfo(System.Guid)">
+            <summary>
+            获取角色信息  基础信息+权限列表
+            </summary>
+            <param name="roleId">角色id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.AppServices.SysMenuAppService.SaveSysRoleInfo(SmartLibrary.LogAnalysis.EntityFramework.Core.Dtos.SysRoleInfoDto)">
+            <summary>
+            保存角色信息
+            </summary>
+            <param name="sysRoleInfoDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.AppServices.SysMenuAppService.GetUserPermissionList(System.Guid)">
+            <summary>
+            获取登陆用户所有的权限菜单-列表
+            </summary>
+            <param name="userKey">用户唯一标识</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.AppServices.SysMenuAppService.GetUserPermissionTree(System.Guid)">
+            <summary>
+            获取登陆用户所有的权限菜单-树型
+            </summary>
+            <param name="userKey">用户唯一标识</param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.LogAnalysis.Application.HealthAppService">
+            <summary>
+            WebApi心跳检查
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.HealthAppService.Index">
+            <summary>
+            WebApi心跳检查
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.LogAnalysis.Application.MigrationController">
+            <summary>
+            数据库迁移的专用接口示例
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.MigrationController.InitializeBasicData(System.String)">
+            <summary>
+            初始话数据，本接口示范  向基础表插入基础数据
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.LogAnalysis.Application.UserAppService">
+            <summary>
+            应用服务接口
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.UserAppService.GetUserName(SmartLibraryUser.UserRequest)">
+            <summary>
+            缓存测试 获取用户名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.UserAppService.InsertAsset(System.String)">
+            <summary>
+            多租户测试 插入一条Asset数据，并立即返回其信息
+            </summary>
+            <param name="title"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.UserAppService.GetAllAsset">
+            <summary>
+            多租户测试 获取所有Asset
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.UserAppService.SetCach(System.String)">
+            <summary>
+            设置redis缓存值
+            </summary>
+            <param name="redisValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.UserAppService.GetCach(System.String)">
+            <summary>
+            设置redis缓存值
+            </summary>
+            <param name="redisValue"></param>
+            <returns></returns>
+        </member>
+        <member name="F:SmartLibrary.LogAnalysis.Application.Dtos.Cap.UserServicePublishEvent.NewPerson">
+            <summary>
+            事件名称
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.LogAnalysis.Application.Dtos.Cap.UserServicePublishEvent.NewPersonMsg">
+            <summary>
+            事件对应消息
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.Cap.UserServicePublishEvent.NewPersonMsg.PersonId">
+            <summary>
+            员工Id
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.LogAnalysis.Application.Dtos.Cap.UserServiceSubscribeEvent.NewPerson">
+            <summary>
+            事件名称
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.LogAnalysis.Application.Dtos.Cap.UserServiceSubscribeEvent.NewPersonMsg">
+            <summary>
+            消息接收类型
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.LogAnalysis.Application.Dtos.DisplayLogAnalysisRequestDto">
+            <summary>
+            首页的本馆数据接口入参
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.DisplayLogAnalysisRequestDto.Type">
+            <summary>
+            类型 1服务数据 2资源数据
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.DisplayLogAnalysisRequestDto.Range">
+            <summary>
+            范围 1 昨天 3 最近三天 7本周 30本月 365本年 
+            如果指定了开始时间和结束时间，则该参数将被忽略
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.DisplayLogAnalysisRequestDto.From">
+            <summary>
+            手动指定开始时间
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.DisplayLogAnalysisRequestDto.To">
+            <summary>
+            手动指定结束时间
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.LogAnalysis.Application.Dtos.DisplayLogAnalysisResponseDto">
+            <summary>
+            首页本官数据的结果项
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.DisplayLogAnalysisResponseDto.Count">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.DisplayLogAnalysisResponseDto.DisplayTitle">
+            <summary>
+            显示的名称
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo">
+            <summary>
+            智图元数据实体，与智图底层数据（对应表名：ilib_title_info）格式一一对应
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Id">
+            <summary>
+            标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Title">
+            <summary>
+            题名
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.EnglishTitle">
+            <summary>
+            英文题名
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.TitleEdition">
+            <summary>
+            版本说明/版次
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.TitleSeries">
+             <summary>
+            丛书名
+             </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.EISBN">
+            <summary>
+            ISBN（数字）
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.PISBN">
+            <summary>
+            ISBN（纸本）
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.ISSN">
+            <summary>
+            ISSN
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.CNNO">
+            <summary>
+            国内统一刊号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Standard">
+            <summary>
+            标准编号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.DOI">
+            <summary>
+            DOI
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Author">
+            <summary>
+            作者
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.EnglishAuthor">
+            <summary>
+            作者英文名
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Institution">
+            <summary>
+            作者单位/提出单位
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Discipline">
+            <summary>
+            作者专业
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Degree">
+            <summary>
+            学位级别
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Drafting">
+            <summary>
+            起草单位
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Release">
+            <summary>
+            发布单位
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Contributor">
+            <summary>
+            导师
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Source">
+            <summary>
+            出版物名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.SourceFL">
+            <summary>
+            出版物首字母
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.EnglishSource">
+            <summary>
+            出版物英文名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.SourceID">
+            <summary>
+            出版物ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.SourceInstitution">
+            <summary>
+            学位授予单位
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Publisher">
+            <summary>
+            出版社/出版者
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.PubPlace">
+            <summary>
+            出版地
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Date">
+            <summary>
+            出版年/年/学位授予年度
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Volume">
+            <summary>
+            卷
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Issue">
+            <summary>
+            期
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Description">
+            <summary>
+            摘要
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.DescriptionEn">
+            <summary>
+            摘要英文
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Fund">
+            <summary>
+            基金
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Core">
+            <summary>
+            核心收录
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Cycle">
+            <summary>
+            出版周期
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.StandardType">
+            <summary>
+            标准类型
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Subject">
+            <summary>
+            主题词
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Page">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.SubjectCLCJson">
+            <summary>
+            中图分类号/中图分类号号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.SubjectCLC">
+            <summary>
+            中图分类号/中图分类号号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.SubjectESCJson">
+            <summary>
+            教育部学科分类号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.SubjectESC">
+            <summary>
+            教育部学科分类号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.SubjectDSA">
+            <summary>
+            学位学科
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.SubjectCSC">
+            <summary>
+            中国标准分类号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.SubjectISC">
+            <summary>
+            国际标准分类号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.DateImpl">
+            <summary>
+            实施日期
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.DateCreated">
+            <summary>
+            出版日期/学位授予日期/发布日期
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Cover">
+            <summary>
+            封面路径
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.CoverUrl">
+            <summary>
+            封面路径
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.DefaultCoverCssClass">
+            <summary>
+            默认封面css类名
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Language">
+            <summary>
+            语种
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Country">
+            <summary>
+            国别
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Provider">
+            <summary>
+            来源数据库
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.ProviderUrl">
+            <summary>
+            来源路径
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.ProviderID">
+            <summary>
+            来源ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.ProviderBN">
+            <summary>
+            来源书号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.ProviderOwner">
+            <summary>
+            来源书号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Owner">
+            <summary>
+            所属者
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Type">
+            <summary>
+            文献类型
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Medium">
+            <summary>
+            载体
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.MediumOwner">
+            <summary>
+            载体
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Batch">
+            <summary>
+            批次
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Combined">
+            <summary>
+            被合并ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.DIO">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.CoverHtml">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.ProviderCombined">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.FolioSize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.TitleSub">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.CreatorBio">
+            <summary>
+            作者简介
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Url">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.DBOwner">
+            <summary>
+            数据库所属者
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.PISSN">
+            <summary>
+            ISSN/专利申请号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.EISSN">
+            <summary>
+            ISSN
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.CreatorCluster">
+            <summary>
+            申请人/主编
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.SubjectEn">
+            <summary>
+            英文关键词
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.IfHtmlFulltex">
+            <summary>
+            是否有html全文
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.IfPdfFulltex">
+            <summary>
+            是否有pdf全文
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.IfPub1st">
+            <summary>
+            是否优先出版
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.RefCnt">
+            <summary>
+            引文量
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.CitedCnt">
+            <summary>
+            被引量
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Rawtype">
+            <summary>
+            原始类型
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Agents">
+            <summary>
+            代理人
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Agency">
+            <summary>
+            代理机构
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.LegalStatus">
+            <summary>
+            法律状态
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.ProvinceCode">
+            <summary>
+            国别省市代码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.ProviderSubject">
+            <summary>
+            来源专辑/分类
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Mark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.AsmResourceId">
+            <summary>
+            汇编资源id
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.Bid">
+            <summary>
+            业务ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.DescriptionSource">
+            <summary>
+            原文出处
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.ILibTitleInfo.IsOA">
+            <summary>
+            原文出处
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.LogAnalysis.Application.Dtos.IndexStatisticsDto">
+            <summary>
+            重大首页那些
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.IndexStatisticsDto.WeeklyVisitUserCount">
+            <summary>
+            周入馆 用户访问数
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.IndexStatisticsDto.PreviousWeeklyVisitUserCount">
+            <summary>
+            上周入馆访问用户数
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.IndexStatisticsDto.WeeklyVisitCount">
+            <summary>
+            周访问量
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.IndexStatisticsDto.PreviousWeeklyVisitCount">
+            <summary>
+            上周访问量
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.IndexStatisticsDto.DepartmentRankList">
+            <summary>
+            学院使用排行
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.IndexStatisticsDto.WeeklyResourceIncreaseCount">
+            <summary>
+            周 资源更新量
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.IndexStatisticsDto.TotalResourceCount">
+            <summary>
+            资源总量
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Dtos.IndexStatisticsDto.ResourceDomainRank">
+            <summary>
+            资源学科分布
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.LogAnalysis.Application.Services.ILogAnalysisService">
+            <summary>
+            统计服务
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.ILogAnalysisService.GetDisplayLogAnalysesAsync(SmartLibrary.LogAnalysis.Application.Dtos.DisplayLogAnalysisRequestDto)">
+            <summary>
+            获取统计数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.ILogAnalysisService.GetIndexStatisticsAsync">
+            <summary>
+            首页数据统计接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.ILogAnalysisService.GetRecommendHotBookAsync">
+            <summary>
+            获取热门下载的文献
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.ILogAnalysisService.GetRecommendHotBorrowBookAsync">
+            <summary>
+            获取热门借阅的文献
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.LogAnalysis.Application.Services.LogAnalysisService.ApiResult`1">
+            <summary>
+            返回结果
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Services.LogAnalysisService.ApiResult`1.status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Services.LogAnalysisService.ApiResult`1.info">
+            <summary>
+            信息
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Services.LogAnalysisService.ApiResult`1.result">
+            <summary>
+            结果
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.LogAnalysis.Application.Services.LogAnalysisService.ApiResult`1.count">
+            <summary>
+            匹配结果总数
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.LogAnalysisService.GenerateRandomNumber(System.Int32)">
+            <summary>
+            随机数发生器
+            </summary>
+            <param name="max"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.LogAnalysisService.GetRecommendHotBookAsync">
+            <summary>
+            获取热门下载的文献
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.LogAnalysisService.GetRecommendHotBorrowBookAsync">
+            <summary>
+            获取热门借阅的文献
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.ISysMenuService.GetAllPermissionTree">
+            <summary>
+            获取本应用中所有的权限列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.ISysMenuService.GetUserPermissionList(System.Guid)">
+            <summary>
+            获取当前登陆用户的所有权限列表
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.ISysMenuService.SaveRoleMenuList(System.Collections.Generic.List{SmartLibrary.LogAnalysis.EntityFramework.Core.Dtos.SysRoleMenuDto})">
+            <summary>
+            保存用户的权限列表
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.ISysMenuService.InsertSysRoleInfo(SmartLibrary.LogAnalysis.EntityFramework.Core.Dtos.SysRoleInfoDto)">
+            <summary>
+            新增角色信息
+            </summary>
+            <param name="sysRoleInfoDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.ISysMenuService.UpdateSysRoleInfo(SmartLibrary.LogAnalysis.EntityFramework.Core.Dtos.SysRoleInfoDto)">
+            <summary>
+            更新角色信息
+            </summary>
+            <param name="sysRoleInfoDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.ISysMenuService.GetSysRoleBaseInfo(System.Guid)">
+            <summary>
+            获取角色
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.ISysMenuService.GetRoleMenu(System.Guid)">
+            <summary>
+            查角色-权限关联
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.ISysMenuService.GetSysRoleInfo(System.Guid)">
+            <summary>
+            查角色信息
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.SysMenuService.GetAllPermissionTree">
+            <summary>
+            获取权限树
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.SysMenuService.GetUserPermissionList(System.Guid)">
+            <summary>
+            获取登陆用户的所有可用API权限
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.SysMenuService.SaveRoleMenuList(System.Collections.Generic.List{SmartLibrary.LogAnalysis.EntityFramework.Core.Dtos.SysRoleMenuDto})">
+            <summary>
+            保存角色-菜单权限关系
+            </summary>
+            <param name="sysRoleMenuDtos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.SysMenuService.InsertSysRoleInfo(SmartLibrary.LogAnalysis.EntityFramework.Core.Dtos.SysRoleInfoDto)">
+            <summary>
+            新增角色基础信息
+            </summary>
+            <param name="sysRoleInfoDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.SysMenuService.UpdateSysRoleInfo(SmartLibrary.LogAnalysis.EntityFramework.Core.Dtos.SysRoleInfoDto)">
+            <summary>
+            修改角色基础信息
+            </summary>
+            <param name="sysRoleInfoDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.SysMenuService.GetSysRoleBaseInfo(System.Guid)">
+            <summary>
+            修改角色基础信息
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.SysMenuService.GetRoleMenu(System.Guid)">
+            <summary>
+            查角色-权限绑定关系
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.SysMenuService.GetSysRoleInfo(System.Guid)">
+            <summary>
+            查角色的信息
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.SysMenuService.GetUserPermissionTree(System.Guid)">
+            <summary>
+            查角色的信息
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.SysMenuService.GetMGRPermissionTree(System.Guid)">
+            <summary>
+            取管理员（默认角色）的权限树
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.SysMenuService.GetOperatorPermissionTree(System.Guid)">
+            <summary>
+            取操作员（默认角色）的权限树
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.SysMenuService.GetVisitorsPermissionTree(System.Guid)">
+            <summary>
+            取浏览者（默认角色）的权限树
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.SysMenuService.GetMGRPermissionList">
+            <summary>
+            取管理员（默认角色）的权限树
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.SysMenuService.GetOperatorPermissionList">
+            <summary>
+            取操作员（默认角色）的权限树
+            </summary>
+            <param name="userId"></param>  GetOperatorPermissionList
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.SysMenuService.GetVisitorsPermissionList">
+            <summary>
+            取浏览者（默认角色）的权限树
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.LogAnalysis.Application.Services.RemoteProxy.EsHttp">
+            <summary>
+            请求代理，具体使用方式参考furion框架
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.Services.RemoteProxy.EsHttp.PostVipSearchByObjectV2Async(System.Object)">
+            <summary>
+            转发到Es查询服务，方法vipSearchByObjectV2
+            </summary>
+            <param name="condition"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.LogAnalysis.Application.UserService">
+            <summary>
+            用户服务
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.UserService.GetUserName(SmartLibraryUser.UserRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            获取用户姓名
+            </summary>
+            <param name="request"></param>
+            <param name="callContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.LogAnalysis.Application.UserService.AddOnePerson">
+            <summary>
+            模拟添加员工同时，发布投递添加员工消息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibraryUser.UserRoleGrpcServiceReflection">
+            <summary>Holder for reflection information generated from Protos/Client/UserRoleGrpcService.proto</summary>
+        </member>
+        <member name="P:SmartLibraryUser.UserRoleGrpcServiceReflection.Descriptor">
+            <summary>File descriptor for Protos/Client/UserRoleGrpcService.proto</summary>
+        </member>
+        <member name="T:SmartLibraryUser.UserRoleRequest">
+            <summary>
+            定义请求的对象名
+            </summary>
+        </member>
+        <member name="F:SmartLibraryUser.UserRoleRequest.UserKeyFieldNumber">
+            <summary>Field number for the "UserKey" field.</summary>
+        </member>
+        <member name="P:SmartLibraryUser.UserRoleRequest.UserKey">
+            <summary>
+            有一个属性字段是name
+            </summary>
+        </member>
+        <member name="T:SmartLibraryUser.UserRoleReply">
+            <summary>
+            定义返回的对象名
+            </summary>
+        </member>
+        <member name="F:SmartLibraryUser.UserRoleReply.UserRoleFieldNumber">
+            <summary>Field number for the "UserRole" field.</summary>
+        </member>
+        <member name="P:SmartLibraryUser.UserRoleReply.UserRole">
+            <summary>
+            有一个返回的字段是message
+            </summary>
+        </member>
+        <member name="T:SmartLibraryUser.UserRoleGrpcService">
+            <summary>
+            定义具体的服务
+            </summary>
+        </member>
+        <member name="P:SmartLibraryUser.UserRoleGrpcService.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:SmartLibraryUser.UserRoleGrpcService.UserRoleGrpcServiceClient">
+            <summary>Client for UserRoleGrpcService</summary>
+        </member>
+        <member name="M:SmartLibraryUser.UserRoleGrpcService.UserRoleGrpcServiceClient.#ctor(Grpc.Core.ChannelBase)">
+            <summary>Creates a new client for UserRoleGrpcService</summary>
+            <param name="channel">The channel to use to make remote calls.</param>
+        </member>
+        <member name="M:SmartLibraryUser.UserRoleGrpcService.UserRoleGrpcServiceClient.#ctor(Grpc.Core.CallInvoker)">
+            <summary>Creates a new client for UserRoleGrpcService that uses a custom <c>CallInvoker</c>.</summary>
+            <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+        </member>
+        <member name="M:SmartLibraryUser.UserRoleGrpcService.UserRoleGrpcServiceClient.#ctor">
+            <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+        </member>
+        <member name="M:SmartLibraryUser.UserRoleGrpcService.UserRoleGrpcServiceClient.#ctor(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Protected constructor to allow creation of configured clients.</summary>
+            <param name="configuration">The client configuration.</param>
+        </member>
+        <member name="M:SmartLibraryUser.UserRoleGrpcService.UserRoleGrpcServiceClient.GetUserRole(SmartLibraryUser.UserRoleRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            定义某一个方法API，格式是：rpc 方法名(请求参数对象名) returns(返回参数对象名)
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+            <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+            <param name="cancellationToken">An optional token for canceling the call.</param>
+            <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibraryUser.UserRoleGrpcService.UserRoleGrpcServiceClient.GetUserRole(SmartLibraryUser.UserRoleRequest,Grpc.Core.CallOptions)">
+            <summary>
+            定义某一个方法API，格式是：rpc 方法名(请求参数对象名) returns(返回参数对象名)
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="options">The options for the call.</param>
+            <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibraryUser.UserRoleGrpcService.UserRoleGrpcServiceClient.GetUserRoleAsync(SmartLibraryUser.UserRoleRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            定义某一个方法API，格式是：rpc 方法名(请求参数对象名) returns(返回参数对象名)
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+            <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+            <param name="cancellationToken">An optional token for canceling the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibraryUser.UserRoleGrpcService.UserRoleGrpcServiceClient.GetUserRoleAsync(SmartLibraryUser.UserRoleRequest,Grpc.Core.CallOptions)">
+            <summary>
+            定义某一个方法API，格式是：rpc 方法名(请求参数对象名) returns(返回参数对象名)
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="options">The options for the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibraryUser.UserRoleGrpcService.UserRoleGrpcServiceClient.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+        </member>
+        <member name="T:SmartLibraryUser.UserServiceReflection">
+            <summary>Holder for reflection information generated from Protos/Server/UserService.proto</summary>
+        </member>
+        <member name="P:SmartLibraryUser.UserServiceReflection.Descriptor">
+            <summary>File descriptor for Protos/Server/UserService.proto</summary>
+        </member>
+        <member name="T:SmartLibraryUser.UserRequest">
+            <summary>
+            定义请求的对象名
+            </summary>
+        </member>
+        <member name="F:SmartLibraryUser.UserRequest.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="P:SmartLibraryUser.UserRequest.Id">
+            <summary>
+            有一个属性字段是name
+            </summary>
+        </member>
+        <member name="T:SmartLibraryUser.UserReply">
+            <summary>
+            定义返回的对象名
+            </summary>
+        </member>
+        <member name="F:SmartLibraryUser.UserReply.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="P:SmartLibraryUser.UserReply.Id">
+            <summary>
+            有一个返回的字段是message
+            </summary>
+        </member>
+        <member name="F:SmartLibraryUser.UserReply.UserNameFieldNumber">
+            <summary>Field number for the "UserName" field.</summary>
+        </member>
+        <member name="T:SmartLibraryUser.UserGrpcService">
+            <summary>
+            定义具体的服务
+            </summary>
+        </member>
+        <member name="P:SmartLibraryUser.UserGrpcService.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:SmartLibraryUser.UserGrpcService.UserGrpcServiceBase">
+            <summary>Base class for server-side implementations of UserGrpcService</summary>
+        </member>
+        <member name="M:SmartLibraryUser.UserGrpcService.UserGrpcServiceBase.GetUserName(SmartLibraryUser.UserRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            定义某一个方法API，格式是：rpc 方法名(请求参数对象名) returns(返回参数对象名)
+            </summary>
+            <param name="request">The request received from the client.</param>
+            <param name="context">The context of the server-side call handler being invoked.</param>
+            <returns>The response to send back to the client (wrapped by a task).</returns>
+        </member>
+        <member name="M:SmartLibraryUser.UserGrpcService.BindService(SmartLibraryUser.UserGrpcService.UserGrpcServiceBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:SmartLibraryUser.UserGrpcService.BindService(Grpc.Core.ServiceBinderBase,SmartLibraryUser.UserGrpcService.UserGrpcServiceBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="T:Grpc.Health.V1.HealthCheckReflection">
+            <summary>Holder for reflection information generated from Protos/Server/HealthCheck.proto</summary>
+        </member>
+        <member name="P:Grpc.Health.V1.HealthCheckReflection.Descriptor">
+            <summary>File descriptor for Protos/Server/HealthCheck.proto</summary>
+        </member>
+        <member name="F:Grpc.Health.V1.HealthCheckRequest.ServiceFieldNumber">
+            <summary>Field number for the "service" field.</summary>
+        </member>
+        <member name="F:Grpc.Health.V1.HealthCheckResponse.StatusFieldNumber">
+            <summary>Field number for the "status" field.</summary>
+        </member>
+        <member name="T:Grpc.Health.V1.HealthCheckResponse.Types">
+            <summary>Container for nested types declared in the HealthCheckResponse message type.</summary>
+        </member>
+        <member name="P:Grpc.Health.V1.Health.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:Grpc.Health.V1.Health.HealthBase">
+            <summary>Base class for server-side implementations of Health</summary>
+        </member>
+        <member name="M:Grpc.Health.V1.Health.BindService(Grpc.Health.V1.Health.HealthBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:Grpc.Health.V1.Health.BindService(Grpc.Core.ServiceBinderBase,Grpc.Health.V1.Health.HealthBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+    </members>
+</doc>

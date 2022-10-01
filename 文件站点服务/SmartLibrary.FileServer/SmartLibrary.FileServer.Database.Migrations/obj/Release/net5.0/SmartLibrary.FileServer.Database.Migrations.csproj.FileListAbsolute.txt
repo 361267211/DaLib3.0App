@@ -1,0 +1,15 @@
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.Database.Migrations\bin\Release\net5.0\SmartLibrary.FileServer.Database.Migrations.deps.json
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.Database.Migrations\bin\Release\net5.0\SmartLibrary.FileServer.Database.Migrations.dll
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.Database.Migrations\bin\Release\net5.0\ref\SmartLibrary.FileServer.Database.Migrations.dll
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.Database.Migrations\bin\Release\net5.0\SmartLibrary.FileServer.Database.Migrations.pdb
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.Database.Migrations\bin\Release\net5.0\SmartLibrary.FileServer.EntityFramework.Core.dll
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.Database.Migrations\bin\Release\net5.0\SmartLibrary.FileServer.EntityFramework.Core.pdb
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.Database.Migrations\obj\Release\net5.0\SmartLibrary.FileServer.Database.Migrations.csproj.AssemblyReference.cache
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.Database.Migrations\obj\Release\net5.0\SmartLibrary.FileServer.Database.Migrations.GeneratedMSBuildEditorConfig.editorconfig
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.Database.Migrations\obj\Release\net5.0\SmartLibrary.FileServer.Database.Migrations.AssemblyInfoInputs.cache
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.Database.Migrations\obj\Release\net5.0\SmartLibrary.FileServer.Database.Migrations.AssemblyInfo.cs
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.Database.Migrations\obj\Release\net5.0\SmartLibrary.FileServer.Database.Migrations.csproj.CoreCompileInputs.cache
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.Database.Migrations\obj\Release\net5.0\SmartLibrary.FileServer.Database.Migrations.csproj.CopyComplete
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.Database.Migrations\obj\Release\net5.0\SmartLibrary.FileServer.Database.Migrations.dll
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.Database.Migrations\obj\Release\net5.0\ref\SmartLibrary.FileServer.Database.Migrations.dll
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.Database.Migrations\obj\Release\net5.0\SmartLibrary.FileServer.Database.Migrations.pdb

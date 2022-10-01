@@ -1,0 +1,54 @@
+﻿{
+  "ServerName": "智图3.0基础后台任务",
+  "Appsettings": {
+    "conn": "Host=192.168.21.46;Port=5432;User ID=postgres;Password=VipSmart2021!@#;Database=SmartLibrary_User1;Pooling=true;",
+    //"conn": "Host=202.202.12.19;Port=5432;User ID=postgres;Password=VipSmart2021!@#;Database=SmartLibrary_User;Pooling=true;",
+    "dbType": "PostgreSQL",
+    "isAutoClose": "true"
+  },
+  "PublicKey": "04B327FFA23F79C5EB9E30D60FEE38249A697D2B66A6A9B0261D85BBE7627B2EE26FEDE4E6C96E4BFB0E66ED4344793BBCD97CF8D196FEE7AD90C886D8FBC7E510",
+  "Jobs": [
+    {
+      "TenantId": "cqu", // 租户名称
+      "JobName": "DefaultSyncCardRepeatJob", //任务名称，不能修改
+      "Cron": "10 20 17 * * ?",
+      "AssemblyFullName": "TaskManager.Tasks", //任务程序集名称
+      "ClassFullName": "TaskManager.Tasks.Job.SyncReaderCardJobV2_2", //任务类全名称
+      "TaskParam": "", // 任务参数
+      "AdapterAssemblyFullName": "TaskManager.Adapters", //适配器程序集名称
+      "AdapterClassFullName": "TaskManager.Adapters.CquReaderAdapterV2_2", //适配器类全名称
+      "AdapterParm": {
+        "ReaderConn": "Server=192.168.21.71;Database=Smart_Portal_Cqu; User ID=Smart_Demo;Password=Smart_Demo_2021;MultipleActiveResultSets=true;"
+      }
+    },
+    {
+      "TenantId": "cqu", // 租户名称
+      "JobName": "SyncReaderPasswordJob", //任务名称
+      "Cron": "10 43 15 * * ?",
+      "AssemblyFullName": "TaskManager.Tasks", //任务程序集名称
+      "ClassFullName": "TaskManager.Tasks.Job.SyncReaderPasswordJob", //任务类全名称
+      "TaskParam": "", // 任务参数
+      "AdapterAssemblyFullName": "TaskManager.Adapters", //适配器程序集名称
+      "AdapterClassFullName": "TaskManager.Adapters.ReaderPasswordAdapter", //适配器类全名称
+      "AdapterParm": {
+        "ReaderConn": "Server=192.168.21.71;Database=Smart_Portal_Cqu; User ID=Smart_Demo;Password=Smart_Demo_2021;MultipleActiveResultSets=true;",
+        //"ReaderConn": "Server=222.198.130.105;Database=Smart_Portal;User ID=cqvipsmartlibmgr;Password=Cf#d14C5#3A843D9Bd9c78D45fCcC1_e;",
+        "SecretKey": "vip-cqu123456" //DES加密key
+      }
+    },
+    {
+      "TenantId": "cqu", // 租户名称
+      "JobName": "SyncReaderStopTimeJob", //任务名称
+      "Cron": "10 04 15 * * ?",
+      "AssemblyFullName": "TaskManager.Tasks", //任务程序集名称
+      "ClassFullName": "TaskManager.Tasks.Job.SyncReaderStopTimeJob", //任务类全名称
+      "TaskParam": "", // 任务参数
+      "AdapterAssemblyFullName": "TaskManager.Adapters", //适配器程序集名称
+      "AdapterClassFullName": "TaskManager.Adapters.ReaderStopTimeAdapter", //适配器类全名称
+      "AdapterParm": {
+        "ReaderConn": "Server=192.168.21.71;Database=Smart_Portal_Cqu; User ID=Smart_Demo;Password=Smart_Demo_2021;MultipleActiveResultSets=true;"
+        //"ReaderConn": "Server=222.198.130.105;Database=Smart_Portal;User ID=cqvipsmartlibmgr;Password=Cf#d14C5#3A843D9Bd9c78D45fCcC1_e;"
+      }
+    }
+  ]
+}

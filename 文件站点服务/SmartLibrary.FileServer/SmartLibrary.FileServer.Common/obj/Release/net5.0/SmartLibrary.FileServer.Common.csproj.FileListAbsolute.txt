@@ -1,0 +1,12 @@
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.Common\bin\Release\net5.0\SmartLibrary.FileServer.Common.deps.json
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.Common\bin\Release\net5.0\SmartLibrary.FileServer.Common.dll
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.Common\bin\Release\net5.0\ref\SmartLibrary.FileServer.Common.dll
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.Common\bin\Release\net5.0\SmartLibrary.FileServer.Common.pdb
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.Common\obj\Release\net5.0\SmartLibrary.FileServer.Common.csproj.AssemblyReference.cache
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.Common\obj\Release\net5.0\SmartLibrary.FileServer.Common.GeneratedMSBuildEditorConfig.editorconfig
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.Common\obj\Release\net5.0\SmartLibrary.FileServer.Common.AssemblyInfoInputs.cache
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.Common\obj\Release\net5.0\SmartLibrary.FileServer.Common.AssemblyInfo.cs
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.Common\obj\Release\net5.0\SmartLibrary.FileServer.Common.csproj.CoreCompileInputs.cache
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.Common\obj\Release\net5.0\SmartLibrary.FileServer.Common.dll
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.Common\obj\Release\net5.0\ref\SmartLibrary.FileServer.Common.dll
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.Common\obj\Release\net5.0\SmartLibrary.FileServer.Common.pdb

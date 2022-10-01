@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <DocumentationFile>SmartLibrary.Identity.Application.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Protos\Client\UserForIdentityGrpcService.proto" />
+    <None Remove="Services\fonts\Candara.ttf" />
+    <None Remove="Services\fonts\impact.ttf" />
+    <None Remove="Services\fonts\monbaiti.ttf" />
+    <None Remove="Services\fonts\STCAIYUN.ttf" />
+    <None Remove="SmartLibrary.Identity.Application.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Services\fonts\Candara.ttf" />
+    <EmbeddedResource Include="Services\fonts\impact.ttf" />
+    <EmbeddedResource Include="Services\fonts\monbaiti.ttf" />
+    <EmbeddedResource Include="Services\fonts\STCAIYUN.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.17.2" />
+    <PackageReference Include="Grpc.AspNetCore.Server" Version="2.37.0" />
+    <PackageReference Include="Grpc.Net.ClientFactory" Version="2.37.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.38.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Serilog.AspNetCore" Version="4.1.0" />
+    <PackageReference Include="Serilog.Sinks.Exceptionless" Version="3.1.4" />
+    <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="1.0.0-beta14" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SmartLibrary.Identity.Common\SmartLibrary.Identity.Common.csproj" />
+    <ProjectReference Include="..\SmartLibrary.Identity.EntityFramework.Core\SmartLibrary.Identity.EntityFramework.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Protos\Server\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Protobuf Include="Protos\Client\UserForIdentityGrpcService.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\Server\HealthCheck.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\Client\UserGrpcService.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\Client\MsgCenterGrpcService.proto" GrpcServices="Client" />
+  </ItemGroup>
+</Project>

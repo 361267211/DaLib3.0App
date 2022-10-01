@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.clearFloat::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.m-width{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-temp2-page{
+  overflow: hidden;
+  padding: 20px;
+  min-height: 80px;
+  line-height: 24px;
+  font-size: 12px;
+  /* background-color: #be3c3c; */
+  color: #fff;
+}
+/**富文本重置**/
+.footer-temp2-page .link a{
+  color: #fff !important;
+  padding: 0 30px;
+  border-right: 1px solid #fff;
+}
+.footer-temp2-page .link a span{
+  color: #fff !important;
+}
+.footer-temp2-page .link a:hover{
+  cursor: pointer;
+  color: #6588b6;
+}
+.footer-temp2-page .footer-fwb{
+  color: #fff !important;
+  display: block;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-temp2-page .footer-fwb a{
+  color: #fff !important;
+}
+.footer-temp2-page .footer-fwb span{
+  color: #fff !important;
+}
+.footer-temp2-page .offer{
+  margin-top: 5px;
+}

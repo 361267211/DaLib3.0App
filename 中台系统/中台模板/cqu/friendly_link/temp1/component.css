@@ -1,0 +1,112 @@
+.index-footer {
+    width: 100%;
+    background: #e2e2e2;
+  }
+  .index-footer .index-footer-box {
+    width: 1440px;
+    height: 200px;
+    margin: 0 auto;
+    background: #e2e2e2;
+    padding-top: 36px;
+    position: relative;
+  }
+  .index-footer .index-footer-box .index-footer-link {
+    width: 1040px;
+    margin-bottom: 20px;
+  }
+  .index-footer .index-footer-box .index-footer-link > h4 {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .index-footer .index-footer-box .index-footer-link > div > span {
+    padding: 0 10px;
+    display: inline-block;
+    border-right: 1px solid #949494;
+    font-size: 12px;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+  .index-footer .index-footer-box .index-footer-link > div > span:hover {
+    opacity: 0.8;
+  }
+  .index-footer .index-footer-box .index-footer-link > div > span:last-child {
+    border: none;
+  }
+  .index-footer .index-footer-box .index-footer-img {
+    position: absolute;
+    right: 0;
+    top: 50px;
+  }
+  .index-footer .index-footer-box .index-footer-img .index-footer-img-box {
+    width: 85px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+  }
+  .index-footer .index-footer-box .index-footer-img .index-footer-img-box > div {
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 4px;
+  }
+  .index-footer .index-footer-box .index-footer-img .index-footer-img-box > div img {
+    width: 64px;
+    height: 64px;
+    margin: 3px;
+  }
+  .index-footer .index-footer-box .index-footer-img .index-footer-img-box > span {
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    color: #cc0000;
+  }
+  .index-footer .index-footer-box .index-footer-img .index-footer-img-box1 {
+    width: 85px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+  }
+  .index-footer .index-footer-box .index-footer-img .index-footer-img-box1:hover {
+    opacity: 0.8;
+  }
+  .index-footer .index-footer-box .index-footer-img .index-footer-img-box1 > div {
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 4px;
+  }
+  .index-footer .index-footer-box .index-footer-img .index-footer-img-box1 > div img {
+    width: 64px;
+    height: 64px;
+    margin: 3px;
+  }
+  .index-footer .index-footer-box .index-footer-img .index-footer-img-box1 > span {
+    display: block;
+    line-height: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .index-footer .index-footer-box .index-footer-img .index-footer-img-box1 .footer-img-box1-cur {
+    font-weight: 500;
+  }
+  .index-qr-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  .index-qr-box img {
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  

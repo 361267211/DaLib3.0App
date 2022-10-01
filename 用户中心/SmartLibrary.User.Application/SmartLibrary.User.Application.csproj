@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <DocumentationFile>SmartLibrary.User.Application.xml</DocumentationFile>
+    <Version>3.0.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="AppServices\MenuCategoryAppService.cs" />
+    <Compile Remove="AppServices\UserTagAnalysisAppService.cs" />
+    <Compile Remove="Dtos\DataApprove\PropertyGroupChangeListDto.cs" />
+    <Compile Remove="Dtos\DataApprove\PropertyGroupChangeLogDto.cs" />
+    <Compile Remove="Dtos\DataApprove\PropertyGroupItemChangeLogDto.cs" />
+    <Compile Remove="GrpcService\ExceptionHandler\GrpcExceptionHandler.cs" />
+    <Compile Remove="Services\UserTestService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Protos\Client\ScoreCenterGrpcService.proto" />
+    <None Remove="Protos\Server\IdentityService.proto" />
+    <None Remove="Protos\Server\UserForIdentityGrpcService.proto" />
+    <None Remove="SmartLibrary.User.Application.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.17.2" />
+    <PackageReference Include="Grpc.Tools" Version="2.38.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="NPOI" Version="2.5.4" />
+    <PackageReference Include="Serilog.AspNetCore" Version="4.1.0" />
+    <PackageReference Include="Serilog.Sinks.Exceptionless" Version="3.1.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SmartLibrary.User.Common\SmartLibrary.User.Common.csproj" />
+    <ProjectReference Include="..\SmartLibrary.User.EntityFramework.Core\SmartLibrary.User.EntityFramework.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Protobuf Include="Protos\Client\ScoreCenterGrpcService.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\Server\HealthCheck.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\Server\UserForIdentityGrpcService.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\Server\UserGrpcService.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\Client\SmartLibraryGuessUserLike.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\Client\MsgCenterGrpcService.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\Client\AppCenterGrpcService.proto" GrpcServices="Client" />
+  </ItemGroup>
+</Project>

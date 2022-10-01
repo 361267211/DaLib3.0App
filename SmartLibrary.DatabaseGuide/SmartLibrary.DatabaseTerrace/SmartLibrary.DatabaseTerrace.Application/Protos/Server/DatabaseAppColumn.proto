@@ -1,0 +1,17 @@
+syntax = "proto3";
+package SmartLibraryAppAppColumn;
+import "google/protobuf/empty.proto";
+
+service DatabaseAppColumnGrpcService {
+	rpc GetAppColumnList (google.protobuf.Empty) returns (AppColumnListReply); // 应用栏目列表
+}
+
+
+message AppColumnListReply {
+	repeated AppColumnListSingleItem AppColumnList = 1;
+}
+
+message AppColumnListSingleItem {
+	string AppColumnName = 1; //栏目名称
+	string AppColumnId = 2; //栏目Id
+}

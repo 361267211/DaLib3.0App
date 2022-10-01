@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "TaskSchedule": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearFloat::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+}
+html{
+    background: #F6F8F9;
+}
+/***标题 */
+.top-main-title-temp{
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+  padding-bottom: 7px;
+  border-bottom:1px solid #E6E6E6;
+}
+.top-main-title-temp .e-title{ 
+  color: #999999;
+  font-size: 12px;
+  line-height: 17px;
+  margin-left: 10px;
+}
+.top-main-title-temp .r-btn{
+  cursor: pointer;
+  float: right;
+  color: #8E8E8E;
+  font-size: 12px;
+  font-weight: normal;
+}
+.top-main-title-temp .r-btn:hover{
+  color: #000;
+}
+/****推荐期刊******/
+.temp-recommendthejournal-warp-pad{
+  padding: 11px;
+  height: 100%;
+}
+.temp-recommendthejournal-warp{
+  background: #fff;
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 40px 75px rgba(57, 60, 67, 0.08);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+  min-height: 100%;
+}
+.recommendthejournal-list-warp{
+  margin: 0 -10px;
+}
+.recommendthejournal-list-warp .recommendthejournal-box{
+  float: left;
+  width: 50%;
+  padding:0 10px;
+  margin-top: 20px;
+}
+.recommendthejournal-list-warp .recommendthejournal-box-bg{
+  height: 200px;
+  background: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.08);
+  border-radius: 3px;
+  position: relative;
+  padding:20px;
+  padding-left: 158px;
+}
+.recommendthejournal-list-warp .recommendthejournal-box-bg .book-cover{
+  cursor: pointer;
+  width: 118px;
+  height: 162px;
+  left: 20px;
+  top: 20px;
+  box-shadow: 1px 1px 3px #D4D8E4;
+  position: absolute;
+}
+.recommendthejournal-list-warp .book-info{
+  padding: 12px 0;
+}
+.recommendthejournal-list-warp .book-info .book-name{
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  color: #325FB4;
+  overflow: hidden;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-decoration: underline;
+}       
+.recommendthejournal-list-warp .book-info .book-author{
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}       
+.recommendthejournal-list-warp .book-info .book-i-gary{
+  margin-top: 3px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  opacity: 0.76;
+  overflow: hidden;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}       
+.recommendthejournal-list-warp .book-info .type-warp{
+  margin-top: 7px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-decoration: underline;
+}
+.recommendthejournal-list-warp .book-info .type-warp .type-btn{
+  height: 21px;
+  line-height: 21px;
+  font-size: 12px;
+  background: #fff;
+  color: #325FB4;
+  border: 1px solid #325FB4;
+  border-radius: 12px;
+  padding: 0 4px;
+  display: inline-block;
+  margin-right: 5px;
+}

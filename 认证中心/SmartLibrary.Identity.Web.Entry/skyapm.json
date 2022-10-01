@@ -1,0 +1,29 @@
+﻿{
+  "SkyWalking": {
+    "ServiceName": "SmartLibrary.Identity",
+    "Namespace": "",
+    "HeaderVersions": [
+      "sw8"
+    ],
+    "Sampling": {
+      "SamplePer3Secs": -1,
+      "Percentage": -1.0,
+      "IgnorePaths": [ "**/ignore" ]
+    },
+    "Tracing": {
+      "ExceptionMaxDepth": 3
+    },
+    "Transport": {
+      "Interval": 1000,
+      "ProtocolVersion": "v8",
+      "QueueSize": 30000,
+      "BatchSize": 3000,
+      "gRPC": {
+        "Servers": "192.168.21.71:11800",
+        "Timeout": 100000,
+        "ConnectTimeout": 100000,
+        "ReportTimeout": 600000
+      }
+    }
+  }
+}

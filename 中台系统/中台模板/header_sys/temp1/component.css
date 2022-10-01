@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.clearFloat::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.min-width{
+  min-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.m-width{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/**顶部欢迎信息*/
+.header-tip {
+  height: 36px;
+  color: #fff;
+}
+/* .bgchild{
+  background-color:#be3c3c;
+} */
+.header-tip .max-width {
+  position: relative;
+}
+
+.header-tip .Welcomes {
+  position: absolute;
+  top: 8px;
+  line-height: 20px;
+}
+
+.header-tip .Welcomes img {
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
+.header-tip .right-float {
+  float: right;
+  margin-top: 8px;
+}
+
+.header-tip .right-float input {
+  outline: none;
+  height: 20px;
+  text-indent: 10px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background-color: #fff;
+}
+
+.header-tip .line {
+  padding: 0 10px;
+  padding-left: 15px;
+}
+
+.header-tip select {
+  outline: none;
+  color: #fff;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.header-tip select option {
+  color: #232323;
+}
+
+/**顶部导航栏*/
+.header-nav {
+  background-color: #fff;
+  height: 100px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .15);
+}
+
+.header-nav .m-width {
+  height: 100%;
+  position: relative;
+  background: url(http://192.168.21.71:9000/image/header-bg.png) no-repeat 156px center;
+}
+
+.header-nav .logo-text {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header-nav .logo-text img{
+  vertical-align: middle;
+}
+.header-nav .logo-text,
+.nav-warp {
+  position: absolute;
+}
+
+.header-nav .nav-warp {
+  right: 0;
+  left: 150px;
+  text-align: right;
+}
+
+.header-nav .row-one {
+  line-height: 30px;
+  color: #555;
+  margin-top: 10px;
+  text-align: right;
+}
+.header-nav .row-one a{
+  color: #232323;
+}
+.header-nav .row-two a {
+  color: #333;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+.header-nav .row-two .active{
+  color: #DF1A1A;
+}
+.header-nav .row-two a:last-child{
+  padding-right: 0;
+}
+.header-nav .row-two a:hover{
+  color: #000;
+}
+.header-nav .row-two div:first-child {
+  padding-left: 0;
+}
+
+.header-nav .row-two div:last-child {
+  padding-right: 0;
+}

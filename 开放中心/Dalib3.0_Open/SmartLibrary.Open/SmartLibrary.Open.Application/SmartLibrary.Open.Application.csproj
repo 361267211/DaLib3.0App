@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <DocumentationFile>SmartLibrary.Open.Application.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Protos\Client\**" />
+    <EmbeddedResource Remove="Protos\Client\**" />
+    <None Remove="Protos\Client\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Protos\Server\Open_AppManage.proto" />
+    <None Remove="Protos\Server\Open_AppRoute.proto" />
+    <None Remove="Protos\Server\Open_AssemblyShared.proto" />
+    <None Remove="Protos\Server\Open_DonationTemplateTemplate.proto" />
+    <None Remove="Protos\Server\Open_OpacTemplate.proto" />
+    <None Remove="Protos\Server\Open_OpacTemplate.proto" />
+    <None Remove="SmartLibrary.Open.Application.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.17.2" />
+    <PackageReference Include="Grpc.AspNetCore.Server" Version="2.37.0" />
+    <PackageReference Include="Grpc.Net.ClientFactory" Version="2.37.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.38.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Serilog.AspNetCore" Version="4.1.0" />
+    <PackageReference Include="Serilog.Sinks.Exceptionless" Version="3.1.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SmartLibrary.Open.Common\SmartLibrary.Open.Common.csproj" />
+    <ProjectReference Include="..\SmartLibrary.Open.EntityFramework.Core\SmartLibrary.Open.EntityFramework.Core.csproj" />
+    <ProjectReference Include="..\SmartLibrary.Open.Services\SmartLibrary.Open.Services.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Protobuf Include="Protos\Server\Open_AppRoute.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\Server\Open_AppManage.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\Server\Open_AssemblyShared.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\Server\HealthCheck.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\Server\Open_DonationTemplateTemplate.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\Server\Open_OpacTemplate.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\Server\Open_SearchBoxTitleItemService.proto" />  </ItemGroup>
+</Project>

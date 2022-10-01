@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.c-l::after{
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+    display: block;
+}
+/***公用 ************/
+/***标题 */
+.temp-left_menu_list-warp{
+    height: 100%;
+    color: #fff;
+    font-size: 14px;
+}
+.temp-left_menu_list-warp .main-title-temp{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+}
+.temp-left_menu_list-warp .e-title{ 
+    color: #E3E3E3;
+    font-size: 12px;
+    line-height: 17px;
+    margin-left: 10px;
+}
+/***公用 end ************/
+.temp-left_menu_list-warp{
+    min-height: 50%;
+    background:#801a16 url('http://192.168.21.71:9000/image/menu_list_left_red.png') no-repeat top;
+    background-size: 100% 100%;
+    padding:22px 30px;
+}
+.template1 .temp-left_menu_list-warp{
+    background:#801a16 url('http://192.168.21.71:9000/image/menu_list_left_red.png') no-repeat top !important;
+    background-size: 100% 100% !important;
+}
+.template2 .temp-left_menu_list-warp{
+    background:#00305d url('http://192.168.21.71:9000/image/menu_list_left_blue.png') no-repeat top !important;
+    background-size: 100% 100% !important;
+}
+
+/**检索 strat */
+.search-warp{
+    padding-bottom: 18px;
+    min-height: 80px;
+}
+.search-warp .search-term{
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+.search-warp .search-term span{
+    margin-right: 15px;
+}
+/**搜索框 */
+.search-warp .search-inpt-warp{
+    position: relative;
+}
+.search-warp .search-inpt-warp .s-input,
+.search-warp .search-inpt-warp .s-btn1,
+.search-warp .search-inpt-warp .s-btn2{
+    float: left;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+.search-warp .search-inpt-warp .s-input{
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 30px;
+    background: rgba(255,255,255,.7);
+}
+.search-warp .search-inpt-warp .s-btn1,
+.search-warp .search-inpt-warp .s-btn2{
+    height: 36px;
+    position: absolute;
+    top: 5px;
+    color: #fff;
+    width: 80px;
+}
+.search-warp .search-inpt-warp .s-btn1{
+    right: 85px;
+    border-radius: 10px 0 0 10px;
+    background: #DF1A1A;
+}
+.search-warp .search-inpt-warp .s-btn2{
+    right: 5px;
+    border-radius:0 10px 10px 0;
+    background: #585858;
+}
+.search-warp .search-inpt-warp{
+    height: 46px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.2);
+}
+/**检索 end */
+
+/***推荐应用 */
+.temp-left_menu_list-warp .hot-apps{
+    padding:20px 30px;
+    margin-top: 18px;
+    height: 192px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 16px;
+}
+.temp-left_menu_list-warp .hot-apps .apps-conent{
+    margin-top: 24px;
+    margin-left: -2%;
+    margin-right: -2%;
+}
+.temp-left_menu_list-warp .hot-apps .apps-conent .box{
+    cursor: pointer;
+    width: 16.666%;
+    float: left;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    padding:0 5px;
+}
+.temp-left_menu_list-warp .hot-apps .apps-c-logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    opacity: 0.7;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+    border: 1px solid rgba(255,255,255,.9);
+}
+.temp-left_menu_list-warp .hot-apps .apps-c-logo img{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    background-color: #fff;
+    padding: 10px;
+}
+/***我的书斋 */
+.temp-left_menu_list-warp .my-study{
+    padding:20px 30px;
+    margin-top: 18px;
+    height:calc(100% - 325px);
+    overflow: hidden;
+    background: rgba(255,255,255,0.2);
+    border-radius: 16px;
+}
+.temp-left_menu_list-warp .my-study .num-count-warp{
+    min-height: 60px;
+    margin: 16px 0;
+}
+.temp-left_menu_list-warp .my-study .n-c-box{
+    width: 20%;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+.temp-left_menu_list-warp .my-study .n-c-box::after{
+    position: absolute;
+    right: 0;
+    top: 8px;
+    display: block;
+    content: '';
+    clear: both;
+    width: 1px;
+    height: 40px;
+    background: rgba(255,255,255,.25);
+}
+.temp-left_menu_list-warp .my-study .c-b-clear::after{
+    width: 0px;
+}
+.temp-left_menu_list-warp .my-study .n-c-box span{
+    display: block;
+}
+.temp-left_menu_list-warp .my-study .n-c-box span.num{
+    cursor: pointer;
+    font-size: 32px;
+    font-weight: bold;
+}
+.temp-left_menu_list-warp .my-study .n-c-box span.num:hover{
+    color: #f1f1f1;
+}
+/***猜你喜欢 */
+.temp-left_menu_list-warp .my-study .like-warp{
+    margin-bottom: 20px;
+}
+.temp-left_menu_list-warp .my-study .like-row>div{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.temp-left_menu_list-warp .my-study .like-row:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+.temp-left_menu_list-warp .my-study .like-row:active{
+    cursor: pointer;
+    opacity: 1;
+}
+.temp-left_menu_list-warp .my-study .like-row .type{
+    height: 20px;
+    font-size: 12px;
+    padding: 0 6px;
+    margin-right: 8px;
+    border-radius: 3px;
+    display: inline-block;
+}
+.bg1{
+    background: #F8685D;
+}
+.bg2{
+    background: #995EBF;
+}
+.bg3{
+    background: #518CD1;
+}
+.bg4{
+    background: #1F8877;
+}
+.temp-left_menu_list-warp .my-study .like-row{
+    line-height: 20px;
+    padding-top: 14px;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 7px;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+.temp-left_menu_list-warp .my-study .like-row .like-title{
+    font-weight: bold;
+}
+/* 未登录状态 */
+.plase-login{
+    text-align: right;
+    margin-top: 18px;
+    height: 176px;
+    border-radius: 16px;
+    padding: 27px 10%;
+    background:rgba(255, 255, 255, 0.15);
+    /* background-image:url('http://192.168.21.71:9000/image/home01.png'),
+     url('http://192.168.21.71:9000/image/home02.png'); */
+    background-position: 0% 30%, 100% 100%;
+    background-repeat: no-repeat;
+}
+.plase-login .welcome-txt{
+    height: 22px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom:2px;
+}
+.plase-login .hint-txt{
+    height: 17px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.plase-login .btn{
+    cursor: pointer;
+    text-decoration:none;
+    color: #BA433E;
+    width: 84px;
+    height: 28px;
+    line-height: 28px;
+    background: #FFFFFF;
+    opacity: 1;
+    border-radius: 9px;
+    text-align: center;
+    display: inline-block;
+}  
+

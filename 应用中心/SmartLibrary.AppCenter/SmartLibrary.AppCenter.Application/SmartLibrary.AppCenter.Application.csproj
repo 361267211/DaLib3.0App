@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <DocumentationFile>SmartLibrary.AppCenter.Application.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Protos\Client\Open_AppManage.proto" />
+    <None Remove="Protos\Client\SceneManage.proto" />
+    <None Remove="Protos\Client\UserGrpcService.proto" />
+    <None Remove="Protos\Server\AppCenterGrpcService.proto" />
+    <None Remove="SmartLibrary.AppCenter.Application.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EasyCaching.Redis" Version="1.5.1" />
+    <PackageReference Include="EasyCaching.Serialization.Json" Version="1.5.1" />
+    <PackageReference Include="Google.Protobuf" Version="3.18.0" />
+    <PackageReference Include="Grpc.AspNetCore.Server" Version="2.40.0" />
+    <PackageReference Include="Grpc.Net.ClientFactory" Version="2.40.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.40.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Serilog.AspNetCore" Version="4.1.0" />
+    <PackageReference Include="Serilog.Sinks.Exceptionless" Version="3.1.4" />
+    <PackageReference Include="SmartLibrary.Search.EsSearchProxy.Core" Version="1.1.14" />
+    <PackageReference Include="TinyPinyin.Net" Version="1.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SmartLibrary.AppCenter.Common\SmartLibrary.AppCenter.Common.csproj" />
+    <ProjectReference Include="..\SmartLibrary.AppCenter.EntityFramework.Core\SmartLibrary.AppCenter.EntityFramework.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Protobuf Include="Protos\Client\Open_AppManage.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\Client\SceneManage.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\Client\UserGrpcService.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\Server\AppCenterGrpcService.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\Server\HealthCheck.proto" GrpcServices="Server" />
+  </ItemGroup>
+</Project>

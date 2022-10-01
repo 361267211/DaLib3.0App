@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SmartLibrary.FileServer.EntityFramework.Core\SmartLibrary.FileServer.EntityFramework.Core.csproj" />
+  </ItemGroup>
+
+</Project>

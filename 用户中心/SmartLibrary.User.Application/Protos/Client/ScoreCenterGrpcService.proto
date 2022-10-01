@@ -1,0 +1,15 @@
+syntax = "proto3";
+package SmartLibrary.ScoreCenter;
+
+service ScoreCenterGrpcService {
+    // 获取用户可用积分
+    rpc GetScoreByUserKey(UserScoreRequest) returns (UserScoreReply);
+}
+
+message UserScoreRequest {
+    string UserKey= 1;
+}
+
+message UserScoreReply {
+    int32 UserScore = 1;
+}

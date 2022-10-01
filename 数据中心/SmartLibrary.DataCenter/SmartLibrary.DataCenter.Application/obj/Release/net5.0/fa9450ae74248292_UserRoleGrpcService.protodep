@@ -1,0 +1,2 @@
+obj\Release\net5.0\Protos\Client/UserRoleGrpcService.cs \
+obj\Release\net5.0\Protos\Client/UserRoleGrpcServiceGrpc.cs: Protos/Client/UserRoleGrpcService.proto

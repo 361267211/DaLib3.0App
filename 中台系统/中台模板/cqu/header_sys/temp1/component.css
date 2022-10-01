@@ -1,0 +1,57 @@
+.index-header {
+  width: 100%;
+  background: #a21e1e;
+}
+.index-header .index-header-box {
+  width: 1440px;
+  height: 81px;
+  margin: 0 auto;
+  position: relative;
+  background: #a21e1e;
+}
+.index-header .index-header-box img {
+  margin-top: 5px;
+  cursor: pointer;
+}
+.index-header .index-header-box img:hover {
+  opacity: 0.8;
+}
+.index-header .index-header-box .index-header-top {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+.index-header .index-header-box .index-header-top>span {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.index-header .index-header-box .index-header-top div {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 12px;
+  cursor: pointer;
+  display: inline-block;
+}
+.index-header .index-header-box .index-header-top>span:hover {
+  opacity: 0.8;
+}
+.index-header .index-header-box .index-header-nav {
+  position: absolute;
+  top: 40px;
+  right: 0;
+}
+.index-header .index-header-box .index-header-nav span {
+  margin: 0 15px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 20px;
+}
+.index-header .index-header-box .index-header-nav span:hover {
+  opacity: 0.8;
+}
+.login-btn:hover{
+  opacity: .8;
+}

@@ -1,0 +1,2 @@
+obj\Release\net5.0\Protos\Server/ProviderResourceService.cs \
+obj\Release\net5.0\Protos\Server/ProviderResourceServiceGrpc.cs: Protos/Server/ProviderResourceService.proto

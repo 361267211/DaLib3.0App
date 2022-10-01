@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartLibrary.DatabaseTerrace.Application", "SmartLibrary.DatabaseTerrace.Application\SmartLibrary.DatabaseTerrace.Application.csproj", "{CD184279-3585-4905-A366-F0DB58A41704}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartLibrary.DatabaseTerrace.Common", "SmartLibrary.DatabaseTerrace.Common\SmartLibrary.DatabaseTerrace.Common.csproj", "{E4227E61-4FDE-4681-ABE2-161A973384C7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartLibrary.DatabaseTerrace.Database.Migrations", "SmartLibrary.DatabaseTerrace.Database.Migrations\SmartLibrary.DatabaseTerrace.Database.Migrations.csproj", "{18BD1C33-8A37-4CEE-826A-57059DE5542A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartLibrary.DatabaseTerrace.EntityFramework.Core", "SmartLibrary.DatabaseTerrace.EntityFramework.Core\SmartLibrary.DatabaseTerrace.EntityFramework.Core.csproj", "{3F7FF23E-19C0-49F1-8F6D-4F30037E5B04}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartLibrary.DatabaseTerrace.GrpcClientTest", "SmartLibrary.DatabaseTerrace.GrpcClientTest\SmartLibrary.DatabaseTerrace.GrpcClientTest.csproj", "{222DF2C4-BEAE-4ECF-B555-16C4904E3DC7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartLibrary.DatabaseTerrace.Web", "SmartLibrary.DatabaseTerrace.Web.Entry\SmartLibrary.DatabaseTerrace.Web.csproj", "{6BCA660B-9907-4EBF-950F-5C3633A0A6DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD184279-3585-4905-A366-F0DB58A41704}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD184279-3585-4905-A366-F0DB58A41704}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD184279-3585-4905-A366-F0DB58A41704}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD184279-3585-4905-A366-F0DB58A41704}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4227E61-4FDE-4681-ABE2-161A973384C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4227E61-4FDE-4681-ABE2-161A973384C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4227E61-4FDE-4681-ABE2-161A973384C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4227E61-4FDE-4681-ABE2-161A973384C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18BD1C33-8A37-4CEE-826A-57059DE5542A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18BD1C33-8A37-4CEE-826A-57059DE5542A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18BD1C33-8A37-4CEE-826A-57059DE5542A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18BD1C33-8A37-4CEE-826A-57059DE5542A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F7FF23E-19C0-49F1-8F6D-4F30037E5B04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F7FF23E-19C0-49F1-8F6D-4F30037E5B04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F7FF23E-19C0-49F1-8F6D-4F30037E5B04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F7FF23E-19C0-49F1-8F6D-4F30037E5B04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{222DF2C4-BEAE-4ECF-B555-16C4904E3DC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{222DF2C4-BEAE-4ECF-B555-16C4904E3DC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{222DF2C4-BEAE-4ECF-B555-16C4904E3DC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{222DF2C4-BEAE-4ECF-B555-16C4904E3DC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BCA660B-9907-4EBF-950F-5C3633A0A6DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BCA660B-9907-4EBF-950F-5C3633A0A6DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BCA660B-9907-4EBF-950F-5C3633A0A6DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BCA660B-9907-4EBF-950F-5C3633A0A6DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E18A7D91-386B-44AF-B028-10CB59C34C33}
+	EndGlobalSection
+EndGlobal

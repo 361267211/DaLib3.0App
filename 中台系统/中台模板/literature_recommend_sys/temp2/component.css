@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.c-l::after{
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+    display: block;
+}
+/***公用 ************/
+/***标题 */
+.temp-newbook-warp{
+    color: #353535;
+    font-size: 14px;
+    padding: 11px;
+    height: 100%;
+}
+.temp-newbook-warp .main-title-temp{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+.temp-newbook-warp .e-title{ 
+    color: #999999;
+    font-size: 12px;
+    line-height: 17px;
+    margin-left: 10px;
+}
+/***公用 end ************/
+.temp-newbook-warp .newbook-content{ 
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 40px 75px rgba(57, 60, 67, 0.08);
+    border-radius: 16px;
+    height: calc(100% - 38px);
+}
+.temp-newbook-warp .newbook-c-center,
+.temp-newbook-warp .newbook-c-right{
+    float: left;
+    padding: 20px;
+    height: 100%;
+}
+.temp-newbook-warp .newbook-c-right{
+    overflow: hidden;
+    width: 30%;
+}
+/**左边-书本信息*/
+.temp-newbook-warp .newbook-c-left .book-info{
+    padding: 20px;
+}
+.temp-newbook-warp .newbook-c-left .book-info .b-i-title{
+    color: #333333;
+    font-size: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.temp-newbook-warp .newbook-c-left .book-info .b-i-author{
+    font-size: 12px;
+    color: #919191;
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 5px;
+}
+.temp-newbook-warp .newbook-c-left .book-info .b-i-info{
+    font-size: 14px;
+    color: #333333;
+    line-height: 20px;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    
+}
+/**中间书本内容****/
+.temp-newbook-warp .newbook-c-center{
+    width:70%;
+    padding: 10px;
+    overflow: hidden;
+    /* border-left: 1px solid #E6E6E6; */
+    border-right: 1px solid #E6E6E6;
+}
+.temp-newbook-warp .newbook-c-center .n-c-box{
+    cursor: pointer;
+    padding: 10px;
+    width: 25%;
+    height: 250px;
+    float: left;
+    color: #333;
+}
+.temp-newbook-warp .newbook-c-center img{
+    width: 120px;
+    min-height: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 3px #D4D8E4;
+    border-radius: 8px;
+    max-width: 100%;
+}
+.temp-newbook-warp .newbook-c-center .n-c-box:hover img{
+    box-shadow: 1px 1px 3px #999999;
+}
+.temp-newbook-warp .newbook-c-center .bok-name{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-weight: 500;
+    line-height: 20px;
+}
+.temp-newbook-warp .newbook-c-center .box-author{
+    margin-top: 5px;
+    overflow: hidden;
+    display: block;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    color: #999;
+}
+/***热门标签******/
+.temp-newbook-warp .newbook-c-right .n-c-r-title{
+    border-bottom: 1px solid #E6E6E6;
+    padding-bottom: 13px;
+}
+.temp-newbook-warp .newbook-c-right .n-c-r-title img{
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 9px;
+}
+.temp-newbook-warp .newbook-c-right .n-c-r-title span{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 22px;
+    color: #353535;
+    vertical-align: middle;
+}
+.temp-newbook-warp .newbook-c-right .box-label{
+    margin-top: 20px;
+}
+.temp-newbook-warp .newbook-c-right .box-label .b-l-title{
+    border-left: 2px solid #B74242;
+    font-weight: bold;
+    color: #333333;
+    padding-left: 5px;
+    line-height: 16px;
+}
+.temp-newbook-warp .newbook-c-right .box-label .b-l-list{
+    margin-top: 7px;
+    color: #333;
+    font-size: 12px;
+}
+.temp-newbook-warp .newbook-c-right .box-label .b-l-list span{
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+    padding:5px 7px;
+    color: #333;
+}
+.temp-newbook-warp .newbook-c-right .box-label .b-l-list .more{
+    color: #919191;
+}
+.temp-newbook-warp .newbook-c-right .box-label .b-l-list span:hover{
+    color: #000;
+}
+
+
+

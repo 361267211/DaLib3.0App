@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\Card.cs" />
+    <Compile Remove="Entities\Group.cs" />
+    <Compile Remove="Entities\Property.cs" />
+    <Compile Remove="Entities\PropertyGroup.cs" />
+    <Compile Remove="Entities\PropertyGroupItem.cs" />
+    <Compile Remove="Entities\PropertyGroupRule.cs" />
+    <Compile Remove="Entities\User.cs" />
+    <Compile Remove="Entities\UserGroup.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mapster" Version="7.2.0" />
+    <PackageReference Include="SqlSugarCore" Version="5.0.4.3-preview05" />
+  </ItemGroup>
+
+</Project>

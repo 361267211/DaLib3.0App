@@ -1,0 +1,1091 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmartLibrary.News.EntityFramework.Core</name>
+    </assembly>
+    <members>
+        <member name="T:SmartLibrary.News.EntityFramework.Core.DbContexts.NewsDbContext">
+            <summary>
+            名    称：NewsPlatesDbContext
+            作    者：张泽军
+            创建时间：2021/9/6 10:23:51
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.News.EntityFramework.Core.DbContexts.NewsDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            创建模型前
+            </summary>
+            <param name="modelBuilder"></param>
+        </member>
+        <member name="M:SmartLibrary.News.EntityFramework.Core.DbContexts.NewsDbContext.GetFullSchemaName">
+            <summary>
+            创建model时获取其schema
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.News.EntityFramework.Core.Entitys.Asset">
+            <summary>
+            测试 EF、多租户、多租户迁移用的模型Asset
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.Asset.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.Asset.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.Asset.Content">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.Asset.Language">
+            <summary>
+            语言
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.Asset.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.Asset.EnglihName">
+            <summary>
+            英文名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.Asset.Plate">
+            <summary>
+            模板
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.News.EntityFramework.Core.Entitys.LableInfo">
+            <summary>
+            名    称：LableInfo
+            作    者：张泽军
+            创建时间：2021/9/9 16:25:24
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.LableInfo.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.LableInfo.Type">
+            <summary>
+            所属类别（1新闻栏目，2新闻）
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.LableInfo.DeleteFlag">
+            <summary>
+            逻辑删除标识
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.News.EntityFramework.Core.Entitys.NewsBodyTemplate">
+            <summary>
+            名    称：NewsBodyTemplate
+            作    者：张泽军
+            创建时间：2021/9/16 11:47:43
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsBodyTemplate.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsBodyTemplate.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsBodyTemplate.Note">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsBodyTemplate.PreviewPic">
+            <summary>
+            预览图
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsBodyTemplate.DeleteFlag">
+            <summary>
+            删除标志
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumn">
+            <summary>
+            名    称：新闻栏目
+            作    者：张泽军
+            创建时间：2021/9/6 10:23:51
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumn.Title">
+            <summary>
+            栏目名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumn.Alias">
+            <summary>
+            栏目别名
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumn.Label">
+            <summary>
+            自定义标签
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumn.Terminals">
+            <summary>
+            是否多终端同步
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumn.Status">
+            <summary>
+            状态 1:启用，2:下架
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumn.Extension">
+            <summary>
+            内容扩展项
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumn.LinkUrl">
+            <summary>
+            栏目地址
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumn.DefaultTemplate">
+            <summary>
+            默认模板
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumn.HeadTemplate">
+            <summary>
+            头部模板
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumn.FootTemplate">
+            <summary>
+            尾部模板
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumn.SideList">
+            <summary>
+            侧边列表
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumn.SysMesList">
+            <summary>
+            展示的系统信息列表
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumn.IsOpenCover">
+            <summary>
+            启用封面
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumn.IsLoginAcess">
+            <summary>
+            是否登录可用
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumn.VisitingList">
+            <summary>
+            侧边列表/授权访问列表字符串
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumn.IsOpenComment">
+            <summary>
+            是否开启评论
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumn.IsOpenAudit">
+            <summary>
+            是否开启审核流程
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumn.AuditFlow">
+            <summary>
+            审核流程
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumn.DeleteFlag">
+            <summary>
+            逻辑删除标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumn.CoverWidth">
+            <summary>
+            封面宽
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumn.CoverHeight">
+            <summary>
+            封面高
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumn.AcessAll">
+            <summary>
+            允许所有用户访问
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnBack">
+            <summary>
+            中转数据表-新闻栏目
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnBack.Title">
+            <summary>
+            栏目名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnBack.Alias">
+            <summary>
+            栏目别名
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnBack.Label">
+            <summary>
+            自定义标签
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnBack.Terminals">
+            <summary>
+            是否多终端同步
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnBack.Status">
+            <summary>
+            状态 1:启用，2:下架
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnBack.Extension">
+            <summary>
+            内容扩展项
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnBack.LinkUrl">
+            <summary>
+            栏目地址
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnBack.DefaultTemplate">
+            <summary>
+            默认模板
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnBack.HeadTemplate">
+            <summary>
+            头部模板
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnBack.FootTemplate">
+            <summary>
+            尾部模板
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnBack.SideList">
+            <summary>
+            侧边列表
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnBack.SysMesList">
+            <summary>
+            展示的系统信息列表
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnBack.IsOpenCover">
+            <summary>
+            启用封面
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnBack.CoverSize">
+            <summary>
+            封面尺寸
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnBack.IsLoginAcess">
+            <summary>
+            是否登录可用
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnBack.VisitingList">
+            <summary>
+            侧边列表/授权访问列表字符串
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnBack.IsOpenComment">
+            <summary>
+            是否开启评论
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnBack.IsOpenAudit">
+            <summary>
+            是否开启审核流程
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnBack.AuditFlow">
+            <summary>
+            审核流程
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnBack.DeleteFlag">
+            <summary>
+            逻辑删除标识
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnPermissions">
+            <summary>
+            名    称：新闻栏目管理权限
+            作    者：张泽军
+            创建时间：2021/9/7 15:33:39
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnPermissions.ColumnID">
+            <summary>
+            栏目ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnPermissions.ManagerID">
+            <summary>
+            管理员ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnPermissions.Manager">
+            <summary>
+            管理员名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnPermissions.Permission">
+            <summary>
+            权限
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnPermissions.DeleteFlag">
+            <summary>
+            逻辑删除标识
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnPermissionsBack">
+            <summary>
+            名    称：新闻栏目管理权限
+            作    者：张泽军
+            创建时间：2021/9/7 15:33:39
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnPermissionsBack.ColumnID">
+            <summary>
+            栏目ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnPermissionsBack.ManagerID">
+            <summary>
+            管理员ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnPermissionsBack.Manager">
+            <summary>
+            管理员名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnPermissionsBack.Permission">
+            <summary>
+            权限
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsColumnPermissionsBack.DeleteFlag">
+            <summary>
+            逻辑删除标识
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent">
+            <summary>
+            名    称：新闻内容
+            作    者：张泽军
+            创建时间：2021/9/7 15:12:32
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.ColumnID">
+            <summary>
+            新闻栏目ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.ColumnIDs">
+            <summary>
+            投递新闻栏目ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.Title">
+            <summary>
+            内容标题
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.TitleStyle">
+            <summary>
+            内容标题 带样式
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.SubTitle">
+            <summary>
+            副标题
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.ParentCatalogue">
+            <summary>
+            所属子类（标签）
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.Content">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.ContentEditor">
+            <summary>
+            内容编辑器 1-编辑器1,2-编辑器2
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.Cover">
+            <summary>
+            封面
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.Author">
+            <summary>
+            原作者
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.Publisher">
+            <summary>
+            发布人
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.PublisherName">
+            <summary>
+            发布人姓名
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.PublishDate">
+            <summary>
+            发布日期
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.Status">
+            <summary>
+            启停状态
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.Terminals">
+            <summary>
+            投递终端
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.AuditStatus">
+            <summary>
+            审核状态 重置栏目流程则重置为待提交
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.Keywords">
+            <summary>
+            关键词
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.ExpirationDate">
+            <summary>
+            失效日期
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.JumpLink">
+            <summary>
+            跳转链接
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.HitCount">
+            <summary>
+            点击量
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.OrderNum">
+            <summary>
+            排序号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.AuditProcessJson">
+            <summary>
+            新闻审核流程记录 重置流程则更改为待提交（仅针对前台显示）
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.ExpendFiled1">
+            <summary>
+            扩展字段1
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.ExpendFiled2">
+            <summary>
+            扩展字段2
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.ExpendFiled3">
+            <summary>
+            扩展字段3
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.ExpendFiled4">
+            <summary>
+            扩展字段4
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.ExpendFiled5">
+            <summary>
+            扩展字段5
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.DeleteFlag">
+            <summary>
+            逻辑删除标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.ExternalLink">
+            <summary>
+            外部链接
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContent.AcessAll">
+            <summary>
+            允许所有用户访问
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentBack">
+            <summary>
+            新闻内容中转表
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentBack.ColumnID">
+            <summary>
+            新闻栏目ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentBack.ColumnIDs">
+            <summary>
+            投递新闻栏目ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentBack.Title">
+            <summary>
+            内容标题
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentBack.TitleStyle">
+            <summary>
+            内容标题 带样式
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentBack.SubTitle">
+            <summary>
+            副标题
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentBack.ParentCatalogue">
+            <summary>
+            所属子类（标签）
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentBack.Content">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentBack.Cover">
+            <summary>
+            封面
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentBack.Author">
+            <summary>
+            原作者
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentBack.Publisher">
+            <summary>
+            发布人
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentBack.PublisherName">
+            <summary>
+            发布人姓名
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentBack.PublishDate">
+            <summary>
+            发布日期
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentBack.Status">
+            <summary>
+            启停状态
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentBack.Terminals">
+            <summary>
+            投递终端
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentBack.AuditStatus">
+            <summary>
+            审核状态 重置栏目流程则重置为待提交
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentBack.Keywords">
+            <summary>
+            关键词
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentBack.ExpirationDate">
+            <summary>
+            失效日期
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentBack.JumpLink">
+            <summary>
+            跳转链接
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentBack.HitCount">
+            <summary>
+            点击量
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentBack.OrderNum">
+            <summary>
+            排序号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentBack.AuditProcessJson">
+            <summary>
+            新闻审核流程记录 重置流程则更改为待提交（仅针对前台显示）
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentBack.ExpendFiled1">
+            <summary>
+            扩展字段1
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentBack.ExpendFiled2">
+            <summary>
+            扩展字段2
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentBack.ExpendFiled3">
+            <summary>
+            扩展字段3
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentBack.ExpendFiled4">
+            <summary>
+            扩展字段4
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentBack.ExpendFiled5">
+            <summary>
+            扩展字段5
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentBack.DeleteFlag">
+            <summary>
+            逻辑删除标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentBack.ExternalLink">
+            <summary>
+            外部链接
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.News.EntityFramework.Core.Entitys.NewsContentExpend">
+            <summary>
+            名    称：NewsContentExpend
+            作    者：张泽军
+            创建时间：2021/9/13 10:50:46
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.News.EntityFramework.Core.Entitys.NewsSettings">
+            <summary>
+            名    称：信息导航应用设置
+            作    者：张泽军
+            创建时间：2021/9/6 11:23:51
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsSettings.SensitiveWords">
+            <summary>
+            敏感词启用
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsSettings.Comments">
+            <summary>
+            评论启用
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsSettings.DeleteFlag">
+            <summary>
+            逻辑删除标识
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.News.EntityFramework.Core.Entitys.NewsTemplate">
+            <summary>
+            名    称：NewsTemplate
+            作    者：张泽军
+            创建时间：2021/9/16 11:44:12
+            联系方式：电话[13608338767],邮件[qxyywy@qq.com]
+            描    述：
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsTemplate.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsTemplate.HeadTemplate">
+            <summary>
+            头部模板
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsTemplate.FootTemplate">
+            <summary>
+            尾部模板
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsTemplate.Note">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsTemplate.PreviewPic">
+            <summary>
+            预览图
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsTemplate.TemplateListDirectUrl">
+            <summary>
+            模板列表访问地址 如：/list?id=
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsTemplate.TemplateDetailDirectUrl">
+            <summary>
+            模板详情访问地址 如：/detail?id=
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.NewsTemplate.DeleteFlag">
+            <summary>
+            删除标志
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.News.EntityFramework.Core.Entitys.SysMenuCategory">
+            系统菜单分组
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysMenuCategory.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysMenuCategory.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysMenuCategory.IsDefault">
+            <summary>
+            默认展示
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysMenuCategory.Sort">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysMenuCategory.Visible">
+            <summary>
+            是否可见
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysMenuCategory.DeleteFlag">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.News.EntityFramework.Core.Entitys.SysMenuPermission">
+            系统菜单及权限配置
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysMenuPermission.Pid">
+            <summary>
+            父ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysMenuPermission.Path">
+            <summary>
+            节点路径
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysMenuPermission.FullPath">
+            <summary>
+            全路径
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysMenuPermission.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysMenuPermission.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysMenuPermission.Icon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysMenuPermission.Router">
+            <summary>
+            路由
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysMenuPermission.Component">
+            <summary>
+            组件
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysMenuPermission.Permission">
+            <summary>
+            权限标识:接口的Action
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysMenuPermission.Category">
+            <summary>
+            分组标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysMenuPermission.OpenWay">
+            <summary>
+            打开方式
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysMenuPermission.Visible">
+            <summary>
+            是否可见
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysMenuPermission.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysMenuPermission.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysMenuPermission.IsSysMenu">
+            <summary>
+            是否应用系统菜单
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysMenuPermission.DeleteFlag">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.News.EntityFramework.Core.Entitys.SysRole">
+            系统角色
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysRole.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysRole.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysRole.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysRole.DeleteFlag">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.News.EntityFramework.Core.Entitys.SysRoleMenu">
+            角色菜单权限
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysRoleMenu.RoleID">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysRoleMenu.MenuPermissionID">
+            <summary>
+            菜单权限ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysRoleMenu.DeleteFlag">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.News.EntityFramework.Core.Entitys.SysUserRole">
+            用户角色关系表
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysUserRole.UserID">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysUserRole.RoleID">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.News.EntityFramework.Core.Entitys.SysUserRole.DeleteFlag">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Core.Entitys.Person">
+            <summary>
+            测试 EF、多租户、多租户迁移用的模型Person
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Core.Entitys.Person.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Core.Entitys.Person.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Core.Entitys.Person.Age">
+            <summary>
+            年龄
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Core.Entitys.Person.Address">
+            <summary>
+            住址
+            </summary>
+        </member>
+        <member name="T:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.ConnectionResolverOption">
+            <summary>
+            数据库连接信息的模型
+            </summary>
+        </member>
+        <member name="T:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.MigrationByTenantAssembly">
+            <summary>
+            自定义的MigrationsAssembly：用于更改模板的格式（引入 带"schema" 的构造函数）
+            </summary>
+        </member>
+        <member name="M:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.MigrationByTenantAssembly.CreateMigration(System.Reflection.TypeInfo,System.String)">
+            <summary>
+            调用模板方法构造函数，获取 改造后的 Migration 的子类
+            </summary>
+            <param name="migrationClass"></param>
+            <param name="activeProvider"></param>
+            <returns></returns>
+        </member>
+        <member name="T:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.MultipleTenancyExtension">
+            <summary>
+            注册DbContext
+            </summary>
+        </member>
+        <member name="M:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.MultipleTenancyExtension.AddDatabasePerConnection``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.ConnectionResolverOption)">
+            <summary>
+            基于数据库连接的多租户
+            </summary>
+            <typeparam name="TDbContext"></typeparam>
+            <param name="services"></param>
+            <param name="option"></param>
+            <returns></returns>
+        </member>
+        <member name="M:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.MultipleTenancyExtension.AddDatabase``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.ConnectionResolverOption)">
+            <summary>
+            注册
+            </summary>
+            <typeparam name="TDbContext"></typeparam>
+            <param name="services"></param>
+            <param name="option"></param>
+            <returns></returns>
+        </member>
+        <member name="M:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.MultipleTenancyExtension.AddTenantDatabasePerTable``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.ConnectionResolverOption)">
+            <summary>
+            基于表的多租户
+            </summary>
+            <typeparam name="TDbContext"></typeparam>
+            <param name="services"></param>
+            <param name="option"></param>
+            <returns></returns>
+        </member>
+        <member name="M:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.MultipleTenancyExtension.AddTenantDatabasePerSchema``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.ConnectionResolverOption)">
+            <summary>
+            基于Schema的多租户
+            </summary>
+            <typeparam name="TDbContext"></typeparam>
+            <param name="services"></param>
+            <param name="option"></param>
+            <returns></returns>
+        </member>
+        <member name="T:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.TenantInfo">
+            <summary>
+            租户信息的模型类，后期可继续拓展
+            </summary>
+        </member>
+        <member name="P:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.TenantInfo.Name">
+            <summary>
+            多租户姓名
+            </summary>
+        </member>
+        <member name="P:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.TenantInfo.UserKey">
+            <summary>
+            租户UserKey
+            </summary>
+        </member>
+        <member name="T:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.TenantInfoMiddleware">
+            <summary>
+            中间件，拦截，根据httpcontext请求获取租户信息，后续可拓展定义
+            </summary>
+        </member>
+        <member name="M:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.TenantInfoMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            获取Scope周期的TenantInfo，为其赋值context中的租户信息
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

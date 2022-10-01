@@ -1,0 +1,1577 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmartLibrary.SceneManage.Service</name>
+    </assembly>
+    <members>
+        <member name="F:SmartLibrary.SceneManage.Services.Dtos.Cap.UserServicePublishEvent.NewPerson">
+            <summary>
+            事件名称
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.Services.Dtos.Cap.UserServicePublishEvent.NewPersonMsg">
+            <summary>
+            事件对应消息
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Services.Dtos.Cap.UserServicePublishEvent.NewPersonMsg.PersonId">
+            <summary>
+            员工Id
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.Services.Dtos.Cap.UserServiceSubscribeEvent.NewPerson">
+            <summary>
+            事件名称
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.Services.Dtos.Cap.UserServiceSubscribeEvent.NewPersonMsg">
+            <summary>
+            消息接收类型
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Services.ISysMenuService.GetAllPermissionTree">
+            <summary>
+            获取本应用中所有的权限列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Services.ISysMenuService.GetUserPermissionList(System.Guid)">
+            <summary>
+            获取当前登陆用户的所有权限列表
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Services.ISysMenuService.SaveRoleMenuList(System.Collections.Generic.List{SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysRoleMenuDto})">
+            <summary>
+            保存用户的权限列表
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Services.ISysMenuService.InsertSysRoleInfo(SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysRoleInfoDto)">
+            <summary>
+            新增角色信息
+            </summary>
+            <param name="sysRoleInfoDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Services.ISysMenuService.UpdateSysRoleInfo(SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysRoleInfoDto)">
+            <summary>
+            更新角色信息
+            </summary>
+            <param name="sysRoleInfoDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Services.ISysMenuService.GetSysRoleBaseInfo(System.Guid)">
+            <summary>
+            获取角色
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Services.ISysMenuService.GetRoleMenu(System.Guid)">
+            <summary>
+            查角色-权限关联
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Services.ISysMenuService.GetSysRoleInfo(System.Guid)">
+            <summary>
+            查角色信息
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Services.SysMenuService.GetAllPermissionTree">
+            <summary>
+            获取权限树
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Services.SysMenuService.GetUserPermissionList(System.Guid)">
+            <summary>
+            获取登陆用户的所有可用API权限
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Services.SysMenuService.SaveRoleMenuList(System.Collections.Generic.List{SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysRoleMenuDto})">
+            <summary>
+            保存角色-菜单权限关系
+            </summary>
+            <param name="sysRoleMenuDtos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Services.SysMenuService.InsertSysRoleInfo(SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysRoleInfoDto)">
+            <summary>
+            新增角色基础信息
+            </summary>
+            <param name="sysRoleInfoDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Services.SysMenuService.UpdateSysRoleInfo(SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysRoleInfoDto)">
+            <summary>
+            修改角色基础信息
+            </summary>
+            <param name="sysRoleInfoDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Services.SysMenuService.GetSysRoleBaseInfo(System.Guid)">
+            <summary>
+            修改角色基础信息
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Services.SysMenuService.GetRoleMenu(System.Guid)">
+            <summary>
+            查角色-权限绑定关系
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Services.SysMenuService.GetSysRoleInfo(System.Guid)">
+            <summary>
+            查角色的信息
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Services.SysMenuService.GetUserPermissionTree(System.Guid)">
+            <summary>
+            查角色的信息
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Services.SysMenuService.GetMGRPermissionTree">
+            <summary>
+            取管理员（默认角色）的权限树
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Services.SysMenuService.GetOperatorPermissionTree(System.Guid)">
+            <summary>
+            取操作员（默认角色）的权限树
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Services.SysMenuService.GetVisitorsPermissionTree(System.Guid)">
+            <summary>
+            取浏览者（默认角色）的权限树
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Services.SysMenuService.GetMGRPermissionList">
+            <summary>
+            取管理员（默认角色）的权限树
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Services.SysMenuService.GetOperatorPermissionList">
+            <summary>
+            取操作员（默认角色）的权限树
+            </summary>
+            <param name="userId"></param>  GetOperatorPermissionList
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Services.SysMenuService.GetVisitorsPermissionList">
+            <summary>
+            取浏览者（默认角色）的权限树
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.Service.Dtos.AppListViewModel">
+            <summary>
+            应用视图模型
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.AppListViewModel.Id">
+            <summary>
+            应用分支ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.AppListViewModel.AppId">
+            <summary>
+            应用ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.AppListViewModel.Name">
+            <summary>
+            分支名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.AppListViewModel.Icon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.AppListViewModel.ServiceType">
+            <summary>
+            服务类型
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.AppPlateViewModel.AppId">
+            <summary>
+            应用标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.AppPlateViewModel.AppName">
+            <summary>
+            应用名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.AppPlateViewModel.Icon">
+            <summary>
+            应用图标
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.AppPlateViewModel.PlateList">
+            <summary>
+            应用栏目
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.AppPlateItem.Id">
+            <summary>
+            应用栏目标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.AppPlateItem.Name">
+            <summary>
+            应用栏目名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.AppPlateItem.ParentSceneAppId">
+            <summary>
+            父级场景应用标识（用于个人中心）
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.AppPlateItem.VisitUrl">
+            <summary>
+            应用
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.AppPlateItem.CreateTime">
+            <summary>
+            创建日期
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.AppPlateItem.TopCount">
+            <summary>
+            数据条数
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.AppPlateItem.SortType">
+            <summary>
+            排序方式 1-创建时间倒序  2-访问量倒序
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.AppPlateItem.OrderIndex">
+            <summary>
+            排序字段
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.AppViewModel.Id">
+            <summary>
+            应用标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.AppViewModel.AppName">
+            <summary>
+            应用名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.AppViewModel.Icon">
+            <summary>
+            应用图标
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.AppWidgetViewModel.Id">
+            <summary>
+            应用组件标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.AppWidgetViewModel.Name">
+            <summary>
+            组件名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.AppWidgetViewModel.Cover">
+            <summary>
+            封面
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.DefaultHeaderFooterViewModel.HeaderTemplate">
+            <summary>
+            头部模板
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.DefaultHeaderFooterViewModel.FooterTemplate">
+            <summary>
+            底部模板
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.DefaultHeaderFooterViewModel.ApiRouter">
+            <summary>
+            api路由
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.DefaultHeaderFooterViewModel.ThemeColor">
+            <summary>
+            主题颜色
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.DefaultHeaderFooterViewModel.UserCenterName">
+            <summary>
+            用户中心场景名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.DictionaryViewModel.SceneStatus">
+            <summary>
+            服务状态
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.DictionaryViewModel.VisitorLimitType">
+            <summary>
+            权限控制
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.DictionaryViewModel.SceneLayout">
+            <summary>
+            场景布局
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.DictionaryViewModel.SceneTemplate">
+            <summary>
+            场景模板
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.DictionaryViewModel.SceneThemeColor">
+            <summary>
+            场景主题色
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.DictionaryViewModel.AppPlateSortType">
+            <summary>
+            场景内App排序规则
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.DictionaryViewModel.AppServiceType">
+            <summary>
+            应用服务类型
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.DictionaryViewModel.AppTerminalType">
+            <summary>
+            终端类型
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.DictionaryViewModel.TerminalStatus">
+            <summary>
+            终端状态
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.DictionaryViewModel.TerminalIcon">
+            <summary>
+            终端备选图表
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.FootTemplateSettingDto.FootTemplateId">
+            <summary>
+            头部模板的id
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.FootTemplateSettingDto.Content">
+            <summary>
+            富文本内容
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.FootTemplateSettingDto.JsPath">
+            <summary>
+            JS文件的路径
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.HeaderViewModel.SiteLogo">
+            <summary>
+            Logo
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.HeaderViewModel.SiteName">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.HeaderViewModel.SiteUrl">
+            <summary>
+            访问链接
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.HeaderViewModel.MainNavigationList">
+            <summary>
+            主导航列表
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.HeaderViewModel.NavigationColumnList">
+            <summary>
+            栏目集合
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.HeaderViewModel.PersonalLibrary">
+            <summary>
+            个人书斋
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.HeaderViewModel.LogOn">
+            <summary>
+            登录
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.HeaderViewModel.HelpInfo">
+            <summary>
+            帮助
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.HeaderViewModel.OldSite">
+            <summary>
+            登录
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.HeaderViewModel.EnglishSite">
+            <summary>
+            帮助
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.HeaderNavigationViewModel.NavigationName">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.HeaderNavigationViewModel.NavigationIcon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.HeaderNavigationViewModel.NavigationUrl">
+            <summary>
+            访问链接
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.HeaderNavigationViewModel.IsOpenNewWindow">
+            <summary>
+            是否打开新窗口
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.HeadTemplateSettingDto.HeadTemplateId">
+            <summary>
+            头部模板的id
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.HeadTemplateSettingDto.Logo">
+            <summary>
+            logo图标的路径
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.HeadTemplateSettingDto.DisplayNavColumn">
+            <summary>
+            展示的导航栏目id
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneAppDto.Id">
+            <summary>
+            主键标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneAppDto.SceneId">
+            <summary>
+            场景标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneAppDto.AppId">
+            <summary>
+            应用标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneAppDto.ParentSceneAppId">
+            <summary>
+            父级场景应用标识（用于个人中心）
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneAppDto.AppWidget">
+            <summary>
+            应用组件(模板)
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneAppDto.AppPlateItems">
+            <summary>
+            应用模板
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneAppDto.SceneScreenId">
+            <summary>
+            分屏Id
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneAppDto.XIndex">
+            <summary>
+            X轴位置
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneAppDto.YIndex">
+            <summary>
+            Y轴位置
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneAppDto.Width">
+            <summary>
+            宽度
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneAppDto.Height">
+            <summary>
+            高度
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneDto.Id">
+            <summary>
+            场景Id
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneDto.Name">
+            <summary>
+            场景名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneDto.TerminalInstanceId">
+            <summary>
+            终端实例标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneDto.TerminalInstanceName">
+            <summary>
+            终端实例名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneDto.LayoutId">
+            <summary>
+            布局标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneDto.Template">
+            <summary>
+            模板
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneDto.HeaderTemplate">
+            <summary>
+            头部模板
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneDto.FooterTemplate">
+            <summary>
+            底部模板
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneDto.ThemeColor">
+            <summary>
+            主题颜色
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneDto.Cover">
+            <summary>
+            场景封面
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneDto.Status">
+            <summary>
+            启用状态。0-启用，1-禁用
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneDto.VisitorLimitType">
+            <summary>
+            权限控制类型。0-禁用，1-登录认证，2-按学院，3-按用户类型，4-按用户标签
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneDto.VisitUrl">
+            <summary>
+            访问地址
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneDto.IsSystemScene">
+            <summary>
+            是否系统默认场景 0-否  1-是
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneDto.UserKey">
+            <summary>
+            用户标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneDto.IsPersonalIndex">
+            <summary>
+            是否个人默认首页
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneDto.SceneScreens">
+            <summary>
+            场景分屏
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneDto.SceneUsers">
+            <summary>
+            场景用户
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneListQuery.TerminalId">
+            <summary>
+            终端标识 
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneListQuery.IsSystemScene">
+            <summary>
+            是否系统默认场景 0-否  1-是
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneListQuery.Status">
+            <summary>
+            启用状态。0-停用，1-启用
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneListViewModel.Id">
+            <summary>
+            场景标识 
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneListViewModel.Name">
+            <summary>
+            场景名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneListViewModel.Cover">
+            <summary>
+            场景封面
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneListViewModel.Status">
+            <summary>
+            启用状态。0-停用，1-启用
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneListViewModel.IsSystemScene">
+            <summary>
+            是否系统默认场景 0-否  1-是
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneListViewModel.VisitUrl">
+            <summary>
+            预览地址
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneOverviewQuery.IsSystemScene">
+            <summary>
+            是否系统默认场景 0-否  1-是
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneOverviewQuery.Status">
+            <summary>
+            启用状态。0-停用，1-启用
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneOverviewQuery.TopCount">
+            <summary>
+            每种终端的场景获取数量
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneOverviewViewModel.TerminalName">
+            <summary>
+            终端名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneOverviewViewModel.TerminalId">
+            <summary>
+            终端标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneOverviewViewModel.TerminalType">
+            <summary>
+            终端类型
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneOverviewViewModel.SceneList">
+            <summary>
+            场景列表
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneUserDto.Id">
+            <summary>
+            场景用户标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneUserDto.SceneId">
+            <summary>
+            场景标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneUserDto.UserSetId">
+            <summary>
+            用户群体标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneUserDto.UserSetType">
+            <summary>
+            用户群体类型。1-学院，2-类型，3-分组
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TemplateListQuery.LayoutId">
+            <summary>
+            布局标识 
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TemplateListQuery.Type">
+            <summary>
+            模板类型 1-场景 2-头部 3-底部
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TemplateListViewModel">
+            <summary>
+            场景模板视图模型
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TemplateListViewModel.Id">
+            <summary>
+            模板Id
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TemplateListViewModel.Name">
+            <summary>
+            模板名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TemplateListViewModel.ScreenCount">
+            <summary>
+            屏数
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TemplateListViewModel.ColumnCount">
+            <summary>
+            列数
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TemplateListViewModel.IsLock">
+            <summary>
+            是否锁定
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TemplateListViewModel.AspectRatio">
+            <summary>
+            宽高比
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TemplateListViewModel.Router">
+            <summary>
+            模板路由
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TemplateListViewModel.TemplateCode">
+            <summary>
+            模板编码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TemplateListViewModel.Cover">
+            <summary>
+            封面
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TemplateListViewModel.LayoutId">
+            <summary>
+            适用布局标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TemplateListViewModel.Type">
+            <summary>
+            模板类型 1-场景 2-头部 3-底部
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TemplateListViewModel.BackgroundColor">
+            <summary>
+            背景色
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TemplateListViewModel.Width">
+            <summary>
+            宽度
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TemplateListViewModel.DefaultHeaderTemplate">
+            <summary>
+            默认头部模板
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TemplateListViewModel.DefaultFooterTemplate">
+            <summary>
+            默认底部模板
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TemplateListViewModel.Content">
+            <summary>
+            富文本内容
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TemplateListViewModel.JsPath">
+            <summary>
+            JS文件的路径
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TemplateListViewModel.Logo">
+            <summary>
+            logo图标的路径
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TemplateListViewModel.DisplayNavColumn">
+            <summary>
+            展示的导航栏目id
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TerminalInstanceDto.Id">
+            <summary>
+            终端实例标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TerminalInstanceDto.Name">
+            <summary>
+            终端实例名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TerminalInstanceDto.TerminalType">
+            <summary>
+            终端类型 1-PC端、2-APP端、3-小程序端、4-自适应移动端、5-显示屏
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TerminalInstanceDto.KeyWords">
+            <summary>
+            关键词，多个逗号分隔
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TerminalInstanceDto.Description">
+            <summary>
+            简介
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TerminalInstanceDto.Logo">
+            <summary>
+            Logo的Url
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TerminalInstanceDto.Icon">
+            <summary>
+            图标的Url
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TerminalInstanceDto.VisitUrl">
+            <summary>
+            访问路径
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TerminalInstanceDto.Status">
+            <summary>
+            状态  0-下线  1-正常
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TerminalInstanceDto.Remark">
+            <summary>
+            备注信息
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TerminalInstanceDto.IsSystemInstance">
+            <summary>
+            是否系统默认实例 0-否  1-是
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneManage.TerminalInstanceDto.SceneCount">
+            <summary>
+            场景数量
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.Service.Dtos.AppWidgetListViewModel">
+            <summary>
+            应用组件视图模型
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.AppWidgetListViewModel.Id">
+            <summary>
+            应用组件ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.AppWidgetListViewModel.AppId">
+            <summary>
+            应用ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.AppWidgetListViewModel.Name">
+            <summary>
+            组件名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.AppWidgetListViewModel.WidgetCode">
+            <summary>
+            组件标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.AppWidgetListViewModel.Target">
+            <summary>
+            组件内容地址
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.AppWidgetListViewModel.AvailableConfig">
+            <summary>
+            可用配置项 ，1-栏目 2-条数 3-排序字段，多个逗号分隔
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.AppWidgetListViewModel.Cover">
+            <summary>
+            组件封面
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.AppWidgetListViewModel.Width">
+            <summary>
+            默认宽度
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.AppWidgetListViewModel.Height">
+            <summary>
+            默认高度
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.AppWidgetListViewModel.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.AppWidgetListViewModel.UpdateTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.AppWidgetListViewModel.SceneType">
+            <summary>
+            特殊场景标识 ，1-通用 2-个人中心
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.AppWidgetListViewModel.TopCountList">
+            <summary>
+            当前模板条数选项
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.AppWidgetListViewModel.SortList">
+            <summary>
+            当前模板排序选项
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.AppWidgetListViewModel.AppColumn">
+            <summary>
+            当前模板的栏目
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.Service.Dtos.SceneScreenDto">
+            <summary>
+            场景分屏
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneScreenDto.Id">
+            <summary>
+            主键标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneScreenDto.SceneId">
+            <summary>
+            场景标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneScreenDto.ScreenName">
+            <summary>
+            分屏名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneScreenDto.OrderIndex">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneScreenDto.Height">
+            <summary>
+            高度
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneScreenDto.DeleteFlag">
+            <summary>
+            删除标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Service.Dtos.SceneScreenDto.SceneApps">
+            <summary>
+            场景内的应用
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.Service.Enum.TerminalStatusEnum">
+            <summary>
+            终端状态枚举
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.Service.Enum.SceneStatusEnum">
+            <summary>
+            场景状态枚举
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.Service.Enum.AppTerminalTypeEnum">
+            <summary>
+            适用终端 1-PC端、2-APP端、3-小程序端、4-自适应移动端、5-显示屏
+            这里只支持3种
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.Service.Enum.VisitorLimitTypeEnum">
+            <summary>
+            权限控制 0-禁用、1-必须登录认证、2-按学院、3-按用户类型、4-按用户分组
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.Service.Enum.AppPlateSortTypeEnum">
+            <summary>
+            适用终端 0-默认、1-添加时间倒序、2-访问量倒序
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.Service.Enum.SceneLayoutTypeEnum">
+            <summary>
+            布局类型
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.Service.Service.BaseService">
+            <summary>
+            中台业务服务基类
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.Service.Service.BaseService.GrpcClientResolver">
+            <summary>
+            grpc客户端生成器
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.BaseService.#ctor(SmartLibrary.SceneManage.Common.IGrpcClientResolver)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.BaseService.GetAppBaseUrl">
+            <summary>
+            获取当前应用的访问地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.BaseService.GetAppList(SmartLibrary.AppCenter.AppListRequest)">
+            <summary>
+            获取应用列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.BaseService.GetAppWidgetList(SmartLibrary.AppCenter.AppWidgetListRequest)">
+            <summary>
+            获取应用模板
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.BaseService.GetAppColumnList(SmartLibrary.AppCenter.AppColumnListRequest)">
+            <summary>
+            获取应用栏目
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.BaseService.GetServiceType">
+            <summary>
+            获取应用服务类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.BaseService.GetUserDictionary(System.Int32)">
+            <summary>
+            获取用户相关字典
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.BaseService.GetUserByKey(System.String)">
+            <summary>
+            获取用户详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.BaseService.GetPortalMajorNavagationList(System.String)">
+            <summary>
+            获取首页顶部主导航
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.Service.Service.HeaderFooterService._terminalInstanceRepository">
+            <summary>
+            终端实例数据仓储
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.Service.Service.HeaderFooterService._themeColorRepository">
+            <summary>
+            主题色数据仓储
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.Service.Service.HeaderFooterService._sceneScreenRepository">
+            <summary>
+            场景分屏数据仓储
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.Service.Service.HeaderFooterService._headTemplateSettingsRepository">
+            <summary>
+            头部模板仓储
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.Service.Service.HeaderFooterService._footTemplateSettingsRepository">
+            <summary>
+            尾部模板仓储
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.Service.Service.HeaderFooterService._templateRepository">
+            <summary>
+            场景模板数据仓储
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.HeaderFooterService.#ctor(Furion.DatabaseAccessor.IRepository{SmartLibrary.SceneManage.EntityFramework.Core.Entitys.TerminalInstance},Furion.DatabaseAccessor.IRepository{SmartLibrary.SceneManage.EntityFramework.Core.Entitys.ThemeColor},Furion.DatabaseAccessor.IRepository{SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneScreen},Furion.DatabaseAccessor.IRepository{SmartLibrary.SceneManage.EntityFramework.Core.Entitys.HeadTemplateSetting},Furion.DatabaseAccessor.IRepository{SmartLibrary.SceneManage.EntityFramework.Core.Entitys.FootTemplateSetting},SmartLibrary.SceneManage.Common.IGrpcClientResolver,SmartLibrary.SceneManage.Service.Service.ISceneManageService,Furion.DatabaseAccessor.IRepository{SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Template})">
+            <summary>
+            构造函数
+            </summary>
+            <param name="terminalInstanceRepository"></param>
+            <param name="themeColorRepository"></param>
+            <param name="sceneScreenRepository"></param>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.HeaderFooterService.GetHeaderData(System.String)">
+            <summary>
+            获取头部数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.HeaderFooterService.GetFooterData(System.String)">
+            <summary>
+            获取头部数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.HeaderFooterService.GetHeadTemplateSettingsById(System.String)">
+            <summary>
+            获取头部模板高级设置项
+            </summary>
+            <param name="headTemplateId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.HeaderFooterService.GetFootTemplateSettingsById(System.String)">
+            <summary>
+            获取底部模板高级设置项
+            </summary>
+            <param name="footTemplateId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.HeaderFooterService.UpdateHeadTemplateSettings(SmartLibrary.SceneManage.Service.Dtos.SceneManage.HeadTemplateSettingDto)">
+            <summary>
+            更新头部模板高级设置项
+            </summary>
+            <param name="head"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.HeaderFooterService.AddHeadTemplateSettings(SmartLibrary.SceneManage.Service.Dtos.SceneManage.HeadTemplateSettingDto)">
+            <summary>
+            新增头部模板高级设置项
+            </summary>
+            <param name="head"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.HeaderFooterService.UpdateFootTemplateSettings(SmartLibrary.SceneManage.Service.Dtos.SceneManage.FootTemplateSettingDto)">
+            <summary>
+            更新底部模板高级设置项
+            </summary>
+            <param name="foot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.HeaderFooterService.AddFootTemplateSettings(SmartLibrary.SceneManage.Service.Dtos.SceneManage.FootTemplateSettingDto)">
+            <summary>
+            新增底部模板高级设置项
+            </summary>
+            <param name="foot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.HeaderFooterService.GetNavColumnList">
+            <summary>
+            新增底部模板高级设置项
+            </summary>
+            <param name="foot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.IHeaderFooterService.GetHeadTemplateSettingsById(System.String)">
+            <summary>
+            获取头部模板高级设置项
+            </summary>
+            <param name="headTemplateId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.IHeaderFooterService.GetFootTemplateSettingsById(System.String)">
+            <summary>
+            获取底部模板高级设置项
+            </summary>
+            <param name="footTemplateId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.IHeaderFooterService.UpdateHeadTemplateSettings(SmartLibrary.SceneManage.Service.Dtos.SceneManage.HeadTemplateSettingDto)">
+            <summary>
+            更新头部模板高级设置项
+            </summary>
+            <param name="head"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.IHeaderFooterService.AddHeadTemplateSettings(SmartLibrary.SceneManage.Service.Dtos.SceneManage.HeadTemplateSettingDto)">
+            <summary>
+            新增头部模板高级设置项
+            </summary>
+            <param name="head"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.IHeaderFooterService.UpdateFootTemplateSettings(SmartLibrary.SceneManage.Service.Dtos.SceneManage.FootTemplateSettingDto)">
+            <summary>
+            更新底部模板高级设置项
+            </summary>
+            <param name="foot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.IHeaderFooterService.AddFootTemplateSettings(SmartLibrary.SceneManage.Service.Dtos.SceneManage.FootTemplateSettingDto)">
+            <summary>
+            新增底部模板高级设置项
+            </summary>
+            <param name="foot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.IHeaderFooterService.GetNavColumnList">
+            <summary>
+            新增底部模板高级设置项
+            </summary>
+            <param name="foot"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.Service.Service.SceneManageService">
+            <summary>
+            场景管理服务
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.Service.Service.SceneManageService._sceneRepository">
+            <summary>
+            场景数据仓储
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.Service.Service.SceneManageService._layoutRepository">
+            <summary>
+            场景布局数据仓储
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.Service.Service.SceneManageService._sceneAppRepository">
+            <summary>
+            场景内应用数据仓储
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.Service.Service.SceneManageService._sceneUserRepository">
+            <summary>
+            场景用户数据仓储
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.Service.Service.SceneManageService._templateRepository">
+            <summary>
+            场景模板数据仓储
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.Service.Service.SceneManageService._terminalInstanceRepository">
+            <summary>
+            终端实例数据仓储
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.Service.Service.SceneManageService._themeColorRepository">
+            <summary>
+            主题色数据仓储
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.Service.Service.SceneManageService._sceneScreenRepository">
+            <summary>
+            场景分屏数据仓储
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.Service.Service.SceneManageService._sceneAppPlateRepository">
+            <summary>
+            场景内应用栏目数据仓储
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.Service.Service.SceneManageService._headTemplateSettingsRepository">
+            <summary>
+            头部模板高级设置
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.Service.Service.SceneManageService._footTemplateSettingsRepository">
+            <summary>
+            底部模板高级设置
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.SceneManageService.#ctor(Furion.DatabaseAccessor.IRepository{SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Scene},Furion.DatabaseAccessor.IRepository{SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Layout},Furion.DatabaseAccessor.IRepository{SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneApp},Furion.DatabaseAccessor.IRepository{SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneUser},Furion.DatabaseAccessor.IRepository{SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Template},Furion.DatabaseAccessor.IRepository{SmartLibrary.SceneManage.EntityFramework.Core.Entitys.TerminalInstance},Furion.DatabaseAccessor.IRepository{SmartLibrary.SceneManage.EntityFramework.Core.Entitys.ThemeColor},Furion.DatabaseAccessor.IRepository{SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneScreen},Furion.DatabaseAccessor.IRepository{SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneAppPlate},Furion.DatabaseAccessor.IRepository{SmartLibrary.SceneManage.EntityFramework.Core.Entitys.HeadTemplateSetting},Furion.DatabaseAccessor.IRepository{SmartLibrary.SceneManage.EntityFramework.Core.Entitys.FootTemplateSetting},SmartLibrary.SceneManage.Common.IGrpcClientResolver)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="sceneRepository"></param>
+            <param name="layoutRepository"></param>
+            <param name="sceneAppRepository"></param>
+            <param name="sceneUserRepository"></param>
+            <param name="templateRepository"></param>
+            <param name="terminalInstanceRepository"></param>
+            <param name="themeColorRepository"></param>
+            <param name="sceneScreenRepository"></param>
+            <param name="sceneAppPlateRepository"></param>
+            <param name="grpcClientResolver"></param>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.SceneManageService.GetSceneOverview(SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneOverviewQuery)">
+            <summary>
+            获取场景总览列表
+            </summary>
+            <param name="queryFilter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.SceneManageService.GetSceneListByTerminalId(SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneListQuery)">
+            <summary>
+            按终端获取场景列表
+            </summary>
+            <param name="queryFilter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.SceneManageService.GetTemplateList(SmartLibrary.SceneManage.Service.Dtos.SceneManage.TemplateListQuery)">
+            <summary>
+            获取模板列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.SceneManageService.GetDefaultTemplateList">
+            <summary>
+            获取模板列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.SceneManageService.GetTemplateDetail(System.String)">
+            <summary>
+            获取模板详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.SceneManageService.GetSceneDetail(System.String)">
+            <summary>
+            获取场景详情
+            </summary>
+            <param name="sceneId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.SceneManageService.GetPersonalSceneDetail(System.String)">
+            <summary>
+            获取当前用户个人中心场景
+            </summary>
+            <param name="userKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.SceneManageService.SavePersonalScene(SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneDto)">
+            <summary>
+            保存用户的个人中心场景
+            </summary>
+            <param name="sceneDto">应用创建数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.SceneManageService.SetPersonalDefaultScene(System.String,System.Int32,System.String)">
+            <summary>
+            设置/取消个人默认首页
+            </summary>
+            <param name="sceneId">场景id</param>
+            <param name="isDefault">是否设为默认首页1-是 0-否</param>
+            <param name="userKey">用户标识</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.SceneManageService.GetPersonalDefaultScene(System.String)">
+            <summary>
+            获取个人默认首页场景id
+            </summary>
+            <param name="userKey">用户标识</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.SceneManageService.CreateScene(SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneDto)">
+            <summary>
+            添加场景
+            </summary>
+            <param name="sceneDto">应用创建数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.SceneManageService.UpdateScene(SmartLibrary.SceneManage.Service.Dtos.SceneManage.SceneDto)">
+            <summary>
+            更新场景
+            </summary>
+            <param name="sceneDto">应用创建数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.SceneManageService.ChangeSceneStatus(System.String,System.Int32)">
+            <summary>
+            启用/禁用场景
+            </summary>
+            <param name="sceneDto">场景Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.SceneManageService.DeleteScene(System.String)">
+            <summary>
+            删除场景
+            </summary>
+            <param name="sceneId">应用ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.SceneManageService.GetAppListByServiceType(System.String,System.Int32)">
+            <summary>
+            按服务类型获取应用列表
+            </summary>
+            <param name="appServiceType">服务类型字典值</param>
+            <param name="terminalType">1-PC端、2-APP端、3-小程序端、4-自适应移动端、5-显示屏</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.SceneManageService.GetPersonalAppList(System.Int32)">
+            <summary>
+            获取当前用户个人中心应用列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.SceneManageService.GetPersonalAppWidgetByAppId(System.String)">
+            <summary>
+            获取个人中心应用组件列表
+            </summary>
+            <param name="appId">应用Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.SceneManageService.GetAppWidgetListByAppId(System.String,System.Int32)">
+            <summary>
+            获取应用组件列表
+            </summary>
+            <param name="appId">应用Id</param>
+            <param name="sceneType">适用场景 0-全部，1-通用，2-个人中心</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.SceneManageService.GetSceneUrlById(System.String)">
+            <summary>
+            获取当前场景访问地址
+            </summary>
+            <param name="sceneId">场景Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.SceneManageService.GetSceneUseageByColumnId(System.Collections.Generic.List{System.String})">
+            <summary>
+            获取栏目使用情况
+            </summary>
+            <param name="columnIdList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.SceneManageService.GetAppPlateListByAppId(System.String)">
+            <summary>
+            获取应用栏目列表
+            </summary>
+            <param name="appId">应用Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.SceneManageService.GetDictionary">
+            <summary>
+            获取下拉框字典
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.SceneManageService.GetDictionaryByType(System.Int32)">
+            <summary>
+            按类型获取下拉框字典
+            </summary>
+            <param name="dicType">字典类型 1-学院 2-用户类型 3-用户分组</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.SceneManageService.GetAppPlateListBySceneId(System.String)">
+            <summary>
+            获取场景内所有栏目列表
+            </summary>
+            <param name="sceneId">场景Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.SceneManageService.GetCoverByTerminalInstanceId(System.String)">
+            <summary>
+            根据场景实例获取封面
+            </summary>
+            <param name="terminalInstanceId">场景实例Id</param>
+            <returns></returns>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.Service.Service.TerminalService._terminalInstanceRepository">
+            <summary>
+            终端实例数据仓储
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.Service.Service.TerminalService._sceneRepository">
+            <summary>
+            场景数据仓储
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.Service.Service.TerminalService._sceneScreenRepository">
+            <summary>
+            场景分屏数据仓储
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.TerminalService.#ctor(Furion.DatabaseAccessor.IRepository{SmartLibrary.SceneManage.EntityFramework.Core.Entitys.TerminalInstance},Furion.DatabaseAccessor.IRepository{SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Scene},Furion.DatabaseAccessor.IRepository{SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneScreen})">
+            <summary>
+            构造函数
+            </summary>
+            <param name="terminalInstanceRepository"></param>
+            <param name="themeColorRepository"></param>
+            <param name="sceneScreenRepository"></param>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.TerminalService.GetTerminalInstanceList">
+            <summary>
+            终端实例列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.TerminalService.GetTerminalInstanceDetail(System.String)">
+            <summary>
+            获取终端实例详情
+            </summary>
+            <param name="terminalId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.TerminalService.CreateTerminalInstance(SmartLibrary.SceneManage.Service.Dtos.SceneManage.TerminalInstanceDto)">
+            <summary>
+            添加终端实例
+            </summary>
+            <param name="temrminal">终端实例</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.TerminalService.UpdateTerminalInstance(SmartLibrary.SceneManage.Service.Dtos.SceneManage.TerminalInstanceDto)">
+            <summary>
+            更新终端实例
+            </summary>
+            <param name="temrminalDto">终端实例</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.TerminalService.DeleteTerminalInstance(System.String)">
+            <summary>
+            删除终端实例
+            </summary>
+            <param name="terminalInstanceId">终端实例ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Service.Service.TerminalService.GetDictionary">
+            <summary>
+            获取下拉框字典
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,256 @@
+// 语法结构，使用pb3
+ syntax = "proto3";
+ import "google/protobuf/empty.proto";
+ import "google/protobuf/timestamp.proto";
+ import "google/protobuf/wrappers.proto";
+  // 定义命名空间，一般是项目名或者解决方案名
+ option csharp_namespace = "SmartLibrary.User.RpcService";
+  // 定义服务的包
+ package SmartLibrary.User;
+
+ 
+ // 定义具体的服务
+ service UserGrpcService {
+    // 通过UserKey获取用户信息
+    rpc GetUserByKey(google.protobuf.StringValue) returns (UserData){}
+    // 通过条件查询用户列表
+    rpc GetUserTableData(UserTableQuery) returns (UserPageData){}
+    // 通过用户Id集合获取用户列表
+    rpc GetUserListByIds(UserIdList) returns(UserListData){}
+    // 获取馆员列表
+    rpc GetManagerList(google.protobuf.Empty) returns (UserPageData){}
+    // 获取用户类型字典
+    rpc GetUserTypeList(SimpleTableQuery) returns (DictList){}
+    // 获取用户组字典
+    rpc GetUserGroupList(SimpleTableQuery) returns (DictList){}
+    // 获取学院字典
+    rpc GetUserCollegeList(SimpleTableQuery) returns (DictList){}
+    //通过用户组获取用户
+    rpc GetUserListByGroups(SimpleTableQuery) returns (UserPageData){}
+    //通过用户类型获取用户
+    rpc GetUserListByTypes(SimpleTableQuery) returns (UserPageData){}
+    //获取精准用户查询条件
+    rpc GetUserSearchProperties(google.protobuf.Empty) returns (SearchPropertyList){}
+    //精准查询用户列表数据
+    rpc GetUserListByConditions(UserSearchTableQuery) returns(UserPageData){}
+    //属性组下来选项
+    rpc GetUserPropertyGroupSelect(google.protobuf.Empty) returns(GroupSelectReply){}
+    //通过导入数据查询用户列表
+    rpc GetUserListBySearchInfo(UserListImportSearchRequest)returns(UserListImportSearchReply){}
+ }
+
+ //用户Id集合
+ message UserIdList{
+      repeated string Ids=1;
+ }
+
+ //字典
+ message DictList{
+      repeated DictItem Items=1;
+ }
+
+ //字典选项类型
+ message DictItem{
+      string Key=1;
+      string Value=2;
+ }
+
+ //关键字查询
+ message SimpleTableQuery{
+    int32 PageIndex=1;
+    int32 PageSize=2;
+    string KeyWord=3;
+    repeated string GroupIds=4;
+    repeated string UserTypeCodes=5;
+ }
+
+ //用户查询基类
+ message UserTableQuery {
+    int32 PageIndex=1;
+    int32 PageSize=2;
+    string KeyWord=3;
+ }
+
+ message UserData{
+     string Key = 1;
+     string Name = 2;
+     string NickName=3;
+     string StudentNo=4;
+     string Gender=5;
+     string Photo=6;
+     string Unit=7;
+     string Edu=8;
+     string Title=9;
+     string Depart=10;
+     string DepartName=11;
+     string College=12;
+     string CollegeName=13;
+     string CollegeDepart=14;
+     string CollegeDepartName=15;
+     string Major=16;
+     string Grade=17;
+     string Class=18;
+     string Type=19;
+     string TypeName=20;
+     int32 Status=21;
+     string ShowStatus=22;
+     string IdCard=23;
+     string Phone=24;
+     string Email=25;
+     int32 SourceFrom=26;
+     string ShowSourceFrom=27;
+     string CardNo=28;
+     google.protobuf.Int32Value CardStatus=29;
+     string ShowCardStatus=30;
+     google.protobuf.Timestamp Birthday=31;
+     google.protobuf.Timestamp LeaveTime=32;
+     google.protobuf.Timestamp FirstLoginTime=33;
+     google.protobuf.Timestamp LastLoginTime=34;
+     string Addr=35;
+     string AddrDetail=36;
+     google.protobuf.Timestamp CardIssueDate=37;
+     google.protobuf.Timestamp CardExpireDate=38;
+     repeated string GroupIds=39;
+     string AsyncReaderId=40;
+     bool IsStaff=41; 
+ }
+
+ //用户表格数据
+ message UserPageData{
+    message UserListItem {
+        string Key = 1;//userkey
+        string Name = 2;//姓名
+        string NickName=3;//昵称
+        string StudentNo=4;//学工号
+        string Gender=5;//性别
+        string Photo=6;//头像
+        string Unit=7;//单位
+        string Edu=8;//学历
+        string Title=9;//职称
+        string Depart=10;//部门
+        string DepartName=11;//部门名称
+        string College=12;//院系
+        string CollegeName=13;//院系名称
+        string CollegeDepart=14;//系
+        string CollegeDepartName=15;//系名称
+        string Major=16;//专业
+        string Grade=17;//年级
+        string Class=18;//班级
+        string Type=19;//用户类型
+        string TypeName=20;//用户类型名称
+        int32 Status=21;//账号状态
+        string ShowStatus=22;//账号显示状态
+        string IdCard=23;//身份证
+        string Phone=24;//电话
+        string Email=25;//邮箱
+        int32 SourceFrom=26;//来源
+        string ShowSourceFrom=27;//显示来源
+        string CardNo=28;//卡号
+        google.protobuf.Int32Value CardStatus=29;//卡状态
+        string ShowCardStatus=30;//显示卡状态
+        google.protobuf.Timestamp Birthday=31;//生日
+        google.protobuf.Timestamp LeaveTime=32;//离校时间
+        google.protobuf.Timestamp FirstLoginTime=33;//首次登录时间
+        google.protobuf.Timestamp LastLoginTime=34;//最近登录时间
+        google.protobuf.Timestamp CreateTime=35;//创建时间
+        int32 Usage=36; //用途 0:无指定用途 1:临时馆员卡登陆凭据
+        google.protobuf.Timestamp CardExpireDate=37;//卡截止日期
+    }
+    int32 TotalCount = 1;
+    
+    repeated UserListItem Items = 2;
+ }
+
+ //用户表格数据
+ message UserListData{
+    repeated UserPageData.UserListItem Items = 2;
+ }
+
+//用户查询属性
+message SearchPropertyItem{
+  string Name=1;
+  string Code=2;
+  bool External=3;
+  int32 Type=4;
+}
+
+ //用户可查询条件
+message SearchPropertyList{
+  repeated SearchPropertyItem Items=1;
+}
+
+//用户精确查询
+message UserSearchTableQuery{
+ string Name=1;
+ string NickName=2;
+ string StudentNo=3;
+ string Unit=4;
+ string Edu=5;
+ string Title=6;
+ string Depart=7;
+ string DepartName=8;
+ string College=9;
+ string CollegeName=10;
+ string CollegeDepart=11;
+ string CollegeDepartName=12;
+ string Major=13;
+ string Grade=14;
+ string Class=15;
+ string Type=16;
+ string TypeName=17;
+ google.protobuf.Int32Value Status=18;
+ string IDCard=19;
+ string Phone=20;
+ string Email=21;
+ string BirthdayStartTime=22;
+ string BirthdayEndTime=23;
+ string Gender=24;
+ string Addr=25;
+ string AddrDetail=26;
+ google.protobuf.Int32Value SourceFrom=27;
+ string LastLoginStartTime=28;
+ string LastLoginEndTime=29;
+ string LeaveStartTime=30;
+ string LeaveEndTime=31;
+ string CardNo=32;
+ string CardBarCode=33;
+ string CardPhysicNo=34;
+ string CardIdentityNo=35;
+ google.protobuf.BoolValue CardIsPrincipal=36;
+ string CardType=37;
+ string CardTypeName=38;
+ google.protobuf.Int32Value CardStatus=39;
+ string CardIssueStartTime=40;
+ string CardIssueEndTime=41;
+ string CardExpireStartTime=42;
+ string CardExpireEndTime=43;
+ google.protobuf.BoolValue IsStaff=44;
+}
+
+//属性选择列表
+message GroupSelectReply{
+    repeated GroupSelectItem Items=1;
+}
+
+//属性组选项
+message GroupSelectItem{
+string GroupCode=1;
+repeated DictItem Items=2;
+}
+
+//用户导入用户匹配
+message UserListImportSearchRequest{
+    repeated UserListImportSearchItem Items=1;
+}
+
+//用户导入数据项
+message UserListImportSearchItem{
+    string Name=1;
+    string IdCard=2;
+    string Phone=3;
+}
+
+//用户导入匹配
+message UserListImportSearchReply{
+    repeated UserPageData.UserListItem Items=1;
+}

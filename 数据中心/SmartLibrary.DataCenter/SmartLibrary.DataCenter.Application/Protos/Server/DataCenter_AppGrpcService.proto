@@ -1,0 +1,166 @@
+﻿// 语法结构，使用pb3
+syntax = "proto3";
+// 定义命名空间，一般是项目名或者解决方案名
+//option csharp_namespace = "SmartLibrary.Open.Application";
+// 定义服务的包
+package SmartLibrary.DataCenter;
+
+ import "google/protobuf/empty.proto";
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+message DatabaseCollectKindItem {
+        string Id = 1;
+        string DatabaseName =2;//显示的名称，如北大核心期刊
+        string EnglishAbbr =3;//英文名称 如bdhx
+         
+} 
+message AllDatabaseCollectKindResponse{
+        repeated DatabaseCollectKindItem DatabaseCollectKindItems=1;
+}
+message AllDatabaseCollectKindRequest{
+string owner=1;
+}
+
+service DatabaseCollectKindGrpcService{
+//获取当前owner所有可用的数据库，包含已购买的，纸本的，和公共的
+        rpc GetAllDatabaseCollectKindResource (AllDatabaseCollectKindRequest) returns (AllDatabaseCollectKindResponse);
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+message DomainTreeItem {
+        int32 DomainID = 1;//学科编号
+        int32 ParentID =2;//父级编号
+        string DomainIDCode =3;//学科标识
+        string DomainName =4;//学科名称
+        string Contrast =5;//中图对照
+        int32 Level =6;//学科等级
+        string Mark =7;//说明
+        int32 Type =8;//类型 1-学科   2-中图
+        string CreateType =9;//创建类型 0 系统 1-自建
+        string UserKey =10;//创建者标识
+        repeated DomainTreeItem NextNodes =11; //下一级的所有学科
+} 
+message AllDomainInfoTreeReply{
+        repeated DomainTreeItem DomainTrees=1;
+}
+message AllDomainInfoTreeRequest{
+int32 type=1;
+int32 level=2;
+}
+
+service DomainInfoService{
+//获取当前owner所有可用的数据库，包含已购买的，纸本的，和公共的
+        rpc GetAllDomainInfoTrees (AllDomainInfoTreeRequest) returns (AllDomainInfoTreeReply);
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+message ProviderResourceItem {
+        string Id = 1;
+        string Provider =2;
+        string LinkTitle =3;
+        string LinkUrl=5;
+        string TerraceFullName=6;
+        string TerraceShortName=7;
+        int32 ServiceType=8;
+        int32 Type=9;
+        
+        int32 Medium=10;//载体 
+        int32 LanguageKind=11;// 语言 :0=中文;外文 
+        int32 FrequentUsedFlag=12;//是否常用数据库
+        int32 ProviderType=13;//类型 1 公共 2 已购买的数据库或学校的纸本
+        int32 DatabaseCode=14;//数据库标识
+        string ChildDatabaseName=15;//子库名称
+        string Introduction=16;//数据库介绍
+} 
+
+message DatabaseProviderItem {
+        string Id = 1;//主键
+        int32 DatabaseCode =2;//数据库标识
+        string ProviderName =3;//供应商名称
+        string Introduction =4;//简介
+        string Remark=5;//备注
+        string Address=8;//供应商地址
+        string Gathering=9;//收款信息
+        string Contacts=10;//联系人信息
+        string District=11;//所属地区 
+        string Tel=12;//电话
+        string ContractsTel=13;//联系人电话
+        int32 Country=14;//国家
+} 
+
+
+message ResourceAlbumItem  {
+        /// 专辑编码
+         int32 AlbumCode =1;
+        /// 父级编码
+         int32 ParentId=2;
+        /// 专辑名称
+         string AlbumName=3;
+        /// 供应商编码
+        string Provider =4;
+        ///下一级的专辑
+        repeated ResourceAlbumItem ChildAlbum =5; 
+}
+
+message AvailableProviderResourceResponse{
+        repeated ProviderResourceItem ProviderResourceItems=1;
+}
+
+message GetAllDatabaseProviderResponse{
+        repeated DatabaseProviderItem DatabaseProviderItems=1;
+}
+
+message GetResourceAlbumByProviderResponse{
+        repeated ResourceAlbumItem ResourceAlbumItem =1; 
+}
+
+message AvailableProviderResourceRequest{
+string owner=1;
+}
+
+message GetAllDatabaseProviderRequest{
+string owner=1;
+}
+
+message GetResourceAlbumByProviderRequest{
+string provider=1;
+}
+ 
+
+service ProviderResourceGrpcService{
+//获取当前owner所有可用的数据库，包含已购买的，纸本的，和公共的
+        rpc GetAllAvailableProviderResource (AvailableProviderResourceRequest) returns (AvailableProviderResourceResponse);
+        rpc GetAllDatabaseProvider (GetAllDatabaseProviderRequest) returns (GetAllDatabaseProviderResponse);
+        rpc GetResourceAlbumByProvider(GetResourceAlbumByProviderRequest)  returns (GetResourceAlbumByProviderResponse);
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+message SourceTypeItem {
+        string Id = 1;//Id
+        int32 Code =2;//编号
+        string Name =3;//名称
+        string UserKey =4;//操作者/创建者
+} 
+message AllSourceReply{
+        repeated SourceTypeItem SourceTypes=1;
+}
+message AllSourceRequest{
+        string typs=1;//传空
+}
+
+
+message AddSourceTypeRequest{
+        string Name =1;//名称
+        string UserKey =2;//操作者/创建者
+}
+
+
+
+service SourceTypeGrpcService{
+//获取当前owner所有可用的数据库，包含已购买的，纸本的，和公共的
+        rpc GetAllSourceType (AllSourceRequest) returns (AllSourceReply);
+        rpc AddSourceType (AddSourceTypeRequest) returns (SourceTypeItem);
+
+}

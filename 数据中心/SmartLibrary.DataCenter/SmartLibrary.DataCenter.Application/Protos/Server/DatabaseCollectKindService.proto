@@ -1,0 +1,23 @@
+// 语法结构，使用pb3
+syntax = "proto3";
+// 定义命名空间，一般是项目名或者解决方案名
+//option csharp_namespace = "SmartLibrary.Open.Application";
+// 定义服务的包
+package SmartLibrarySearch;
+message DatabaseCollectKindItem {
+        string Id = 1;
+        string DatabaseName =2;//显示的名称，如北大核心期刊
+        string EnglishAbbr =3;//英文名称 如bdhx
+         
+} 
+message AllDatabaseCollectKindResponse{
+        repeated DatabaseCollectKindItem DatabaseCollectKindItems=1;
+}
+message AllDatabaseCollectKindRequest{
+string owner=1;
+}
+
+service DatabaseCollectKindGrpcService{
+//获取当前owner所有可用的数据库，包含已购买的，纸本的，和公共的
+        rpc GetAllDatabaseCollectKindResource (AllDatabaseCollectKindRequest) returns (AllDatabaseCollectKindResponse);
+}

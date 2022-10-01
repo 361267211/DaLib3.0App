@@ -1,0 +1,108 @@
+.tmp-detail {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  margin: 0;
+  border-radius: 16px;
+  background: #fff;
+}
+.title-box {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+.title-box .left {
+  font-size: 20px;
+  font-weight: bold;
+}
+.title-box .right {
+  font-size: 16px;
+  color: #666;
+  cursor: pointer;
+  padding-right: 20px;
+}
+.title-box .right .font-w {
+  font-weight: 600;
+}
+.temp-no-data-show{
+  text-align: center;
+  line-height: 40px;
+  color: #666;
+}
+.tmp-detail .tem-content {
+  padding: 0 20px;
+  position: relative;
+}
+.activity-item-box{
+  width: 100%;
+  position: relative;
+}
+.tmp-detail .tem-content .activity-item {
+  width: 100%;
+  height: 240px;
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  transition: all .5s;
+}
+/* .tmp-detail .tem-content .activity-item:hover {
+  opacity: 0.8;
+} */
+
+.tmp-detail .tem-content .activity-item img {
+  width: 100%;
+  height: 240px;
+}
+.tmp-detail .tem-content .activity-item>div {
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+.tmp-detail .tem-content .activity-item div .act-tag {
+  width: 60px;
+  height: 60px;
+  background: #a21e1e;
+  padding: 8px 0 0 12px;
+  font-size: 18px;
+  display: inline-block;
+  /* display: inline-block; */
+  position: absolute;
+  box-sizing: border-box;
+}
+.tmp-detail .tem-content .activity-item>div>div {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top:10px;
+  width: 70%;
+  
+}
+.tmp-detail .tem-content .activity-item div .act-name {
+  font-size: 15px;
+  font-weight: bold;
+  display: block;
+  line-height: 25px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /* padding-top:4px; */
+}
+.tmp-detail .tem-content .activity-item div .act-text {
+  display: block;
+  line-height: 25px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.lib-activity-item-show{
+  opacity: 1 !important;
+  z-index: 5;
+}

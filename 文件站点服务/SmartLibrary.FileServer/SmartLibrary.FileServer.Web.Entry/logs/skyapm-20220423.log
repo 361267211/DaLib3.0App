@@ -1,0 +1,38 @@
+2022-04-23 18:17:39.495 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Initializing ...
+2022-04-23 18:17:39.522 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2022-04-23 18:17:39.523 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2022-04-23 18:17:39.523 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2022-04-23 18:17:39.539 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2022-04-23 18:17:39.539 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2022-04-23 18:17:39.539 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2022-04-23 18:17:39.577 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [CapDiagnosticListener].
+2022-04-23 18:17:39.578 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2022-04-23 18:17:39.579 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2022-04-23 18:17:39.579 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2022-04-23 18:17:39.579 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2022-04-23 18:17:59.086 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Stopped instrument service RegisterService.
+2022-04-23 18:17:59.086 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Stopped instrument service PingService.
+2022-04-23 18:17:59.086 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.SegmentReportService : Stopped instrument service SegmentReportService.
+2022-04-23 18:17:59.087 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Stopped instrument service CLRStatsService.
+2022-04-23 18:17:59.087 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Stopped instrument service SimpleCountSamplingInterceptor.
+2022-04-23 18:17:59.087 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectService : Stopped instrument service ConnectService.
+2022-04-23 18:17:59.087 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Stopped SkyAPM .NET Core Agent.
+2022-04-23 18:57:38.450 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Initializing ...
+2022-04-23 18:57:38.477 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2022-04-23 18:57:38.477 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2022-04-23 18:57:38.478 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2022-04-23 18:57:38.478 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2022-04-23 18:57:38.478 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2022-04-23 18:57:38.478 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2022-04-23 18:57:38.513 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [CapDiagnosticListener].
+2022-04-23 18:57:38.514 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2022-04-23 18:57:38.514 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2022-04-23 18:57:38.515 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2022-04-23 18:57:38.515 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2022-04-23 18:57:54.089 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.RegisterService : Stopped instrument service RegisterService.
+2022-04-23 18:57:54.089 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.PingService : Stopped instrument service PingService.
+2022-04-23 18:57:54.089 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.SegmentReportService : Stopped instrument service SegmentReportService.
+2022-04-23 18:57:54.089 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Service.CLRStatsService : Stopped instrument service CLRStatsService.
+2022-04-23 18:57:54.089 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Stopped instrument service SimpleCountSamplingInterceptor.
+2022-04-23 18:57:54.089 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.Transport.Grpc.ConnectService : Stopped instrument service ConnectService.
+2022-04-23 18:57:54.089 +08:00 [SmartLibrary.FileServer] [Information] SkyApm.InstrumentStartup : Stopped SkyAPM .NET Core Agent.

@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.c-l::after{
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+    display: block;
+}
+/***公用 ************/
+/***标题 */
+.temp-home1-warp{
+    color: #fff;
+    font-size: 14px;
+}
+.temp-home1-warp .main-title-temp{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+}
+.temp-home1-warp .e-title{ 
+    color: #E3E3E3;
+    font-size: 12px;
+    line-height: 17px;
+    margin-left: 10px;
+}
+/***公用 end ************/
+.temp-home1-warp{
+    padding: 10px;
+}
+/***推荐应用 */
+.temp-home1-warp .hot-apps{
+    padding:20px 30px;
+    margin-top: 18px;
+    height: 194px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 16px;
+}
+.temp-home1-warp .hot-apps .apps-conent{
+    margin-top: 20px;
+    margin-left: -2%;
+    margin-right: -2%;
+}
+.temp-home1-warp .hot-apps .apps-conent .box{
+    cursor: pointer;
+    width: 16.666%;
+    float: left;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    padding:0 5px;
+}
+.temp-home1-warp .hot-apps .apps-c-logo{
+    width: 94%;
+    max-width: 60px;
+    min-height:40px;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    opacity: 0.7;
+    padding: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+    border: 1px solid #fff;
+}

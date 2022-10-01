@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <DocumentationFile>SmartLibrary.News.Application.xml</DocumentationFile>
+    <Version>3.0.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="applicationsettings.json" />
+    <None Remove="Protos\Client\AppCenterGrpcService.proto" />
+    <None Remove="Protos\Client\AppToDoEventGrpcService.proto" />
+    <None Remove="Protos\Client\SceneManage.proto" />
+    <None Remove="Protos\Client\UserGrpcService.proto" />
+    <None Remove="Protos\Client\UserRoleGrpcService.proto" />
+    <None Remove="Services\LableInfoService.cs~RF7fc72b72.TMP" />
+    <None Remove="SmartLibrary.News.Application.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Protobuf Include="Protos\Client\AppCenterGrpcService.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\Client\AppToDoEventGrpcService.proto" />
+    <Protobuf Include="Protos\Client\SceneManage.proto" GrpcServices="Client" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="applicationsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SmartLibrary.News.Application.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="7.0.1" />
+    <PackageReference Include="EFCore.BulkExtensions" Version="5.4.0" />
+    <PackageReference Include="Google.Protobuf" Version="3.17.2" />
+    <PackageReference Include="Grpc.AspNetCore.Server" Version="2.37.0" />
+    <PackageReference Include="Grpc.Net.ClientFactory" Version="2.37.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.38.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="SmartLibrary.Search.EsSearchProxy.Core" Version="1.1.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SmartLibrary.News.Utility\SmartLibrary.News.Utility.csproj" />
+    <ProjectReference Include="..\SmartLibrary.News.Common\SmartLibrary.News.Common.csproj" />
+    <ProjectReference Include="..\SmartLibrary.News.EntityFramework.Core\SmartLibrary.News.EntityFramework.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Protobuf Include="Protos\Client\UserGrpcService.proto" />
+    <Protobuf Include="Protos\Client\UserRoleGrpcService.proto" />
+    <Protobuf Include="Protos\Server\HealthCheck.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\Server\UserService.proto" GrpcServices="Server" />
+	  <Protobuf Include="Protos\Server\NewsService.proto" GrpcServices="Server" />
+  </ItemGroup>
+</Project>

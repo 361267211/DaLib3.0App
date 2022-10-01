@@ -1,0 +1,37 @@
+syntax = "proto3";
+package SmartLibrary.Open;
+import "google/protobuf/empty.proto";
+
+service AppRouteGrpcService {
+	rpc GetAppRouteList (AppRouteListRequest) returns (AppRouteListReply); // 应用路由列表
+	rpc GetCustomerList (google.protobuf.Empty) returns (CustomerListReply); // 租户列表
+}
+
+
+message AppRouteListRequest {
+	string TenantCode = 1; //租户标识
+}
+
+message AppRouteListReply {
+	repeated AppRouteListSingle TenantRouteList = 1;
+}
+
+message AppRouteListSingle {
+	string TenantCode = 1;
+	repeated AppRouteListSingleItem AppRouteList = 2;
+}
+
+message AppRouteListSingleItem {
+	string AppRouteCode = 1; //应用路由标识
+	string RestApiGateway = 2; //RestApi网关地址
+	string GrpcApiGateway = 3; //GrpcApi网关地址
+}
+
+message CustomerListReply {
+	repeated CustomerSingleItem CustomerList = 1; //租户列表
+}
+
+message CustomerSingleItem {
+	string OrgId = 1; // 租户ID
+	string OrgSecret = 2; // 租户秘钥
+}

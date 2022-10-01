@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmartLibrary.SceneManage.Application</name>
+    </assembly>
+    <members>
+        <member name="T:SmartLibrary.SceneManage.Application.AppServices.CapDocumentAppService">
+            <summary>
+            Cap文档描述
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Application.AppServices.CapDocumentAppService.GetCapPublishEventDoc">
+            <summary>
+            获取当前服务发布事件描述文档数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.Application.HealthAppService">
+            <summary>
+            WebApi心跳检查
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Application.HealthAppService.Index">
+            <summary>
+            WebApi心跳检查
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.Application.ProductController">
+            <summary>
+            数据库迁移的专用接口示例
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Application.ProductController.GetUserName">
+            <summary>
+            缓存测试 获取用户名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Application.ProductController.LogInfo(System.String)">
+            <summary>
+            Exceptionless日志记录测试
+            </summary>
+            <param name="msg">记录消息</param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.Application.UserAppService">
+            <summary>
+            应用服务接口
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Application.UserAppService.GetUserName(SmartLibraryUser.UserRequest)">
+            <summary>
+            缓存测试 获取用户名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Application.UserAppService.SetCach(System.String)">
+            <summary>
+            设置redis缓存值
+            </summary>
+            <param name="redisValue"></param>
+            <returns></returns>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.Application.Dtos.Cap.UserServicePublishEvent.NewPerson">
+            <summary>
+            事件名称
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.Application.Dtos.Cap.UserServicePublishEvent.NewPersonMsg">
+            <summary>
+            事件对应消息
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.Application.Dtos.Cap.UserServicePublishEvent.NewPersonMsg.PersonId">
+            <summary>
+            员工Id
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.Application.Dtos.Cap.UserServiceSubscribeEvent.NewPerson">
+            <summary>
+            事件名称
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.Application.Dtos.Cap.UserServiceSubscribeEvent.NewPersonMsg">
+            <summary>
+            消息接收类型
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.Application.Services.RemoteProxy.EsHttp">
+            <summary>
+            请求代理，具体使用方式参考furion框架
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Application.Services.RemoteProxy.EsHttp.PostVipSearchByObjectV2Async(System.Object)">
+            <summary>
+            转发到Es查询服务，方法vipSearchByObjectV2
+            </summary>
+            <param name="condition"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.Application.UserService">
+            <summary>
+            用户服务
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Application.UserService.GetUserName(SmartLibraryUser.UserRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            获取用户姓名
+            </summary>
+            <param name="request"></param>
+            <param name="callContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.Application.UserService.AddOnePerson">
+            <summary>
+            模拟添加员工同时，发布投递添加员工消息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Grpc.Health.V1.HealthCheckReflection">
+            <summary>Holder for reflection information generated from Protos/Server/HealthCheck.proto</summary>
+        </member>
+        <member name="P:Grpc.Health.V1.HealthCheckReflection.Descriptor">
+            <summary>File descriptor for Protos/Server/HealthCheck.proto</summary>
+        </member>
+        <member name="F:Grpc.Health.V1.HealthCheckRequest.ServiceFieldNumber">
+            <summary>Field number for the "service" field.</summary>
+        </member>
+        <member name="F:Grpc.Health.V1.HealthCheckResponse.StatusFieldNumber">
+            <summary>Field number for the "status" field.</summary>
+        </member>
+        <member name="T:Grpc.Health.V1.HealthCheckResponse.Types">
+            <summary>Container for nested types declared in the HealthCheckResponse message type.</summary>
+        </member>
+        <member name="P:Grpc.Health.V1.Health.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:Grpc.Health.V1.Health.HealthBase">
+            <summary>Base class for server-side implementations of Health</summary>
+        </member>
+        <member name="M:Grpc.Health.V1.Health.BindService(Grpc.Health.V1.Health.HealthBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:Grpc.Health.V1.Health.BindService(Grpc.Core.ServiceBinderBase,Grpc.Health.V1.Health.HealthBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="T:SmartLibraryUser.UserServiceReflection">
+            <summary>Holder for reflection information generated from Protos/Server/UserService.proto</summary>
+        </member>
+        <member name="P:SmartLibraryUser.UserServiceReflection.Descriptor">
+            <summary>File descriptor for Protos/Server/UserService.proto</summary>
+        </member>
+        <member name="T:SmartLibraryUser.UserRequest">
+            <summary>
+            定义请求的对象名
+            </summary>
+        </member>
+        <member name="F:SmartLibraryUser.UserRequest.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="P:SmartLibraryUser.UserRequest.Id">
+            <summary>
+            有一个属性字段是name
+            </summary>
+        </member>
+        <member name="T:SmartLibraryUser.UserReply">
+            <summary>
+            定义返回的对象名
+            </summary>
+        </member>
+        <member name="F:SmartLibraryUser.UserReply.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="P:SmartLibraryUser.UserReply.Id">
+            <summary>
+            有一个返回的字段是message
+            </summary>
+        </member>
+        <member name="F:SmartLibraryUser.UserReply.UserNameFieldNumber">
+            <summary>Field number for the "UserName" field.</summary>
+        </member>
+        <member name="T:SmartLibraryUser.UserGrpcService">
+            <summary>
+            定义具体的服务
+            </summary>
+        </member>
+        <member name="P:SmartLibraryUser.UserGrpcService.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:SmartLibraryUser.UserGrpcService.UserGrpcServiceBase">
+            <summary>Base class for server-side implementations of UserGrpcService</summary>
+        </member>
+        <member name="M:SmartLibraryUser.UserGrpcService.UserGrpcServiceBase.GetUserName(SmartLibraryUser.UserRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            定义某一个方法API，格式是：rpc 方法名(请求参数对象名) returns(返回参数对象名)
+            </summary>
+            <param name="request">The request received from the client.</param>
+            <param name="context">The context of the server-side call handler being invoked.</param>
+            <returns>The response to send back to the client (wrapped by a task).</returns>
+        </member>
+        <member name="M:SmartLibraryUser.UserGrpcService.BindService(SmartLibraryUser.UserGrpcService.UserGrpcServiceBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:SmartLibraryUser.UserGrpcService.BindService(Grpc.Core.ServiceBinderBase,SmartLibraryUser.UserGrpcService.UserGrpcServiceBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+    </members>
+</doc>

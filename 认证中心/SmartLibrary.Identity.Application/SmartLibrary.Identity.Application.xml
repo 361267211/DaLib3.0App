@@ -1,0 +1,2666 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmartLibrary.Identity.Application</name>
+    </assembly>
+    <members>
+        <member name="M:SmartLibrary.Identity.Application.AppServices.BaseAppService.#ctor">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.AppServices.BaseAppService.CurrentUser">
+            <summary>
+            当前登录人信息
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.AppServices.BaseAppService.CurUserPermission">
+            <summary>
+            当前登录人权限
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.AppServices.CapDocumentAppService">
+            <summary>
+            Cap文档描述
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.AppServices.CapDocumentAppService.GetCapPublishEventDoc">
+            <summary>
+            获取当前服务发布事件描述文档数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.AppServices.LoginConfigAppService.QueryListData">
+            <summary>
+            获取登录设置列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.AppServices.LoginConfigAppService.SetIsOpen(SmartLibrary.Identity.Application.ViewModels.LoginSetOpenSetInput)">
+            <summary>
+            设置是否开启
+            </summary>
+            <param name="openSet"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.AppServices.RegisterConfigAppService">
+            <summary>
+            用户注册配置
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Identity.Application.AppServices.RegisterConfigAppService._registerConfigService">
+            <summary>
+            注册服务
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.AppServices.RegisterConfigAppService.GetDetailInfo">
+            <summary>
+            获取注册配置信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.AppServices.RegisterConfigAppService.Save(SmartLibrary.Identity.Application.ViewModels.RegisterConfigSetInput)">
+            <summary>
+            保存注册配置
+            </summary>
+            <param name="configSet"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.AppServices.SysMenuAppService">
+            <summary>
+            菜单权限服务
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.AppServices.SysMenuAppService.#ctor(SmartLibrary.Identity.Application.Services.ISysMenuService,kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.TenantInfo)">
+            <summary>
+            服务初始化
+            </summary>
+            <param name="sysMenuService"></param>
+            <param name="tenantInfo"></param>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.AppServices.SysMenuAppService.GetAllPermissionTree">
+            <summary>
+            获取应用中所有权限列表树
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.AppServices.SysMenuAppService.GetUserPermissionTree">
+            <summary>
+            获取用户权限树
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.AppServices.SysMenuAppService.GetUserPermissionList">
+            <summary>
+            获取馆员权限列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.AppServices.ThirdPartAuthAppService">
+            <summary>
+            三方登录
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.AppServices.ThirdPartAuthAppService.CasProxy">
+            <summary>
+            Cas代理
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.AppServices.ThirdPartAuthAppService.HttpGet(System.String)">
+            <summary>
+            获取http请求数据
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.AppServices.UserIdentityAppService">
+            <summary>
+            用户认证服务
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.AppServices.UserIdentityAppService.CasLogin(SmartLibrary.Identity.Application.ViewModels.Identity.CasLoginInput)">
+            <summary>
+            用户Cas登录Api
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.AppServices.UserIdentityAppService.LoginByAccount(SmartLibrary.Identity.Application.ViewModels.LoginAccountInput)">
+            <summary>
+            用户登录
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.AppServices.UserIdentityAppService.LoginByPhone(SmartLibrary.Identity.Application.ViewModels.LoginPhoneInput)">
+            <summary>
+            通过手机号登录
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.AppServices.UserIdentityAppService.LoginByIdcard(SmartLibrary.Identity.Application.ViewModels.LoginIdCardInput)">
+            <summary>
+            通过身份证号登录
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.AppServices.UserIdentityAppService.SearchCardByNo(SmartLibrary.Identity.Application.ViewModels.CardSearchInput)">
+            <summary>
+            通过卡号查询读者卡
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.AppServices.UserIdentityAppService.SendMobileVerifyCode(SmartLibrary.Identity.Application.ViewModels.PhoneVerifyInput)">
+            <summary>
+            发送手机验证码
+            </summary>
+            <param name="phoneVerifyInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.AppServices.UserIdentityAppService.SendMobileVerifyCodeForget(SmartLibrary.Identity.Application.ViewModels.PhoneVerifyForgetInput)">
+            <summary>
+            发送手机验证码（忘记密码）
+            </summary>
+            <param name="phoneVerifyInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.AppServices.UserIdentityAppService.GetValidateCode">
+            <summary>
+            获取验证码信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.AppServices.UserIdentityAppService.VerifyPhoneCode(SmartLibrary.Identity.Application.ViewModels.PhoneCodeInput)">
+            <summary>
+            验证手机验证码
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.AppServices.UserIdentityAppService.ChangeCardPassword(SmartLibrary.Identity.Application.ViewModels.CardChangeInput)">
+            <summary>
+            修改读者卡密码
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.AppServices.UserIdentityAppService.CheckUniquePhone(SmartLibrary.Identity.Application.ViewModels.RegisterPhoneInput)">
+            <summary>
+            手机验证
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.AppServices.UserIdentityAppService.RegisterUser(SmartLibrary.Identity.Application.ViewModels.RegisterUserInput)">
+            <summary>
+            用户注册
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.CommonAppService">
+            <summary>
+            公共接口
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.CommonAppService.UpdateDatabaseSchema">
+            <summary>
+            租户数据迁移
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.CommonAppService.InitLoginConfig">
+            <summary>
+            登录配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.CommonAppService.InitRegisterConfig">
+            <summary>
+            注册配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.CommonAppService.InitRegisterProperty">
+            <summary>
+            注册属性配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.CommonAppService.InitPermissionMenu">
+            <summary>
+            初始化系统菜单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.CommonAppService.TestLoginMessage">
+            <summary>
+            测试登录消息投递
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.HealthAppService">
+            <summary>
+            WebApi心跳检查
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.HealthAppService.Index">
+            <summary>
+            WebApi心跳检查
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.AuthHandler.StaffAuthHandler">
+            <summary>
+            馆员权限校验
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.AuthHandler.StaffAuthHandler.CheckUserPermission(System.Collections.Generic.List{System.String},System.String,System.String)">
+            <summary>
+            检查路由信息
+            </summary>
+            <param name="userPermissions"></param>
+            <param name="routeMethod"></param>
+            <param name="routeName"></param>
+            <returns></returns>
+        </member>
+        <member name="F:SmartLibrary.Identity.Application.Dtos.Cap.PublishEvent.ActionEvent">
+            <summary>
+            事件名称
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.Dtos.Cap.PublishEvent.ActionEventMsg">
+            <summary>
+            事件对应消息
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.Cap.PublishEvent.ActionEventMsg.AppCode">
+            <summary>
+            应用编码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.Cap.PublishEvent.ActionEventMsg.AppName">
+            <summary>
+            应用名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.Cap.PublishEvent.ActionEventMsg.UserKey">
+            <summary>
+            用户标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.Cap.PublishEvent.ActionEventMsg.EventCode">
+            <summary>
+            事件编码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.Cap.PublishEvent.ActionEventMsg.EventName">
+            <summary>
+            事件名称
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Identity.Application.Dtos.Cap.UserServiceSubscribeEvent.NewPerson">
+            <summary>
+            事件名称
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.Dtos.Cap.UserServiceSubscribeEvent.NewPersonMsg">
+            <summary>
+            消息接收类型
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.Dtos.Common.PolicyKey">
+            <summary>
+            缓存key
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.Dtos.LoginConfig.CasConfigDto">
+            <summary>
+            Cas三方接入配置
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.LoginConfig.CasConfigDto.IsOpen">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.LoginConfig.LoginConfigSetDto.ID">
+            <summary>
+            主键标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.LoginConfig.LoginConfigSetDto.LoginType">
+            <summary>
+            登录方式
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.LoginConfig.LoginConfigSetDto.Icon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.LoginConfig.LoginConfigSetDto.LoginName">
+            <summary>
+            登录方式名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.LoginConfig.LoginConfigSetDto.Desc">
+            <summary>
+            登录方式描述
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.LoginConfig.LoginConfigSetDto.Enable">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.LoginConfig.LoginConfigSetDto.IsOpen">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.LoginConfig.LoginConfigSetDto.LoginConfig">
+            <summary>
+            登录配置,保存为Json字符
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.LoginConfig.LoginConfigSetDto.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.LoginConfig.LoginConfigSetDto.NeedConfig">
+            <summary>
+            是否需要配置
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.LoginConfig.LoginSetOpenDto.ID">
+            <summary>
+            配置ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.LoginConfig.LoginSetOpenDto.IsOpen">
+            <summary>
+            是否开启
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.RegisterConfig.RegisterConfigSetDto.OpenRegistion">
+            <summary>
+            是否开放注册
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.RegisterConfig.RegisterConfigSetDto.RegisteType">
+            <summary>
+            注册方式
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.RegisterConfig.RegisterConfigSetDto.RegisteFlow">
+            <summary>
+            注册流程
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.RegisterConfig.RegisterConfigSetDto.ProtoUrl">
+            <summary>
+            协议地址
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.RegisterConfig.RegisterConfigSetDto.Properties">
+            <summary>
+            注册选填属性配置
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.Dtos.RegisterConfig.RegisterPropertyDto">
+            <summary>
+            选填属性
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.RegisterConfig.RegisterPropertyDto.PropertyCode">
+            <summary>
+            属性编码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.RegisterConfig.RegisterPropertyDto.IsEnable">
+            <summary>
+            是否可选择
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.RegisterConfig.RegisterPropertyDto.IsCheck">
+            <summary>
+            是否勾选
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.UserIdentity.CardSearchDto.No">
+            <summary>
+            卡号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.UserIdentity.CardSearchDto.ValidateKey">
+            <summary>
+            验证Key
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.UserIdentity.CardSearchDto.ValidateCode">
+            <summary>
+            验证码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.UserIdentity.CardSearchResultDto.Phone">
+            <summary>
+            手机号码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.UserIdentity.CardSearchResultDto.CardId">
+            <summary>
+            卡标识
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.Dtos.UserIdentity.RegisterPhoneDto">
+            <summary>
+            注册手机验证
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.Dtos.UserIdentity.RegisterPhoneData">
+            <summary>
+            注册手机数据
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.Dtos.UserIdentity.RegisterUserDto">
+            <summary>
+            用户注册信息
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.UserIdentity.LoginAccountDto.Account">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.UserIdentity.LoginAccountDto.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.UserIdentity.LoginAccountDto.ValidateKey">
+            <summary>
+            验证码Key
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.UserIdentity.LoginAccountDto.ValidateCode">
+            <summary>
+            验证码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.UserIdentity.LoginAccountDto.RememberMe">
+            <summary>
+            是否记住登录凭据
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.UserIdentity.LoginIdCardDto.IdCard">
+            <summary>
+            身份证号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.UserIdentity.LoginIdCardDto.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.UserIdentity.LoginIdCardDto.ValidateKey">
+            <summary>
+            验证码Key
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.UserIdentity.LoginIdCardDto.ValidateCode">
+            <summary>
+            验证码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.UserIdentity.LoginIdCardDto.RememberMe">
+            <summary>
+            是否记住登录凭据
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.UserIdentity.LoginPhoneDto.VerifyKey">
+            <summary>
+            验证码Key
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.UserIdentity.LoginPhoneDto.VerifyCode">
+            <summary>
+            验证码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.UserIdentity.LoginPhoneDto.Phone">
+            <summary>
+            手机号码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.UserIdentity.LoginPhoneDto.RememberMe">
+            <summary>
+            是否记住
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.UserIdentity.CasLoginResultDto.ReaderInfo">
+            <summary>
+            登录信息
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.UserIdentity.CasLoginResultDto.Status">
+            <summary>
+            验证状态
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.UserIdentity.CasLoginResultDto.Msg">
+            <summary>
+            信息
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.UserIdentity.CasLoginResultDto.VirginPassword">
+            <summary>
+            原始密码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.UserIdentity.CasLoginDto.LoginName">
+            <summary>
+            用户名
+            </summary>
+            <example>superAdmin</example>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.UserIdentity.CasLoginDto.Password">
+            <summary>
+            密码
+            </summary>
+            <example>123456</example>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Dtos.UserIdentity.LoginReaderInfoDto.username">
+            <summary>
+            此字段是为了维普中刊对接cas所加
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.Filter.CapActionEventAttribute">
+            <summary>
+            事件发布描述
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Filter.CapActionEventAttribute.EventCode">
+            <summary>
+            事件编码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Filter.CapActionEventAttribute.EventName">
+            <summary>
+            事件名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Filter.CapActionEventAttribute.UnitOfWork">
+            <summary>
+            是否启用事务
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.Filter.CapActionEventAttribute.EnsureTransaction">
+            <summary>
+            确保事务可用
+            <para>此方法为了解决静态类方式操作数据库的问题</para>
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Filter.CapActionEventAttribute.#ctor(System.String,System.String)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Filter.CapActionEventAttribute.#ctor(System.String,System.String,System.Boolean)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Filter.CapActionEventAttribute.#ctor(System.String,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Identity.Application.Filter.CapActionEventFilter._dbContextPool">
+            <summary>
+            数据库上下文池
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Filter.CapActionEventFilter.#ctor(Furion.DatabaseAccessor.IDbContextPool,DotNetCore.CAP.ICapPublisher,SmartLibrary.Identity.EntityFramework.Core.DbContexts.IdentityDbContext,kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.TenantInfo)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="dbContextPool"></param>
+            <param name="capPublisher"></param>
+            <param name="dbContext"></param>
+            <param name="tenantInfo"></param>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.Services.Enum.EnumPermissionType">
+            <summary>
+            菜单权限类型
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Identity.Application.Services.Enum.EnumPermissionType.Dir">
+            <summary>
+            目录
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Identity.Application.Services.Enum.EnumPermissionType.Menu">
+            <summary>
+            菜单
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Identity.Application.Services.Enum.EnumPermissionType.Query">
+            <summary>
+            查询
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Identity.Application.Services.Enum.EnumPermissionType.Operate">
+            <summary>
+            操作
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.Identity.Application.Services.Enum.EnumPermissionType.Api">
+            <summary>
+            接口
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.Services.Impl.CaptchaService">
+            <summary>
+            验证码生成
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Impl.CaptchaService.getCirclePoginF(System.Int32,System.Int32,System.Double,System.Collections.Generic.List{SixLabors.ImageSharp.PointF}@)">
+            <summary>
+            散 随机点
+            </summary>
+            <param name="containerWidth"></param>
+            <param name="containerHeight"></param>
+            <param name="lapR"></param>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Impl.CaptchaService.GenerateRandomNum(System.Int32)">
+            <summary>
+            生成随机数字验证码
+            </summary>
+            <param name="codeLength"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Impl.CaptchaService.GenerateRandomChapter(System.Int32)">
+            <summary>
+            生成随机数字+字符验证码
+            </summary>
+            <param name="codeLength"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Impl.CaptchaService.GenerateRandomNumImg(System.Int32)">
+            <summary>
+            生成随机数字验证码图片
+            </summary>
+            <param name="codeLength"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Impl.CaptchaService.GenerateRandomChapterImg(System.Int32)">
+            <summary>
+            生成随机数字+字符验证码图片
+            </summary>
+            <param name="codeLength"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Impl.CaptchaService.initFonts(System.Int32)">
+            <summary>
+            初始化字体池
+            </summary>
+            <param name="fontSize">一个初始大小</param>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Impl.LoginConfigService.QueryListData">
+            <summary>
+            获取登录配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Impl.LoginConfigService.SetIsOpen(SmartLibrary.Identity.Application.Dtos.LoginConfig.LoginSetOpenDto)">
+            <summary>
+            设置开启
+            </summary>
+            <param name="openSet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Impl.LoginConfigService.GetCasLoginConfig">
+            <summary>
+            获取Cas登录详细配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.Services.Impl.RegisterConfigService">
+            <summary>
+            注册配置服务
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Impl.RegisterConfigService.GetDetailInfo">
+            <summary>
+            获取注册详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Impl.RegisterConfigService.Save(SmartLibrary.Identity.Application.Dtos.RegisterConfig.RegisterConfigSetDto)">
+            <summary>
+            保存注册配置
+            </summary>
+            <param name="configSet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Impl.UserIdentityService.LoginCasByAccount(SmartLibrary.Identity.Application.Dtos.UserIdentity.CasLoginDto)">
+            <summary>
+            通过账号密码验证
+            </summary>
+            <param name="loginAccount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Impl.UserIdentityService.LoginByAccount(SmartLibrary.Identity.Application.Dtos.UserIdentity.LoginAccountDto)">
+            <summary>
+            通过账号密码验证
+            </summary>
+            <param name="loginAccount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Impl.UserIdentityService.LoginByIdCard(SmartLibrary.Identity.Application.Dtos.UserIdentity.LoginIdCardDto)">
+            <summary>
+            通过身份证号登录
+            </summary>
+            <param name="loginIdCard"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Impl.UserIdentityService.LoginByPhone(SmartLibrary.Identity.Application.Dtos.UserIdentity.LoginPhoneDto)">
+            <summary>
+            通过手机号登录
+            </summary>
+            <param name="loginPhone"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Impl.UserIdentityService.SendMobileVerifyCode(SmartLibrary.Identity.Application.Dtos.UserIdentity.PhoneVerifyDto)">
+            <summary>
+            发送手机验证码，返回对应key
+            </summary>
+            <param name="phoneVerifyData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Impl.UserIdentityService.SendMobileVerifyCodeForget(SmartLibrary.Identity.Application.Dtos.UserIdentity.PhoneVerifyForgetDto)">
+            <summary>
+            发送手机验证码，返回对应key
+            </summary>
+            <param name="phoneVerifyData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Impl.UserIdentityService.GetValidateCode">
+            <summary>
+            生成验证码信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Impl.UserIdentityService.VerifyPhoneCode(SmartLibrary.Identity.Application.Dtos.UserIdentity.PhoneCodeDto)">
+            <summary>
+            验证手机号是否匹配
+            </summary>
+            <param name="phoneInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Impl.UserIdentityService.SearchCardByNo(SmartLibrary.Identity.Application.Dtos.UserIdentity.CardSearchDto)">
+            <summary>
+            通过卡号查询读者卡
+            </summary>
+            <param name="cardSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Impl.UserIdentityService.ChangeCardPassword(SmartLibrary.Identity.Application.Dtos.UserIdentity.CardChangeDto)">
+            <summary>
+            修改读者卡密码
+            </summary>
+            <param name="changeInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Impl.UserIdentityService.CheckUniquePhone(SmartLibrary.Identity.Application.Dtos.UserIdentity.RegisterPhoneDto)">
+            <summary>
+            检查手机号是否唯一
+            </summary>
+            <param name="registerPhone"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Impl.UserIdentityService.RegisterUser(SmartLibrary.Identity.Application.Dtos.UserIdentity.RegisterUserDto)">
+            <summary>
+            用户注册
+            </summary>
+            <param name="userData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Impl.UserPermissionService.#ctor(SmartLibrary.Identity.Common.Services.IGrpcClientResolver,Microsoft.Extensions.Logging.ILogger{SmartLibrary.Identity.Application.Services.Impl.UserPermissionService},SmartLibrary.Identity.Common.Services.ITenantDistributedCache,kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.TenantInfo,SmartLibrary.Identity.Application.Services.ISysMenuService)">
+            <summary>
+            初始化
+            </summary>
+            <param name="grpcClientResolver"></param>
+            <param name="logger"></param>
+            <param name="distributedCache"></param>
+            <param name="tenantInfo"></param>
+            <param name="sysMenuService"></param>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Impl.UserPermissionService.GetUserInfo(System.String)">
+            <summary>
+            获取用户信息
+            </summary>
+            <param name="userKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Interface.ICaptchaService.GenerateRandomNum(System.Int32)">
+            <summary>
+            生成随机数字验证码
+            </summary>
+            <param name="codeLength"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Interface.ICaptchaService.GenerateRandomNumImg(System.Int32)">
+            <summary>
+            生成随机数字验证码图片
+            </summary>
+            <param name="codeLength"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Interface.ICaptchaService.GenerateRandomChapter(System.Int32)">
+            <summary>
+            生成随机数字字母验证码
+            </summary>
+            <param name="codeLength"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Interface.ICaptchaService.GenerateRandomChapterImg(System.Int32)">
+            <summary>
+            生成随机数字字母验证码图片
+            </summary>
+            <param name="codeLength"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Interface.ILoginConfigService.QueryListData">
+            <summary>
+            获取登录设置列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Interface.ILoginConfigService.SetIsOpen(SmartLibrary.Identity.Application.Dtos.LoginConfig.LoginSetOpenDto)">
+            <summary>
+            设置是否开启
+            </summary>
+            <param name="openSet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Interface.ILoginConfigService.GetCasLoginConfig">
+            <summary>
+            获取Cas登录详细配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.Services.Interface.IRegisterConfigService">
+            <summary>
+            注册配置服务
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Interface.IRegisterConfigService.GetDetailInfo">
+            <summary>
+            获取注册配置信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Interface.IRegisterConfigService.Save(SmartLibrary.Identity.Application.Dtos.RegisterConfig.RegisterConfigSetDto)">
+            <summary>
+            保存注册配置
+            </summary>
+            <param name="configSet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Interface.IUserIdentityService.LoginCasByAccount(SmartLibrary.Identity.Application.Dtos.UserIdentity.CasLoginDto)">
+            <summary>
+            通过账号密码登录
+            </summary>
+            <param name="loginAccount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Interface.IUserIdentityService.LoginByAccount(SmartLibrary.Identity.Application.Dtos.UserIdentity.LoginAccountDto)">
+            <summary>
+            通过账号密码登录
+            </summary>
+            <param name="loginAccount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Interface.IUserIdentityService.LoginByPhone(SmartLibrary.Identity.Application.Dtos.UserIdentity.LoginPhoneDto)">
+            <summary>
+            通过手机号码登录
+            </summary>
+            <param name="loginPhone"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Interface.IUserIdentityService.LoginByIdCard(SmartLibrary.Identity.Application.Dtos.UserIdentity.LoginIdCardDto)">
+            <summary>
+            通过身份证号码登录
+            </summary>
+            <param name="loginIdCard"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Interface.IUserIdentityService.SearchCardByNo(SmartLibrary.Identity.Application.Dtos.UserIdentity.CardSearchDto)">
+            <summary>
+            通过卡号查询读者卡
+            </summary>
+            <param name="cardSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Interface.IUserIdentityService.GetValidateCode">
+            <summary>
+            生成验证码信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Interface.IUserIdentityService.SendMobileVerifyCode(SmartLibrary.Identity.Application.Dtos.UserIdentity.PhoneVerifyDto)">
+            <summary>
+            手机号发送验证码
+            </summary>
+            <param name="phoneVerifyData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Interface.IUserIdentityService.SendMobileVerifyCodeForget(SmartLibrary.Identity.Application.Dtos.UserIdentity.PhoneVerifyForgetDto)">
+            <summary>
+            手机号发送验证码
+            </summary>
+            <param name="phoneVerifyData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Interface.IUserIdentityService.VerifyPhoneCode(SmartLibrary.Identity.Application.Dtos.UserIdentity.PhoneCodeDto)">
+            <summary>
+            验证手机验证码
+            </summary>
+            <param name="phoneInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Interface.IUserIdentityService.ChangeCardPassword(SmartLibrary.Identity.Application.Dtos.UserIdentity.CardChangeDto)">
+            <summary>
+            修改读者卡密码
+            </summary>
+            <param name="changeInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Interface.IUserIdentityService.CheckUniquePhone(SmartLibrary.Identity.Application.Dtos.UserIdentity.RegisterPhoneDto)">
+            <summary>
+            检查手机号是否唯一
+            </summary>
+            <param name="registerPhone"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.Interface.IUserIdentityService.RegisterUser(SmartLibrary.Identity.Application.Dtos.UserIdentity.RegisterUserDto)">
+            <summary>
+            用户注册
+            </summary>
+            <param name="userData"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.Services.Interface.IUserPermissionService">
+            <summary>
+            用户权限服务
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.Services.ISysMenuService">
+            <summary>
+            用户权限服务
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.ISysMenuService.GetAllPermissionTree">
+            <summary>
+            获取本应用中所有的权限列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.ISysMenuService.GetUserPermissoinTree(System.String)">
+            <summary>
+            获取用户权限树
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.ISysMenuService.GetUserPermissionList(System.String)">
+            <summary>
+            获取馆员权限列表
+            </summary>
+            <param name="userKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.ISysMenuService.GetMGRPermissionTree">
+            <summary>
+            获取应用管理员权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.ISysMenuService.GetMGRPermissionList">
+            <summary>
+            获取应用管理员权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.ISysMenuService.GetOpPermissionTree">
+            <summary>
+            获取应用操作员权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.ISysMenuService.GetOpPermissionList">
+            <summary>
+            获取应用操作员权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.ISysMenuService.GetVisPermissionTree">
+            <summary>
+            获取浏览者权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.ISysMenuService.GetVisPermissionList">
+            <summary>
+            获取浏览者权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.Services.SysMenuService">
+            <summary>
+            用户权限服务
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.SysMenuService.#ctor(Furion.DatabaseAccessor.IRepository{SmartLibrary.Identity.EntityFramework.Core.Entitys.SysMenuPermission})">
+            <summary>
+            服务初始化
+            </summary>
+            <param name="sysMenuPermissionRepository"></param>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.SysMenuService.GetPermissionNodes(SmartLibrary.Identity.EntityFramework.Core.Dtos.SysMenuPermissionDto,System.Collections.Generic.List{SmartLibrary.Identity.EntityFramework.Core.Dtos.SysMenuPermissionDto})">
+            <summary>
+            递归获取权限树
+            </summary>
+            <param name="permissionNode"></param>
+            <param name="sysMenuPermissions"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.SysMenuService.GetPermissionNodesWithChildNodes(SmartLibrary.Identity.EntityFramework.Core.Dtos.SysMenuPermissionDto,System.Collections.Generic.List{SmartLibrary.Identity.EntityFramework.Core.Dtos.SysMenuPermissionDto},System.Collections.Generic.List{SmartLibrary.Identity.EntityFramework.Core.Dtos.SysMenuPermissionDto})">
+            <summary>
+            递归获取权限树，必须包含子节点
+            </summary>
+            <param name="permissionNode"></param>
+            <param name="sysMenuPermissions"></param>
+            <param name="childNodes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.SysMenuService.GetAllPermissionTree">
+            <summary>
+            获取权限树
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.SysMenuService.GetOperatorPermissionTree">
+            <summary>
+            获取操作人，用户管理降级为浏览者
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.SysMenuService.GetUserPermissionList(System.String)">
+            <summary>
+            获取登录用户Api权限
+            </summary>
+            <param name="userKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.SysMenuService.GetUserPermissoinTree(System.String)">
+            <summary>
+            获取用户权限菜单
+            </summary>
+            <param name="userKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.SysMenuService.GetMGRPermissionTree">
+            <summary>
+            获取默认管理员权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.SysMenuService.GetOpPermissionTree">
+            <summary>
+            获取操作者权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.SysMenuService.GetVisPermissionTree">
+            <summary>
+            获取浏览者权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.Services.RemoteProxy.EsHttp">
+            <summary>
+            请求代理，具体使用方式参考furion框架
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.Identity.Application.Services.RemoteProxy.EsHttp.PostVipSearchByObjectV2Async(System.Object)">
+            <summary>
+            转发到Es查询服务，方法vipSearchByObjectV2
+            </summary>
+            <param name="condition"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.ViewModels.RegisterConfigSetInput">
+            <summary>
+            注册属性配置
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.RegisterConfigSetInput.OpenRegistion">
+            <summary>
+            是否开放注册
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.RegisterConfigSetInput.RegisteType">
+            <summary>
+            注册方式
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.RegisterConfigSetInput.RegisteFlow">
+            <summary>
+            注册流程
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.RegisterConfigSetInput.ProtoUrl">
+            <summary>
+            协议地址
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.RegisterConfigSetInput.Properties">
+            <summary>
+            注册选填属性配置
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.RegisterConfigSetOutput.OpenRegistion">
+            <summary>
+            是否开放注册
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.RegisterConfigSetOutput.RegisteType">
+            <summary>
+            注册方式
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.RegisterConfigSetOutput.RegisteFlow">
+            <summary>
+            注册流程
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.RegisterConfigSetOutput.ProtoUrl">
+            <summary>
+            协议地址
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.RegisterConfigSetOutput.Properties">
+            <summary>
+            注册选填属性配置
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.RegisterPropertyInput.PropertyCode">
+            <summary>
+            属性编码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.RegisterPropertyInput.IsCheck">
+            <summary>
+            是否勾选
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.ViewModels.RegisterPropertyOutput">
+            <summary>
+            选填属性
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.RegisterPropertyOutput.PropertyCode">
+            <summary>
+            属性编码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.RegisterPropertyOutput.IsEnable">
+            <summary>
+            是否可选择
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.RegisterPropertyOutput.IsCheck">
+            <summary>
+            是否勾选
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.Identity.CasLoginInput.LoginName">
+            <summary>
+            用户名
+            </summary>
+            <example>superAdmin</example>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.Identity.CasLoginInput.Password">
+            <summary>
+            密码
+            </summary>
+            <example>123456</example>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.CardSearchInput.No">
+            <summary>
+            卡号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.CardSearchInput.ValidateKey">
+            <summary>
+            验证Key
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.CardSearchInput.ValidateCode">
+            <summary>
+            验证Code
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.CardSearchResult.Code">
+            <summary>
+            结果编码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.CardSearchResult.ErrMsg">
+            <summary>
+            错误消息
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.CardSearchResult.Phone">
+            <summary>
+            手机号码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.CardSearchResult.CardId">
+            <summary>
+            卡标识
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.ViewModels.RegisterPhoneInput">
+            <summary>
+            注册手机验证
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.ViewModels.RegisterUserInput">
+            <summary>
+            用户注册信息
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.LoginAccountInput.Account">
+            <summary>
+            用户名
+            </summary>
+            <example>superAdmin</example>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.LoginAccountInput.Password">
+            <summary>
+            密码
+            </summary>
+            <example>123456</example>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.LoginAccountInput.ValidateCode">
+            <summary>
+            验证码
+            </summary>
+            <example>code</example>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.LoginAccountInput.ValidateKey">
+            <summary>
+            验证Key
+            </summary>
+            <example>key</example>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.LoginAccountInput.RememberMe">
+            <summary>
+            记住账号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.LoginIdCardInput.IdCard">
+            <summary>
+            用户名
+            </summary>
+            <example>superAdmin</example>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.LoginIdCardInput.Password">
+            <summary>
+            密码
+            </summary>
+            <example>123456</example>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.LoginIdCardInput.ValidateCode">
+            <summary>
+            验证码
+            </summary>
+            <example>code</example>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.LoginIdCardInput.ValidateKey">
+            <summary>
+            验证Key
+            </summary>
+            <example>key</example>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.LoginIdCardInput.RememberMe">
+            <summary>
+            记住账号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.LoginPhoneInput.Phone">
+            <summary>
+            手机号
+            </summary>
+            <example>superAdmin</example>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.LoginPhoneInput.VerifyCode">
+            <summary>
+            验证码
+            </summary>
+            <example>code</example>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.LoginPhoneInput.VerifyKey">
+            <summary>
+            验证Key
+            </summary>
+            <example>key</example>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.LoginPhoneInput.RememberMe">
+            <summary>
+            记住账号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.CasLoginResult.ReaderInfo">
+            <summary>
+            登录信息
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.CasLoginResult.Status">
+            <summary>
+            验证状态
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.CasLoginResult.Msg">
+            <summary>
+            信息
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.CasLoginResult.VirginPassword">
+            <summary>
+            原始密码
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.Identity.Application.ViewModels.LoginConfigSetOutput">
+            <summary>
+            登录配置项
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.LoginConfigSetOutput.ID">
+            <summary>
+            主键标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.LoginConfigSetOutput.LoginType">
+            <summary>
+            登录方式
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.LoginConfigSetOutput.Icon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.LoginConfigSetOutput.LoginName">
+            <summary>
+            登录方式名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.LoginConfigSetOutput.Desc">
+            <summary>
+            登录方式描述
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.LoginConfigSetOutput.Enable">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.LoginConfigSetOutput.IsOpen">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.LoginConfigSetOutput.LoginConfig">
+            <summary>
+            登录配置,保存为Json字符
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.LoginConfigSetOutput.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.LoginConfigSetOutput.NeedConfig">
+            <summary>
+            是否需要配置
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.LoginSetOpenSetInput.ID">
+            <summary>
+            配置ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.Identity.Application.ViewModels.LoginSetOpenSetInput.IsOpen">
+            <summary>
+            是否开启
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.User.RpcService.UserForIdentityGrpcServiceReflection">
+            <summary>Holder for reflection information generated from Protos/Client/UserForIdentityGrpcService.proto</summary>
+        </member>
+        <member name="P:SmartLibrary.User.RpcService.UserForIdentityGrpcServiceReflection.Descriptor">
+            <summary>File descriptor for Protos/Client/UserForIdentityGrpcService.proto</summary>
+        </member>
+        <member name="T:SmartLibrary.User.RpcService.RegisterUserInfo">
+             <summary>
+            注册用户信息
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.RegisterUserInfo.NeedConfirmFieldNumber">
+            <summary>Field number for the "NeedConfirm" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.RegisterUserInfo.UserDataFieldNumber">
+            <summary>Field number for the "UserData" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.User.RpcService.RegisterUserInfo.Types">
+            <summary>Container for nested types declared in the RegisterUserInfo message type.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.RegisterUserInfo.Types.UserInfo.NameFieldNumber">
+            <summary>Field number for the "Name" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.RegisterUserInfo.Types.UserInfo.PhoneFieldNumber">
+            <summary>Field number for the "Phone" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.RegisterUserInfo.Types.UserInfo.NickNameFieldNumber">
+            <summary>Field number for the "NickName" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.RegisterUserInfo.Types.UserInfo.UnitFieldNumber">
+            <summary>Field number for the "Unit" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.RegisterUserInfo.Types.UserInfo.EduFieldNumber">
+            <summary>Field number for the "Edu" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.RegisterUserInfo.Types.UserInfo.TitleFieldNumber">
+            <summary>Field number for the "Title" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.RegisterUserInfo.Types.UserInfo.DepartFieldNumber">
+            <summary>Field number for the "Depart" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.RegisterUserInfo.Types.UserInfo.CollegeFieldNumber">
+            <summary>Field number for the "College" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.RegisterUserInfo.Types.UserInfo.MajorFieldNumber">
+            <summary>Field number for the "Major" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.RegisterUserInfo.Types.UserInfo.GradeFieldNumber">
+            <summary>Field number for the "Grade" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.RegisterUserInfo.Types.UserInfo.ClassFieldNumber">
+            <summary>Field number for the "Class" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.RegisterUserInfo.Types.UserInfo.TypeFieldNumber">
+            <summary>Field number for the "Type" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.RegisterUserInfo.Types.UserInfo.IdCardFieldNumber">
+            <summary>Field number for the "IdCard" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.RegisterUserInfo.Types.UserInfo.EmailFieldNumber">
+            <summary>Field number for the "Email" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.RegisterUserInfo.Types.UserInfo.BirthdayFieldNumber">
+            <summary>Field number for the "Birthday" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.RegisterUserInfo.Types.UserInfo.GenderFieldNumber">
+            <summary>Field number for the "Gender" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.RegisterUserInfo.Types.UserInfo.AddrFieldNumber">
+            <summary>Field number for the "Addr" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.RegisterUserInfo.Types.UserInfo.AddrDetailFieldNumber">
+            <summary>Field number for the "AddrDetail" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.RegisterUserInfo.Types.UserInfo.PhotoFieldNumber">
+            <summary>Field number for the "Photo" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.RegisterUserInfo.Types.UserInfo.LeaveTimeFieldNumber">
+            <summary>Field number for the "LeaveTime" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.User.RpcService.AccountInfo">
+             <summary>
+            账号密码验证消息
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.AccountInfo.AccountFieldNumber">
+            <summary>Field number for the "Account" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.AccountInfo.PasswordFieldNumber">
+            <summary>Field number for the "Password" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.User.RpcService.PhoneInfo">
+             <summary>
+            手机号验证消息
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.PhoneInfo.PhoneFieldNumber">
+            <summary>Field number for the "Phone" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.User.RpcService.IdCardInfo">
+             <summary>
+            身份证号验证消息
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.IdCardInfo.IdCardFieldNumber">
+            <summary>Field number for the "IdCard" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.IdCardInfo.PasswordFieldNumber">
+            <summary>Field number for the "Password" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.User.RpcService.LoginResult">
+             <summary>
+            登录验证结果
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.LoginResult.CodeFieldNumber">
+            <summary>Field number for the "Code" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.LoginResult.ErrMsgFieldNumber">
+            <summary>Field number for the "ErrMsg" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.LoginResult.UserKeyFieldNumber">
+            <summary>Field number for the "UserKey" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.User.RpcService.CardSearch">
+             <summary>
+            查询读者卡
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.CardSearch.NoFieldNumber">
+            <summary>Field number for the "No" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.User.RpcService.CardSearchResult">
+             <summary>
+            查询卡结果
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.CardSearchResult.CodeFieldNumber">
+            <summary>Field number for the "Code" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.CardSearchResult.ErrMsgFieldNumber">
+            <summary>Field number for the "ErrMsg" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.CardSearchResult.PhoneFieldNumber">
+            <summary>Field number for the "Phone" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.CardSearchResult.CardIdFieldNumber">
+            <summary>Field number for the "CardId" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.User.RpcService.CardTokenInfo">
+             <summary>
+            变更卡密码
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.CardTokenInfo.CardIdFieldNumber">
+            <summary>Field number for the "CardId" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.CardTokenInfo.PasswordFieldNumber">
+            <summary>Field number for the "Password" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.User.RpcService.SimpleResult">
+             <summary>
+            简单调用结果
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.SimpleResult.CodeFieldNumber">
+            <summary>Field number for the "Code" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.SimpleResult.ErrMsgFieldNumber">
+            <summary>Field number for the "ErrMsg" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.RegisterResult.CodeFieldNumber">
+            <summary>Field number for the "Code" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.RegisterResult.ErrMsgFieldNumber">
+            <summary>Field number for the "ErrMsg" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.RegisterResult.CardNoFieldNumber">
+            <summary>Field number for the "CardNo" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.User.RpcService.UserForIdentityGrpcService">
+            <summary>
+            定义具体的服务
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.User.RpcService.UserForIdentityGrpcService.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient">
+            <summary>Client for UserForIdentityGrpcService</summary>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.#ctor(Grpc.Core.ChannelBase)">
+            <summary>Creates a new client for UserForIdentityGrpcService</summary>
+            <param name="channel">The channel to use to make remote calls.</param>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.#ctor(Grpc.Core.CallInvoker)">
+            <summary>Creates a new client for UserForIdentityGrpcService that uses a custom <c>CallInvoker</c>.</summary>
+            <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.#ctor">
+            <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.#ctor(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Protected constructor to allow creation of configured clients.</summary>
+            <param name="configuration">The client configuration.</param>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.LoginByAccountPwd(SmartLibrary.User.RpcService.AccountInfo,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+             <summary>
+            通过账号密码查询用户信息
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+             <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+             <param name="cancellationToken">An optional token for canceling the call.</param>
+             <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.LoginByAccountPwd(SmartLibrary.User.RpcService.AccountInfo,Grpc.Core.CallOptions)">
+             <summary>
+            通过账号密码查询用户信息
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="options">The options for the call.</param>
+             <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.LoginByAccountPwdAsync(SmartLibrary.User.RpcService.AccountInfo,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+             <summary>
+            通过账号密码查询用户信息
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+             <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+             <param name="cancellationToken">An optional token for canceling the call.</param>
+             <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.LoginByAccountPwdAsync(SmartLibrary.User.RpcService.AccountInfo,Grpc.Core.CallOptions)">
+             <summary>
+            通过账号密码查询用户信息
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="options">The options for the call.</param>
+             <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.LoginByPhone(SmartLibrary.User.RpcService.PhoneInfo,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+             <summary>
+            通过手机号码查询用户信息
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+             <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+             <param name="cancellationToken">An optional token for canceling the call.</param>
+             <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.LoginByPhone(SmartLibrary.User.RpcService.PhoneInfo,Grpc.Core.CallOptions)">
+             <summary>
+            通过手机号码查询用户信息
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="options">The options for the call.</param>
+             <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.LoginByPhoneAsync(SmartLibrary.User.RpcService.PhoneInfo,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+             <summary>
+            通过手机号码查询用户信息
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+             <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+             <param name="cancellationToken">An optional token for canceling the call.</param>
+             <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.LoginByPhoneAsync(SmartLibrary.User.RpcService.PhoneInfo,Grpc.Core.CallOptions)">
+             <summary>
+            通过手机号码查询用户信息
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="options">The options for the call.</param>
+             <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.LoginByIdCard(SmartLibrary.User.RpcService.IdCardInfo,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+             <summary>
+            通过身份证号查询用户信息
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+             <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+             <param name="cancellationToken">An optional token for canceling the call.</param>
+             <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.LoginByIdCard(SmartLibrary.User.RpcService.IdCardInfo,Grpc.Core.CallOptions)">
+             <summary>
+            通过身份证号查询用户信息
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="options">The options for the call.</param>
+             <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.LoginByIdCardAsync(SmartLibrary.User.RpcService.IdCardInfo,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+             <summary>
+            通过身份证号查询用户信息
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+             <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+             <param name="cancellationToken">An optional token for canceling the call.</param>
+             <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.LoginByIdCardAsync(SmartLibrary.User.RpcService.IdCardInfo,Grpc.Core.CallOptions)">
+             <summary>
+            通过身份证号查询用户信息
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="options">The options for the call.</param>
+             <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.SearchCardByNo(SmartLibrary.User.RpcService.CardSearch,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+             <summary>
+            通过卡号查询读者卡
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+             <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+             <param name="cancellationToken">An optional token for canceling the call.</param>
+             <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.SearchCardByNo(SmartLibrary.User.RpcService.CardSearch,Grpc.Core.CallOptions)">
+             <summary>
+            通过卡号查询读者卡
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="options">The options for the call.</param>
+             <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.SearchCardByNoAsync(SmartLibrary.User.RpcService.CardSearch,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+             <summary>
+            通过卡号查询读者卡
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+             <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+             <param name="cancellationToken">An optional token for canceling the call.</param>
+             <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.SearchCardByNoAsync(SmartLibrary.User.RpcService.CardSearch,Grpc.Core.CallOptions)">
+             <summary>
+            通过卡号查询读者卡
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="options">The options for the call.</param>
+             <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.ChangeCardPwd(SmartLibrary.User.RpcService.CardTokenInfo,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+             <summary>
+            修改卡密码
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+             <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+             <param name="cancellationToken">An optional token for canceling the call.</param>
+             <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.ChangeCardPwd(SmartLibrary.User.RpcService.CardTokenInfo,Grpc.Core.CallOptions)">
+             <summary>
+            修改卡密码
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="options">The options for the call.</param>
+             <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.ChangeCardPwdAsync(SmartLibrary.User.RpcService.CardTokenInfo,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+             <summary>
+            修改卡密码
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+             <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+             <param name="cancellationToken">An optional token for canceling the call.</param>
+             <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.ChangeCardPwdAsync(SmartLibrary.User.RpcService.CardTokenInfo,Grpc.Core.CallOptions)">
+             <summary>
+            修改卡密码
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="options">The options for the call.</param>
+             <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.CheckUniquePhone(SmartLibrary.User.RpcService.PhoneInfo,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+             <summary>
+            检查手机号是否重复
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+             <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+             <param name="cancellationToken">An optional token for canceling the call.</param>
+             <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.CheckUniquePhone(SmartLibrary.User.RpcService.PhoneInfo,Grpc.Core.CallOptions)">
+             <summary>
+            检查手机号是否重复
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="options">The options for the call.</param>
+             <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.CheckUniquePhoneAsync(SmartLibrary.User.RpcService.PhoneInfo,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+             <summary>
+            检查手机号是否重复
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+             <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+             <param name="cancellationToken">An optional token for canceling the call.</param>
+             <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.CheckUniquePhoneAsync(SmartLibrary.User.RpcService.PhoneInfo,Grpc.Core.CallOptions)">
+             <summary>
+            检查手机号是否重复
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="options">The options for the call.</param>
+             <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.RegisterUser(SmartLibrary.User.RpcService.RegisterUserInfo,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+             <summary>
+            注册读者信息
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+             <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+             <param name="cancellationToken">An optional token for canceling the call.</param>
+             <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.RegisterUser(SmartLibrary.User.RpcService.RegisterUserInfo,Grpc.Core.CallOptions)">
+             <summary>
+            注册读者信息
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="options">The options for the call.</param>
+             <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.RegisterUserAsync(SmartLibrary.User.RpcService.RegisterUserInfo,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+             <summary>
+            注册读者信息
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+             <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+             <param name="cancellationToken">An optional token for canceling the call.</param>
+             <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.RegisterUserAsync(SmartLibrary.User.RpcService.RegisterUserInfo,Grpc.Core.CallOptions)">
+             <summary>
+            注册读者信息
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="options">The options for the call.</param>
+             <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserForIdentityGrpcService.UserForIdentityGrpcServiceClient.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+        </member>
+        <member name="T:SmartLibrary.User.RpcService.UserGrpcServiceReflection">
+            <summary>Holder for reflection information generated from Protos/Client/UserGrpcService.proto</summary>
+        </member>
+        <member name="P:SmartLibrary.User.RpcService.UserGrpcServiceReflection.Descriptor">
+            <summary>File descriptor for Protos/Client/UserGrpcService.proto</summary>
+        </member>
+        <member name="T:SmartLibrary.User.RpcService.UserIdList">
+             <summary>
+            用户Id集合
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserIdList.IdsFieldNumber">
+            <summary>Field number for the "Ids" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.User.RpcService.DictList">
+             <summary>
+            字典
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.DictList.ItemsFieldNumber">
+            <summary>Field number for the "Items" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.User.RpcService.DictItem">
+             <summary>
+            字典选项类型
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.DictItem.KeyFieldNumber">
+            <summary>Field number for the "Key" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.DictItem.ValueFieldNumber">
+            <summary>Field number for the "Value" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.User.RpcService.SimpleTableQuery">
+             <summary>
+            关键字查询
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.SimpleTableQuery.PageIndexFieldNumber">
+            <summary>Field number for the "PageIndex" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.SimpleTableQuery.PageSizeFieldNumber">
+            <summary>Field number for the "PageSize" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.SimpleTableQuery.KeyWordFieldNumber">
+            <summary>Field number for the "KeyWord" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.User.RpcService.UserTableQuery">
+             <summary>
+            用户查询基类
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserTableQuery.PageIndexFieldNumber">
+            <summary>Field number for the "PageIndex" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserTableQuery.PageSizeFieldNumber">
+            <summary>Field number for the "PageSize" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserTableQuery.KeyWordFieldNumber">
+            <summary>Field number for the "KeyWord" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.KeyFieldNumber">
+            <summary>Field number for the "Key" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.NameFieldNumber">
+            <summary>Field number for the "Name" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.NickNameFieldNumber">
+            <summary>Field number for the "NickName" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.StudentNoFieldNumber">
+            <summary>Field number for the "StudentNo" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.GenderFieldNumber">
+            <summary>Field number for the "Gender" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.PhotoFieldNumber">
+            <summary>Field number for the "Photo" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.UnitFieldNumber">
+            <summary>Field number for the "Unit" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.EduFieldNumber">
+            <summary>Field number for the "Edu" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.TitleFieldNumber">
+            <summary>Field number for the "Title" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.DepartFieldNumber">
+            <summary>Field number for the "Depart" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.DepartNameFieldNumber">
+            <summary>Field number for the "DepartName" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.CollegeFieldNumber">
+            <summary>Field number for the "College" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.CollegeNameFieldNumber">
+            <summary>Field number for the "CollegeName" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.CollegeDepartFieldNumber">
+            <summary>Field number for the "CollegeDepart" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.CollegeDepartNameFieldNumber">
+            <summary>Field number for the "CollegeDepartName" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.MajorFieldNumber">
+            <summary>Field number for the "Major" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.GradeFieldNumber">
+            <summary>Field number for the "Grade" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.ClassFieldNumber">
+            <summary>Field number for the "Class" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.TypeFieldNumber">
+            <summary>Field number for the "Type" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.TypeNameFieldNumber">
+            <summary>Field number for the "TypeName" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.StatusFieldNumber">
+            <summary>Field number for the "Status" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.ShowStatusFieldNumber">
+            <summary>Field number for the "ShowStatus" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.IdCardFieldNumber">
+            <summary>Field number for the "IdCard" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.PhoneFieldNumber">
+            <summary>Field number for the "Phone" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.EmailFieldNumber">
+            <summary>Field number for the "Email" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.SourceFromFieldNumber">
+            <summary>Field number for the "SourceFrom" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.ShowSourceFromFieldNumber">
+            <summary>Field number for the "ShowSourceFrom" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.CardNoFieldNumber">
+            <summary>Field number for the "CardNo" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.CardStatusFieldNumber">
+            <summary>Field number for the "CardStatus" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.ShowCardStatusFieldNumber">
+            <summary>Field number for the "ShowCardStatus" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.BirthdayFieldNumber">
+            <summary>Field number for the "Birthday" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.LeaveTimeFieldNumber">
+            <summary>Field number for the "LeaveTime" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.FirstLoginTimeFieldNumber">
+            <summary>Field number for the "FirstLoginTime" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.LastLoginTimeFieldNumber">
+            <summary>Field number for the "LastLoginTime" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.AddrFieldNumber">
+            <summary>Field number for the "Addr" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.AddrDetailFieldNumber">
+            <summary>Field number for the "AddrDetail" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.CardIssueDateFieldNumber">
+            <summary>Field number for the "CardIssueDate" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.CardExpireDateFieldNumber">
+            <summary>Field number for the "CardExpireDate" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.GroupIdsFieldNumber">
+            <summary>Field number for the "GroupIds" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.AsyncReaderIdFieldNumber">
+            <summary>Field number for the "AsyncReaderId" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserData.IsStaffFieldNumber">
+            <summary>Field number for the "IsStaff" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.User.RpcService.UserPageData">
+             <summary>
+            用户表格数据
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.TotalCountFieldNumber">
+            <summary>Field number for the "TotalCount" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.ItemsFieldNumber">
+            <summary>Field number for the "Items" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.User.RpcService.UserPageData.Types">
+            <summary>Container for nested types declared in the UserPageData message type.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.KeyFieldNumber">
+            <summary>Field number for the "Key" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.NameFieldNumber">
+            <summary>Field number for the "Name" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.NickNameFieldNumber">
+            <summary>Field number for the "NickName" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.StudentNoFieldNumber">
+            <summary>Field number for the "StudentNo" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.GenderFieldNumber">
+            <summary>Field number for the "Gender" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.PhotoFieldNumber">
+            <summary>Field number for the "Photo" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.UnitFieldNumber">
+            <summary>Field number for the "Unit" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.EduFieldNumber">
+            <summary>Field number for the "Edu" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.TitleFieldNumber">
+            <summary>Field number for the "Title" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.DepartFieldNumber">
+            <summary>Field number for the "Depart" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.DepartNameFieldNumber">
+            <summary>Field number for the "DepartName" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.CollegeFieldNumber">
+            <summary>Field number for the "College" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.CollegeNameFieldNumber">
+            <summary>Field number for the "CollegeName" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.CollegeDepartFieldNumber">
+            <summary>Field number for the "CollegeDepart" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.CollegeDepartNameFieldNumber">
+            <summary>Field number for the "CollegeDepartName" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.MajorFieldNumber">
+            <summary>Field number for the "Major" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.GradeFieldNumber">
+            <summary>Field number for the "Grade" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.ClassFieldNumber">
+            <summary>Field number for the "Class" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.TypeFieldNumber">
+            <summary>Field number for the "Type" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.TypeNameFieldNumber">
+            <summary>Field number for the "TypeName" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.StatusFieldNumber">
+            <summary>Field number for the "Status" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.ShowStatusFieldNumber">
+            <summary>Field number for the "ShowStatus" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.IdCardFieldNumber">
+            <summary>Field number for the "IdCard" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.PhoneFieldNumber">
+            <summary>Field number for the "Phone" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.EmailFieldNumber">
+            <summary>Field number for the "Email" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.SourceFromFieldNumber">
+            <summary>Field number for the "SourceFrom" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.ShowSourceFromFieldNumber">
+            <summary>Field number for the "ShowSourceFrom" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.CardNoFieldNumber">
+            <summary>Field number for the "CardNo" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.CardStatusFieldNumber">
+            <summary>Field number for the "CardStatus" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.ShowCardStatusFieldNumber">
+            <summary>Field number for the "ShowCardStatus" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.BirthdayFieldNumber">
+            <summary>Field number for the "Birthday" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.LeaveTimeFieldNumber">
+            <summary>Field number for the "LeaveTime" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.FirstLoginTimeFieldNumber">
+            <summary>Field number for the "FirstLoginTime" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserPageData.Types.UserListItem.LastLoginTimeFieldNumber">
+            <summary>Field number for the "LastLoginTime" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.User.RpcService.UserListData">
+             <summary>
+            用户表格数据
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.User.RpcService.UserListData.ItemsFieldNumber">
+            <summary>Field number for the "Items" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.User.RpcService.UserGrpcService">
+            <summary>
+            定义具体的服务
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.User.RpcService.UserGrpcService.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient">
+            <summary>Client for UserGrpcService</summary>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.#ctor(Grpc.Core.ChannelBase)">
+            <summary>Creates a new client for UserGrpcService</summary>
+            <param name="channel">The channel to use to make remote calls.</param>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.#ctor(Grpc.Core.CallInvoker)">
+            <summary>Creates a new client for UserGrpcService that uses a custom <c>CallInvoker</c>.</summary>
+            <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.#ctor">
+            <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.#ctor(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Protected constructor to allow creation of configured clients.</summary>
+            <param name="configuration">The client configuration.</param>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.GetUserByKey(Google.Protobuf.WellKnownTypes.StringValue,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            通过UserKey获取用户信息
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+            <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+            <param name="cancellationToken">An optional token for canceling the call.</param>
+            <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.GetUserByKey(Google.Protobuf.WellKnownTypes.StringValue,Grpc.Core.CallOptions)">
+            <summary>
+            通过UserKey获取用户信息
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="options">The options for the call.</param>
+            <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.GetUserByKeyAsync(Google.Protobuf.WellKnownTypes.StringValue,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            通过UserKey获取用户信息
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+            <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+            <param name="cancellationToken">An optional token for canceling the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.GetUserByKeyAsync(Google.Protobuf.WellKnownTypes.StringValue,Grpc.Core.CallOptions)">
+            <summary>
+            通过UserKey获取用户信息
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="options">The options for the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.GetUserTableData(SmartLibrary.User.RpcService.UserTableQuery,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            通过条件查询用户列表
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+            <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+            <param name="cancellationToken">An optional token for canceling the call.</param>
+            <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.GetUserTableData(SmartLibrary.User.RpcService.UserTableQuery,Grpc.Core.CallOptions)">
+            <summary>
+            通过条件查询用户列表
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="options">The options for the call.</param>
+            <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.GetUserTableDataAsync(SmartLibrary.User.RpcService.UserTableQuery,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            通过条件查询用户列表
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+            <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+            <param name="cancellationToken">An optional token for canceling the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.GetUserTableDataAsync(SmartLibrary.User.RpcService.UserTableQuery,Grpc.Core.CallOptions)">
+            <summary>
+            通过条件查询用户列表
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="options">The options for the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.GetUserListByIds(SmartLibrary.User.RpcService.UserIdList,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            通过用户Id集合获取用户列表
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+            <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+            <param name="cancellationToken">An optional token for canceling the call.</param>
+            <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.GetUserListByIds(SmartLibrary.User.RpcService.UserIdList,Grpc.Core.CallOptions)">
+            <summary>
+            通过用户Id集合获取用户列表
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="options">The options for the call.</param>
+            <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.GetUserListByIdsAsync(SmartLibrary.User.RpcService.UserIdList,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            通过用户Id集合获取用户列表
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+            <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+            <param name="cancellationToken">An optional token for canceling the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.GetUserListByIdsAsync(SmartLibrary.User.RpcService.UserIdList,Grpc.Core.CallOptions)">
+            <summary>
+            通过用户Id集合获取用户列表
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="options">The options for the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.GetManagerList(Google.Protobuf.WellKnownTypes.Empty,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            获取馆员列表
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+            <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+            <param name="cancellationToken">An optional token for canceling the call.</param>
+            <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.GetManagerList(Google.Protobuf.WellKnownTypes.Empty,Grpc.Core.CallOptions)">
+            <summary>
+            获取馆员列表
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="options">The options for the call.</param>
+            <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.GetManagerListAsync(Google.Protobuf.WellKnownTypes.Empty,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            获取馆员列表
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+            <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+            <param name="cancellationToken">An optional token for canceling the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.GetManagerListAsync(Google.Protobuf.WellKnownTypes.Empty,Grpc.Core.CallOptions)">
+            <summary>
+            获取馆员列表
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="options">The options for the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.GetUserTypeList(SmartLibrary.User.RpcService.SimpleTableQuery,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            获取用户类型字典
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+            <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+            <param name="cancellationToken">An optional token for canceling the call.</param>
+            <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.GetUserTypeList(SmartLibrary.User.RpcService.SimpleTableQuery,Grpc.Core.CallOptions)">
+            <summary>
+            获取用户类型字典
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="options">The options for the call.</param>
+            <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.GetUserTypeListAsync(SmartLibrary.User.RpcService.SimpleTableQuery,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            获取用户类型字典
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+            <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+            <param name="cancellationToken">An optional token for canceling the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.GetUserTypeListAsync(SmartLibrary.User.RpcService.SimpleTableQuery,Grpc.Core.CallOptions)">
+            <summary>
+            获取用户类型字典
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="options">The options for the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.GetUserGroupList(SmartLibrary.User.RpcService.SimpleTableQuery,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            获取用户组字典
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+            <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+            <param name="cancellationToken">An optional token for canceling the call.</param>
+            <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.GetUserGroupList(SmartLibrary.User.RpcService.SimpleTableQuery,Grpc.Core.CallOptions)">
+            <summary>
+            获取用户组字典
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="options">The options for the call.</param>
+            <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.GetUserGroupListAsync(SmartLibrary.User.RpcService.SimpleTableQuery,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            获取用户组字典
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+            <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+            <param name="cancellationToken">An optional token for canceling the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.GetUserGroupListAsync(SmartLibrary.User.RpcService.SimpleTableQuery,Grpc.Core.CallOptions)">
+            <summary>
+            获取用户组字典
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="options">The options for the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.GetUserCollegeList(SmartLibrary.User.RpcService.SimpleTableQuery,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            获取学院字典
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+            <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+            <param name="cancellationToken">An optional token for canceling the call.</param>
+            <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.GetUserCollegeList(SmartLibrary.User.RpcService.SimpleTableQuery,Grpc.Core.CallOptions)">
+            <summary>
+            获取学院字典
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="options">The options for the call.</param>
+            <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.GetUserCollegeListAsync(SmartLibrary.User.RpcService.SimpleTableQuery,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            获取学院字典
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+            <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+            <param name="cancellationToken">An optional token for canceling the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.GetUserCollegeListAsync(SmartLibrary.User.RpcService.SimpleTableQuery,Grpc.Core.CallOptions)">
+            <summary>
+            获取学院字典
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="options">The options for the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.User.RpcService.UserGrpcService.UserGrpcServiceClient.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+        </member>
+        <member name="T:SmartLibrary.MsgCenter.RpcService.MsgCenterGrpcServiceReflection">
+            <summary>Holder for reflection information generated from Protos/Client/MsgCenterGrpcService.proto</summary>
+        </member>
+        <member name="P:SmartLibrary.MsgCenter.RpcService.MsgCenterGrpcServiceReflection.Descriptor">
+            <summary>File descriptor for Protos/Client/MsgCenterGrpcService.proto</summary>
+        </member>
+        <member name="F:SmartLibrary.MsgCenter.RpcService.MessageResult.IsSuccessFieldNumber">
+            <summary>Field number for the "IsSuccess" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.MsgCenter.RpcService.MessageResult.MessageFieldNumber">
+            <summary>Field number for the "Message" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.MsgCenter.RpcService.PhoneVerifyCodeInput.PhoneFieldNumber">
+            <summary>Field number for the "Phone" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.MsgCenter.RpcService.PhoneVerifyCodeInput.CodeFieldNumber">
+            <summary>Field number for the "Code" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.MsgCenter.RpcService.EmailVerifyCodeInput.AddressFieldNumber">
+            <summary>Field number for the "Address" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.MsgCenter.RpcService.EmailVerifyCodeInput.CodeFieldNumber">
+            <summary>Field number for the "Code" field.</summary>
+        </member>
+        <member name="T:SmartLibrary.MsgCenter.RpcService.MsgCenterGrpcService">
+            <summary>
+            定义具体的服务
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.MsgCenter.RpcService.MsgCenterGrpcService.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:SmartLibrary.MsgCenter.RpcService.MsgCenterGrpcService.MsgCenterGrpcServiceClient">
+            <summary>Client for MsgCenterGrpcService</summary>
+        </member>
+        <member name="M:SmartLibrary.MsgCenter.RpcService.MsgCenterGrpcService.MsgCenterGrpcServiceClient.#ctor(Grpc.Core.ChannelBase)">
+            <summary>Creates a new client for MsgCenterGrpcService</summary>
+            <param name="channel">The channel to use to make remote calls.</param>
+        </member>
+        <member name="M:SmartLibrary.MsgCenter.RpcService.MsgCenterGrpcService.MsgCenterGrpcServiceClient.#ctor(Grpc.Core.CallInvoker)">
+            <summary>Creates a new client for MsgCenterGrpcService that uses a custom <c>CallInvoker</c>.</summary>
+            <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+        </member>
+        <member name="M:SmartLibrary.MsgCenter.RpcService.MsgCenterGrpcService.MsgCenterGrpcServiceClient.#ctor">
+            <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+        </member>
+        <member name="M:SmartLibrary.MsgCenter.RpcService.MsgCenterGrpcService.MsgCenterGrpcServiceClient.#ctor(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Protected constructor to allow creation of configured clients.</summary>
+            <param name="configuration">The client configuration.</param>
+        </member>
+        <member name="M:SmartLibrary.MsgCenter.RpcService.MsgCenterGrpcService.MsgCenterGrpcServiceClient.SendPhoneVerifyCodeMessage(SmartLibrary.MsgCenter.RpcService.PhoneVerifyCodeInput,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+             <summary>
+            发送手机短信
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+             <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+             <param name="cancellationToken">An optional token for canceling the call.</param>
+             <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.MsgCenter.RpcService.MsgCenterGrpcService.MsgCenterGrpcServiceClient.SendPhoneVerifyCodeMessage(SmartLibrary.MsgCenter.RpcService.PhoneVerifyCodeInput,Grpc.Core.CallOptions)">
+             <summary>
+            发送手机短信
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="options">The options for the call.</param>
+             <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.MsgCenter.RpcService.MsgCenterGrpcService.MsgCenterGrpcServiceClient.SendPhoneVerifyCodeMessageAsync(SmartLibrary.MsgCenter.RpcService.PhoneVerifyCodeInput,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+             <summary>
+            发送手机短信
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+             <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+             <param name="cancellationToken">An optional token for canceling the call.</param>
+             <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.MsgCenter.RpcService.MsgCenterGrpcService.MsgCenterGrpcServiceClient.SendPhoneVerifyCodeMessageAsync(SmartLibrary.MsgCenter.RpcService.PhoneVerifyCodeInput,Grpc.Core.CallOptions)">
+             <summary>
+            发送手机短信
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="options">The options for the call.</param>
+             <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.MsgCenter.RpcService.MsgCenterGrpcService.MsgCenterGrpcServiceClient.SendEmailVerifyCodeMessage(SmartLibrary.MsgCenter.RpcService.EmailVerifyCodeInput,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+             <summary>
+            发送邮箱信息
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+             <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+             <param name="cancellationToken">An optional token for canceling the call.</param>
+             <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.MsgCenter.RpcService.MsgCenterGrpcService.MsgCenterGrpcServiceClient.SendEmailVerifyCodeMessage(SmartLibrary.MsgCenter.RpcService.EmailVerifyCodeInput,Grpc.Core.CallOptions)">
+             <summary>
+            发送邮箱信息
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="options">The options for the call.</param>
+             <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibrary.MsgCenter.RpcService.MsgCenterGrpcService.MsgCenterGrpcServiceClient.SendEmailVerifyCodeMessageAsync(SmartLibrary.MsgCenter.RpcService.EmailVerifyCodeInput,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+             <summary>
+            发送邮箱信息
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+             <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+             <param name="cancellationToken">An optional token for canceling the call.</param>
+             <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.MsgCenter.RpcService.MsgCenterGrpcService.MsgCenterGrpcServiceClient.SendEmailVerifyCodeMessageAsync(SmartLibrary.MsgCenter.RpcService.EmailVerifyCodeInput,Grpc.Core.CallOptions)">
+             <summary>
+            发送邮箱信息
+             </summary>
+             <param name="request">The request to send to the server.</param>
+             <param name="options">The options for the call.</param>
+             <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibrary.MsgCenter.RpcService.MsgCenterGrpcService.MsgCenterGrpcServiceClient.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+        </member>
+        <member name="T:Grpc.Health.V1.HealthCheckReflection">
+            <summary>Holder for reflection information generated from Protos/Server/HealthCheck.proto</summary>
+        </member>
+        <member name="P:Grpc.Health.V1.HealthCheckReflection.Descriptor">
+            <summary>File descriptor for Protos/Server/HealthCheck.proto</summary>
+        </member>
+        <member name="F:Grpc.Health.V1.HealthCheckRequest.ServiceFieldNumber">
+            <summary>Field number for the "service" field.</summary>
+        </member>
+        <member name="F:Grpc.Health.V1.HealthCheckResponse.StatusFieldNumber">
+            <summary>Field number for the "status" field.</summary>
+        </member>
+        <member name="T:Grpc.Health.V1.HealthCheckResponse.Types">
+            <summary>Container for nested types declared in the HealthCheckResponse message type.</summary>
+        </member>
+        <member name="P:Grpc.Health.V1.Health.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:Grpc.Health.V1.Health.HealthBase">
+            <summary>Base class for server-side implementations of Health</summary>
+        </member>
+        <member name="M:Grpc.Health.V1.Health.BindService(Grpc.Health.V1.Health.HealthBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:Grpc.Health.V1.Health.BindService(Grpc.Core.ServiceBinderBase,Grpc.Health.V1.Health.HealthBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+    </members>
+</doc>

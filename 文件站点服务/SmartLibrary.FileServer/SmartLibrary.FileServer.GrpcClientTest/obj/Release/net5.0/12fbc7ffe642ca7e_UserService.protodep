@@ -1,0 +1,2 @@
+obj\Release\net5.0\Protos/UserService.cs \
+obj\Release\net5.0\Protos/UserServiceGrpc.cs: Protos/UserService.proto

@@ -1,0 +1,66 @@
+.index-warp-box {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+.index-data-box {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  overflow: hidden;
+  display: flex;
+}
+.index-data-box .index-data-list {
+  width: 12.7%;
+  height: 100%;
+  border-right: 1px solid #d9d9d9;
+}
+.index-data-box .index-data-list h5 {
+  margin: 7px 0 30px;
+  font-size: 14px;
+}
+.index-data-box .index-data-list .index-data-list-cur {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.index-data-box .index-data-list .index-data-list-cur span {
+  color: #cc0000;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.index-data-box .index-data-list .index-data-list-pre span {
+  color: #cc0000;
+  font-size: 14px;
+  font-weight: bold;
+}
+.index-data-box .index-data-list2 {
+  width: 14.5%;
+  padding-left: 2%;
+}
+.index-data-box .index-data-list2 h5 {
+  margin-bottom: 26px;
+}
+.index-data-box .index-data-list3 {
+  width: 30%;
+  padding-left: 0.7%;
+}
+.index-data-box .index-data-list3 h5 {
+  margin-bottom: 15px;
+}
+.index-data-box .index-data-list4 {
+  width: 13.8%;
+  padding-left: 2%;
+}
+.index-data-box .index-data-list5 {
+  width: 28%;
+  padding-left: 1%;
+  border: none;
+}
+.index-data-box .index-data-list5 h5 {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,246 @@
+﻿
+// 语法结构，使用pb3
+ syntax = "proto3";
+ import "google/protobuf/empty.proto";
+ import "google/protobuf/timestamp.proto";
+ import "google/protobuf/wrappers.proto";
+
+  // 定义命名空间，一般是项目名或者解决方案名
+option csharp_namespace = "SmartLibrary.Assembly.Application.Protos";
+  // 定义服务的包
+ package SmartLibrary.Open;
+ 
+ 
+// 定义具体的服务
+ service AssemblySharedGrpcService {
+    // 定义某一个方法API，格式是：rpc 方法名(请求参数对象名) returns(返回参数对象名)
+    rpc DeliverySharedAssembly (DeliverySharedAssemblyRequest) returns (DeliverySharedAssemblyReply);
+    rpc GetSystemAssemblyPage (GetSystemAssemblyRequest) returns (GetSystemAssemblyReply);
+    rpc GetAssemblyFromOpenCenter(GetAssemblyFromOpenCenterRequest) returns (GetAssemblyFromOpenCenterReply);
+    rpc GetUnionSharedAssemblyPage(GetUnionSharedAssemblyPageRequest) returns (GetUnionSharedAssemblyReply);
+    rpc GetSharedLocalAssemblyPage(GetSharedLocalAssemblyPageRequest) returns (GetSharedLocalAssemblyPageReply);
+    rpc PreviewArticleColumn(PreviewArticleColumnRequest) returns (PreviewArticleColumnReply);
+    rpc PreviewArticleColumnById(PreviewArticleColumnByIdRequest) returns (PreviewArticleColumnByIdReply);
+    rpc CancelSharedLocalAssembly(google.protobuf.StringValue) returns (google.protobuf.Empty);    
+    }
+
+ 
+  //联盟共享专题分页对象
+ message UnionAssemblyPagedList{
+      int32 PageIndex=1;
+      int32 PageSize=2;
+      int32 TotalCount=3;
+      int32 TotalPages=4;
+      repeated AssemblyBaseInfoTab Items=5;
+ }
+
+ //查找已共享的本官专题的入参
+   message GetSharedLocalAssemblyPageRequest{
+    string SearchKey=1;
+    int32 PageIndex=2;
+    int32 PageSize=3;
+    int32 AuditType=4;
+ }
+  //查找已共享的本官专题的reply
+  message GetSharedLocalAssemblyPageReply{
+  SysAssemblyPagedList AssemblyPage=1;
+ }
+
+ //获取联盟共享专题分页的请求request
+  message GetUnionSharedAssemblyPageRequest{
+    string SearchKey=1;
+    int32 PageIndex=2;
+    int32 PageSize=3;
+    repeated string acquiredIds=4;
+    int32 SortRule=5;//排序规则 1-默认排序 2-创建时间排序 3-点击量排序
+ }
+ //获取联盟共享专题分页的请求reply
+  message GetUnionSharedAssemblyReply{
+  SysAssemblyPagedList AssemblyPage=1;
+ }
+
+ //获取共享专题的请求request
+ message GetAssemblyFromOpenCenterRequest{
+      repeated string assemblyIds=1;//需要的专题列表
+ }
+
+ //获取共享专题的请求reply
+ message GetAssemblyFromOpenCenterReply{
+    repeated DeliverySharedAssemblyRequest Assemblys =1;
+ }
+
+ //获取系统专题分页的请求request
+ message GetSystemAssemblyRequest{
+    string SearchKey=1;
+    string RecommendType=2;
+    int32 PageIndex=3;
+    int32 PageSize=4;
+    repeated string acquiredIds=5;
+
+ }
+
+ //获取系统专题分页的请求reply
+ message GetSystemAssemblyReply{
+  SysAssemblyPagedList AssemblyPage=1;
+ }
+ 
+ //系统专题分页对象
+ message SysAssemblyPagedList{
+      int32 PageIndex=1;
+      int32 PageSize=2;
+      int32 TotalCount=3;
+      int32 TotalPages=4;
+      repeated AssemblyBaseInfoTab Items=5;
+
+ }
+
+
+ //专题基础信息表数据
+   message AssemblyBaseInfoTab {
+    string Id = 1;
+    string AssemblyName = 2;
+    string ColumnId = 3;
+    string Description = 4;
+    string KeyWords = 5;
+    string Label = 6;
+    string Template = 7;
+   // string MaintainerId = 8;
+  //  string CreaterId = 9;
+    string Cover = 10;
+    int32 Source = 11;
+    int32 FocusCounts = 12;
+    int32 Status = 13;
+    int32 UnionServiceType = 14;
+    string SharedId = 15;
+    string DeleteFlag = 16;
+    string RecommendType = 17;
+    string OrgCode = 18;
+    string RejectionReason = 19;
+    int32 SharedCount=20;
+    int32 AuditStatus=21;
+    string OrginCreaterName=22;
+    string OrginOwnerName=23;
+    string SharedTime=24;
+    //google.protobuf.Timestamp CreatedTime = 17;
+    //google.protobuf.Timestamp UpdatedTime = 18;
+  }
+
+ //文献栏目表的数据
+message AssemblyArticleColumnTab {
+    string Id = 1;
+    string Name = 2;
+    string AssemblyID = 3;
+    string Template = 4;
+    int32 ArtBindType = 5;
+    string DeleteFlag = 6;
+    string MaintainerId = 7;
+    //google.protobuf.Timestamp CreatedTime = 8;
+    //google.protobuf.Timestamp UpdatedTime = 9;
+  }
+
+ //主题检索规则表的数据
+message ArtColSearchThemesTab {
+    string Id = 1;
+    string AssemblyArticleColumnID = 2;
+    string SearchThemes = 3;
+    string ArtTypes = 4;
+    bool DeleteFlag = 5;
+    //google.protobuf.Timestamp CreatedTime = 6;
+    //google.protobuf.Timestamp UpdatedTime = 7;
+  }
+
+
+ //表达式文献栏目的匹配规则表的数据
+message ArtRetrievalExpTab {
+    string Id = 1;
+    string Name = 2;
+    string AssemblyArticleColumnID = 3;
+    string Expression = 4;
+    string ArticleTypes = 5;
+    string CoreCollection = 6;
+    int32 Collation = 7;
+    bool DeleteFlag = 8;
+    //google.protobuf.Timestamp CreatedTime = 9;
+    //google.protobuf.Timestamp UpdatedTime = 10;
+  }
+
+ //导入类文献栏目的匹配规则表的数据
+message ArtByImportedTab {
+    string Id = 1;
+    string ArtColumnId = 2;
+    int64 ArticleID = 3;
+    int32 OrderIndex = 4;
+    string Comment = 5;
+    string DeleteFlag = 6;
+    //google.protobuf.Timestamp CreatedTime = 7;
+    //google.protobuf.Timestamp UpdatedTime = 8;
+  }
+
+ //上传类文献栏目的匹配规则表的数据
+message ArtByUploadTab {
+    string Id = 1;
+    string ArtColumnId = 2;
+    string Title = 3;
+    string Author = 4;
+    int32 OrderIndex = 5;
+    string Date = 6;
+    string Comment = 7;
+    string File = 8;
+    string Url = 9;
+    bool DeleteFlag = 10;
+    //google.protobuf.Timestamp CreatedTime = 11;
+    //google.protobuf.Timestamp UpdatedTime = 12;
+  }
+
+ //文件资源表的数据
+message FileSourceTab {
+    string Id = 1;
+    string ArtByUploadId = 2;
+    string FilePath = 3;
+    string FileName = 4;
+    string DeleteFlag = 5;
+    //google.protobuf.Timestamp CreatedTime = 6;
+    //google.protobuf.Timestamp UpdatedTime = 7;
+  }
+  // 定义请求的对象名
+ message DeliverySharedAssemblyRequest {
+   
+  repeated  AssemblyBaseInfoTab AssemblyTab = 1;
+  repeated  AssemblyArticleColumnTab ArtColumnTab = 2;
+  repeated  ArtColSearchThemesTab RuleByThemsTab = 3;
+  repeated  ArtRetrievalExpTab RuleByExpTab = 4;
+  repeated  ArtByImportedTab RuleByImportedTab = 5;
+  repeated  ArtByUploadTab RuleByUploadTab = 6;
+  repeated  FileSourceTab FileSourceTab = 7;
+ }
+  // 定义返回的对象名
+ message DeliverySharedAssemblyReply {
+    // 有一个返回的字段是message
+    string message = 1;   //用户对应的角色
+}
+   //预览文献栏目的返回数据
+message PreviewArticleColumnRequest {
+   string  AssemblyId  = 1; //专题id
+  }
+
+
+   //预览文献栏目的返回数据
+message PreviewArticleColumnReply {
+  repeated  AssemblyArticleColumnTab ArtColumnTabs = 1;
+  }
+
+   //预览文献栏目的返回数据
+message PreviewArticleColumnByIdRequest {
+   int32 PageIndex=1;
+   int32 PageSize=2;
+   string ArtColumnId =3; //专题id
+  }
+   //预览文献栏目的返回数据
+message PreviewArticleColumnByIdReply {
+  AssemblyArticleColumnTab ArtColumnTab = 1;
+  ArtColSearchThemesTab RuleByThemsTab = 2;
+  ArtRetrievalExpTab RuleByExpTab = 3;
+  repeated  ArtByImportedTab RuleByImportedTab = 4;
+  repeated  ArtByUploadTab RuleByUploadTab = 5;
+  repeated  FileSourceTab FileSourceTab = 6;
+  }

@@ -1,0 +1,189 @@
+.index-warp-box {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.index-my-box {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+  padding: 10px;
+  overflow: hidden;
+}
+.index-my-box .index-my-title {
+  width: 100%;
+  height: 40px;
+  background: #f3f3f3;
+  font-size: 16px;
+  font-weight: bold;
+  color: #cc0000;
+  line-height: 40px;
+  padding: 0 20px;
+}
+.index-my-box .index-my-title>span{
+  font-size: 12px;
+  color: #575655;
+  float: right;
+  cursor: pointer;
+  font-weight: normal;
+}
+.index-my-box .index-my-title>span:hover{
+  opacity: .8;
+}
+.index-my-box .index-my-read-cont {
+  width: 100%;
+  height: 160px;
+  padding: 11px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.index-my-box .index-my-read-cont div {
+  width: 25%;
+  border-right: 1px dashed #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.index-my-box .index-my-read-cont div span:nth-child(1) {
+  font-size: 24px;
+  font-weight: 520;
+  display: block;
+  cursor: pointer;
+}
+.index-my-box .index-my-read-cont div span:nth-child(1):hover{
+  opacity: .8;
+}
+.index-my-box .index-my-read-cont div:nth-child(4n) {
+  border-right: none;
+}
+.index-my-box .index-my-read-cont div:nth-child(-n + 4) {
+  border-bottom: 1px dashed #ddd;
+}
+.index-my-box .index-my-database-cont {
+  width: 100%;
+  height: 145px;
+  padding: 11px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  overflow: hidden;
+}
+.index-my-box .index-my-database-cont div {
+  width: 50%;
+  height: 30px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.index-my-box .index-my-database-cont div:hover {
+  opacity: 0.8;
+}
+.index-my-box .index-my-database-cont div .database-cont-redtag {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  background: #f8685d;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 6px;
+  display: inline-block;
+}
+.index-my-box .index-my-database-cont div .database-cont-gretag {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  background: #00a24e;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 6px;
+  display: inline-block;
+}
+.index-my-box .index-my-database-cont div .database-cont-title {
+  width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+.index-my-box .index-my-recommd-cont {
+  width: 100%;
+  height: 270px;
+  padding: 16px 11px 11px;
+  overflow: hidden;
+}
+.index-my-box .index-my-recommd-cont > div {
+  width: 25%;
+  margin-bottom: 16px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+.index-my-box .index-my-recommd-cont > div:hover {
+  opacity: 0.8;
+}
+.index-my-box .index-my-recommd-cont > div div {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #e4f8fb;
+  margin: 0 auto;
+}
+.index-my-box .index-my-recommd-cont > div div img {
+  width: 50%;
+  height: 50%;
+  margin-top: 25%;
+}
+.index-my-box .index-my-recommd-cont > div span {
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.index-nologin-tips{
+  height: 365px;
+  margin-bottom: 20px;
+  padding: 100px 0 0;
+  text-align: center;
+  background: #f3f3f3;
+  border-radius: 15px;
+  background-position: 100% 0%, 100% 100%;
+  background-repeat: no-repeat;
+}
+.index-nologin-tips .index-nologin-div-warp{
+  height: 176px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #f3f3f3;
+  padding-top: 39px;
+  border-radius: 15px;
+  text-align: right;
+  padding-right: 20px;
+  color: #848484;
+}
+.index-login-btn {
+  width: 84px;
+  height: 28px;
+  margin-left: auto;
+  margin-top: 20px;
+  background: #a21e1e;
+  text-align: center;
+  line-height: 28px;
+  border-radius: 9px;
+  color: #fff;
+  cursor: pointer;
+}
+.index-login-btn:hover {
+  opacity: 0.8;
+}

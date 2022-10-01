@@ -1,0 +1,283 @@
+2021-09-07 18:23:54.615 +08:00 [My_Service] [Information] SkyApm.InstrumentStartup : Initializing ...
+2021-09-07 18:23:54.645 +08:00 [My_Service] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2021-09-07 18:23:54.645 +08:00 [My_Service] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2021-09-07 18:23:54.646 +08:00 [My_Service] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2021-09-07 18:23:54.646 +08:00 [My_Service] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2021-09-07 18:23:54.646 +08:00 [My_Service] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2021-09-07 18:23:54.646 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2021-09-07 18:23:54.680 +08:00 [My_Service] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [CapDiagnosticListener].
+2021-09-07 18:23:54.717 +08:00 [My_Service] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-09-07 18:23:54.717 +08:00 [My_Service] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-09-07 18:23:54.719 +08:00 [My_Service] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2021-09-07 18:23:54.720 +08:00 [My_Service] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2021-09-07 18:23:54.720 +08:00 [My_Service] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2021-09-07 18:24:04.896 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:24:09.673 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:24:19.709 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:24:25.797 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:24:35.811 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:24:57.572 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:25:07.607 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:25:07.619 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:25:17.631 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:25:17.641 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:25:27.653 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:25:27.662 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:25:37.674 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:25:42.577 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:25:52.590 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:25:57.581 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:26:07.593 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:26:12.576 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:26:22.586 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:26:27.579 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:26:37.592 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:26:42.577 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:26:52.590 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:26:57.580 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:27:07.596 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:27:12.580 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:27:22.594 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:27:27.575 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:27:37.589 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:27:42.575 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:27:52.589 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:27:57.574 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:28:07.587 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:28:12.576 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:28:22.586 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:28:27.578 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:28:37.590 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:28:42.575 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:28:52.589 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:28:57.577 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:29:07.589 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:29:12.576 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:29:22.588 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:29:27.584 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:29:37.595 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:29:42.576 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:29:52.589 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:29:57.580 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:30:07.596 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:30:12.575 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:30:22.586 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:30:27.576 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:30:37.593 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:30:42.578 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:30:52.590 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:30:57.575 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:31:07.588 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:31:12.580 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:31:22.589 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:31:27.574 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:31:37.585 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:31:42.581 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:31:52.593 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:31:57.577 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:32:07.590 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:32:12.580 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:32:22.591 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:32:27.578 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:32:37.590 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:32:42.581 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:32:52.596 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:32:57.577 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:33:22.693 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:33:22.706 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:34:16.063 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:34:16.070 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:34:26.112 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:34:26.124 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:34:36.138 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:34:36.146 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:34:46.157 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:34:46.167 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:34:56.179 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:34:56.187 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:35:06.203 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:35:06.215 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:35:16.229 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:35:16.242 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2021-09-07 18:35:26.256 +08:00 [My_Service] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2021-09-07 18:35:27.750 +08:00 [My_Service] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].

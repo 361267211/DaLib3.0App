@@ -1,0 +1,72 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\SmartLib3.0Project\\应用服务\\文件站点服务\\SmartLibrary.FileServer\\SmartLibrary.FileServer.Common\\SmartLibrary.FileServer.Common.csproj": {}
+  },
+  "projects": {
+    "E:\\SmartLib3.0Project\\应用服务\\文件站点服务\\SmartLibrary.FileServer\\SmartLibrary.FileServer.Common\\SmartLibrary.FileServer.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\SmartLib3.0Project\\应用服务\\文件站点服务\\SmartLibrary.FileServer\\SmartLibrary.FileServer.Common\\SmartLibrary.FileServer.Common.csproj",
+        "projectName": "SmartLibrary.FileServer.Common",
+        "projectPath": "E:\\SmartLib3.0Project\\应用服务\\文件站点服务\\SmartLibrary.FileServer\\SmartLibrary.FileServer.Common\\SmartLibrary.FileServer.Common.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "E:\\SmartLib3.0Project\\应用服务\\文件站点服务\\SmartLibrary.FileServer\\SmartLibrary.FileServer.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://192.168.21.47:6002/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "SmartLibrary.Core": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+#1.修改 SmartLibrary.ScoreCenter.nuspec 文件
+
+#2.打包项目成 .nupkg 文件，在有  .nuspec文件 的目录下CMD执行
+nuget.exe pack SmartLibrary.ScoreCenter.nuspec -OutputDirectory F:\CodeForSmartLib\SmartLib3.0\SmartLibrary.Apps\SmartLibrary.User\nugetpackages -NoDefaultExcludes
+
+#3.发布  .nupkg 文件 到nuget服务器，在PowerShell中执行
+dotnet nuget push SmartLibrary.ScoreCenter.3.0.2.nupkg -s http://192.168.21.47:6002/nuget -k cqvip_smart_core

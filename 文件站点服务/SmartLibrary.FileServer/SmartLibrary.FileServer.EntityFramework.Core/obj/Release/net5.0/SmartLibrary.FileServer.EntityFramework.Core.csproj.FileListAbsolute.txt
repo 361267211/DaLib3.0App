@@ -1,0 +1,12 @@
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.EntityFramework.Core\bin\Release\net5.0\SmartLibrary.FileServer.EntityFramework.Core.deps.json
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.EntityFramework.Core\bin\Release\net5.0\SmartLibrary.FileServer.EntityFramework.Core.dll
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.EntityFramework.Core\bin\Release\net5.0\ref\SmartLibrary.FileServer.EntityFramework.Core.dll
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.EntityFramework.Core\bin\Release\net5.0\SmartLibrary.FileServer.EntityFramework.Core.pdb
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.EntityFramework.Core\obj\Release\net5.0\SmartLibrary.FileServer.EntityFramework.Core.csproj.AssemblyReference.cache
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.EntityFramework.Core\obj\Release\net5.0\SmartLibrary.FileServer.EntityFramework.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.EntityFramework.Core\obj\Release\net5.0\SmartLibrary.FileServer.EntityFramework.Core.AssemblyInfoInputs.cache
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.EntityFramework.Core\obj\Release\net5.0\SmartLibrary.FileServer.EntityFramework.Core.AssemblyInfo.cs
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.EntityFramework.Core\obj\Release\net5.0\SmartLibrary.FileServer.EntityFramework.Core.csproj.CoreCompileInputs.cache
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.EntityFramework.Core\obj\Release\net5.0\SmartLibrary.FileServer.EntityFramework.Core.dll
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.EntityFramework.Core\obj\Release\net5.0\ref\SmartLibrary.FileServer.EntityFramework.Core.dll
+E:\3.0SmartLibraryProgram\SmartLibrary.FileServer\SmartLibrary.FileServer\SmartLibrary.FileServer.EntityFramework.Core\obj\Release\net5.0\SmartLibrary.FileServer.EntityFramework.Core.pdb

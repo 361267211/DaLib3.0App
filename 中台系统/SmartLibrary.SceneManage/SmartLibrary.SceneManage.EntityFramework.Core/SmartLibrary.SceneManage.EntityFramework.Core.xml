@@ -1,0 +1,916 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmartLibrary.SceneManage.EntityFramework.Core</name>
+    </assembly>
+    <members>
+        <member name="T:SmartLibrary.SceneManage.EntityFramework.Core.DbContexts.SceneManageDbContext">
+            <summary>
+            示例数据库上下文
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.EntityFramework.Core.DbContexts.SceneManageDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            创建模型前
+            </summary>
+            <param name="modelBuilder"></param>
+        </member>
+        <member name="M:SmartLibrary.SceneManage.EntityFramework.Core.DbContexts.SceneManageDbContext.GetFullSchemaName">
+            <summary>
+            创建model时获取其schema
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.EntityFramework.Core.SceneManageDbContextLocator">
+            <summary>
+            DbContext上下文选择器，仅有一个DbContext时，可以省略
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.PermissionNode">
+            <summary>
+            权限节点
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.PermissionNode.PermissionNodes">
+            <summary>
+            权限列表
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysMenuPermissionDto.Pid">
+            <summary>
+            父ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysMenuPermissionDto.Path">
+            <summary>
+            节点路径
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysMenuPermissionDto.FullPath">
+            <summary>
+            全路径
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysMenuPermissionDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysMenuPermissionDto.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysMenuPermissionDto.Icon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysMenuPermissionDto.Router">
+            <summary>
+            路由
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysMenuPermissionDto.Component">
+            <summary>
+            组件
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysMenuPermissionDto.Permission">
+            <summary>
+            权限标识:接口的Action
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysMenuPermissionDto.Category">
+            <summary>
+            分组标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysMenuPermissionDto.OpenWay">
+            <summary>
+            打开方式
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysMenuPermissionDto.Visible">
+            <summary>
+            是否可见
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysMenuPermissionDto.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysMenuPermissionDto.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysMenuPermissionDto.IsSysMenu">
+            <summary>
+            是否应用系统菜单
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysMenuPermissionDto.DeleteFlag">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysRoleDto.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysRoleDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysRoleDto.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysRoleDto.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysRoleDto.DeleteFlag">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysRoleInfoDto.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysRoleInfoDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysRoleInfoDto.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysRoleInfoDto.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysRoleInfoDto.DeleteFlag">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysRoleInfoDto.Permissions">
+            <summary>
+            权限id
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysUserRoleDto.UserID">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Dtos.SysUserRoleDto.RoleID">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.FootTemplateSetting.FootTemplateId">
+            <summary>
+            头部模板的id
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.FootTemplateSetting.Content">
+            <summary>
+            富文本内容
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.FootTemplateSetting.JsPath">
+            <summary>
+            JS文件的路径
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.HeadTemplateSetting.HeadTemplateId">
+            <summary>
+            头部模板的id
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.HeadTemplateSetting.Logo">
+            <summary>
+            logo图标的路径
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.HeadTemplateSetting.DisplayNavColumn">
+            <summary>
+            展示的导航栏目id
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Layout">
+            <summary>
+            场景布局
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Layout.Name">
+            <summary>
+            布局名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Layout.TerminalType">
+            <summary>
+            适用终端类型 1-PC端、2-APP端、3-小程序端、4-自适应移动端、5-显示屏
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Layout.DeleteFlag">
+            <summary>
+            删除标识
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysMenuCategory">
+            系统菜单分组
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysMenuCategory.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysMenuCategory.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysMenuCategory.IsDefault">
+            <summary>
+            默认展示
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysMenuCategory.Sort">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysMenuCategory.Visible">
+            <summary>
+            是否可见
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysMenuCategory.DeleteFlag">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysMenuPermission">
+            系统菜单及权限配置
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysMenuPermission.Pid">
+            <summary>
+            父ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysMenuPermission.Path">
+            <summary>
+            节点路径
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysMenuPermission.FullPath">
+            <summary>
+            全路径
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysMenuPermission.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysMenuPermission.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysMenuPermission.Icon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysMenuPermission.Router">
+            <summary>
+            路由
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysMenuPermission.Component">
+            <summary>
+            组件
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysMenuPermission.Permission">
+            <summary>
+            权限标识:接口的Action
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysMenuPermission.Category">
+            <summary>
+            分组标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysMenuPermission.OpenWay">
+            <summary>
+            打开方式
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysMenuPermission.Visible">
+            <summary>
+            是否可见
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysMenuPermission.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysMenuPermission.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysMenuPermission.IsSysMenu">
+            <summary>
+            是否应用系统菜单
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysMenuPermission.DeleteFlag">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysRole">
+            系统角色
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysRole.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysRole.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysRole.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysRole.DeleteFlag">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysRoleMenu">
+            角色菜单权限
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysRoleMenu.RoleID">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysRoleMenu.MenuPermissionID">
+            <summary>
+            菜单权限ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysRoleMenu.DeleteFlag">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysUserRole">
+            用户角色关系表
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysUserRole.UserID">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysUserRole.RoleID">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SysUserRole.DeleteFlag">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Scene">
+            <summary>
+            场景
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Scene.Name">
+            <summary>
+            场景名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Scene.TerminalInstanceId">
+            <summary>
+            终端实例标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Scene.LayoutId">
+            <summary>
+            布局标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Scene.TemplateId">
+            <summary>
+            模板标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Scene.HeaderTemplateId">
+            <summary>
+            头部模板标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Scene.FooterTemplateId">
+            <summary>
+            底部模板标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Scene.ThemeColor">
+            <summary>
+            主题颜色
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Scene.Cover">
+            <summary>
+            场景封面
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Scene.Status">
+            <summary>
+            启用状态。0-启用，1-禁用
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Scene.VisitorLimitType">
+            <summary>
+            权限控制类型。0-禁用，1-登录认证，2-按学院，3-按用户类型，4-按用户标签
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Scene.VisitUrl">
+            <summary>
+            访问地址
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Scene.IsSystemScene">
+            <summary>
+            是否系统默认场景 0-否  1-是
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Scene.SceneType">
+            <summary>
+            场景类型。0-普通，1-门户首页，2-个人中心
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Scene.UserKey">
+            <summary>
+            用户标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Scene.IsPersonalIndex">
+            <summary>
+            是否个人默认首页
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Scene.DeleteFlag">
+            <summary>
+            删除标识
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneApp">
+            <summary>
+            场景内应用
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneApp.SceneId">
+            <summary>
+            场景标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneApp.AppId">
+            <summary>
+            应用标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneApp.ParentSceneAppId">
+            <summary>
+            父级场景应用标识（用于个人中心）
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneApp.AppWidgetId">
+            <summary>
+            应用组件(模板)标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneApp.ScreenId">
+            <summary>
+            分屏Id
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneApp.XIndex">
+            <summary>
+            X轴位置
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneApp.YIndex">
+            <summary>
+            Y轴位置
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneApp.Width">
+            <summary>
+            宽度
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneApp.Height">
+            <summary>
+            高度
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneApp.DeleteFlag">
+            <summary>
+            删除标识
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneAppPlate">
+            <summary>
+            场景内应用
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneAppPlate.SceneAppId">
+            <summary>
+            场景内应用标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneAppPlate.SceneId">
+            <summary>
+            场景标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneAppPlate.AppPlateId">
+            <summary>
+            应用栏目标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneAppPlate.TopCount">
+            <summary>
+            数据条数
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneAppPlate.SortType">
+            <summary>
+            排序方式 1-创建时间倒序  2-访问量倒序
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneAppPlate.DeleteFlag">
+            <summary>
+            删除标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneAppPlate.OrderIndex">
+            <summary>
+            排序字段
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneScreen">
+            <summary>
+            场景分屏
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneScreen.SceneId">
+            <summary>
+            场景标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneScreen.ScreenName">
+            <summary>
+            分屏名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneScreen.OrderIndex">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneScreen.Height">
+            <summary>
+            高度
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneScreen.DeleteFlag">
+            <summary>
+            删除标识
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneUser">
+            <summary>
+            场景用户
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneUser.SceneId">
+            <summary>
+            场景标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneUser.UserSetId">
+            <summary>
+            用户群体标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneUser.UserSetType">
+            <summary>
+            用户群体类型。1-学院，1-类型，3-分组
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.SceneUser.DeleteFlag">
+            <summary>
+            删除标识
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Template">
+            <summary>
+            场景模板
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Template.Name">
+            <summary>
+            模板名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Template.Router">
+            <summary>
+            模板路由
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Template.ScreenCount">
+            <summary>
+            屏数
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Template.ColumnCount">
+            <summary>
+            列数
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Template.IsLock">
+            <summary>
+            是否锁定
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Template.AspectRatio">
+            <summary>
+            宽高比
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Template.LayoutId">
+            <summary>
+            适用布局标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Template.Cover">
+            <summary>
+            封面
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Template.Type">
+            <summary>
+            模板类型 1-场景 2-头部 3-底部
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Template.Width">
+            <summary>
+            模板宽度
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Template.BackgroundColor">
+            <summary>
+            背景色
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Template.DefaultHeaderTemplateId">
+            <summary>
+            默认头部模板标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Template.DefaultFooterTemplateId">
+            <summary>
+            默认底部模板标识
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.Template.DeleteFlag">
+            <summary>
+            删除标识
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.TerminalInstance">
+            <summary>
+            终端实例
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.TerminalInstance.Name">
+            <summary>
+            终端实例名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.TerminalInstance.TerminalType">
+            <summary>
+            终端类型 1-PC端、2-APP端、3-小程序端、4-自适应移动端、5-显示屏
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.TerminalInstance.KeyWords">
+            <summary>
+            关键词，多个逗号分隔
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.TerminalInstance.Description">
+            <summary>
+            简介
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.TerminalInstance.Logo">
+            <summary>
+            Logo的Url
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.TerminalInstance.Icon">
+            <summary>
+            图标的Url
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.TerminalInstance.VisitUrl">
+            <summary>
+            访问路径
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.TerminalInstance.Status">
+            <summary>
+            状态  0-下线  1-正常
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.TerminalInstance.Remark">
+            <summary>
+            备注信息
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.TerminalInstance.IsSystemInstance">
+            <summary>
+            是否系统默认实例 0-否  1-是
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.TerminalInstance.DeleteFlag">
+            <summary>
+            删除标识
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.ThemeColor">
+            <summary>
+            主题色
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.ThemeColor.Name">
+            <summary>
+            主题色名称
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.ThemeColor.Color">
+            <summary>
+            颜色名称或自定义色号
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.SceneManage.EntityFramework.Core.Entitys.ThemeColor.DeleteFlag">
+            <summary>
+            删除标识
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.SceneManage.EntityFramework.Core.Enum.PermissionTypeEnum">
+            <summary>
+            系统菜单类型
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.EntityFramework.Core.Enum.PermissionTypeEnum.Dir">
+            <summary>
+            目录
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.EntityFramework.Core.Enum.PermissionTypeEnum.Menu">
+            <summary>
+            菜单
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.EntityFramework.Core.Enum.PermissionTypeEnum.Btn">
+            <summary>
+            按钮
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.EntityFramework.Core.Enum.PermissionTypeEnum.Query">
+            <summary>
+            查询
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.EntityFramework.Core.Enum.PermissionTypeEnum.Operate">
+            <summary>
+            操作
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.SceneManage.EntityFramework.Core.Enum.PermissionTypeEnum.Api">
+            <summary>
+            接口
+            </summary>
+        </member>
+        <member name="T:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.ConnectionResolverOption">
+            <summary>
+            数据库连接信息的模型
+            </summary>
+        </member>
+        <member name="T:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.MigrationByTenantAssembly">
+            <summary>
+            自定义的MigrationsAssembly：用于更改模板的格式（引入 带"schema" 的构造函数）
+            </summary>
+        </member>
+        <member name="M:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.MigrationByTenantAssembly.CreateMigration(System.Reflection.TypeInfo,System.String)">
+            <summary>
+            调用模板方法构造函数，获取 改造后的 Migration 的子类
+            </summary>
+            <param name="migrationClass"></param>
+            <param name="activeProvider"></param>
+            <returns></returns>
+        </member>
+        <member name="T:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.MultipleTenancyExtension">
+            <summary>
+            注册DbContext
+            </summary>
+        </member>
+        <member name="M:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.MultipleTenancyExtension.AddDatabasePerConnection``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.ConnectionResolverOption)">
+            <summary>
+            基于数据库连接的多租户
+            </summary>
+            <typeparam name="TDbContext"></typeparam>
+            <param name="services"></param>
+            <param name="option"></param>
+            <returns></returns>
+        </member>
+        <member name="M:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.MultipleTenancyExtension.AddDatabase``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.ConnectionResolverOption)">
+            <summary>
+            注册
+            </summary>
+            <typeparam name="TDbContext"></typeparam>
+            <param name="services"></param>
+            <param name="option"></param>
+            <returns></returns>
+        </member>
+        <member name="M:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.MultipleTenancyExtension.AddTenantDatabasePerTable``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.ConnectionResolverOption)">
+            <summary>
+            基于表的多租户
+            </summary>
+            <typeparam name="TDbContext"></typeparam>
+            <param name="services"></param>
+            <param name="option"></param>
+            <returns></returns>
+        </member>
+        <member name="M:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.MultipleTenancyExtension.AddTenantDatabasePerSchema``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.ConnectionResolverOption)">
+            <summary>
+            基于Schema的多租户
+            </summary>
+            <typeparam name="TDbContext"></typeparam>
+            <param name="services"></param>
+            <param name="option"></param>
+            <returns></returns>
+        </member>
+        <member name="T:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.TenantInfo">
+            <summary>
+            租户信息的模型类，后期可继续拓展
+            </summary>
+        </member>
+        <member name="P:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.TenantInfo.Name">
+            <summary>
+            多租户姓名
+            </summary>
+        </member>
+        <member name="T:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.TenantInfoMiddleware">
+            <summary>
+            中间件，拦截，根据httpcontext请求获取租户信息，后续可拓展定义
+            </summary>
+        </member>
+        <member name="M:kiwiho.Course.MultipleTenancy.EFcore.Api.Infrastructure.TenantInfoMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            获取Scope周期的TenantInfo，为其赋值context中的租户信息
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.c-l::after{
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+    display: block;
+}
+/***标题 */
+.temp-database-warp{
+    color: #353535;
+    font-size: 14px;
+    padding: 11px;
+}
+.temp-database-warp .main-title-temp{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+.temp-database-warp .main-title-temp a{
+    color: #353535;
+    font-size: 14px;
+    margin-left: 20px;
+}
+.temp-database-warp .main-title-temp a:hover{
+    color: #DF1A1A;
+}
+.temp-database-warp .main-title-temp a.periodical-nav-active{
+    color: #DF1A1A;
+}
+.temp-database-warp .e-title{ 
+    color: #999999;
+    font-size: 12px;
+    line-height: 17px;
+    margin-left: 10px;
+}
+.temp-database-warp .main-title-temp .r-btn{
+    cursor: pointer;
+    float: right;
+    color: #8E8E8E;
+    font-size: 12px;
+    font-weight: normal;
+}
+.temp-database-warp .main-title-temp .r-btn:hover{
+    color: #000;
+}
+/***公用 end ************/
+.temp-database-warp .database-content{ 
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 40px 75px rgba(57, 60, 67, 0.08);
+    border-radius: 16px;
+    padding: 7px;
+}
+.temp-database-warp .apps_center_sys_temp1_data-list{
+    padding: 10px;
+    width: 100%;
+}
+.temp-database-warp .apps_center_sys_temp1_data-list .data-box{
+    width: 12.5%;
+    float: left;
+    padding: 10px;
+}
+.temp-database-warp .apps_center_sys_temp1_data-list .d-box{
+    cursor: pointer;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgba(40, 120, 255, 0.05);
+    border-radius: 5px;
+    padding:15px 20px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    width: 130px;
+    height: 130px;
+}
+.temp-database-warp .apps_center_sys_temp1_data-list .d-box:hover{
+    border: 1px solid #D4D8E4;
+}
+.temp-database-warp .apps_center_sys_temp1_data-list img.d-logo{
+    width: 62px;
+    height: 62px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 15px;
+    background: #f1eeff;
+    border-radius: 14px;
+    margin-bottom: 8px;
+}
+.temp-database-warp .apps_center_sys_temp1_data-list .data-txt{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333333;
+}
+.temp-database-warp .apps_center_sys_temp1_data-list .data-txt span:first-child{
+    color: #333;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom:3px;
+}

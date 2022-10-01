@@ -1,0 +1,25 @@
+﻿
+-- ----------------------------
+-- Table structure for SchedulerLogEntity
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."SchedulerLogEntity";
+CREATE TABLE "public"."SchedulerLogEntity" (
+  "Id" serial NOT NULL,
+  "TenantId" varchar(100) NOT NULL,
+  "JobId" int4 NOT NULL,
+  "JobName" varchar(200) NOT NULL,
+  "Params" varchar(2000) NULL,
+  "BatchId" varchar(50) NOT NULL,
+  "Context" text NULL,
+  "StartTime" timestamp(6),
+  "EndTime" timestamp(6),
+  "Status" int4 NOT NULL,
+  "CreateTime" timestamp(6) NOT NULL,
+  "NextFireTime" timestamp(6)
+)
+;
+
+-- ----------------------------
+-- Primary Key structure for table SchedulerLogEntity
+-- ----------------------------
+ALTER TABLE "public"."SchedulerLogEntity" ADD CONSTRAINT "schedulerlogentity_pkey" PRIMARY KEY ("Id");

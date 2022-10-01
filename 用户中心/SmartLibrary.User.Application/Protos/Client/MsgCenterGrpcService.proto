@@ -1,0 +1,36 @@
+// 语法结构，使用pb3
+ syntax = "proto3";
+ import "google/protobuf/empty.proto";
+ import "google/protobuf/timestamp.proto";
+ import "google/protobuf/wrappers.proto";
+  // 定义命名空间，一般是项目名或者解决方案名
+ option csharp_namespace = "SmartLibrary.MsgCenter.RpcService";
+  // 定义服务的包
+ package SmartLibrary.MsgCenter;
+
+ 
+ // 定义具体的服务
+ service MsgCenterGrpcService {
+     //发送手机短信
+     rpc SendPhoneVerifyCodeMessage(PhoneVerifyCodeInput) returns(MessageResult){}
+     //发送邮箱信息
+     rpc SendEmailVerifyCodeMessage(EmailVerifyCodeInput) returns(MessageResult){}
+ }
+
+ message MessageResult
+ {
+    bool IsSuccess=1;
+    string Message=2;
+ }
+
+ message PhoneVerifyCodeInput
+ {
+    string Phone=1;
+    string Code=2;
+ }
+
+ message EmailVerifyCodeInput
+ {
+    string Address=1;
+    string Code=2;
+ }

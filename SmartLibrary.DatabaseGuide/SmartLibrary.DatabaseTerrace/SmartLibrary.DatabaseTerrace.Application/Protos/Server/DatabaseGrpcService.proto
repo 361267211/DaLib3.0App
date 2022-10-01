@@ -1,0 +1,13 @@
+syntax = "proto3";
+package SmartLibraryDatabase;
+import "google/protobuf/empty.proto";
+
+service DatabaseGrpcService {
+	rpc GetDatabaseGuideStatCount (google.protobuf.Empty) returns (GetDatabaseGuideStatCountReply); // 应用栏目列表
+}
+
+
+message GetDatabaseGuideStatCountReply {
+	int32 Count = 1;
+}
+

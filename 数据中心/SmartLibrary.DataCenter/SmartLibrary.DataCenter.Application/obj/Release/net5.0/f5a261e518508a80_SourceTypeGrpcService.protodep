@@ -1,0 +1,3 @@
+obj\Release\net5.0\Protos\Server/SourceTypeGrpcService.cs \
+obj\Release\net5.0\Protos\Server/SourceTypeGrpcServiceGrpc.cs: C:/Users/Administrator/.nuget/packages/grpc.tools/2.38.0/build/native/include/google/protobuf/empty.proto\
+ Protos/Server/SourceTypeGrpcService.proto

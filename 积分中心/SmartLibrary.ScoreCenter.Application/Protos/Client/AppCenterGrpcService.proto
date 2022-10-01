@@ -1,0 +1,293 @@
+// 应用中心 grpc 服务
+ syntax = "proto3";
+
+ package SmartLibrary.AppCenter;
+ 
+ import "google/protobuf/empty.proto";
+ 
+ // 定义具体的服务
+ service AppCenterGrpcService {
+    // 定义某一个方法API，格式是：rpc 方法名(请求参数对象名) returns(返回参数对象名)
+    //获取指定用户管理权限
+    rpc GetUserAppAuthList (UserAppAuthRequest) returns (UserAppAuthReply);
+    
+    //获取应用权限
+    rpc GetUserAppAuthListByType (UserAppAuthByTypeRequest) returns (UserAppAuthReply);
+
+    //获取指定应用馆员权限信息
+    rpc GetAppUserAuthList (AppUserAuthRequest) returns (AppUserAuthReply);
+
+    //获取指定应用地址
+    rpc GetAppBaseUri (AppBaseUriRequest) returns (AppBaseUriReply);
+
+    //批量获取应用地址
+    rpc GetAppBaseUriBatch (AppBaseUriBatchRequest) returns (AppBaseUriBatchReply);
+
+    //根据userkey获取指定应用的权限类型(后台)
+    rpc GetUserAppPermissionType (UserAppPermissionTypeRequest) returns (UserAppPermissionTypeReply);
+
+    //根据userkey获取指定应用的权限类型(前台)
+    rpc GetUserApppermission (UserAppPermissionTypeRequest) returns (UserAppPermissionReply);
+
+    //通过事件类型查询当前机构的使用的应用
+    rpc GetAppByEventType (GetAppByEventTypeRequest) returns (GetAppByEventTypeReply);
+
+    //通过类型查询当前机构某个应用下的事件
+    rpc GetAppEventByCode (GetAppEventByCodeRequest) returns (GetAppEventByCodeReply);
+
+    //获取应用列表
+    rpc GetAppList (AppListRequest) returns (AppListReply);
+
+    //获取应用组件列表
+    rpc GetAppWidgetList (AppWidgetListRequest) returns (AppWidgetListReply);
+    
+    //获取服务类型列表
+    rpc GetServiceType (google.protobuf.Empty) returns (ServiceTypeReply);
+    
+    //获取应用栏目列表
+    rpc GetAppColumnList (AppColumnListRequest) returns (AppColumnListReply);
+
+    //应用栏目操作，新增/修改/删除
+    rpc AppColumnOperation (AppColumnOperationRequest) returns (AppColumnOperationReply);
+
+    //通过应用编码获取网关地址
+    rpc GetAppGateHostByCode (GetAppGateHostByCodeRequest) returns (GetAppGateHostByCodeReply);
+
+    //批量获取应用网关地址
+    rpc GetAppGateHostByCodeBatch (GetAppGateHostByCodeBatchRequest) returns (GetAppGateHostByCodeBatchReply);
+ }
+ 
+ // 用户中心 ================================================================================================================= start
+
+ message UserAppAuthRequest {
+     string UserId = 1; //用户ID
+ }
+
+ message UserAppAuthByTypeRequest {
+     string UserTypeId = 1; //用户类型ID
+     repeated string UserGroupIds = 2; //用户组ID集合
+ }
+
+ message UserAppAuthReply {
+     repeated UserAppAuthSingle UserAppAuthList = 1;
+ }
+
+ message UserAppAuthSingle {
+     string AppId = 1; //应用ID
+     string AppName = 2; //应用名称
+     string Icon = 3; //应用图标
+ }
+
+ message AppUserAuthRequest {
+     string AppId = 1; //应用ID
+ }
+
+ message AppUserAuthReply {
+     repeated AppUserAuthSingle AppUserAuthList = 1;
+ }
+
+ message AppUserAuthSingle {
+     string UserId = 1; //用户ID
+     int32 PermissionType = 2; //1：管理员，2：操作员，3：浏览者
+ }
+
+ message UserAppPermissionTypeRequest {
+    string AppId = 1; //应用ID
+ }
+
+ message UserAppPermissionTypeReply {
+    int32 PermissionType = 1; // 1：管理员，2：操作员，3：浏览者，0：无权限
+ }
+
+ message UserAppPermissionReply {
+    int32 IsHasPermission = 1; // 1：有权限，0：无权限
+ }
+
+ //通过事件类型查询当前机构的使用的应用
+ message GetAppByEventTypeRequest {
+    int32 EventType = 1; //事件类型，1 运行日志，2 操作日志 ，3 积分获取，4 积分消费，5 待办项，0 所有
+ }
+
+ message GetAppByEventTypeReply {
+    repeated GetAppByEventTypeSingle GetAppByEventTypeList = 1;
+ }
+
+ message GetAppByEventTypeSingle {
+    string AppCode = 1; //应用编码
+    string AppName = 2; //应用名称
+ }
+
+ //通过类型查询当前机构某个应用下的事件
+ message GetAppEventByCodeRequest {
+    string AppCode = 1;
+    int32 EventType = 2; //事件类型，1 运行日志，2 操作日志 ，3 积分获取，4 积分消费，5 待办项，0 所有 
+ }
+
+ message GetAppEventByCodeReply {
+    repeated GetAppEventByCodeSingle GetAppEventByCodeList = 1;
+ }
+
+ message GetAppEventByCodeSingle {
+    string EventCode = 1; //事件编码
+    string EventName = 2; //事件名称
+ }
+
+ message GetAppGateHostByCodeRequest {
+     string RouteCode = 1; //应用编码
+ }
+
+ message GetAppGateHostByCodeReply {
+     string GateHost = 1; // 网关地址
+ }
+
+ message GetAppGateHostByCodeBatchRequest {
+     repeated string RouteCode = 1; //应用路由编号
+ }
+
+ message GetAppGateHostByCodeBatchReply {
+     repeated GetAppGateHostByCodeBacthReplySingle Results = 1;
+ }
+
+ message GetAppGateHostByCodeBacthReplySingle {
+     string GateHost = 1; //网关地址
+     string RouteCode = 2; //应用路由编号
+ }
+
+ // 用户中心 ======================================================================================================================= end
+
+
+ // 检索应用 ====================================================================================================================== start
+
+ message AppBaseUriRequest {
+     string AppRouteCode = 1; //应用路由编号
+ }
+
+ message AppBaseUriReply {
+     string FrontUrl = 1; //前台地址
+     string BackUrl = 2; //后台地址
+ }
+
+ message AppBaseUriBatchRequest {
+     repeated string AppRouteCode = 1; //应用路由编号
+ }
+
+ message AppBaseUriBatchReply {
+     repeated AppBaseUriBatchReplySingle AppBaseUriBatchReplys = 1;
+ }
+
+ message AppBaseUriBatchReplySingle {
+     string FrontUrl = 1; //前台地址
+     string BackUrl = 2; //后台地址
+     string RouteCode = 3; //应用路由编号
+ }
+
+
+ // 检索应用 ======================================================================================================================== end
+
+
+
+ // 中台 ========================================================================================================================= start 
+
+ // 应用列表请求
+ message AppListRequest{
+    string AppServiceType = 1; //应用服务类型
+    int32 TerminalType = 2; //使用终端 0-全部 1-PC端、2-APP端、3-小程序端、4-自适应移动端、5-显示屏
+    int32 SceneType = 3; //场景类型 0-全部 1-通用、2-个人中心
+    string AppRouteCodes = 4; //应用路由编号,多个逗号分隔
+    int32 UseScene = 5; //适用场景 1-前台，2-后台，3-通用
+    bool HasPermission = 6; //是否筛选权限
+ }
+
+ message AppListReply{
+    repeated AppListSingle AppList = 1;// 应用列表
+ }
+
+ message AppListSingle{
+    string AppId = 1;// 应用ID
+    string Name = 2;// 分支名称
+    string Icon = 3;// 图标
+    string RouteCode = 4; //应用路由编号
+    string FrontUrl = 5; //前台默认入口
+    string BackUrl = 6; //后台默认入口
+ }
+
+ // 应用组件列表
+ message AppWidgetListRequest{
+    string AppId = 1;//应用ID
+    int32 SceneType = 2;// 特殊场景标识 ，1-通用 2-个人中心
+ }
+ 
+ message AppWidgetListReply{
+    repeated AppWidgetSingle AppWidgetList = 1;// 应用组件列表
+ }
+
+ message AppWidgetSingle{
+    string Id = 1;// 应用组件ID
+    string AppId = 2;// 应用ID
+    string Name = 3;// 组件名称
+    string WidgetCode = 4;// 组件标识
+    string Target = 5;// 组件内容地址
+    string AvailableConfig = 6;// 可用配置项 ，1-栏目 2-条数 3-排序字段，多个逗号分隔
+    string Cover = 7;// 组件封面
+    int32 Width = 8;// 默认宽度
+    int32 Height = 9;// 默认高度
+    string CreateTime = 10;// 创建时间
+    string UpdateTime = 11;// 更新时间
+    int32 SceneType = 12;// 特殊场景标识 ，1-通用 2-个人中心
+    repeated IntSysDictSingle TopCountList = 13;// 当前模板条数选项
+    repeated StringSysDictSingle SortList = 14;// 当前模板排序选项
+}
+
+message StringSysDictSingle{
+    string Key = 1;// 键
+    string Value = 2;// 值
+}
+message IntSysDictSingle{
+    string Key = 1;// 键
+    int32 Value = 2;// 值
+}
+
+//应用服务类型 返回类型
+message ServiceTypeReply{
+    repeated ServiceTypeSingle ServiceTypeList = 1; //服务类型列表
+}
+
+message ServiceTypeSingle{
+    string Key = 1;// 键
+    string Value = 2;// 值
+}
+
+//获取应用栏目列表请求
+message AppColumnListRequest{
+    string AppId = 1; //应用ID
+}
+
+message AppColumnListReply{
+    repeated AppColumnListSingle AppColumnList = 1; //栏目列表
+}
+
+message AppColumnListSingle{
+    string Name = 1; //栏目名称
+    string ColumnId = 2; //栏目ID
+    string CreateTime = 3; //创建时间
+    string VisitUrl = 4; //该应用栏目设置页面访问地址
+}
+
+// 应用栏目操作
+// 新增和修改 以下参数都需要传
+// 删除 传OperationType和ColumnId和AppRouteCode
+message AppColumnOperationRequest{
+    int32 OperationType = 1; // 1=新增，2=修改，3=删除
+    string ColumnName = 2; //栏目名称
+    string ColumnId = 3; //栏目ID
+    string CreateTime = 4; //栏目创建时间
+    string VisitUrl = 5; //栏目设置页面访问地址
+    string AppRouteCode = 6; //应用编码
+}
+
+message AppColumnOperationReply{
+    bool IsSuccess = 1; //是否成功
+    string ErrorMsg = 2; //失败时提示信息
+}
+
+ // 中台 ========================================================================================================================= end

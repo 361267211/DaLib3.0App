@@ -1,0 +1,42 @@
+.index-warp-box {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+.index-navgetion-box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+.index-navgetion-box .index-navgetion-img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.index-navgetion-box .index-navgetion-img div {
+  width: 100%;
+  height: 24%;
+  cursor: pointer;
+}
+.index-navgetion-box .index-navgetion-img div:hover {
+  opacity: 0.8;
+}
+.index-navgetion-box .index-navgetion-img div:nth-child(1) {
+  background: #009ae1;
+}
+.index-navgetion-box .index-navgetion-img div:nth-child(2) {
+  background: #f05408;
+}
+.index-navgetion-box .index-navgetion-img div:nth-child(3) {
+  background: #529457;
+}
+.index-navgetion-box .index-navgetion-img div:nth-child(4) {
+  background: #957ffd;
+}
+.index-navgetion-box .index-navgetion-img div img {
+  width: 100%;
+  height: 100%;
+}

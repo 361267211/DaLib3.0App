@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SmartLibrary.AppCenter.EntityFramework.Core.Entitys.AppCenterSettings">
+    <Position X="6.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAJAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Entitys\AppCenterSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartLibrary.AppCenter.EntityFramework.Core.Entitys.AppCollection">
+    <Position X="4.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAQQAAAA=</HashCode>
+      <FileName>Entitys\AppCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartLibrary.AppCenter.EntityFramework.Core.Entitys.AppNavigation">
+    <Position X="9.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAACAAAAAQAAAA=</HashCode>
+      <FileName>Entitys\AppNavigation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartLibrary.AppCenter.EntityFramework.Core.Entitys.AppManager">
+    <Position X="7.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAQQAAAA=</HashCode>
+      <FileName>Entitys\AppManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartLibrary.AppCenter.EntityFramework.Core.Entitys.AppUser">
+    <Position X="5.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAQQAAAA=</HashCode>
+      <FileName>Entitys\AppUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartLibrary.AppCenter.EntityFramework.Core.Entitys.ManagerRole">
+    <Position X="10" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Entitys\ManagerRole.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartLibrary.AppCenter.EntityFramework.Core.Entitys.Navigation">
+    <Position X="8" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAgAAAA=</HashCode>
+      <FileName>Entitys\Navigation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

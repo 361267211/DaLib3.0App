@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>SmartLibrary.SceneManage.Service.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="SmartLibrary.SceneManage.Service.xml" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\SmartLibrary.SceneManage.Common\SmartLibrary.SceneManage.Common.csproj" />
+    <ProjectReference Include="..\SmartLibrary.SceneManage.EntityFramework.Core\SmartLibrary.SceneManage.EntityFramework.Core.csproj" />
+  </ItemGroup>
+
+</Project>

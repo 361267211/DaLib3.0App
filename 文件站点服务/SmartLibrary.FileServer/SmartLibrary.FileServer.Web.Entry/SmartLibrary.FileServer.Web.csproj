@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\**" />
+    <Content Remove="Controllers\**" />
+    <EmbeddedResource Remove="Controllers\**" />
+    <None Remove="Controllers\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Com.Ctrip.Framework.Apollo.Configuration" Version="2.4.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="5.0.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.14" />
+    <PackageReference Include="SkyAPM.Agent.AspNetCore" Version="1.3.0" />
+    <PackageReference Include="SkyAPM.Diagnostics.CAP" Version="1.3.0" />
+    <PackageReference Include="Winton.Extensions.Configuration.Consul" Version="3.1.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SmartLibrary.FileServer.Application\SmartLibrary.FileServer.Application.csproj" />
+    <ProjectReference Include="..\SmartLibrary.FileServer.Common\SmartLibrary.FileServer.Common.csproj" />
+    <ProjectReference Include="..\SmartLibrary.FileServer.Database.Migrations\SmartLibrary.FileServer.Database.Migrations.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Dockerfile">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Properties\launchSettings.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="PubKey.cert">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\uploads\20211013\5461e22d35dc4457a57c0b08d328a6cd.png" />
+    <None Include="wwwroot\uploads\20211013\708bddfdca384ba0812085a307eeec07.png" />
+    <None Include="wwwroot\uploads\20211013\8a0213b28a9e41ed88f3f61463adc244.png" />
+    <None Include="wwwroot\uploads\20211013\cf5ff41ebafd44d781b6adefcbf9a07a.png" />
+    <None Include="wwwroot\uploads\20211013\de689492f779492c876cf76c096f44c1.png" />
+    <None Include="wwwroot\uploads\20211013\ec3d4940a8534d64b52678f3bf640296.png" />
+    <None Include="wwwroot\uploads\20211013\f1077392ed784f1c9027731edfc5984f.png" />
+    <None Include="wwwroot\uploads\20211014\5be90afd1c674fdab9b366ce8aa10fa7.png" />
+    <None Include="wwwroot\uploads\20211014\9a3f7a7514c14e7b9a4e6abc9b18a89f.png" />
+    <None Include="wwwroot\uploads\20211014\da3a34690c3d4cc499b39e1e5b8d15d4.png" />
+    <None Include="wwwroot\uploads\2ac04512775044ef8d138095ce3e71c7.png" />
+    <None Include="wwwroot\uploads\c9e6ad50d4334edcb6e832653b51d2bf.png" />
+    <None Include="wwwroot\uploads\cqu\20211014\0ded4458640848eaad2c12ea724050ea.png" />
+    <None Include="wwwroot\uploads\cqu\20211014\616bb58fa82147f78a988dabfd47ef5e.png" />
+  </ItemGroup>
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+</Project>

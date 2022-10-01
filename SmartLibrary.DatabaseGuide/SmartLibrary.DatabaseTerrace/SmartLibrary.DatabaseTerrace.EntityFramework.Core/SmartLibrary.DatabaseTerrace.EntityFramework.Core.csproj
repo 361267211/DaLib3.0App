@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DbContexts\StoreDbContext.cs" />
+    <Compile Remove="DbContexts\UserDbContextLocator.cs" />
+    <Compile Remove="Mapper.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="sqlsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.10" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.10" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.1.1" />
+    <PackageReference Include="SmartLibrary.Core" Version="3.0.0" />
+    <PackageReference Include="Zack.EFCore.Batch.MSSQL" Version="1.4.10" />
+    <PackageReference Include="Zack.EFCore.Batch.Npgsql" Version="1.4.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SmartLibrary.DatabaseTerrace.Common\SmartLibrary.DatabaseTerrace.Common.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,2 @@
+obj\Debug\net5.0\Protos\Server/DatabaseService.cs \
+obj\Debug\net5.0\Protos\Server/DatabaseServiceGrpc.cs: Protos/Server/DatabaseService.proto

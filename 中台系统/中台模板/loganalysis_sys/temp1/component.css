@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearFloat::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+}
+html{
+    background: #F6F8F9;
+}
+/***标题 */
+.top-main-title-temp{
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+  padding-bottom: 7px;
+  border-bottom:1px solid #E6E6E6;
+}
+.top-main-title-temp .e-title{ 
+  color: #999999;
+  font-size: 12px;
+  line-height: 17px;
+  margin-left: 10px;
+}
+.top-main-title-temp .r-btn{
+  cursor: pointer;
+  float: right;
+  color: #8E8E8E;
+  font-size: 12px;
+  font-weight: normal;
+}
+.top-main-title-temp .r-btn:hover{
+  color: #000;
+}
+/****最新借出图书******/
+.thelatestbooksonloan-warp-pad{
+  padding: 11px;
+}
+.thelatestbooksonloan-warp{
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 40px 75px rgba(57, 60, 67, 0.08);
+  border-radius: 5px;
+  color: #353535;
+  font-size: 14px;
+  padding: 20px;
+}
+/* .thelatestbooksonloan-warp .thelatestbooksonloan-list{
+  
+} */
+.thelatestbooksonloan-warp .thelatestbooksonloan-l-row{
+  cursor: pointer;
+  border-bottom: 1px dotted #D9D9D9;
+  position: relative;
+  padding-left: 30px;
+  margin-top: 35px;
+  padding-bottom: 11px;
+}
+.thelatestbooksonloan-warp .thelatestbooksonloan-l-row .title{
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+.thelatestbooksonloan-warp .thelatestbooksonloan-l-row:hover .title{
+  color: #000;
+}
+.thelatestbooksonloan-warp .thelatestbooksonloan-l-row .s-title{
+  font-size: 14px;
+  color: #333;
+  padding-top: 5px;
+  word-break: break-all;
+}
+.thelatestbooksonloan-warp .thelatestbooksonloan-l-row .num{
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 1px;
+  font-size: 12px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  font-style: normal;
+  line-height: 18px;
+  text-align: center;
+  background: #B7B7B7;
+  border-radius: 2px;
+}
+.thelatestbooksonloan-warp .thelatestbooksonloan-l-row i.one{
+  background: #F8685D;
+}
+.thelatestbooksonloan-warp .thelatestbooksonloan-l-row i.two{
+  background: #3FCEEC;
+}
+.thelatestbooksonloan-warp .thelatestbooksonloan-l-row i.three{
+  background: #00A24F;
+}

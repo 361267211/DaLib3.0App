@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>E:\workspace\SmartLibrary.DatabaseGuide</_PublishTargetUrl>
+    <History>True|2022-01-13T10:19:28.2359906Z;True|2022-01-13T15:56:33.3171219+08:00;True|2022-01-11T19:40:32.7126390+08:00;</History>
+  </PropertyGroup>
+</Project>

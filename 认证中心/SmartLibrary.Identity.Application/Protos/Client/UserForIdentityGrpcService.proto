@@ -1,0 +1,111 @@
+// 语法结构，使用pb3
+ syntax = "proto3";
+ import "google/protobuf/empty.proto";
+ import "google/protobuf/timestamp.proto";
+ import "google/protobuf/wrappers.proto";
+  // 定义命名空间，一般是项目名或者解决方案名
+ option csharp_namespace = "SmartLibrary.User.RpcService";
+  // 定义服务的包
+ package SmartLibrary.User;
+
+ 
+ // 定义具体的服务
+ service UserForIdentityGrpcService {
+     //通过账号密码查询用户信息
+     rpc LoginByAccountPwd(AccountInfo) returns(LoginResult){}
+     //通过手机号码查询用户信息
+     rpc LoginByPhone(PhoneInfo) returns(LoginResult){}
+     //通过身份证号查询用户信息
+     rpc LoginByIdCard(IdCardInfo) returns(LoginResult){}
+     //通过卡号查询读者卡
+     rpc SearchCardByNo(CardSearch) returns (CardSearchResult){}
+     //修改卡密码
+     rpc ChangeCardPwd(CardTokenInfo) returns(SimpleResult){}
+     //检查手机号是否重复
+     rpc CheckUniquePhone(PhoneInfo) returns (SimpleResult){}
+     //注册读者信息
+     rpc RegisterUser(RegisterUserInfo) returns (RegisterResult){}
+ }
+
+ //注册用户信息
+ message RegisterUserInfo{
+   
+   message UserInfo{
+     string Name=1;
+     string Phone=2;
+     string NickName=3;
+     string Unit=4;
+     string Edu=5;
+     string Title=6;
+     string Depart=7;
+     string College=8;
+     string Major=9;
+     string Grade=10;
+     string Class=11;
+     string Type=12;
+     string IdCard=13;
+     string Email=14;
+     google.protobuf.Timestamp Birthday=15;
+     string Gender=16;
+     string Addr=17;
+     string AddrDetail=18;
+     string Photo=19;
+     google.protobuf.Timestamp LeaveTime=20;
+   }
+   bool NeedConfirm=1;
+   UserInfo UserData=2;
+ }
+
+ //账号密码验证消息
+ message AccountInfo{
+  string Account=1;
+  string Password=2;
+ }
+ //手机号验证消息
+ message PhoneInfo{
+  string Phone=1;
+ }
+
+ //身份证号验证消息
+ message IdCardInfo{
+  string IdCard=1;
+  string Password=2;
+ }
+ //登录验证结果
+ message LoginResult{
+  string Code=1;
+  string ErrMsg=2;
+  string UserKey=3;
+ }
+
+ //查询读者卡
+ message CardSearch{
+  string No=1;
+ }
+
+ //查询卡结果
+ message CardSearchResult{
+     string Code=1;
+     string ErrMsg=2;
+     string Phone=3;
+     string CardId=4;
+ }
+
+ //变更卡密码
+ message CardTokenInfo{
+     string CardId=1;
+     string Password=2;
+ }
+
+ //简单调用结果
+ message SimpleResult{
+    string Code=1;
+    string ErrMsg=2;
+ }
+
+ message RegisterResult{
+    string Code=1;
+    string ErrMsg=2;
+    string CardNo=3;
+ }
+ 

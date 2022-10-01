@@ -1,0 +1,2 @@
+obj\Debug\net5.0\Protos\Server/DatabaseCollectKindService.cs \
+obj\Debug\net5.0\Protos\Server/DatabaseCollectKindServiceGrpc.cs: Protos/Server/DatabaseCollectKindService.proto

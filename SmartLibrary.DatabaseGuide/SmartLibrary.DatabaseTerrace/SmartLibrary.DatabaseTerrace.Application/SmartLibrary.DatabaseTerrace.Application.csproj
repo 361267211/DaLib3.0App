@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <DocumentationFile>SmartLibrary.DatabaseTerrace.Application.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Filter\DatabaseActionFilter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="applicationsettings.json" />
+    <None Remove="Protos\Client\AppCenterGrpcService.proto" />
+    <None Remove="Protos\Client\DataCenter_AppGrpcService.proto" />
+    <None Remove="Protos\Client\SceneManage.proto" />
+    <None Remove="Protos\Client\UserGrpcService.proto" />
+    <None Remove="Protos\Client\UserRoleGrpcService.proto" />
+    <None Remove="Protos\Client\UserService.proto" />
+    <None Remove="Protos\Server\DatabaseAppColumn.proto" />
+    <None Remove="Protos\Server\DatabaseGrpcService.proto" />
+    <None Remove="Protos\UserService.proto" />
+    <None Remove="SmartLibrary.DatabaseTerrace.Application.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="applicationsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.17.2" />
+    <PackageReference Include="Grpc.AspNetCore.Server" Version="2.37.0" />
+    <PackageReference Include="Grpc.Net.ClientFactory" Version="2.37.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.38.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Serilog.AspNetCore" Version="4.1.0" />
+    <PackageReference Include="Serilog.Sinks.Exceptionless" Version="3.1.4" />
+    <PackageReference Include="SmartLibrary.Search.EsSearchProxy.Core" Version="1.1.6" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SmartLibrary.DatabaseTerrace.Utility\SmartLibrary.DatabaseTerrace.Utility.csproj" />
+    <ProjectReference Include="..\SmartLibrary.DatabaseTerrace.Common\SmartLibrary.DatabaseTerrace.Common.csproj" />
+    <ProjectReference Include="..\SmartLibrary.DatabaseTerrace.EntityFramework.Core\SmartLibrary.DatabaseTerrace.EntityFramework.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Protobuf Include="Protos\Client\AppCenterGrpcService.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\Client\DataCenter_AppGrpcService.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\Client\SceneManage.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\Client\UserGrpcService.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\Client\UserRoleGrpcService.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\Server\DatabaseGrpcService.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\Server\DatabaseAppColumn.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\Server\HealthCheck.proto" GrpcServices="Server" />
+  </ItemGroup>
+</Project>

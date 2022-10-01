@@ -1,0 +1,34 @@
+﻿-- ----------------------------
+-- Table structure for SchedulerEntity
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."SchedulerEntity";
+CREATE TABLE "public"."SchedulerEntity" (
+  "Id" serial NOT NULL,
+  "TenantId" varchar(100)  NOT NULL,
+  "JobName" varchar(100)  NOT NULL,
+  "JobGroup" varchar(100)  NOT NULL,
+  "Cron" varchar(200) NULL,
+  "AssemblyFullName" varchar(200) NULL,
+  "ClassFullName" varchar(200) NULL,
+  "TaskParam" varchar(2000) NULL,
+  "AdapterAssemblyFullName" VARCHAR(200) NULL,
+  "AdapterClassFullName" VARCHAR(200) NULL,
+  "AdapterParm" VARCHAR(2000) NULL,
+  "JobStatus" int4 NOT NULL,
+  "CreatedTime" timestamp(6),
+  "NextTime" timestamp(6),
+  "BeginTime" timestamp(6),
+  "EndTime" timestamp(6),
+  "IntervalSecond" int4 NOT NULL,
+  "IsRepeat" bool NOT NULL,
+  "RunTimes" int4 NOT NULL,
+  "RetryTimes" int4 NOT NULL,
+  "IsDelete" int4 NOT NULL,
+  "Remark" varchar(200) NULL,
+  "CronRemark" varchar(1000) NULL
+);
+
+-- ----------------------------
+-- Primary Key structure for table SchedulerEntity
+-- ----------------------------
+ALTER TABLE "public"."SchedulerEntity" ADD CONSTRAINT "schedulerentity_pkey" PRIMARY KEY ("Id");

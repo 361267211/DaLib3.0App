@@ -1,0 +1,1162 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmartLibrary.DataCenter.Application</name>
+    </assembly>
+    <members>
+        <member name="T:SmartLibrary.DataCenter.Application.AppServices.CapDocumentAppService">
+            <summary>
+            Cap文档描述
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.AppServices.CapDocumentAppService.GetCapPublishEventDoc">
+            <summary>
+            获取当前服务发布事件描述文档数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.AppServices.DataCenterAppService.AddProviderResource">
+            <summary>
+            批量添加数据--正式开发后删除
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.AppServices.DataCenterAppService.AddDatabaseProvider">
+            <summary>
+            批量添加数据--正式开发后删除
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.AppServices.DataCenterAppService.AddResourceAlbum">
+            <summary>
+            批量添加数据--正式开发后删除
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.AppServices.DataCenterAppService.AddDomainInfo">
+            <summary>
+            批量添加数据--正式开发后删除
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.AppServices.DataCenterAppService.AddDataType">
+            <summary>
+            批量添加数据--正式开发后删除
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.AppServices.DataCenterAppService.CacheFile(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            从excel表中读取中心站的数据，用完记得删除
+            </summary>
+            <param name="formFile"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.AppServices.DataCenterAppService.CacheFileData(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            从excel表中读取中心站的数据，用完记得删除
+            </summary>
+            <param name="formFile"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.DataCenter.Application.AppServices.SysMenuAppService">
+            <summary>
+            权限管理接口
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.AppServices.SysMenuAppService.GetAllPermissionTree">
+            <summary>
+            获取完整的权限-树型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.AppServices.SysMenuAppService.GetSysRoleInfo(System.Guid)">
+            <summary>
+            获取角色信息  基础信息+权限列表
+            </summary>
+            <param name="roleId">角色id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.AppServices.SysMenuAppService.SaveSysRoleInfo(SmartLibrary.DataCenter.EntityFramework.Core.Dtos.SysRoleInfoDto)">
+            <summary>
+            保存角色信息
+            </summary>
+            <param name="sysRoleInfoDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.AppServices.SysMenuAppService.GetUserPermissionList(System.Guid)">
+            <summary>
+            获取登陆用户所有的权限菜单-列表
+            </summary>
+            <param name="userKey">用户唯一标识</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.AppServices.SysMenuAppService.GetUserPermissionTree(System.Guid)">
+            <summary>
+            获取登陆用户所有的权限菜单-树型
+            </summary>
+            <param name="userKey">用户唯一标识</param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.DataCenter.Application.HealthAppService">
+            <summary>
+            WebApi心跳检查
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.HealthAppService.Index">
+            <summary>
+            WebApi心跳检查
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.DataCenter.Application.MigrationController">
+            <summary>
+            数据库迁移的专用接口示例
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.MigrationController.InitializeBasicData(System.String)">
+            <summary>
+            初始话数据，本接口示范  向基础表插入基础数据
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.DataCenter.Application.UserAppService">
+            <summary>
+            应用服务接口
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.UserAppService.GetUserName(SmartLibraryUser.UserRequest)">
+            <summary>
+            缓存测试 获取用户名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.UserAppService.InsertAsset(System.String)">
+            <summary>
+            多租户测试 插入一条Asset数据，并立即返回其信息
+            </summary>
+            <param name="title"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.UserAppService.GetAllAsset">
+            <summary>
+            多租户测试 获取所有Asset
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.UserAppService.SetCach(System.String)">
+            <summary>
+            设置redis缓存值
+            </summary>
+            <param name="redisValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.UserAppService.GetCach(System.String)">
+            <summary>
+            设置redis缓存值
+            </summary>
+            <param name="redisValue"></param>
+            <returns></returns>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.Application.Dtos.Cap.UserServicePublishEvent.NewPerson">
+            <summary>
+            事件名称
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.DataCenter.Application.Dtos.Cap.UserServicePublishEvent.NewPersonMsg">
+            <summary>
+            事件对应消息
+            </summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.Application.Dtos.Cap.UserServicePublishEvent.NewPersonMsg.PersonId">
+            <summary>
+            员工Id
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.Application.Dtos.Cap.UserServiceSubscribeEvent.NewPerson">
+            <summary>
+            事件名称
+            </summary>
+        </member>
+        <member name="T:SmartLibrary.DataCenter.Application.Dtos.Cap.UserServiceSubscribeEvent.NewPersonMsg">
+            <summary>
+            消息接收类型
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.GrpcService.Service.DatabaseCollectKindService.GetAllDatabaseCollectKindResource(SmartLibrary.DataCenter.AllDatabaseCollectKindRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            获取所有的数据库商资源
+            </summary>
+            <param name="request"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.GrpcService.Service.DomainService.GetAllDomainInfoTrees(SmartLibrary.DataCenter.AllDomainInfoTreeRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            获取所有的数据库商资源
+            </summary>
+            <param name="request"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.GrpcService.Service.ProviderResourceService.GetAllAvailableProviderResource(SmartLibrary.DataCenter.AvailableProviderResourceRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            获取所有的数据库商资源
+            </summary>
+            <param name="request"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.DatabaseService.GetAllAvailableProviderResource">
+            <summary>
+            查询所有可获取的数据库商资源
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.DomainService.GetAllDomains(System.Int32,System.Int32)">
+            <summary>
+            查所有学科分类-平级
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.DomainService.GetAllDomainTrees(System.Int32,System.Int32)">
+            <summary>
+            查所有学科分类树-树型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.DomainService.GetNextNode(SmartLibrary.DataCenter.DomainTreeItem,System.Collections.Generic.List{SmartLibrary.DataCenter.EntityFramework.Core.Dto.DomainInfoDto})">
+            <summary>
+            取本层级学科
+            </summary>
+            <param name="thisNode">本层级的学科节点</param>
+            <param name="secondaryNodeList">本层级的所有下级学科节点的集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.ISourceTypeService.GetSourceTypes">
+            <summary>
+            获取资源类型字典
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.ISourceTypeService.AddSourceType(SmartLibrary.DataCenter.EntityFramework.Core.Dto.SourceTypeDto)">
+            <summary>
+            添加资源类型字典
+            </summary>
+            <param name="request"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.ISysMenuService.GetAllPermissionTree">
+            <summary>
+            获取本应用中所有的权限列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.ISysMenuService.GetUserPermissionList(System.Guid)">
+            <summary>
+            获取当前登陆用户的所有权限列表
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.ISysMenuService.SaveRoleMenuList(System.Collections.Generic.List{SmartLibrary.DataCenter.EntityFramework.Core.Dtos.SysRoleMenuDto})">
+            <summary>
+            保存用户的权限列表
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.ISysMenuService.InsertSysRoleInfo(SmartLibrary.DataCenter.EntityFramework.Core.Dtos.SysRoleInfoDto)">
+            <summary>
+            新增角色信息
+            </summary>
+            <param name="sysRoleInfoDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.ISysMenuService.UpdateSysRoleInfo(SmartLibrary.DataCenter.EntityFramework.Core.Dtos.SysRoleInfoDto)">
+            <summary>
+            更新角色信息
+            </summary>
+            <param name="sysRoleInfoDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.ISysMenuService.GetSysRoleBaseInfo(System.Guid)">
+            <summary>
+            获取角色
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.ISysMenuService.GetRoleMenu(System.Guid)">
+            <summary>
+            查角色-权限关联
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.ISysMenuService.GetSysRoleInfo(System.Guid)">
+            <summary>
+            查角色信息
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.SysMenuService.GetAllPermissionTree">
+            <summary>
+            获取权限树
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.SysMenuService.GetUserPermissionList(System.Guid)">
+            <summary>
+            获取登陆用户的所有可用API权限
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.SysMenuService.SaveRoleMenuList(System.Collections.Generic.List{SmartLibrary.DataCenter.EntityFramework.Core.Dtos.SysRoleMenuDto})">
+            <summary>
+            保存角色-菜单权限关系
+            </summary>
+            <param name="sysRoleMenuDtos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.SysMenuService.InsertSysRoleInfo(SmartLibrary.DataCenter.EntityFramework.Core.Dtos.SysRoleInfoDto)">
+            <summary>
+            新增角色基础信息
+            </summary>
+            <param name="sysRoleInfoDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.SysMenuService.UpdateSysRoleInfo(SmartLibrary.DataCenter.EntityFramework.Core.Dtos.SysRoleInfoDto)">
+            <summary>
+            修改角色基础信息
+            </summary>
+            <param name="sysRoleInfoDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.SysMenuService.GetSysRoleBaseInfo(System.Guid)">
+            <summary>
+            修改角色基础信息
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.SysMenuService.GetRoleMenu(System.Guid)">
+            <summary>
+            查角色-权限绑定关系
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.SysMenuService.GetSysRoleInfo(System.Guid)">
+            <summary>
+            查角色的信息
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.SysMenuService.GetUserPermissionTree(System.Guid)">
+            <summary>
+            查角色的信息
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.SysMenuService.GetMGRPermissionTree(System.Guid)">
+            <summary>
+            取管理员（默认角色）的权限树
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.SysMenuService.GetOperatorPermissionTree(System.Guid)">
+            <summary>
+            取操作员（默认角色）的权限树
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.SysMenuService.GetVisitorsPermissionTree(System.Guid)">
+            <summary>
+            取浏览者（默认角色）的权限树
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.SysMenuService.GetMGRPermissionList">
+            <summary>
+            取管理员（默认角色）的权限树
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.SysMenuService.GetOperatorPermissionList">
+            <summary>
+            取操作员（默认角色）的权限树
+            </summary>
+            <param name="userId"></param>  GetOperatorPermissionList
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.SysMenuService.GetVisitorsPermissionList">
+            <summary>
+            取浏览者（默认角色）的权限树
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.DataCenter.Application.Services.RemoteProxy.EsHttp">
+            <summary>
+            请求代理，具体使用方式参考furion框架
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.RemoteProxy.EsHttp.PostVipSearchByObjectV2Async(System.Object)">
+            <summary>
+            转发到Es查询服务，方法vipSearchByObjectV2
+            </summary>
+            <param name="condition"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.SourceTypeService.GetSourceTypes">
+            <summary>
+            获取资源类型字典
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.Services.SourceTypeService.AddSourceType(SmartLibrary.DataCenter.EntityFramework.Core.Dto.SourceTypeDto)">
+            <summary>
+            添加资源类型字典
+            </summary>
+            <param name="request"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.DataCenter.Application.UserService">
+            <summary>
+            用户服务
+            </summary>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.UserService.GetUserName(SmartLibraryUser.UserRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            获取用户姓名
+            </summary>
+            <param name="request"></param>
+            <param name="callContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.Application.UserService.AddOnePerson">
+            <summary>
+            模拟添加员工同时，发布投递添加员工消息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibrary.DataCenter.DataCenterAppGrpcServiceReflection">
+            <summary>Holder for reflection information generated from Protos/Server/DataCenter_AppGrpcService.proto</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.DataCenterAppGrpcServiceReflection.Descriptor">
+            <summary>File descriptor for Protos/Server/DataCenter_AppGrpcService.proto</summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:SmartLibrary.DataCenter.DatabaseCollectKindItem" -->
+        <member name="F:SmartLibrary.DataCenter.DatabaseCollectKindItem.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.DatabaseCollectKindItem.DatabaseNameFieldNumber">
+            <summary>Field number for the "DatabaseName" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.DatabaseCollectKindItem.DatabaseName">
+             <summary>
+            显示的名称，如北大核心期刊
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.DatabaseCollectKindItem.EnglishAbbrFieldNumber">
+            <summary>Field number for the "EnglishAbbr" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.DatabaseCollectKindItem.EnglishAbbr">
+             <summary>
+            英文名称 如bdhx
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.AllDatabaseCollectKindResponse.DatabaseCollectKindItemsFieldNumber">
+            <summary>Field number for the "DatabaseCollectKindItems" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.AllDatabaseCollectKindRequest.OwnerFieldNumber">
+            <summary>Field number for the "owner" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.DomainTreeItem.DomainIDFieldNumber">
+            <summary>Field number for the "DomainID" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.DomainTreeItem.DomainID">
+             <summary>
+            学科编号
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.DomainTreeItem.ParentIDFieldNumber">
+            <summary>Field number for the "ParentID" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.DomainTreeItem.ParentID">
+             <summary>
+            父级编号
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.DomainTreeItem.DomainIDCodeFieldNumber">
+            <summary>Field number for the "DomainIDCode" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.DomainTreeItem.DomainIDCode">
+             <summary>
+            学科标识
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.DomainTreeItem.DomainNameFieldNumber">
+            <summary>Field number for the "DomainName" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.DomainTreeItem.DomainName">
+             <summary>
+            学科名称
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.DomainTreeItem.ContrastFieldNumber">
+            <summary>Field number for the "Contrast" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.DomainTreeItem.Contrast">
+             <summary>
+            中图对照
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.DomainTreeItem.LevelFieldNumber">
+            <summary>Field number for the "Level" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.DomainTreeItem.Level">
+             <summary>
+            学科等级
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.DomainTreeItem.MarkFieldNumber">
+            <summary>Field number for the "Mark" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.DomainTreeItem.Mark">
+             <summary>
+            说明
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.DomainTreeItem.TypeFieldNumber">
+            <summary>Field number for the "Type" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.DomainTreeItem.Type">
+             <summary>
+            类型 1-学科   2-中图
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.DomainTreeItem.CreateTypeFieldNumber">
+            <summary>Field number for the "CreateType" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.DomainTreeItem.CreateType">
+             <summary>
+            创建类型 0 系统 1-自建
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.DomainTreeItem.UserKeyFieldNumber">
+            <summary>Field number for the "UserKey" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.DomainTreeItem.UserKey">
+             <summary>
+            创建者标识
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.DomainTreeItem.NextNodesFieldNumber">
+            <summary>Field number for the "NextNodes" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.DomainTreeItem.NextNodes">
+             <summary>
+            下一级的所有学科
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.AllDomainInfoTreeReply.DomainTreesFieldNumber">
+            <summary>Field number for the "DomainTrees" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.AllDomainInfoTreeRequest.TypeFieldNumber">
+            <summary>Field number for the "type" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.AllDomainInfoTreeRequest.LevelFieldNumber">
+            <summary>Field number for the "level" field.</summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:SmartLibrary.DataCenter.ProviderResourceItem" -->
+        <member name="F:SmartLibrary.DataCenter.ProviderResourceItem.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.ProviderResourceItem.ProviderFieldNumber">
+            <summary>Field number for the "Provider" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.ProviderResourceItem.LinkTitleFieldNumber">
+            <summary>Field number for the "LinkTitle" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.ProviderResourceItem.LinkUrlFieldNumber">
+            <summary>Field number for the "LinkUrl" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.ProviderResourceItem.TerraceFullNameFieldNumber">
+            <summary>Field number for the "TerraceFullName" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.ProviderResourceItem.TerraceShortNameFieldNumber">
+            <summary>Field number for the "TerraceShortName" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.ProviderResourceItem.ServiceTypeFieldNumber">
+            <summary>Field number for the "ServiceType" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.ProviderResourceItem.TypeFieldNumber">
+            <summary>Field number for the "Type" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.ProviderResourceItem.MediumFieldNumber">
+            <summary>Field number for the "Medium" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.ProviderResourceItem.Medium">
+             <summary>
+            载体 
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.ProviderResourceItem.LanguageKindFieldNumber">
+            <summary>Field number for the "LanguageKind" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.ProviderResourceItem.LanguageKind">
+            <summary>
+            语言 :0=中文;外文 
+            </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.ProviderResourceItem.FrequentUsedFlagFieldNumber">
+            <summary>Field number for the "FrequentUsedFlag" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.ProviderResourceItem.FrequentUsedFlag">
+             <summary>
+            是否常用数据库
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.ProviderResourceItem.ProviderTypeFieldNumber">
+            <summary>Field number for the "ProviderType" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.ProviderResourceItem.ProviderType">
+             <summary>
+            类型 1 公共 2 已购买的数据库或学校的纸本
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.ProviderResourceItem.DatabaseCodeFieldNumber">
+            <summary>Field number for the "DatabaseCode" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.ProviderResourceItem.DatabaseCode">
+             <summary>
+            数据库标识
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.ProviderResourceItem.ChildDatabaseNameFieldNumber">
+            <summary>Field number for the "ChildDatabaseName" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.ProviderResourceItem.ChildDatabaseName">
+             <summary>
+            子库名称
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.ProviderResourceItem.IntroductionFieldNumber">
+            <summary>Field number for the "Introduction" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.ProviderResourceItem.Introduction">
+             <summary>
+            数据库介绍
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.DatabaseProviderItem.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.DatabaseProviderItem.Id">
+             <summary>
+            主键
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.DatabaseProviderItem.DatabaseCodeFieldNumber">
+            <summary>Field number for the "DatabaseCode" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.DatabaseProviderItem.DatabaseCode">
+             <summary>
+            数据库标识
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.DatabaseProviderItem.ProviderNameFieldNumber">
+            <summary>Field number for the "ProviderName" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.DatabaseProviderItem.ProviderName">
+             <summary>
+            供应商名称
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.DatabaseProviderItem.IntroductionFieldNumber">
+            <summary>Field number for the "Introduction" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.DatabaseProviderItem.Introduction">
+             <summary>
+            简介
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.DatabaseProviderItem.RemarkFieldNumber">
+            <summary>Field number for the "Remark" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.DatabaseProviderItem.Remark">
+             <summary>
+            备注
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.DatabaseProviderItem.AddressFieldNumber">
+            <summary>Field number for the "Address" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.DatabaseProviderItem.Address">
+             <summary>
+            供应商地址
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.DatabaseProviderItem.GatheringFieldNumber">
+            <summary>Field number for the "Gathering" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.DatabaseProviderItem.Gathering">
+             <summary>
+            收款信息
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.DatabaseProviderItem.ContactsFieldNumber">
+            <summary>Field number for the "Contacts" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.DatabaseProviderItem.Contacts">
+             <summary>
+            联系人信息
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.DatabaseProviderItem.DistrictFieldNumber">
+            <summary>Field number for the "District" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.DatabaseProviderItem.District">
+             <summary>
+            所属地区 
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.DatabaseProviderItem.TelFieldNumber">
+            <summary>Field number for the "Tel" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.DatabaseProviderItem.Tel">
+             <summary>
+            电话
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.DatabaseProviderItem.ContractsTelFieldNumber">
+            <summary>Field number for the "ContractsTel" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.DatabaseProviderItem.ContractsTel">
+             <summary>
+            联系人电话
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.DatabaseProviderItem.CountryFieldNumber">
+            <summary>Field number for the "Country" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.DatabaseProviderItem.Country">
+             <summary>
+            国家
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.ResourceAlbumItem.AlbumCodeFieldNumber">
+            <summary>Field number for the "AlbumCode" field.</summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:SmartLibrary.DataCenter.ResourceAlbumItem.AlbumCode" -->
+        <member name="F:SmartLibrary.DataCenter.ResourceAlbumItem.ParentIdFieldNumber">
+            <summary>Field number for the "ParentId" field.</summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:SmartLibrary.DataCenter.ResourceAlbumItem.ParentId" -->
+        <member name="F:SmartLibrary.DataCenter.ResourceAlbumItem.AlbumNameFieldNumber">
+            <summary>Field number for the "AlbumName" field.</summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:SmartLibrary.DataCenter.ResourceAlbumItem.AlbumName" -->
+        <member name="F:SmartLibrary.DataCenter.ResourceAlbumItem.ProviderFieldNumber">
+            <summary>Field number for the "Provider" field.</summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:SmartLibrary.DataCenter.ResourceAlbumItem.Provider" -->
+        <member name="F:SmartLibrary.DataCenter.ResourceAlbumItem.ChildAlbumFieldNumber">
+            <summary>Field number for the "ChildAlbum" field.</summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:SmartLibrary.DataCenter.ResourceAlbumItem.ChildAlbum" -->
+        <member name="F:SmartLibrary.DataCenter.AvailableProviderResourceResponse.ProviderResourceItemsFieldNumber">
+            <summary>Field number for the "ProviderResourceItems" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.GetAllDatabaseProviderResponse.DatabaseProviderItemsFieldNumber">
+            <summary>Field number for the "DatabaseProviderItems" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.GetResourceAlbumByProviderResponse.ResourceAlbumItemFieldNumber">
+            <summary>Field number for the "ResourceAlbumItem" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.AvailableProviderResourceRequest.OwnerFieldNumber">
+            <summary>Field number for the "owner" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.GetAllDatabaseProviderRequest.OwnerFieldNumber">
+            <summary>Field number for the "owner" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.GetResourceAlbumByProviderRequest.ProviderFieldNumber">
+            <summary>Field number for the "provider" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.SourceTypeItem.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.SourceTypeItem.Id">
+             <summary>
+            Id
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.SourceTypeItem.CodeFieldNumber">
+            <summary>Field number for the "Code" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.SourceTypeItem.Code">
+             <summary>
+            编号
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.SourceTypeItem.NameFieldNumber">
+            <summary>Field number for the "Name" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.SourceTypeItem.Name">
+             <summary>
+            名称
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.SourceTypeItem.UserKeyFieldNumber">
+            <summary>Field number for the "UserKey" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.SourceTypeItem.UserKey">
+             <summary>
+            操作者/创建者
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.AllSourceReply.SourceTypesFieldNumber">
+            <summary>Field number for the "SourceTypes" field.</summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.AllSourceRequest.TypsFieldNumber">
+            <summary>Field number for the "typs" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.AllSourceRequest.Typs">
+             <summary>
+            传空
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.AddSourceTypeRequest.NameFieldNumber">
+            <summary>Field number for the "Name" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.AddSourceTypeRequest.Name">
+             <summary>
+            名称
+             </summary>
+        </member>
+        <member name="F:SmartLibrary.DataCenter.AddSourceTypeRequest.UserKeyFieldNumber">
+            <summary>Field number for the "UserKey" field.</summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.AddSourceTypeRequest.UserKey">
+             <summary>
+            操作者/创建者
+             </summary>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.DatabaseCollectKindGrpcService.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:SmartLibrary.DataCenter.DatabaseCollectKindGrpcService.DatabaseCollectKindGrpcServiceBase">
+            <summary>Base class for server-side implementations of DatabaseCollectKindGrpcService</summary>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.DatabaseCollectKindGrpcService.DatabaseCollectKindGrpcServiceBase.GetAllDatabaseCollectKindResource(SmartLibrary.DataCenter.AllDatabaseCollectKindRequest,Grpc.Core.ServerCallContext)">
+             <summary>
+            获取当前owner所有可用的数据库，包含已购买的，纸本的，和公共的
+             </summary>
+             <param name="request">The request received from the client.</param>
+             <param name="context">The context of the server-side call handler being invoked.</param>
+             <returns>The response to send back to the client (wrapped by a task).</returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.DatabaseCollectKindGrpcService.BindService(SmartLibrary.DataCenter.DatabaseCollectKindGrpcService.DatabaseCollectKindGrpcServiceBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.DatabaseCollectKindGrpcService.BindService(Grpc.Core.ServiceBinderBase,SmartLibrary.DataCenter.DatabaseCollectKindGrpcService.DatabaseCollectKindGrpcServiceBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.DomainInfoService.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:SmartLibrary.DataCenter.DomainInfoService.DomainInfoServiceBase">
+            <summary>Base class for server-side implementations of DomainInfoService</summary>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.DomainInfoService.DomainInfoServiceBase.GetAllDomainInfoTrees(SmartLibrary.DataCenter.AllDomainInfoTreeRequest,Grpc.Core.ServerCallContext)">
+             <summary>
+            获取当前owner所有可用的数据库，包含已购买的，纸本的，和公共的
+             </summary>
+             <param name="request">The request received from the client.</param>
+             <param name="context">The context of the server-side call handler being invoked.</param>
+             <returns>The response to send back to the client (wrapped by a task).</returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.DomainInfoService.BindService(SmartLibrary.DataCenter.DomainInfoService.DomainInfoServiceBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.DomainInfoService.BindService(Grpc.Core.ServiceBinderBase,SmartLibrary.DataCenter.DomainInfoService.DomainInfoServiceBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.ProviderResourceGrpcService.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:SmartLibrary.DataCenter.ProviderResourceGrpcService.ProviderResourceGrpcServiceBase">
+            <summary>Base class for server-side implementations of ProviderResourceGrpcService</summary>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.ProviderResourceGrpcService.ProviderResourceGrpcServiceBase.GetAllAvailableProviderResource(SmartLibrary.DataCenter.AvailableProviderResourceRequest,Grpc.Core.ServerCallContext)">
+             <summary>
+            获取当前owner所有可用的数据库，包含已购买的，纸本的，和公共的
+             </summary>
+             <param name="request">The request received from the client.</param>
+             <param name="context">The context of the server-side call handler being invoked.</param>
+             <returns>The response to send back to the client (wrapped by a task).</returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.ProviderResourceGrpcService.BindService(SmartLibrary.DataCenter.ProviderResourceGrpcService.ProviderResourceGrpcServiceBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.ProviderResourceGrpcService.BindService(Grpc.Core.ServiceBinderBase,SmartLibrary.DataCenter.ProviderResourceGrpcService.ProviderResourceGrpcServiceBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="P:SmartLibrary.DataCenter.SourceTypeGrpcService.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:SmartLibrary.DataCenter.SourceTypeGrpcService.SourceTypeGrpcServiceBase">
+            <summary>Base class for server-side implementations of SourceTypeGrpcService</summary>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.SourceTypeGrpcService.SourceTypeGrpcServiceBase.GetAllSourceType(SmartLibrary.DataCenter.AllSourceRequest,Grpc.Core.ServerCallContext)">
+             <summary>
+            获取当前owner所有可用的数据库，包含已购买的，纸本的，和公共的
+             </summary>
+             <param name="request">The request received from the client.</param>
+             <param name="context">The context of the server-side call handler being invoked.</param>
+             <returns>The response to send back to the client (wrapped by a task).</returns>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.SourceTypeGrpcService.BindService(SmartLibrary.DataCenter.SourceTypeGrpcService.SourceTypeGrpcServiceBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:SmartLibrary.DataCenter.SourceTypeGrpcService.BindService(Grpc.Core.ServiceBinderBase,SmartLibrary.DataCenter.SourceTypeGrpcService.SourceTypeGrpcServiceBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:SmartLibrary.DatabaseTerrace.EntityFramework.Core.Mapper.GetListFromString(System.String)">
+            <summary>
+            多值字段判空
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartLibrary.DatabaseTerrace.EntityFramework.Core.Mapper.GetStringFromList(System.Collections.Generic.List{System.String})">
+            <summary>
+            多值字段判空
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartLibraryUser.UserRoleGrpcServiceReflection">
+            <summary>Holder for reflection information generated from Protos/Client/UserRoleGrpcService.proto</summary>
+        </member>
+        <member name="P:SmartLibraryUser.UserRoleGrpcServiceReflection.Descriptor">
+            <summary>File descriptor for Protos/Client/UserRoleGrpcService.proto</summary>
+        </member>
+        <member name="T:SmartLibraryUser.UserRoleRequest">
+            <summary>
+            定义请求的对象名
+            </summary>
+        </member>
+        <member name="F:SmartLibraryUser.UserRoleRequest.UserKeyFieldNumber">
+            <summary>Field number for the "UserKey" field.</summary>
+        </member>
+        <member name="P:SmartLibraryUser.UserRoleRequest.UserKey">
+            <summary>
+            有一个属性字段是name
+            </summary>
+        </member>
+        <member name="T:SmartLibraryUser.UserRoleReply">
+            <summary>
+            定义返回的对象名
+            </summary>
+        </member>
+        <member name="F:SmartLibraryUser.UserRoleReply.UserRoleFieldNumber">
+            <summary>Field number for the "UserRole" field.</summary>
+        </member>
+        <member name="P:SmartLibraryUser.UserRoleReply.UserRole">
+            <summary>
+            有一个返回的字段是message
+            </summary>
+        </member>
+        <member name="T:SmartLibraryUser.UserRoleGrpcService">
+            <summary>
+            定义具体的服务
+            </summary>
+        </member>
+        <member name="P:SmartLibraryUser.UserRoleGrpcService.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:SmartLibraryUser.UserRoleGrpcService.UserRoleGrpcServiceClient">
+            <summary>Client for UserRoleGrpcService</summary>
+        </member>
+        <member name="M:SmartLibraryUser.UserRoleGrpcService.UserRoleGrpcServiceClient.#ctor(Grpc.Core.ChannelBase)">
+            <summary>Creates a new client for UserRoleGrpcService</summary>
+            <param name="channel">The channel to use to make remote calls.</param>
+        </member>
+        <member name="M:SmartLibraryUser.UserRoleGrpcService.UserRoleGrpcServiceClient.#ctor(Grpc.Core.CallInvoker)">
+            <summary>Creates a new client for UserRoleGrpcService that uses a custom <c>CallInvoker</c>.</summary>
+            <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+        </member>
+        <member name="M:SmartLibraryUser.UserRoleGrpcService.UserRoleGrpcServiceClient.#ctor">
+            <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+        </member>
+        <member name="M:SmartLibraryUser.UserRoleGrpcService.UserRoleGrpcServiceClient.#ctor(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Protected constructor to allow creation of configured clients.</summary>
+            <param name="configuration">The client configuration.</param>
+        </member>
+        <member name="M:SmartLibraryUser.UserRoleGrpcService.UserRoleGrpcServiceClient.GetUserRole(SmartLibraryUser.UserRoleRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            定义某一个方法API，格式是：rpc 方法名(请求参数对象名) returns(返回参数对象名)
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+            <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+            <param name="cancellationToken">An optional token for canceling the call.</param>
+            <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibraryUser.UserRoleGrpcService.UserRoleGrpcServiceClient.GetUserRole(SmartLibraryUser.UserRoleRequest,Grpc.Core.CallOptions)">
+            <summary>
+            定义某一个方法API，格式是：rpc 方法名(请求参数对象名) returns(返回参数对象名)
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="options">The options for the call.</param>
+            <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SmartLibraryUser.UserRoleGrpcService.UserRoleGrpcServiceClient.GetUserRoleAsync(SmartLibraryUser.UserRoleRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            定义某一个方法API，格式是：rpc 方法名(请求参数对象名) returns(返回参数对象名)
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+            <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+            <param name="cancellationToken">An optional token for canceling the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibraryUser.UserRoleGrpcService.UserRoleGrpcServiceClient.GetUserRoleAsync(SmartLibraryUser.UserRoleRequest,Grpc.Core.CallOptions)">
+            <summary>
+            定义某一个方法API，格式是：rpc 方法名(请求参数对象名) returns(返回参数对象名)
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="options">The options for the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:SmartLibraryUser.UserRoleGrpcService.UserRoleGrpcServiceClient.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+        </member>
+        <member name="T:SmartLibraryUser.UserServiceReflection">
+            <summary>Holder for reflection information generated from Protos/Server/UserService.proto</summary>
+        </member>
+        <member name="P:SmartLibraryUser.UserServiceReflection.Descriptor">
+            <summary>File descriptor for Protos/Server/UserService.proto</summary>
+        </member>
+        <member name="T:SmartLibraryUser.UserRequest">
+            <summary>
+            定义请求的对象名
+            </summary>
+        </member>
+        <member name="F:SmartLibraryUser.UserRequest.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="P:SmartLibraryUser.UserRequest.Id">
+            <summary>
+            有一个属性字段是name
+            </summary>
+        </member>
+        <member name="T:SmartLibraryUser.UserReply">
+            <summary>
+            定义返回的对象名
+            </summary>
+        </member>
+        <member name="F:SmartLibraryUser.UserReply.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="P:SmartLibraryUser.UserReply.Id">
+            <summary>
+            有一个返回的字段是message
+            </summary>
+        </member>
+        <member name="F:SmartLibraryUser.UserReply.UserNameFieldNumber">
+            <summary>Field number for the "UserName" field.</summary>
+        </member>
+        <member name="T:SmartLibraryUser.UserGrpcService">
+            <summary>
+            定义具体的服务
+            </summary>
+        </member>
+        <member name="P:SmartLibraryUser.UserGrpcService.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:SmartLibraryUser.UserGrpcService.UserGrpcServiceBase">
+            <summary>Base class for server-side implementations of UserGrpcService</summary>
+        </member>
+        <member name="M:SmartLibraryUser.UserGrpcService.UserGrpcServiceBase.GetUserName(SmartLibraryUser.UserRequest,Grpc.Core.ServerCallContext)">
+            <summary>
+            定义某一个方法API，格式是：rpc 方法名(请求参数对象名) returns(返回参数对象名)
+            </summary>
+            <param name="request">The request received from the client.</param>
+            <param name="context">The context of the server-side call handler being invoked.</param>
+            <returns>The response to send back to the client (wrapped by a task).</returns>
+        </member>
+        <member name="M:SmartLibraryUser.UserGrpcService.BindService(SmartLibraryUser.UserGrpcService.UserGrpcServiceBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:SmartLibraryUser.UserGrpcService.BindService(Grpc.Core.ServiceBinderBase,SmartLibraryUser.UserGrpcService.UserGrpcServiceBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="T:Grpc.Health.V1.HealthCheckReflection">
+            <summary>Holder for reflection information generated from Protos/Server/HealthCheck.proto</summary>
+        </member>
+        <member name="P:Grpc.Health.V1.HealthCheckReflection.Descriptor">
+            <summary>File descriptor for Protos/Server/HealthCheck.proto</summary>
+        </member>
+        <member name="F:Grpc.Health.V1.HealthCheckRequest.ServiceFieldNumber">
+            <summary>Field number for the "service" field.</summary>
+        </member>
+        <member name="F:Grpc.Health.V1.HealthCheckResponse.StatusFieldNumber">
+            <summary>Field number for the "status" field.</summary>
+        </member>
+        <member name="T:Grpc.Health.V1.HealthCheckResponse.Types">
+            <summary>Container for nested types declared in the HealthCheckResponse message type.</summary>
+        </member>
+        <member name="P:Grpc.Health.V1.Health.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:Grpc.Health.V1.Health.HealthBase">
+            <summary>Base class for server-side implementations of Health</summary>
+        </member>
+        <member name="M:Grpc.Health.V1.Health.BindService(Grpc.Health.V1.Health.HealthBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:Grpc.Health.V1.Health.BindService(Grpc.Core.ServiceBinderBase,Grpc.Health.V1.Health.HealthBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+    </members>
+</doc>

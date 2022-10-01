@@ -1,0 +1,39 @@
+// 语法结构，使用pb3
+syntax = "proto3";
+// 定义命名空间，一般是项目名或者解决方案名
+//option csharp_namespace = "SmartLibrary.DatabaseTerrace.Application";
+// 定义服务的包
+package SmartLibraryWorkbench;
+
+
+// 定义具体的服务
+service AppToDoEventGrpcService
+{
+    // 定义某一个方法API，格式是：rpc 方法名(请求参数对象名) returns(返回参数对象名)
+    rpc AddAppToDoEvent (AppToDoEventRequest) returns (AppToDoEventReply);
+    rpc DeleteAppToDoEvent (DeleteAppToDoEventRequest) returns (AppToDoEventReply);
+}
+
+// 请求的事件信息
+message AppToDoEventRequest
+{
+    string AppID = 1;   //应用标识
+    string EventId=2;   //事件标识
+    string NextEventId=3;   //下个流程事件标识
+    string Name=4; //待办项名称
+    string ParentObjID=5;  //待办业务对象上级对象标识(主要针对类似新闻发布的动态流程的新闻栏目）
+    string ParentObjName=6; //待办业务对象上级对象名称
+}
+
+// 返回的应用业务信息
+message AppToDoEventReply
+{
+    int32 Success=1;//0失败 1成功
+    string msg=2;//消息
+}
+
+message DeleteAppToDoEventRequest
+{
+    string AppId=1;
+    string ParentObjectId=2;
+}

@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartLibrary.LogAnalysis.Application", "SmartLibrary.LogAnalysis.Application\SmartLibrary.LogAnalysis.Application.csproj", "{D2E7C955-6AA4-495F-AA84-20F6B02AAB1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartLibrary.LogAnalysis.Common", "SmartLibrary.LogAnalysis.Common\SmartLibrary.LogAnalysis.Common.csproj", "{A6159233-23A5-4EC4-A6E8-85F072107E74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartLibrary.LogAnalysis.Database.Migrations", "SmartLibrary.LogAnalysis.Database.Migrations\SmartLibrary.LogAnalysis.Database.Migrations.csproj", "{FBC110E0-F251-44FA-9806-4872D61D166B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartLibrary.LogAnalysis.EntityFramework.Core", "SmartLibrary.LogAnalysis.EntityFramework.Core\SmartLibrary.LogAnalysis.EntityFramework.Core.csproj", "{F7323C22-BA0B-4C01-8AA5-FEA5B50963FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartLibrary.LogAnalysis.GrpcClientTest", "SmartLibrary.LogAnalysis.GrpcClientTest\SmartLibrary.LogAnalysis.GrpcClientTest.csproj", "{D12D7F1D-2160-4004-B427-FF923EA376CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartLibrary.LogAnalysis.Web", "SmartLibrary.LogAnalysis.Web.Entry\SmartLibrary.LogAnalysis.Web.csproj", "{ED29EDCA-71A2-4E22-B3E0-E027E47C5677}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2E7C955-6AA4-495F-AA84-20F6B02AAB1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2E7C955-6AA4-495F-AA84-20F6B02AAB1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2E7C955-6AA4-495F-AA84-20F6B02AAB1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2E7C955-6AA4-495F-AA84-20F6B02AAB1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6159233-23A5-4EC4-A6E8-85F072107E74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6159233-23A5-4EC4-A6E8-85F072107E74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6159233-23A5-4EC4-A6E8-85F072107E74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6159233-23A5-4EC4-A6E8-85F072107E74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBC110E0-F251-44FA-9806-4872D61D166B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBC110E0-F251-44FA-9806-4872D61D166B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBC110E0-F251-44FA-9806-4872D61D166B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBC110E0-F251-44FA-9806-4872D61D166B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7323C22-BA0B-4C01-8AA5-FEA5B50963FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7323C22-BA0B-4C01-8AA5-FEA5B50963FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7323C22-BA0B-4C01-8AA5-FEA5B50963FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7323C22-BA0B-4C01-8AA5-FEA5B50963FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D12D7F1D-2160-4004-B427-FF923EA376CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D12D7F1D-2160-4004-B427-FF923EA376CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D12D7F1D-2160-4004-B427-FF923EA376CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D12D7F1D-2160-4004-B427-FF923EA376CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED29EDCA-71A2-4E22-B3E0-E027E47C5677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED29EDCA-71A2-4E22-B3E0-E027E47C5677}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED29EDCA-71A2-4E22-B3E0-E027E47C5677}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED29EDCA-71A2-4E22-B3E0-E027E47C5677}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF41F6E9-A36E-4C04-97DF-9741F17715FA}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,133 @@
+2021-08-27 09:40:17.709 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Initializing ...
+2021-08-27 09:40:17.737 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2021-08-27 09:40:17.738 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2021-08-27 09:40:17.738 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2021-08-27 09:40:17.738 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2021-08-27 09:40:17.739 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2021-08-27 09:40:17.739 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2021-08-27 09:40:17.773 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [CapDiagnosticListener].
+2021-08-27 09:40:17.774 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-27 09:40:17.774 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-27 09:40:17.775 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2021-08-27 09:40:17.775 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2021-08-27 09:40:17.776 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2021-08-27 09:40:17.847 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[192.168.21.71:11800].
+2021-08-27 09:40:18.325 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.RegisterService : Reported Service Instance Properties[Service=SmartLibrary.DataCenter,InstanceId=192.168.21.75@15bea9a7e2484a58906cfdb6dc43527a].
+2021-08-27 09:40:29.804 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 4 trace segment. cost: 00:00:00.0601861s
+2021-08-27 09:40:43.763 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.EntityFrameworkCore].
+2021-08-27 09:40:58.605 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 22M ThreadPool 32763 32767 1000 1000
+2021-08-27 09:40:58.605 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/27 1:40:58 +00:00
+2021-08-27 09:41:20.443 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 22M ThreadPool 32759 32767 1000 1000
+2021-08-27 09:41:20.489 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0471912s
+2021-08-27 09:41:24.018 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.5248611s
+2021-08-27 09:41:37.543 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0502619s
+2021-08-27 09:41:47.788 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 28M ThreadPool 32764 32767 1000 1000
+2021-08-27 09:41:47.788 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/27 1:41:47 +00:00
+2021-08-27 09:46:37.551 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Initializing ...
+2021-08-27 09:46:37.583 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2021-08-27 09:46:37.583 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2021-08-27 09:46:37.583 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2021-08-27 09:46:37.583 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2021-08-27 09:46:37.583 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2021-08-27 09:46:37.583 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2021-08-27 09:46:37.623 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [CapDiagnosticListener].
+2021-08-27 09:46:37.624 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-27 09:46:37.624 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-27 09:46:37.625 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2021-08-27 09:46:37.625 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2021-08-27 09:46:37.625 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2021-08-27 09:46:37.894 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[192.168.21.71:11800].
+2021-08-27 09:46:38.200 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.RegisterService : Reported Service Instance Properties[Service=SmartLibrary.DataCenter,InstanceId=192.168.21.75@a6e91023dd4146df9e16f5aed0b0b8a8].
+2021-08-27 09:47:04.626 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 4 trace segment. cost: 00:00:00.0386182s
+2021-08-27 09:47:07.601 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/27 1:47:07 +00:00
+2021-08-27 09:47:07.647 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 21M ThreadPool 32764 32767 1000 1000
+2021-08-27 09:47:13.638 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.EntityFrameworkCore].
+2021-08-27 09:47:36.052 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0627918s
+2021-08-27 09:47:37.046 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0551124s
+2021-08-27 09:47:37.595 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 7.8125 GenCollectCount 0 0 0 26M ThreadPool 32765 32767 1000 1000
+2021-08-27 09:47:38.039 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0490123s
+2021-08-27 09:48:07.606 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 27M ThreadPool 32764 32767 1000 1000
+2021-08-27 09:48:07.606 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/27 1:48:07 +00:00
+2021-08-27 09:48:37.595 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 27M ThreadPool 32765 32767 1000 1000
+2021-08-27 09:48:38.055 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0506143s
+2021-08-27 09:49:07.593 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 28M ThreadPool 32763 32767 1000 1000
+2021-08-27 09:49:07.593 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/27 1:49:07 +00:00
+2021-08-27 09:49:14.739 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0523008s
+2021-08-27 15:59:11.829 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Initializing ...
+2021-08-27 15:59:11.874 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2021-08-27 15:59:11.874 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2021-08-27 15:59:11.874 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2021-08-27 15:59:11.874 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2021-08-27 15:59:11.874 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2021-08-27 15:59:11.874 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2021-08-27 15:59:11.909 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [CapDiagnosticListener].
+2021-08-27 15:59:11.911 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-27 15:59:11.911 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-27 15:59:11.912 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2021-08-27 15:59:11.912 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2021-08-27 15:59:11.912 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2021-08-27 15:59:11.959 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[192.168.21.71:11800].
+2021-08-27 15:59:12.835 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.RegisterService : Reported Service Instance Properties[Service=SmartLibrary.DataCenter,InstanceId=192.168.21.75@2045784ac9584ef3aba699f08fe1bdba].
+2021-08-27 15:59:41.899 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/27 7:59:41 +00:00
+2021-08-27 15:59:41.903 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 17M ThreadPool 32764 32767 1000 1000
+2021-08-27 16:00:11.892 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 17M ThreadPool 32760 32767 1000 1000
+2021-08-27 16:00:11.942 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0544859s
+2021-08-27 16:00:42.140 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 18M ThreadPool 32759 32767 1000 1000
+2021-08-27 16:00:42.140 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/27 8:00:42 +00:00
+2021-08-27 16:01:11.886 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 19M ThreadPool 32759 32767 1000 1000
+2021-08-27 16:01:11.975 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0955567s
+2021-08-27 16:01:41.900 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/27 8:01:41 +00:00
+2021-08-27 16:01:41.904 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 20M ThreadPool 32757 32767 1000 1000
+2021-08-27 16:02:11.889 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 20M ThreadPool 32760 32767 1000 1000
+2021-08-27 16:02:11.889 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0081307s
+2021-08-27 16:02:41.889 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/27 8:02:41 +00:00
+2021-08-27 16:02:41.889 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 21M ThreadPool 32759 32767 1000 1000
+2021-08-27 16:03:11.941 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0595177s
+2021-08-27 16:03:11.941 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 22M ThreadPool 32761 32767 1000 1000
+2021-08-27 16:03:41.889 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/27 8:03:41 +00:00
+2021-08-27 16:03:41.889 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 23M ThreadPool 32758 32767 1000 1000
+2021-08-27 16:04:11.910 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 24M ThreadPool 32761 32767 1000 1000
+2021-08-27 16:04:11.910 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 4 trace segment. cost: 00:00:00.0253605s
+2021-08-27 16:04:42.028 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/27 8:04:42 +00:00
+2021-08-27 16:04:42.031 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 25M ThreadPool 32756 32767 1000 1000
+2021-08-27 16:05:11.991 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 25M ThreadPool 32759 32767 1000 1000
+2021-08-27 16:05:12.934 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0501932s
+2021-08-27 16:05:41.893 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 26M ThreadPool 32759 32767 1000 1000
+2021-08-27 16:05:41.893 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Ping server @2021/8/27 8:05:41 +00:00
+2021-08-27 16:34:18.061 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Initializing ...
+2021-08-27 16:34:18.085 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2021-08-27 16:34:18.085 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2021-08-27 16:34:18.085 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2021-08-27 16:34:18.085 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2021-08-27 16:34:18.085 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2021-08-27 16:34:18.085 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2021-08-27 16:34:18.116 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [CapDiagnosticListener].
+2021-08-27 16:34:18.117 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-27 16:34:18.117 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-27 16:34:18.118 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2021-08-27 16:34:18.118 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2021-08-27 16:34:18.118 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2021-08-27 16:34:18.165 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[192.168.21.71:11800].
+2021-08-27 16:34:18.668 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.RegisterService : Reported Service Instance Properties[Service=SmartLibrary.DataCenter,InstanceId=192.168.21.75@255e4d928e784aabbdb13b571e34d83b].
+2021-08-27 16:49:43.401 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Initializing ...
+2021-08-27 16:49:43.426 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2021-08-27 16:49:43.427 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2021-08-27 16:49:43.427 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2021-08-27 16:49:43.427 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2021-08-27 16:49:43.427 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2021-08-27 16:49:43.427 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2021-08-27 16:49:43.463 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [CapDiagnosticListener].
+2021-08-27 16:49:43.464 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-27 16:49:43.464 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SqlClientDiagnosticListener].
+2021-08-27 16:49:43.465 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2021-08-27 16:49:43.465 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2021-08-27 16:49:43.465 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2021-08-27 16:49:43.593 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[192.168.21.71:11800].
+2021-08-27 16:49:44.004 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.RegisterService : Reported Service Instance Properties[Service=SmartLibrary.DataCenter,InstanceId=192.168.21.75@2dbff4a801914b99b89317147f8b902c].
+2021-08-27 16:49:47.352 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.RegisterService : Stopped instrument service RegisterService.
+2021-08-27 16:49:47.352 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.PingService : Stopped instrument service PingService.
+2021-08-27 16:49:47.352 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.SegmentReportService : Stopped instrument service SegmentReportService.
+2021-08-27 16:49:47.353 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Service.CLRStatsService : Stopped instrument service CLRStatsService.
+2021-08-27 16:49:47.353 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Stopped instrument service SimpleCountSamplingInterceptor.
+2021-08-27 16:49:47.353 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.Transport.Grpc.ConnectService : Stopped instrument service ConnectService.
+2021-08-27 16:49:47.353 +08:00 [SmartLibrary.DataCenter] [Information] SkyApm.InstrumentStartup : Stopped SkyAPM .NET Core Agent.
